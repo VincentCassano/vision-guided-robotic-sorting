@@ -19,6 +19,37 @@ main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-
 <li><strong>记录</strong>：原图、通信、动作结果与文件哈希保留，软件周期数与实际分拣结果分别记录。</li>
 </ul>
 <p>底层视觉取放已有四件黑壳连续批次及部分三色取放记录；<strong>当前网页版仍等待现场验收</strong>。动作周期完成不能直接作为实际抓稳、入正确盒或整机成功率的证明。</p>
+<h2>项目结构</h2>
+<pre><code>vision-guided-robotic-sorting/
+├── README.md / README.en.md          中英文项目说明
+├── requirements-web.txt              网页、相机与推理依赖
+├── deployment/
+│   ├── run_visual_task_control_v24.py      网页与持续相机服务启动入口
+│   ├── visual_task_control_v24.py          HTTP接口、任务状态、停止与日志
+│   ├── visual_task_dashboard_v24.html      网页控制台
+│   ├── visual_live_camera_v24.py           D435唯一采集端、同帧图像/识别结果供给
+│   ├── visual_detection_confirm_v24.py     同一目标连续存在满2秒的统计确认
+│   ├── visual_pick_sort_live_v24_vision.py  目标选择、两层支撑面判断与空间定位
+│   ├── run_visual_pick_sort_live_v24.py     自动/单件批次调度
+│   ├── visual_pick_sort_v23_worker.py      原机械臂/灵巧手动作子进程
+│   ├── task_control_ros_v24.py             可选ROS任务桥
+│   ├── CURRENT_RELEASE.json               当前版本、入口与验收状态
+│   └── *-files.sha256                     原动作及网页运行文件校验清单
+├── src/battery_grasp/
+│   ├── scripts/yolo_worker.py         独立YOLO/TorchScript推理进程
+│   ├── src/battery_grasp/             推理、规划及ROS公共模块
+│   ├── config/                       模型类别阈值与任务配置
+│   ├── launch/                       ROS节点启动文件
+│   └── models/                       模型放置位置；GitHub仅保留说明
+├── docs/
+│   ├── ASSETS.md                     模型、SDK、标定与绑定配置
+│   └── guide.*.html                  中英文HTML说明及选中可见彩蛋
+└── tools/release/
+    ├── build_runtime_archive.py       按运行清单打包
+    ├── prepare_github.py              导出精简公开源码
+    └── render_project_guides.py       生成中英文HTML说明</code></pre>
+<p>运行关系为：<strong>网页按钮 → HTTP任务控制 → 批次调度 → 视觉定位与原SDK动作子进程</strong>。相机服务持续供帧，运动阶段保留实时预览。</p>
+<p><code>calibration/</code>保存本机标定和绑定，<code>captures/</code>保存原始会话，<code>publish/</code>保存本地发布副本；这些目录不随GitHub源码上传。<code>deployment/</code>中部分较早版本的脚本和JSON属于当前校验链或来源依据，保留原路径；入口以<code>CURRENT_RELEASE.json</code>为准。</p>
 <h2>环境配置</h2>
 <h3>硬件与工作条件</h3>
 <div class="table-wrap"><table>
@@ -71,9 +102,5 @@ cd vision-guided-robotic-sorting</code></pre>
 <pre><code>source ~/catkin_ws/devel/setup.bash
 /usr/bin/python3 deployment/task_control_ros_v24.py</code></pre>
 <p>ROS桥与网页共用同一真机控制服务。完整接口和操作细节见<a href="../deployment/VISUAL_WEB_CONTROL_V24_README.txt">运行说明</a>。</p>
-<h2>项目结构与边界</h2>
-<pre><code>deployment/             网页、相机服务、定位、原动作流程及发布校验清单
-src/battery_grasp/      ROS功能包、推理模块和配置
-docs/                  资产配置及项目文档
-tools/release/         文件打包与GitHub发布准备工具</code></pre>
+<h2>当前范围</h2>
 <p>当前范围是固定头/板、同规格直立测试件与已测量的两层工作面。任意未知高度、其他规格、方形抓取、右臂协作及实际抓稳/滑落/入框自动闭环尚未完成。依赖与参考材料说明见<a href="../THIRD_PARTY_NOTICES.md">第三方说明</a>。</p><p class="selection-easter-egg">世上无难事，只要肯登攀。</p></main></html>

@@ -2,7 +2,7 @@
   "project_title": "Vision-Guided Robotic Grasping and Sorting System",
   "repository": "VincentCassano/vision-guided-robotic-sorting",
   "files": 696,
-  "bytes": 16541478,
+  "bytes": 16550900,
   "manifest": {
     ".gitattributes": {
       "bytes": 83,
@@ -13,12 +13,12 @@
       "sha256": "c5aad2da707a3cc939414b6a7376725817e5b87c9cff93567138e376bebaf5c7"
     },
     "README.en.md": {
-      "bytes": 8073,
-      "sha256": "81b92c578687008a440cd179fab03db8f7de276316ba8a434b8637d198bf19af"
+      "bytes": 10451,
+      "sha256": "84f9831167659b5a5a38392c758dfd3080640dbad723d471416a6a41e9d90983"
     },
     "README.md": {
-      "bytes": 6838,
-      "sha256": "66585d7178cb2f63b6fc92b2f50dda124b0057f4f0e091758e9e788c05c2379f"
+      "bytes": 9086,
+      "sha256": "25246c4691253b26b885bc67c1da65db70af7518bbb4092f05e9b451496e4961"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 1294,
@@ -2465,12 +2465,12 @@
       "sha256": "88db2068f55c4bcb14c688a1be0a433c607b3ec70488793dfb18f21594f5ae84"
     },
     "docs/guide.en.html": {
-      "bytes": 10700,
-      "sha256": "b59c10b4f037e002ff900f32b1d2ae1e9951cf023d472a2c51be2b011a4c7572"
+      "bytes": 13163,
+      "sha256": "7a02b1480a9f74c5d0678f6cd454fa908c4d1724abcd174e0da532533a34803a"
     },
     "docs/guide.zh-CN.html": {
-      "bytes": 9473,
-      "sha256": "a72d924bdc394dbb04d4d070b82631db3ca9598dc2ddd632f7433a014cb48907"
+      "bytes": 11806,
+      "sha256": "6b0489e0dbfda06890125085c1e03fabdb85864806c259a98d4f4241ebad5fdb"
     },
     "requirements-web.txt": {
       "bytes": 235,

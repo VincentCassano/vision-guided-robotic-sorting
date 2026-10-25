@@ -19,6 +19,37 @@ main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-
 <li><strong>Traceability:</strong> original images, communication records, motion results, and file hashes. Motion-cycle counts remain separate from physical sorting outcomes.</li>
 </ul>
 <p>The underlying pipeline has field records for a four-object black-shell batch and some three-color operations. <strong>The current web integration is awaiting field acceptance.</strong> A completed motion cycle does not prove retention, delivery into the correct bin, or an end-to-end success rate.</p>
+<h2>Project structure</h2>
+<pre><code>vision-guided-robotic-sorting/
+├── README.md / README.en.md          Chinese and English project guides
+├── requirements-web.txt              Web, camera, and inference dependencies
+├── deployment/
+│   ├── run_visual_task_control_v24.py      Web and continuous-camera entry point
+│   ├── visual_task_control_v24.py          HTTP commands, state, stop, and logs
+│   ├── visual_task_dashboard_v24.html      Web dashboard
+│   ├── visual_live_camera_v24.py           Single D435 owner; paired frames/results
+│   ├── visual_detection_confirm_v24.py     Two-second target-presence confirmation
+│   ├── visual_pick_sort_live_v24_vision.py  Target selection, support level, position
+│   ├── run_visual_pick_sort_live_v24.py     Automatic/single-object batch scheduling
+│   ├── visual_pick_sort_v23_worker.py      Original arm/hand motion subprocess
+│   ├── task_control_ros_v24.py             Optional ROS task bridge
+│   ├── CURRENT_RELEASE.json               Version, entry points, acceptance status
+│   └── *-files.sha256                     Motion and web runtime file manifests
+├── src/battery_grasp/
+│   ├── scripts/yolo_worker.py         Separate YOLO/TorchScript inference process
+│   ├── src/battery_grasp/             Inference, planning, and shared ROS modules
+│   ├── config/                       Class thresholds and task configuration
+│   ├── launch/                       ROS node launch files
+│   └── models/                       Model location; only notes are published
+├── docs/
+│   ├── ASSETS.md                     Model, SDK, calibration, and binding setup
+│   └── guide.*.html                  Bilingual HTML guides and selection-only motto
+└── tools/release/
+    ├── build_runtime_archive.py       Package manifest-listed runtime files
+    ├── prepare_github.py              Export the curated public source tree
+    └── render_project_guides.py       Generate both HTML guides</code></pre>
+<p>Control flow: <strong>dashboard command → HTTP task control → batch scheduler → visual localization and the original SDK motion subprocess</strong>. The camera service continues supplying live video during motion.</p>
+<p>Device calibration/bindings belong in <code>calibration/</code>, original sessions in <code>captures/</code>, and local publication checkouts in <code>publish/</code>; these directories are excluded from the public source. Some earlier-named scripts and JSON files in <code>deployment/</code> remain part of the current verification/provenance chain. Use <code>CURRENT_RELEASE.json</code> to identify the active entry point.</p>
 <h2>Environment configuration</h2>
 <h3>Hardware and operating scope</h3>
 <div class="table-wrap"><table>
@@ -71,9 +102,5 @@ cd vision-guided-robotic-sorting</code></pre>
 <pre><code>source ~/catkin_ws/devel/setup.bash
 /usr/bin/python3 deployment/task_control_ros_v24.py</code></pre>
 <p>ROS and the dashboard share one real task-control service. See the <a href="../deployment/VISUAL_WEB_CONTROL_V24_README.txt">runtime notes</a> for interface details.</p>
-<h2>Structure and limitations</h2>
-<pre><code>deployment/             Dashboard, camera service, localization, motion pipeline, manifests
-src/battery_grasp/      ROS package, inference modules, configuration
-docs/                  Asset configuration and project documentation
-tools/release/         File packaging and GitHub publication preparation</code></pre>
+<h2>Current scope</h2>
 <p>The current scope is a fixed camera/board installation, same-size upright objects, and two measured support levels. Arbitrary heights, other dimensions, square-object grasping, right-arm collaboration, and automatic verification of retention, slips, and correct-bin delivery remain incomplete. See <a href="../THIRD_PARTY_NOTICES.md">Third-party notices</a> for dependency and reference-source information.</p><p class="selection-easter-egg">世上无难事，只要肯登攀。</p></main></html>

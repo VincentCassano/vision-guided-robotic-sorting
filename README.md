@@ -19,6 +19,43 @@
 
 底层视觉取放已有四件黑壳连续批次及部分三色取放记录；**当前网页版仍等待现场验收**。动作周期完成不能直接作为实际抓稳、入正确盒或整机成功率的证明。
 
+## 项目结构
+
+```text
+vision-guided-robotic-sorting/
+├── README.md / README.en.md          中英文项目说明
+├── requirements-web.txt              网页、相机与推理依赖
+├── deployment/
+│   ├── run_visual_task_control_v24.py      网页与持续相机服务启动入口
+│   ├── visual_task_control_v24.py          HTTP接口、任务状态、停止与日志
+│   ├── visual_task_dashboard_v24.html      网页控制台
+│   ├── visual_live_camera_v24.py           D435唯一采集端、同帧图像/识别结果供给
+│   ├── visual_detection_confirm_v24.py     同一目标连续存在满2秒的统计确认
+│   ├── visual_pick_sort_live_v24_vision.py  目标选择、两层支撑面判断与空间定位
+│   ├── run_visual_pick_sort_live_v24.py     自动/单件批次调度
+│   ├── visual_pick_sort_v23_worker.py      原机械臂/灵巧手动作子进程
+│   ├── task_control_ros_v24.py             可选ROS任务桥
+│   ├── CURRENT_RELEASE.json               当前版本、入口与验收状态
+│   └── *-files.sha256                     原动作及网页运行文件校验清单
+├── src/battery_grasp/
+│   ├── scripts/yolo_worker.py         独立YOLO/TorchScript推理进程
+│   ├── src/battery_grasp/             推理、规划及ROS公共模块
+│   ├── config/                       模型类别阈值与任务配置
+│   ├── launch/                       ROS节点启动文件
+│   └── models/                       模型放置位置；GitHub仅保留说明
+├── docs/
+│   ├── ASSETS.md                     模型、SDK、标定与绑定配置
+│   └── guide.*.html                  中英文HTML说明及选中可见彩蛋
+└── tools/release/
+    ├── build_runtime_archive.py       按运行清单打包
+    ├── prepare_github.py              导出精简公开源码
+    └── render_project_guides.py       生成中英文HTML说明
+```
+
+运行关系为：**网页按钮 → HTTP任务控制 → 批次调度 → 视觉定位与原SDK动作子进程**。相机服务持续供帧，运动阶段保留实时预览。
+
+`calibration/`保存本机标定和绑定，`captures/`保存原始会话，`publish/`保存本地发布副本；这些目录不随GitHub源码上传。`deployment/`中部分较早版本的脚本和JSON属于当前校验链或来源依据，保留原路径；入口以`CURRENT_RELEASE.json`为准。
+
 ## 环境配置
 
 ### 硬件与工作条件
@@ -103,13 +140,6 @@ source ~/catkin_ws/devel/setup.bash
 
 ROS桥与网页共用同一真机控制服务。完整接口和操作细节见[运行说明](deployment/VISUAL_WEB_CONTROL_V24_README.txt)。
 
-## 项目结构与边界
-
-```text
-deployment/             网页、相机服务、定位、原动作流程及发布校验清单
-src/battery_grasp/      ROS功能包、推理模块和配置
-docs/                  资产配置及项目文档
-tools/release/         文件打包与GitHub发布准备工具
-```
+## 当前范围
 
 当前范围是固定头/板、同规格直立测试件与已测量的两层工作面。任意未知高度、其他规格、方形抓取、右臂协作及实际抓稳/滑落/入框自动闭环尚未完成。依赖与参考材料说明见[第三方说明](THIRD_PARTY_NOTICES.md)。

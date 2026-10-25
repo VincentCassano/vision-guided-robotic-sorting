@@ -19,6 +19,43 @@ The web dashboard combines continuous camera video, automatic and single-object 
 
 The underlying pipeline has field records for a four-object black-shell batch and some three-color operations. **The current web integration is awaiting field acceptance.** A completed motion cycle does not prove retention, delivery into the correct bin, or an end-to-end success rate.
 
+## Project structure
+
+```text
+vision-guided-robotic-sorting/
+├── README.md / README.en.md          Chinese and English project guides
+├── requirements-web.txt              Web, camera, and inference dependencies
+├── deployment/
+│   ├── run_visual_task_control_v24.py      Web and continuous-camera entry point
+│   ├── visual_task_control_v24.py          HTTP commands, state, stop, and logs
+│   ├── visual_task_dashboard_v24.html      Web dashboard
+│   ├── visual_live_camera_v24.py           Single D435 owner; paired frames/results
+│   ├── visual_detection_confirm_v24.py     Two-second target-presence confirmation
+│   ├── visual_pick_sort_live_v24_vision.py  Target selection, support level, position
+│   ├── run_visual_pick_sort_live_v24.py     Automatic/single-object batch scheduling
+│   ├── visual_pick_sort_v23_worker.py      Original arm/hand motion subprocess
+│   ├── task_control_ros_v24.py             Optional ROS task bridge
+│   ├── CURRENT_RELEASE.json               Version, entry points, acceptance status
+│   └── *-files.sha256                     Motion and web runtime file manifests
+├── src/battery_grasp/
+│   ├── scripts/yolo_worker.py         Separate YOLO/TorchScript inference process
+│   ├── src/battery_grasp/             Inference, planning, and shared ROS modules
+│   ├── config/                       Class thresholds and task configuration
+│   ├── launch/                       ROS node launch files
+│   └── models/                       Model location; only notes are published
+├── docs/
+│   ├── ASSETS.md                     Model, SDK, calibration, and binding setup
+│   └── guide.*.html                  Bilingual HTML guides and selection-only motto
+└── tools/release/
+    ├── build_runtime_archive.py       Package manifest-listed runtime files
+    ├── prepare_github.py              Export the curated public source tree
+    └── render_project_guides.py       Generate both HTML guides
+```
+
+Control flow: **dashboard command → HTTP task control → batch scheduler → visual localization and the original SDK motion subprocess**. The camera service continues supplying live video during motion.
+
+Device calibration/bindings belong in `calibration/`, original sessions in `captures/`, and local publication checkouts in `publish/`; these directories are excluded from the public source. Some earlier-named scripts and JSON files in `deployment/` remain part of the current verification/provenance chain. Use `CURRENT_RELEASE.json` to identify the active entry point.
+
 ## Environment configuration
 
 ### Hardware and operating scope
@@ -103,13 +140,6 @@ source ~/catkin_ws/devel/setup.bash
 
 ROS and the dashboard share one real task-control service. See the [runtime notes](deployment/VISUAL_WEB_CONTROL_V24_README.txt) for interface details.
 
-## Structure and limitations
-
-```text
-deployment/             Dashboard, camera service, localization, motion pipeline, manifests
-src/battery_grasp/      ROS package, inference modules, configuration
-docs/                  Asset configuration and project documentation
-tools/release/         File packaging and GitHub publication preparation
-```
+## Current scope
 
 The current scope is a fixed camera/board installation, same-size upright objects, and two measured support levels. Arbitrary heights, other dimensions, square-object grasping, right-arm collaboration, and automatic verification of retention, slips, and correct-bin delivery remain incomplete. See [Third-party notices](THIRD_PARTY_NOTICES.md) for dependency and reference-source information.
