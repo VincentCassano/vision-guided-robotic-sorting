@@ -10,4 +10,8 @@ The web entry is `run_visual_task_control_v24.py`; the original terminal entry r
 
 较早版本的脚本和JSON中，有一部分属于当前运行清单的依赖或来源证据，不能仅凭版本号较小删除。两个SHA256运行清单列出的文件保持原路径与字节。旧大包、临时回传和教学打包副本已移到本地归档，具体位置见`docs/maintenance/`。
 
+目录内容分为当前入口与执行模块、冻结的来源/校验材料、当前发布索引和回退包。它们并非全部直接执行。2026-10-26继续移出了当前清单和保守静态引用链之外的历史脚本与材料；没有通过改写原运行清单来强行缩减依赖。
+
 Some earlier-named scripts and JSON records are active dependencies or provenance evidence. Files covered by the two runtime manifests keep their original paths and bytes. Older bulk archives, temporary returns, and teaching staging copies are stored outside the active project; local receipts are under `docs/maintenance/`.
+
+The directory includes active entry points, frozen verification/provenance material, current release indexes, and rollback packages; not every file is executed. Historical material outside the current manifests and conservative static reference closure has been removed from the active directory. The existing runtime manifests were preserved.

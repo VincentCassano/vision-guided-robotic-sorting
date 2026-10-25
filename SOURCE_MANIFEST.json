@@ -1,8 +1,8 @@
 {
   "project_title": "Vision-Guided Robotic Grasping and Sorting System",
   "repository": "VincentCassano/vision-guided-robotic-sorting",
-  "files": 696,
-  "bytes": 16550900,
+  "files": 698,
+  "bytes": 17492589,
   "manifest": {
     ".gitattributes": {
       "bytes": 83,
@@ -13,12 +13,12 @@
       "sha256": "c5aad2da707a3cc939414b6a7376725817e5b87c9cff93567138e376bebaf5c7"
     },
     "README.en.md": {
-      "bytes": 10451,
-      "sha256": "84f9831167659b5a5a38392c758dfd3080640dbad723d471416a6a41e9d90983"
+      "bytes": 10803,
+      "sha256": "426ee747169f4bb868a254015598b09bd0ef6b6e8b6c0b418991b5a941ce75b4"
     },
     "README.md": {
-      "bytes": 9086,
-      "sha256": "25246c4691253b26b885bc67c1da65db70af7518bbb4092f05e9b451496e4961"
+      "bytes": 9427,
+      "sha256": "1cd99d67accdc98250c0b54f68ceeee588c42bb3a02d9a3048aeb62261a421f1"
     },
     "THIRD_PARTY_NOTICES.md": {
       "bytes": 1294,
@@ -121,8 +121,8 @@
       "sha256": "8ec8a477f46f8910edeabc5624e1b6466e6d1db6a5f9a4d27ac8df7c939de9f8"
     },
     "deployment/README.md": {
-      "bytes": 1127,
-      "sha256": "6dcbfdd06f4fd84967909b3dfc5a58b8bb4982f8f5968e64aa67453aa27b273e"
+      "bytes": 1770,
+      "sha256": "82dcbd4f3dde8c869f1739f32113c7703fe3e9413338710f7919d01506eac194"
     },
     "deployment/SCHOOL_BIN_CYCLE_README.txt": {
       "bytes": 4674,
@@ -2465,12 +2465,12 @@
       "sha256": "88db2068f55c4bcb14c688a1be0a433c607b3ec70488793dfb18f21594f5ae84"
     },
     "docs/guide.en.html": {
-      "bytes": 13163,
-      "sha256": "7a02b1480a9f74c5d0678f6cd454fa908c4d1724abcd174e0da532533a34803a"
+      "bytes": 13688,
+      "sha256": "2b58871efc07f09d268ce66fd9e0dab60a201026a78fe5000fb1cd87ab5ebd40"
     },
     "docs/guide.zh-CN.html": {
-      "bytes": 11806,
-      "sha256": "6b0489e0dbfda06890125085c1e03fabdb85864806c259a98d4f4241ebad5fdb"
+      "bytes": 12320,
+      "sha256": "1ec0ade175ffc4dfe9207be7caf1e72863008e3963b0af092f24f1b5eb15e8e4"
     },
     "requirements-web.txt": {
       "bytes": 235,
@@ -2777,16 +2777,24 @@
       "sha256": "18085bf35f3c58270168207644e2138ffa068c036ce9163d27c04945704132fa"
     },
     "tools/release/build_runtime_archive.py": {
-      "bytes": 2026,
-      "sha256": "043fd50a724e7dff054b618e20e99ce6bafbd35f289743e0663d2fbc9f7cae10"
+      "bytes": 2128,
+      "sha256": "234ab2d54f7a84a7144f4db93f76266461b3430509a697c19630a09903f42b83"
     },
     "tools/release/prepare_github.py": {
-      "bytes": 5304,
-      "sha256": "f9017430738fe6d30f33a35a683f5ff5fa6eec77135bc0d0956cfec2290d8135"
+      "bytes": 5406,
+      "sha256": "7d3e30c2e853873f73b65ff02795cc9c307d64578a185b456280512a42dcee24"
     },
     "tools/release/render_project_guides.py": {
-      "bytes": 4474,
-      "sha256": "5015eb9f23f25bb43d7c336168c6c21719ffd3f0d99ee2947bfa7e19785bcfa7"
+      "bytes": 4790,
+      "sha256": "d753af071a868fba606862a0c4c9cc8b4b27d08483a065bb87ed58ddd75634f0"
+    },
+    "docs/images/head-camera-scene.png": {
+      "bytes": 938080,
+      "sha256": "6f7db3638e7b6b69b59cd7465293a33ec28c2c383d98a684882972744997e125"
+    },
+    "docs/images/head-camera-scene.provenance.json": {
+      "bytes": 714,
+      "sha256": "3ad4aa40c5ab280892499331c086eefdefedc6b501c8fd595eab66b7a169ad6b"
     }
   }
 }

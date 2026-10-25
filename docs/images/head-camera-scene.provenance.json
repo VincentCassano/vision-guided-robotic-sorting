@@ -1,0 +1,15 @@
+{
+  "source_type": "original_head_D435_RGB_frame",
+  "scene_date": "2026-10-24",
+  "source_archive": "visual_pick_sort_v22_20261024_195721_105288.zip",
+  "source_archive_sha256": "6a31f5bd5f86bde3eff767d5dd117432c5d8be07c0a0217cea7d8203a33d2976",
+  "outer_member": "visual_pick_sort_v22_20261024_195721_105288/batch_001/vision_001/camera.zip",
+  "image_member": "visual_pick_point_v22_target_20261024_200214_900859/observation_001.png",
+  "image_sha256": "6f7db3638e7b6b69b59cd7465293a33ec28c2c383d98a684882972744997e125",
+  "width": 1280,
+  "height": 720,
+  "inner_image_manifest_verified": true,
+  "original_bytes_preserved": true,
+  "image_editing_or_generation": false,
+  "purpose": "workspace_preview_only"
+}

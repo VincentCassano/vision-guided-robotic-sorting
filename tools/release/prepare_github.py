@@ -42,7 +42,8 @@ def main():
         if '/models/' in relative and source.name!='README.md':continue
         payload[relative]=source.read_bytes()
     for name in ('README.md','README.en.md','requirements-web.txt','THIRD_PARTY_NOTICES.md',
-                 '.gitattributes','docs/ASSETS.md','docs/guide.zh-CN.html','docs/guide.en.html','deployment/README.md',
+                 '.gitattributes','docs/ASSETS.md','docs/guide.zh-CN.html','docs/guide.en.html',
+                 'docs/images/head-camera-scene.png','docs/images/head-camera-scene.provenance.json','deployment/README.md',
                  'deployment/CURRENT_RELEASE.json','deployment/VISUAL_WEB_CONTROL_V24_ONSITE_COMMAND.txt',
                  'tools/release/build_runtime_archive.py','tools/release/prepare_github.py',
                  'tools/release/render_project_guides.py'):

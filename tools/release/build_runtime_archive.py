@@ -28,6 +28,7 @@ def main():
             payload[relative]=raw
     for name in ('README.md','README.en.md','requirements-web.txt','THIRD_PARTY_NOTICES.md',
                  'docs/ASSETS.md','docs/guide.zh-CN.html','docs/guide.en.html',
+                 'docs/images/head-camera-scene.png','docs/images/head-camera-scene.provenance.json',
                  'deployment/README.md','deployment/CURRENT_RELEASE.json',
                  'src/battery_grasp/models/README.md'):
         if (ROOT/name).is_file():payload[name]=(ROOT/name).read_bytes()

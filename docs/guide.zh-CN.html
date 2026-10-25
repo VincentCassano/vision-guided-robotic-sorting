@@ -5,11 +5,14 @@
 main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-height:1.3;letter-spacing:-.6px;margin:0 0 18px}h2{font-size:23px;margin-top:42px;padding-bottom:9px;border-bottom:1px solid var(--line)}h3{font-size:18px;margin-top:26px}a{color:#3774c4;text-underline-offset:3px}p,ul{margin:16px 0}li{margin:7px 0}pre{padding:18px 20px;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;font:14px/1.65 ui-monospace,Consolas,monospace}code{font-size:.9em}p code,li code,td code{padding:2px 5px;background:var(--panel);border-radius:4px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top}th{background:var(--panel)}.selection-easter-egg{color:transparent;user-select:text;-webkit-user-select:text;margin-top:32px}.selection-easter-egg::selection{color:#102a43;background:#a5ceff}
 @media(prefers-color-scheme:dark){:root{--paper:#101722;--ink:#e2e8f0;--line:#344155;--panel:#1a2535}a{color:#92bfff}}
 @media(max-width:700px){main{padding:28px 20px}h1{font-size:26px}}
+.scene-preview{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;margin:18px 0}
 </style><main><h1>Vision-Guided Robotic Grasping and Sorting System</h1>
 <p><strong>视觉引导的机器人抓取与分拣系统</strong> · 简体中文 | <a href="../README.en.md">English</a></p>
 <p><a href="guide.zh-CN.html">中英文HTML说明（下载后用浏览器打开）</a> · <a href="guide.en.html">English HTML guide</a></p>
 <h2>项目介绍</h2>
 <p>本项目将目标识别、空间定位、机器人抓取与分类投放连接成一个连续工作流程。头部 Intel RealSense D435 提供实时图像，YOLOv5 模型识别电池外形和颜色，定位模块计算当前目标的位置，再由机械臂与灵巧手完成接近、抓取、提起、投放和返回观察位。</p>
+<p><img class="scene-preview" src="images/head-camera-scene.png" alt="头部D435相机拍摄的实际分拣场景：九槽工作板、四个黑色空壳及两侧投放盒" loading="lazy"></p>
+<p>场景说明：2026-10-24四件黑壳批次测试时保存的原始相机画面，展示实际工作区布局。</p>
 <p>系统根据实时视觉结果生成目标坐标，并根据工作区选择近处或远处腕姿。当前任务是分拣同规格的直立圆柱测试件：黑色进入正常品盒，红色和白色进入废品盒；方形目标仅识别。</p>
 <p>网页控制台提供持续相机画面、自动与单件取放、停止、软件重置、阶段反馈和运行日志。原始定位图像与网页展示视频分开传输；同一目标连续出现至少 <strong>2秒</strong> 才进入检测统计，短暂闪现和重复刷新不会增加数量。</p>
 <ul>
@@ -43,6 +46,7 @@ main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-
 │   └── models/                       模型放置位置；GitHub仅保留说明
 ├── docs/
 │   ├── ASSETS.md                     模型、SDK、标定与绑定配置
+│   ├── images/head-camera-scene.png   测试回传的头部相机场景预览
 │   └── guide.*.html                  中英文HTML说明及选中可见彩蛋
 └── tools/release/
     ├── build_runtime_archive.py       按运行清单打包

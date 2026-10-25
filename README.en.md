@@ -8,6 +8,10 @@
 
 This project connects visual detection, spatial localization, robotic grasping, and destination-based sorting into a continuous workflow. A head-mounted Intel RealSense D435 supplies live images. A YOLOv5 model identifies battery shapes and colors, the localization pipeline estimates the current target position, and a robotic arm with a dexterous hand approaches, grasps, lifts, deposits, and returns to its observation pose.
 
+![Actual D435 head-camera view showing the nine-slot board, four black shells, and bins on both sides](docs/images/head-camera-scene.png)
+
+Scene: an original camera frame saved during the four-shell batch test on 24 October 2026, showing the real workspace layout.
+
 Target coordinates come from current visual observations. Near and far wrist profiles handle different parts of the workspace. The present task uses upright cylindrical test objects of the same dimensions: black objects go to the normal-product bin, while red and white objects share the reject bin. Square objects are detected but are not grasped.
 
 The web dashboard combines continuous camera video, automatic and single-object operation, software stop/reset, stage feedback, and logs. Localization consumes original images rather than the browser video stream. A target must remain visible for at least **two seconds** before entering detection statistics; brief detections and repeated page updates do not increase the count.
@@ -45,6 +49,7 @@ vision-guided-robotic-sorting/
 │   └── models/                       Model location; only notes are published
 ├── docs/
 │   ├── ASSETS.md                     Model, SDK, calibration, and binding setup
+│   ├── images/head-camera-scene.png   Head-camera scene from an earlier test
 │   └── guide.*.html                  Bilingual HTML guides and selection-only motto
 └── tools/release/
     ├── build_runtime_archive.py       Package manifest-listed runtime files

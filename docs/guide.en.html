@@ -5,11 +5,14 @@
 main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-height:1.3;letter-spacing:-.6px;margin:0 0 18px}h2{font-size:23px;margin-top:42px;padding-bottom:9px;border-bottom:1px solid var(--line)}h3{font-size:18px;margin-top:26px}a{color:#3774c4;text-underline-offset:3px}p,ul{margin:16px 0}li{margin:7px 0}pre{padding:18px 20px;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;font:14px/1.65 ui-monospace,Consolas,monospace}code{font-size:.9em}p code,li code,td code{padding:2px 5px;background:var(--panel);border-radius:4px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top}th{background:var(--panel)}.selection-easter-egg{color:transparent;user-select:text;-webkit-user-select:text;margin-top:32px}.selection-easter-egg::selection{color:#102a43;background:#a5ceff}
 @media(prefers-color-scheme:dark){:root{--paper:#101722;--ink:#e2e8f0;--line:#344155;--panel:#1a2535}a{color:#92bfff}}
 @media(max-width:700px){main{padding:28px 20px}h1{font-size:26px}}
+.scene-preview{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;margin:18px 0}
 </style><main><h1>Vision-Guided Robotic Grasping and Sorting System</h1>
 <p><a href="../README.md">简体中文</a> | <strong>English</strong></p>
 <p><a href="guide.en.html">HTML guide (download and open in a browser)</a> · <a href="guide.zh-CN.html">中文HTML说明</a></p>
 <h2>Project overview</h2>
 <p>This project connects visual detection, spatial localization, robotic grasping, and destination-based sorting into a continuous workflow. A head-mounted Intel RealSense D435 supplies live images. A YOLOv5 model identifies battery shapes and colors, the localization pipeline estimates the current target position, and a robotic arm with a dexterous hand approaches, grasps, lifts, deposits, and returns to its observation pose.</p>
+<p><img class="scene-preview" src="images/head-camera-scene.png" alt="Actual D435 head-camera view showing the nine-slot board, four black shells, and bins on both sides" loading="lazy"></p>
+<p>Scene: an original camera frame saved during the four-shell batch test on 24 October 2026, showing the real workspace layout.</p>
 <p>Target coordinates come from current visual observations. Near and far wrist profiles handle different parts of the workspace. The present task uses upright cylindrical test objects of the same dimensions: black objects go to the normal-product bin, while red and white objects share the reject bin. Square objects are detected but are not grasped.</p>
 <p>The web dashboard combines continuous camera video, automatic and single-object operation, software stop/reset, stage feedback, and logs. Localization consumes original images rather than the browser video stream. A target must remain visible for at least <strong>two seconds</strong> before entering detection statistics; brief detections and repeated page updates do not increase the count.</p>
 <ul>
@@ -43,6 +46,7 @@ main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-
 │   └── models/                       Model location; only notes are published
 ├── docs/
 │   ├── ASSETS.md                     Model, SDK, calibration, and binding setup
+│   ├── images/head-camera-scene.png   Head-camera scene from an earlier test
 │   └── guide.*.html                  Bilingual HTML guides and selection-only motto
 └── tools/release/
     ├── build_runtime_archive.py       Package manifest-listed runtime files

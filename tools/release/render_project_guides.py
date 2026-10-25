@@ -11,13 +11,16 @@ def inline(text):
     text=html.escape(text)
     text=re.sub(r'`([^`]+)`',r'<code>\1</code>',text)
     text=re.sub(r'\*\*([^*]+)\*\*',r'<strong>\1</strong>',text)
-    def link(match):
-        target=match.group(2)
+    def location(target):
         if target.startswith('docs/'):
             target=target[5:]
         elif not re.match(r'https?://',target):
             target='../'+target
-        return '<a href="'+target+'">'+match.group(1)+'</a>'
+        return target
+    text=re.sub(r'!\[([^\]]*)\]\(([^)]+)\)',
+        lambda m:'<img class="scene-preview" src="'+location(m.group(2))+'" alt="'+m.group(1)+'" loading="lazy">',text)
+    def link(match):
+        return '<a href="'+location(match.group(2))+'">'+match.group(1)+'</a>'
     return re.sub(r'\[([^\]]+)\]\(([^)]+)\)',link,text)
 
 
@@ -63,6 +66,7 @@ STYLE='''
 main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-height:1.3;letter-spacing:-.6px;margin:0 0 18px}h2{font-size:23px;margin-top:42px;padding-bottom:9px;border-bottom:1px solid var(--line)}h3{font-size:18px;margin-top:26px}a{color:#3774c4;text-underline-offset:3px}p,ul{margin:16px 0}li{margin:7px 0}pre{padding:18px 20px;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;font:14px/1.65 ui-monospace,Consolas,monospace}code{font-size:.9em}p code,li code,td code{padding:2px 5px;background:var(--panel);border-radius:4px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top}th{background:var(--panel)}.selection-easter-egg{color:transparent;user-select:text;-webkit-user-select:text;margin-top:32px}.selection-easter-egg::selection{color:#102a43;background:#a5ceff}
 @media(prefers-color-scheme:dark){:root{--paper:#101722;--ink:#e2e8f0;--line:#344155;--panel:#1a2535}a{color:#92bfff}}
 @media(max-width:700px){main{padding:28px 20px}h1{font-size:26px}}
+.scene-preview{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:12px;margin:18px 0}
 '''
 
 
