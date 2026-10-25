@@ -1,0 +1,7 @@
+<launch>
+  <rosparam command="load" file="$(find battery_grasp)/config/sorting_simulation.yaml"/>
+  <node pkg="battery_grasp" type="vision_observation_tracker.py" name="vision_observation_tracker" output="screen">
+    <remap from="~objects" to="/battery_vision/objects_3d"/>
+    <remap from="~observations" to="/battery_vision/observations_base"/>
+  </node>
+</launch>

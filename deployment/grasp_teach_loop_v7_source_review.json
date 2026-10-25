@@ -1,0 +1,49 @@
+{
+  "scope": "operator feedback and manual source/package review, no new robot result",
+  "request": "restore hand pre-shape first, then adjust individual fingers onsite without pre-entered final grip targets",
+  "initial_prepare": {
+    "address": 1135,
+    "count": 5,
+    "targets": [
+      8000,
+      8000,
+      8000,
+      8000,
+      65535
+    ],
+    "opposition": "fresh current target and actual retained, no rotation write",
+    "requires": "explicit empty hand and cleared digit sweep permission before SDK action"
+  },
+  "manual_control": {
+    "absolute": "d18000 or selected digit number",
+    "relative": "d+500/d-500 based on fresh current actual position",
+    "bounds": [
+      0,
+      65535
+    ],
+    "step_size": "operator chosen",
+    "one_attempt_each_explicit_command": true
+  },
+  "preserved": [
+    "current SDK/identity/configuration/frame/limits/protection8True reads",
+    "real3/4/current/transport/arm fault handling",
+    "SDK exit before wrist teaching and fresh current state on resume",
+    "target2 and actual/sweep150 tolerances"
+  ],
+  "state5": "warning plus explicit single hand-target permission; no repeated automatic force/retry",
+  "evidence_labels": "settled but short of target recorded separately from reached pre-shape and actual lift",
+  "no_automatic_arm_lift_or_sort": true,
+  "v12_inflight_code": "preserved for later after measured targets are obtained",
+  "verification": {
+    "source_review": true,
+    "file_crc_sha": true,
+    "project_tests_compile_ast_mock_fk_ik": false,
+    "sdk_loaded": false,
+    "real_device_accepted": false
+  },
+  "known_unknowns": [
+    "current arm/hand feedback not available in this turn",
+    "pre-shape restoration and finger target effectiveness need onsite observation",
+    "no final successful grip or retention force value yet"
+  ]
+}

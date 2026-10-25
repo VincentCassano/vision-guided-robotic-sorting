@@ -1,0 +1,389 @@
+{
+  "archive": "tmp/visual_pick_sort_v4_20261022_172744_504668_logs_only_211821.zip",
+  "sha256": "29a9a16a351444e011208962bcbc532d8454ddebb788fc50fe2f2afdf2059ba4",
+  "bytes": 74695,
+  "members": 16,
+  "crc_pass": true,
+  "original_manifest_pass": true,
+  "original_provided_files": 14,
+  "collection_sha256_pass": true,
+  "declared_single_historical_input_omission": {
+    "input_pregrasp.zip": "69df11068ab539fe09f0ed7e2cdc31ff70addf4d4350a45a86198918c076b663"
+  },
+  "historical_input_independently_matched": true,
+  "deployed_source_hashes_matched": 299,
+  "parent_worker_equal": true,
+  "actual_outcome": "aborted_no_further_writes",
+  "worker_returncode": 1,
+  "phase": "fault",
+  "exceptions": [
+    {
+      "error": "RuntimeError('Grasp target/sweep/orientation changed')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v4_worker.py\", line 213, in main\n    active,row=hand.close_recipe();seq.tuned_recipe=active[:]\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v4_hand.py\", line 113, in close_recipe\n    raise RuntimeError('Grasp target/sweep/orientation changed')\nRuntimeError: Grasp target/sweep/orientation changed\n"
+    }
+  ],
+  "write_counts": {
+    "arm": 0,
+    "hand": 2,
+    "configuration": 0
+  },
+  "sdk_cleanup": [
+    {
+      "method": "Arm_Socket_Close",
+      "raw_repr": "None"
+    },
+    {
+      "method": "RM_API_UnInit",
+      "raw_repr": "0"
+    }
+  ],
+  "cleanup_errors": [],
+  "accepted_visual_source_sha256": "69df11068ab539fe09f0ed7e2cdc31ff70addf4d4350a45a86198918c076b663",
+  "opposition_retreat_completed": true,
+  "retreat_receipt": {
+    "before": {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "current": [
+        40,
+        13,
+        2,
+        0,
+        0,
+        0
+      ],
+      "positions": [
+        7999,
+        8001,
+        7999,
+        8000,
+        65535,
+        65535
+      ],
+      "targets": [
+        7999,
+        8001,
+        7999,
+        8000,
+        65535,
+        65056
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 677587.956327546,
+      "finished_monotonic": 677590.075297112,
+      "final_status_started_monotonic": 677589.714731283,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    },
+    "target": 64556,
+    "groups": [
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          35,
+          40,
+          0,
+          0,
+          3,
+          32
+        ],
+        "positions": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          64558
+        ],
+        "targets": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          64558
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 677592.725503454,
+        "finished_monotonic": 677594.850895134,
+        "final_status_started_monotonic": 677594.496174931,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          4,
+          43,
+          2,
+          0,
+          3,
+          8
+        ],
+        "positions": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          64561
+        ],
+        "targets": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          64558
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 677594.911838023,
+        "finished_monotonic": 677597.016323827,
+        "final_status_started_monotonic": 677596.67103156,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          4,
+          25,
+          2,
+          0,
+          2,
+          3
+        ],
+        "positions": [
+          7999,
+          8001,
+          7996,
+          8000,
+          65535,
+          64558
+        ],
+        "targets": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          64558
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 677597.051645657,
+        "finished_monotonic": 677599.162155522,
+        "final_status_started_monotonic": 677598.811263999,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      }
+    ],
+    "uncommanded_channels": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "arm_motion_performed": false,
+    "only_register1140_written": true,
+    "old_fault_state_used_as_new_reference": false
+  },
+  "startup_hand": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      2
+    ],
+    "current": [
+      4,
+      25,
+      2,
+      0,
+      2,
+      3
+    ],
+    "positions": [
+      7999,
+      8001,
+      7996,
+      8000,
+      65535,
+      64558
+    ],
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      64558
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 677597.051645657,
+    "finished_monotonic": 677599.162155522,
+    "final_status_started_monotonic": 677598.811263999,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      5
+    ],
+    "current": [
+      253,
+      986,
+      322,
+      156,
+      0,
+      58
+    ],
+    "positions": [
+      26497,
+      30504,
+      27010,
+      18984,
+      65535,
+      65535
+    ],
+    "targets": [
+      26501,
+      30501,
+      27001,
+      18999,
+      65535,
+      64558
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 677636.229882097,
+    "finished_monotonic": 677638.365043544,
+    "final_status_started_monotonic": 677638.015249919,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "active_grip_targets": [
+    26500,
+    30500,
+    27000,
+    19000,
+    65535,
+    64556
+  ],
+  "arm_segments": [],
+  "no_lift_or_sort_command_this_run": true,
+  "interpretation": "Confirmed close_recipe target/sweep/orientation check, opposition actual65535 versus target64558 and pre-close64558. Full six-target close resends uncommanded channels; whether redundant write or physical coupling caused the excursion is not established.",
+  "next_change": "Future close writes1135x4 only; retain readback2/actual150/full six feedback, status3/4/current gates. Supported-only first4 withdrawal must be explicitly authorized; no loaded fault continuation.",
+  "operator_followup": {
+    "source": "direct_user_reply",
+    "shell_still_in_hand": true,
+    "not_released": true,
+    "no_abnormal_sound_reported": true,
+    "no_obvious_heating_reported": true,
+    "arm_not_moved_or_restarted": "pending_explicit_confirmation",
+    "shell_fully_supported_in_original_groove": "pending_explicit_confirmation"
+  },
+  "new_cycle_accepted": false,
+  "offline_project_tests_executed": false,
+  "SDK_loaded": false,
+  "device_connected": false
+}

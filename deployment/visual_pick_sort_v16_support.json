@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "reference_support": "recess_bottom",
+  "second_support": "board_top",
+  "board_top_above_recess_bottom_mm": 9.6,
+  "measurement_source": "operator_vernier_caliper",
+  "operator_measurement": "9.6mm",
+  "confirmed_date_cst": "2026-10-24",
+  "scope": "same acrylic board, same upright measured shell; reference grasp and binding were in a recess",
+  "translation_axis": "World_Z_positive",
+  "height_detected_automatically": false,
+  "arbitrary_height_supported": false,
+  "board_plane_independently_surveyed": false,
+  "full_handeye_accuracy_accepted": false
+}

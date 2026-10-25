@@ -1,0 +1,120 @@
+{
+  "scope": "arithmetic_on_saved_transform_and_user_offsets_not_motion_or_IK",
+  "robot_view_backward": [
+    0.011280176611002994,
+    0.9999363767838554,
+    0.0
+  ],
+  "robot_view_right": [
+    -0.999920147241403,
+    -0.012637212538009788,
+    0.0
+  ],
+  "targets": [
+    {
+      "color": "black",
+      "total_backward_mm": 70.0,
+      "total_right_mm": 0.0,
+      "total_delta_world_mm": [
+        0.7896123627702096,
+        69.99554637486987,
+        0.0
+      ],
+      "target_pose_m_rad": [
+        0.45107662660875714,
+        -0.34807244535868115,
+        -0.14466699957847595,
+        -2.5940001010894775,
+        -1.2289999723434448,
+        -1.7489999532699585
+      ],
+      "drop_pose_source_color": "black",
+      "total_up_mm": 0.0,
+      "post_drop_raise_mm": 80.0,
+      "expected_exit_pose_m_rad": [
+        0.45107662660875714,
+        -0.34807244535868115,
+        -0.06466699957847595,
+        -2.5940001010894775,
+        -1.2289999723434448,
+        -1.7489999532699585
+      ]
+    },
+    {
+      "color": "red",
+      "total_backward_mm": 55.0,
+      "total_right_mm": -35.0,
+      "total_delta_world_mm": [
+        35.617614867054264,
+        55.438803161942396,
+        60.0
+      ],
+      "target_pose_m_rad": [
+        0.5069416116493571,
+        -0.17981219140116034,
+        -0.121878000497818,
+        -2.736999988555908,
+        -1.3209999799728394,
+        -2.071000099182129
+      ],
+      "drop_pose_source_color": "white",
+      "total_up_mm": 60.0,
+      "post_drop_raise_mm": 40.0,
+      "expected_exit_pose_m_rad": [
+        0.5069416116493571,
+        -0.17981219140116034,
+        -0.08187800049781799,
+        -2.736999988555908,
+        -1.3209999799728394,
+        -2.071000099182129
+      ]
+    },
+    {
+      "color": "white",
+      "total_backward_mm": 55.0,
+      "total_right_mm": -35.0,
+      "total_delta_world_mm": [
+        35.617614867054264,
+        55.438803161942396,
+        60.0
+      ],
+      "target_pose_m_rad": [
+        0.5069416116493571,
+        -0.17981219140116034,
+        -0.121878000497818,
+        -2.736999988555908,
+        -1.3209999799728394,
+        -2.071000099182129
+      ],
+      "drop_pose_source_color": "white",
+      "total_up_mm": 60.0,
+      "post_drop_raise_mm": 40.0,
+      "expected_exit_pose_m_rad": [
+        0.5069416116493571,
+        -0.17981219140116034,
+        -0.08187800049781799,
+        -2.736999988555908,
+        -1.3209999799728394,
+        -2.071000099182129
+      ]
+    }
+  ],
+  "latest_operator_confirmation": "红白40mm，黑色仍80mm；用户明确本次不安排测试",
+  "black_changed_in_fix3": false,
+  "red_white_additional_left_from_fix2_mm": 60.0,
+  "SDK_loaded": false,
+  "offline_project_tests_executed": false,
+  "new_drop_field_accepted": false,
+  "red_white_before_latest_right_mm": 25.0,
+  "red_white_latest_additional_right_mm": -60.0,
+  "red_white_total_right_mm": -35.0,
+  "black_changed_in_fix5": false,
+  "red_white_latest_additional_left_mm": 60.0,
+  "red_white_total_left_mm": 35.0,
+  "black_changed_in_fix6": false,
+  "red_white_shared_pose_source": "white",
+  "red_original_distinct_pose_no_longer_commanded": true,
+  "black_changed_in_fix8": false,
+  "black_changed_in_fix9": false,
+  "lift40_field_acceptance": false
+}

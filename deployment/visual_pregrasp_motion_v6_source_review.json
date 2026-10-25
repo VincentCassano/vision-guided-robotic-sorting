@@ -1,0 +1,41 @@
+{
+  "scope": "source_only_new_communication_reopen_wrapper_not_real_device_acceptance",
+  "preceding_result": "105801_native_SDK_direct_hand_read_failed_at_1125x6_zero_complete_groups",
+  "official_protocol": "https://develop.realman-robotics.com/robot/json/modbus/",
+  "rationale": "Existing already-open mode setup did not recover; bounded documented close/reopen is a distinct recovery candidate, cause and repair remain unproved.",
+  "explicit_flag": "--restart-tool-rs485",
+  "fixed_TX": [
+    {
+      "command": "close_modbus_mode",
+      "port": 1
+    },
+    {
+      "command": "set_modbus_mode",
+      "port": 1,
+      "baudrate": 115200,
+      "timeout": 1
+    }
+  ],
+  "max_configuration_TX_attempts": 2,
+  "closed_mode_readback": 0,
+  "original_mode_readback": {
+    "mode": 1,
+    "baudrate": 115200,
+    "timeout": 1
+  },
+  "uncertain_close_policy": "One original-mode restore only; any fault blocks motion. No automatic retry of failed reopen.",
+  "gates": "Actual current identity firmware errors protections original mode; unchanged v4 full startup and post-m checks plus m/d permissions.",
+  "actuation_scope": "Only unchanged v4 supervised noncontact pregrasp; no grasp lift bin transfer.",
+  "source_audit_findings": [
+    "New bus worker imports no SDK or actuator writer.",
+    "Original motion worker and hand gates inherited byte-for-byte.",
+    "Raw close/open TX attempts counted before send; unknown ACK never accepted as repair.",
+    "Shared-device fresh reference and original drift/current/status gates retained.",
+    "Target provenance checked before configuration; operator must confirm scene unchanged."
+  ],
+  "SDK_loaded": false,
+  "hardware_connected": false,
+  "offline_project_tests_executed": false,
+  "compile_AST_mock_FK_IK_executed": false,
+  "real_device_accepted": false
+}

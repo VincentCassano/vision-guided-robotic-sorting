@@ -1,0 +1,14 @@
+<launch>
+  <arg name="api_host" default="127.0.0.1" />
+  <arg name="api_port" default="18080" />
+  <rosparam command="load" file="$(find battery_grasp)/config/sorting_simulation.yaml" />
+  <node pkg="battery_grasp" type="camera_stream_test.py" name="camera_stream_test" output="screen" required="true" />
+  <node pkg="battery_grasp" type="battery_detector_test.py" name="battery_detector_test" output="screen" required="true" />
+  <node pkg="battery_grasp" type="battery_localizer.py" name="battery_localizer" output="screen" required="true" />
+  <node pkg="battery_grasp" type="task_controller.py" name="task_controller" output="screen" required="true" />
+  <node pkg="battery_grasp" type="api_control_server.py" name="api_control_server" output="screen" required="true">
+    <param name="host" value="$(arg api_host)" />
+    <param name="port" value="$(arg api_port)" />
+  </node>
+  <node pkg="tf2_ros" type="static_transform_publisher" name="map_to_base" args="0 0 0 0 0 0 1 map base_link" />
+</launch>

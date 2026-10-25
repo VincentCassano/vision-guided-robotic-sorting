@@ -1,0 +1,15 @@
+<launch>
+   
+    <arg name="head_serial" default="344322075008"/>   <!-- HEAD Camera -->
+    <arg name="left_serial" default="342222074152"/>   <!-- LEFT Camera -->
+    <arg name="right_serial" default="347622070359"/>  <!-- RIGHT Camera -->
+
+  
+	<node name="grasp_node" pkg="grasp_demo" type="ohandtest.py" output="screen">
+    </node>
+	
+	<node name="pick_http_node" pkg="grasp_demo" type="http_server.py" output="screen">
+		<param name="serial" value="$(arg head_serial)" type="str"/>
+    </node>
+
+</launch>

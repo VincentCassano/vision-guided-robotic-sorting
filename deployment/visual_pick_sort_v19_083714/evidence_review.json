@@ -1,0 +1,56 @@
+{
+  "scope": "actual_successful_single_shell_board_top_cycle_not_multi_target_acceptance",
+  "archive": "visual_pick_sort_v19_20261024_083714_114062.zip",
+  "sha256": "d2b85a5c5969fc7b559d55b8d92d45d239975a7489413d1e50ac7e978bbaeb14",
+  "bytes": 14406140,
+  "parent_CRC_pass": true,
+  "parent_hashes_verified": 10,
+  "child_CRC_pass": true,
+  "child_hashes_verified": 20,
+  "actual_operator_success": "y",
+  "parent_complete_visual_pick_sort_accepted": true,
+  "worker_phase": "completed",
+  "worker_outcome": "black_bin_motion_and_open_completed_waiting_operator",
+  "exceptions": [],
+  "cleanup_errors": [],
+  "arm_writes": 6,
+  "hand_writes": 3,
+  "arm_stop_writes": 0,
+  "configuration_writes": 0,
+  "SDK_cleanup_finished": true,
+  "real_status3_recovery": [
+    {
+      "label": "grip_together",
+      "resumed": true,
+      "samples": 3,
+      "elapsed_seconds": 11.224500365904532,
+      "final_status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "preserved_prepare": [
+    6001,
+    6000,
+    6001,
+    32000,
+    65535,
+    65535
+  ],
+  "preserved_grip": [
+    26001,
+    16899,
+    19100,
+    32000,
+    65535,
+    65535
+  ],
+  "complete_visual_pick_sort_single_shell_accepted": true,
+  "multi_target_AUTO_accepted": false,
+  "motion_result_is_not_automatic_object_retention_sensor": true
+}

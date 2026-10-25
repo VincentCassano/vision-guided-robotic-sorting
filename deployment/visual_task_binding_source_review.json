@@ -1,0 +1,202 @@
+{
+  "scope": "Original evidence and source-role review only; no project runtime imported",
+  "raw_sha256": {
+    "visual_binding_pregrasp_source_024412.json": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+    "visual_binding_pregrasp_crosscheck_081023.json": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+    "visual_binding_grasp_source_123051.json": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614"
+  },
+  "pregrasp_phase": "descending_to_supported_shell",
+  "completed_pregrasp_endpoint": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.27491000294685364,
+      -0.40129199624061584,
+      -0.26479101181030273,
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2149999141693115
+    ],
+    "joints": [
+      -37.020999908447266,
+      -99.99400329589844,
+      -16.04400062561035,
+      81.947998046875,
+      39.459999084472656,
+      -7.252999782562256
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      140.97900009155273,
+      30.005996704101562,
+      118.95599937438965,
+      96.052001953125,
+      88.54000091552734,
+      352.74700021743774
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "pregrasp_equals_prior_successful_tuning_reference": true,
+  "position_anchor_role": "024412 completed descending endpoint while shell still supported in original recess",
+  "last_grip_recipe": [
+    26500,
+    30500,
+    29500,
+    22000,
+    65535,
+    65056
+  ],
+  "later_partially_lifted_grip_TCP_pose": [
+    0.27426400780677795,
+    -0.40099000930786133,
+    -0.25374600291252136,
+    -2.578000068664551,
+    -1.1690000295639038,
+    -2.2119998931884766
+  ],
+  "later_TCP_minus_seated_pregrasp_mm": [
+    -0.6459951400756836,
+    0.3019869327545166,
+    11.045008897781372
+  ],
+  "later_lifted_pose_used_as_seated_anchor": false,
+  "fault_last_arm_state_used": false,
+  "original_140mm_endpoint_used": false,
+  "new_reference_image_available": false,
+  "new_reference_image_required": "One current unobstructed reference of same shell restored at original seated place; not a repeat16FIT or A/B spacing test",
+  "six_dimensional_TCP_calibrated": false,
+  "motion_authorized": false,
+  "execution_ready": false
+}

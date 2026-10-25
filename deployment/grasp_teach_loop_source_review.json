@@ -1,0 +1,37 @@
+{
+  "scope": "manual source review only, no SDK or project runtime executed",
+  "user_required_loop": [
+    "manual wrist adjustment",
+    "finger adjustment",
+    "close SDK child then manual pendant lift",
+    "if failed: fully support shell then open/reposition and repeat",
+    "if successful: stop and record"
+  ],
+  "new_entry": "deployment/run_grasp_teach_loop.py",
+  "worker": "deployment/grasp_teach_loop_worker.py",
+  "arm_motion_capability": "Current.call rejects every non-Get SDK call, fault path sends no armStop; parent never imports SDK",
+  "hand_commands": [
+    "h in high clear empty stage:1135x6=[8000,8000,8000,8000,0,64556]",
+    "optional c:1135x4=[26500,30500,27000,19000] candidate only",
+    "explicit single channel t/i/m/r/l with displayed candidate caps30000/31500/29500/20250/65535",
+    "o only five open fingers, explicit empty/rotation-clear confirmation; native position0..65535, not degrees",
+    "b only after manual test failure and full board support,1135x5 zeros; opposition untouched",
+    "no unprompted writes, no automatic retries/resets, no arm movement/lift/drop"
+  ],
+  "manual_audit": [
+    "all SDK work actual Linux aarch64 child, current identity/native4.3.1/DH/World-tool/installation/real-mode/ordinary-drive reserve/protection8True read per child",
+    "startup full working/config reads with bounded original refusal collection only before authority, no actuator retries",
+    "each new finger command has its own one-attempt exact signature and nonfaulted capability; retained current identity and same-run read pacing only",
+    "SDK sockets and child must exit before manual wrist positioning or manual lift; fresh later child anchors current state after teaching",
+    "during finger input original arm0.08deg/0.5mm/0.005rad, actual current limit, identity/diagnostic, target2, actual150 guards remain",
+    "contact may stop short of target if position quiet, but no holding proof; status5 blocks added closure,3/4 and actual overcurrent block",
+    "relative actual-start to command monotonic sweep and untouched-channel actual150 guards retained; no stale grasp-recipe equality or old thumb15000 cap",
+    "prepare/open require empty target reached150, contact only quiet actual feedback, no motor arrival interpreted as holding",
+    "success only operator observed unsupported shell lift; postlift new readonly capture separately qualifies record",
+    "incomplete success raw saved separately, never replaces fully qualified saved reference; no visual/automatic route acceptance claimed"
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_compile_AST_mock_FK_IK_executed": false,
+  "real_device_loop_accepted": false
+}

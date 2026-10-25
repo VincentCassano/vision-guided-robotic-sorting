@@ -1,0 +1,39 @@
+{
+  "scope": "human failure report and manual source/byte review, no new v9 raw archive received",
+  "user_report": "运行了，但是没抓起来；后续不以提供ZIP作为继续处理前提",
+  "known_result": "physical pickup failed by onsite report",
+  "unknown": [
+    "v9 controller final phase",
+    "actual current arm/hand state",
+    "exact raw error or lack of error",
+    "mechanical cause and actual holding force"
+  ],
+  "changes": [
+    "fresh current empty-hand visual cycle, no unknown fault-pose continuation",
+    "supported initial seed close then local individual250 flex steps",
+    "candidate caps30000/31500/29500/20250; little/opposition unchanged; existing150/2/arm/protection/status/current gates retained",
+    "read-only live hand/arm observation while awaiting tuning input",
+    "each explicit key has one fresh nonfaulted capability, marks attempt before send, no automatic retry; status5 forbids added closure",
+    "g actual index15..114 grants complete normal cycle after fresh healthy feedback, not fake index5 or holding sensor reading",
+    "f/q+Enter in non-waiting motion phase writes abort request, existing one-time softwareStop path, no automatic opening",
+    "operator-confirmed actual successful sort only saves accepted recipe locally; later derive from hashed source archive and actual success, no manual ZIP transfer required",
+    "no synthetic grip or automatic slip detection claimed"
+  ],
+  "manual_audit": [
+    "seq.seed_recipe initialized before dynamic seed close",
+    "initialc only contact permission; no arm route enabled until actualg",
+    "fresh successful visual endpoint and currentPREPARE remain necessary",
+    "new explicit step only after old step healthy/nonfaulted completed; copied read pacing only from same exclusive empty qualification",
+    "single-channel monotonic sweep and uncommanded actual anchor150 before next command",
+    "all raw3/4/overcurrent/diagnostic/frame/protection/limit/drift faults remain terminal",
+    "runtime recipe within reviewedbounds, preserve65535/64556, single4 seed and single1 tune writes",
+    "drop and continuous scope accept only realg from tune index15..114 with fullroute flag",
+    "failed pickup and incomplete execution do not overwrite last accepted recipe",
+    "no old fault positions, arbitrary pose or uploaded result assumed current"
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests": false,
+  "compile_AST_mock_FK_IK": false,
+  "v10_real_device_accepted": false
+}

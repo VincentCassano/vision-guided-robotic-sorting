@@ -1,0 +1,524 @@
+{
+  "source_archive": "G:\\Code_Project\\battery_grasp_ws\\tmp\\visual_pregrasp_alignment_v3_20261021_063308_469534.zip",
+  "sha256": "a676a0ee623d94d6057504d38b58312940bbfdb379ae371e51557ea2ca45b013",
+  "bytes": 10685910,
+  "members": 14,
+  "checks": {
+    "unique_members": true,
+    "CRC_ok": true,
+    "internal_inventory_complete": true,
+    "internal_hashes_match": true,
+    "deployed229_sources_match": true,
+    "parent_worker_equal": true,
+    "nested_vision_matches_054800": true,
+    "no_motion_or_settings_calls": true,
+    "no_hand_writes": true,
+    "no_permissions": true
+  },
+  "outcome": "aborted_no_further_writes",
+  "exceptions": [
+    {
+      "error": "TransportError('Read rejected')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pregrasp_motion_worker_v3.py\", line 322, in main\n    hand=seq.open_hand_reader(full=True)\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pregrasp_motion_worker_v3.py\", line 204, in open_hand_reader\n    if full:hand.configuration()\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_pose_hand.py\", line 48, in configuration\n    self.report['configuration'][name]=self.read(name,address,count)\n  File \"/home/rm/test/battery-d435-preview/deployment/run_school_battery_hand.py\", line 40, in read\n    started=self.clock(); values=self.io.read(address,count)\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 265, in read\n    return self.exchange(dict(command=MULTI,port=1,address=address,num=count,device=2))\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pregrasp_motion_worker_v3.py\", line 89, in exchange\n    value=super().exchange(message)\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 229, in exchange\n    if response.get('read_state') is False: raise TransportError('Read rejected')\nschool_battery_transport.TransportError: Read rejected\n"
+    }
+  ],
+  "counts": {
+    "arm_actuator_writes": 0,
+    "hand_register_writes": 0,
+    "controller_configuration_writes": 0
+  },
+  "current_protection": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "protection_wire": [
+    {
+      "event": "transaction_begin",
+      "sequence": 1,
+      "monotonic": 551884.962268835,
+      "request": {
+        "command": "get_collision_stage"
+      },
+      "fresh_socket": true
+    },
+    {
+      "event": "connected",
+      "sequence": 1,
+      "endpoint": [
+        "169.254.128.18",
+        8080
+      ],
+      "monotonic": 551884.963667697
+    },
+    {
+      "event": "tx",
+      "sequence": 1,
+      "monotonic": 551885.264267649,
+      "request": {
+        "command": "get_collision_stage"
+      },
+      "hex": "7b22636f6d6d616e64223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+    },
+    {
+      "event": "rx",
+      "sequence": 1,
+      "monotonic": 551885.279999613,
+      "hex": "7b22636f6c6c6973696f6e5f7374616765223a382c227374617465223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+    },
+    {
+      "event": "response",
+      "sequence": 1,
+      "monotonic": 551885.330430963,
+      "elapsed_s": 0.36816289590206,
+      "response": {
+        "collision_stage": 8,
+        "state": "get_collision_stage"
+      },
+      "value": [
+        0,
+        8
+      ]
+    },
+    {
+      "event": "closed",
+      "sequence": 1,
+      "monotonic": 551885.330728726
+    },
+    {
+      "event": "transaction_begin",
+      "sequence": 2,
+      "monotonic": 551885.443504728,
+      "request": {
+        "command": "get_self_collision_enable"
+      },
+      "fresh_socket": true
+    },
+    {
+      "event": "connected",
+      "sequence": 2,
+      "endpoint": [
+        "169.254.128.18",
+        8080
+      ],
+      "monotonic": 551885.44510564
+    },
+    {
+      "event": "tx",
+      "sequence": 2,
+      "monotonic": 551885.745736568,
+      "request": {
+        "command": "get_self_collision_enable"
+      },
+      "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65227d0d0a"
+    },
+    {
+      "event": "rx",
+      "sequence": 2,
+      "monotonic": 551885.752763198,
+      "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65222c22656e61626c655f7374617465223a747275657d0d0a"
+    },
+    {
+      "event": "response",
+      "sequence": 2,
+      "monotonic": 551885.803143796,
+      "elapsed_s": 0.3596405719872564,
+      "response": {
+        "command": "get_self_collision_enable",
+        "enable_state": true
+      },
+      "value": [
+        0,
+        true
+      ]
+    },
+    {
+      "event": "closed",
+      "sequence": 2,
+      "monotonic": 551885.803485591
+    }
+  ],
+  "readiness": {
+    "passed": true,
+    "deadline_seconds": 45,
+    "attempts": [
+      {
+        "number": 1,
+        "started_monotonic": 551865.19403125,
+        "initial_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "operational_reads": {
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ]
+        },
+        "transport_error": "TransportError('Read rejected')",
+        "outcome": "work_read_explicitly_rejected_no_write",
+        "finished_monotonic": 551866.270636346
+      },
+      {
+        "number": 2,
+        "started_monotonic": 551867.277356781,
+        "initial_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "operational_reads": {
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ],
+          "speeds": [
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+          ],
+          "force_targets": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "targets": [
+            7999,
+            8001,
+            7999,
+            8000,
+            65535,
+            65056
+          ],
+          "positions": [
+            7999,
+            8001,
+            7996,
+            8000,
+            65535,
+            65535
+          ]
+        },
+        "transport_error": "TransportError('Read rejected')",
+        "outcome": "work_read_explicitly_rejected_no_write",
+        "finished_monotonic": 551870.690402476
+      },
+      {
+        "number": 3,
+        "started_monotonic": 551871.696143865,
+        "initial_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "operational_reads": {
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ],
+          "speeds": [
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+          ],
+          "force_targets": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "transport_error": "TransportError('Read rejected')",
+        "outcome": "work_read_explicitly_rejected_no_write",
+        "finished_monotonic": 551873.855502419
+      },
+      {
+        "number": 4,
+        "started_monotonic": 551874.862516336,
+        "initial_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "operational_reads": {
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ],
+          "speeds": [
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+          ],
+          "force_targets": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "targets": [
+            7999,
+            8001,
+            7999,
+            8000,
+            65535,
+            65056
+          ],
+          "positions": [
+            7999,
+            8001,
+            7996,
+            8000,
+            65535,
+            65535
+          ],
+          "current_ma_0_to_4": [
+            2,
+            2,
+            2,
+            42,
+            5
+          ],
+          "current": [
+            2,
+            2,
+            2,
+            42,
+            5,
+            1
+          ],
+          "status": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            5
+          ]
+        },
+        "final_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "outcome": "work_registers_accepted_not_motion_certified",
+        "finished_monotonic": 551879.126879801
+      }
+    ],
+    "no_actuator_writes": true,
+    "diagnostic_zero_required": false,
+    "no_claim_that_subexception1_is_stale": true,
+    "automatic_reset_or_start_init": false,
+    "normal_full_profile_still_required": true,
+    "final_identity_raw": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "initial_diagnostic": 0,
+    "final_diagnostic": 0,
+    "current_work_registers_readable": true,
+    "elapsed_seconds": 13.932304129935801,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "rejected_reads": [
+    {
+      "stream": "hand_wire.jsonl",
+      "event": "transport_error",
+      "sequence": 4,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1030,
+        "num": 6,
+        "device": 2
+      },
+      "buffer_hex": ""
+    },
+    {
+      "stream": "readiness_wire.jsonl",
+      "event": "transport_error",
+      "sequence": 3,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1000,
+        "num": 8,
+        "device": 2
+      },
+      "buffer_hex": ""
+    },
+    {
+      "stream": "readiness_wire.jsonl",
+      "event": "transport_error",
+      "sequence": 9,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1105,
+        "num": 5,
+        "device": 2
+      },
+      "buffer_hex": ""
+    },
+    {
+      "stream": "readiness_wire.jsonl",
+      "event": "transport_error",
+      "sequence": 6,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1135,
+        "num": 6,
+        "device": 2
+      },
+      "buffer_hex": ""
+    }
+  ],
+  "partial_configuration": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "calibration_end_absolute": [
+      21539,
+      24972,
+      25993,
+      24169,
+      24866,
+      18946
+    ]
+  },
+  "last_arm_state_diagnostic_only": {
+    "joints": [
+      -58.93000030517578,
+      -60.702999114990234,
+      -51.22600173950195,
+      -14.376999855041504,
+      -29.599000930786133,
+      96.43599700927734
+    ],
+    "pose": [
+      0.25774499773979187,
+      -0.44464701414108276,
+      -0.09196799993515015,
+      -3.0139999389648438,
+      -0.7889999747276306,
+      -2.322999954223633
+    ],
+    "raw": [
+      0,
+      [
+        -58.93000030517578,
+        -60.702999114990234,
+        -51.22600173950195,
+        -14.376999855041504,
+        -29.599000930786133,
+        96.43599700927734
+      ],
+      [
+        0.25774499773979187,
+        -0.44464701414108276,
+        -0.09196799993515015,
+        -3.0139999389648438,
+        -0.7889999747276306,
+        -2.322999954223633
+      ],
+      0,
+      0
+    ]
+  },
+  "last_arm_error": [
+    0,
+    0
+  ],
+  "actual_blocker": "explicit_false_read_multiple_holding_registers_port1_node2_address1030_num6_before_permission_or_writes",
+  "source_gap": "Existing45s gate checks operational blocks only; subsequent full profile and startup feedback have no equivalent prewrite read collection",
+  "manufacturer_semantics": {
+    "url": "https://develop.realman-robotics.com/robot/json/modbus/",
+    "read_state_false": "No Modbus response within configured controller timeout; physical cause not distinguished"
+  },
+  "proposed_change": "v4 pure read-only session before m and any write; exact explicit false only,45s total, original checks required; normal phase remains fail-closed",
+  "timeout_or_baudrate_writes": false,
+  "underlying_bus_cause_proven": false,
+  "collision_4109_recurred": false,
+  "offline_project_tests_executed": false,
+  "SDK_loaded_locally": false,
+  "hardware_connected": false
+}

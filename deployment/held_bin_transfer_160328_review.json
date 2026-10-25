@@ -1,0 +1,21 @@
+{
+  "archive": "tmp/held_bin_transfer_20261020_160328_637177.zip",
+  "sha256": "af1713a53f3b9926fefbc06fbcc753e71afee9d062119dba7d0abef28a0b2f03",
+  "members": 5,
+  "internal_hashes": 4,
+  "internal_hashes_match": true,
+  "installed_payload_count": 179,
+  "installed_payload_matches_v1": true,
+  "parent_worker_match": true,
+  "error": "RuntimeError('Original commanded corridor differs')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/held_bin_transfer_worker.py\", line 66, in main\n    raise RuntimeError('Original commanded corridor differs')\nRuntimeError: Original commanded corridor differs\n",
+  "arm_writes": 0,
+  "hand_writes": 0,
+  "configuration_writes": 0,
+  "device_connection_attempted": false,
+  "SDK_loaded": false,
+  "raw_device_reads": false,
+  "physical_current_state_not_observed": true,
+  "actual_blocker": "Wrong historical target-construction snapshot: later segment-start z differs by0.005006790161mm from the snapshot used to construct140mm target; source-provenance bug before connection",
+  "fix": "Use pinned original target-construction snapshot plus exact acknowledged SDK request; retain all current device/motion guards"
+}

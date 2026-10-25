@@ -1,0 +1,48 @@
+{
+  "scope": "operator terminal evidence and manual source review only",
+  "terminal_sha256": "3a3f8c76275146dd68b01abd5745af35c125622177f589bcd344c851cfcd45ac",
+  "observed_positive_ring_moves": [
+    {
+      "request": "d +1000",
+      "target": 7635,
+      "actual": 7623,
+      "status": 2
+    },
+    {
+      "request": "d +1000",
+      "requested_target": 8635,
+      "readback_target": 8634,
+      "actual": 8655,
+      "status": 2,
+      "blocked_history_incorrectly_retained": true
+    }
+  ],
+  "observed_failures": [
+    "d +3000 rejected by arbitrary step1000 ceiling",
+    "ring channel3 remained blocked after transient5 despite current status2 and near-target position",
+    "console repeatedly printed raw dictionaries and full instructions"
+  ],
+  "changes": [
+    "isolated v4 parent/worker and manifest; preserve previous members",
+    "a-e select only; bare integer sets selected finger; d 18000 directly sets ring target",
+    "all integers absolute native counts, including signed values; clamp0..candidate cap; no fixed default increment or magnitude limit",
+    "worker performs its own independent clamp before exact one-attempt target authority; only chosen finger written",
+    "compact redraw:5 values plus1 command line; errors one line, full raw preserved to files",
+    "threaded input() with optional standard readline permits line editing/history; main thread still monitors current child and permission index; blank lines local only",
+    "inside already-authorized command, require3 quiet reached status2 groups spanning>=1s for empty endpoint; clear only commanded channel transient5 history after healthy endpoint; live5 before new command still blocks closure",
+    "current hardware/transport3/4/current/config/identity/protection/arm guards retained; no reset, no forced writes to unresponsive device",
+    "same pre-shape/manual-wrist/grip/manual-lift/repeat-or-success workflow"
+  ],
+  "candidate_caps": [
+    30000,
+    31500,
+    29500,
+    20250,
+    65535
+  ],
+  "caps_are_manufacturer_certified_safe_force": false,
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_compile_AST_mock_FK_IK_executed": false,
+  "real_device_v4_accepted": false
+}

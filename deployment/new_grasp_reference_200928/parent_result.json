@@ -1,0 +1,899 @@
+{
+  "scope": "new_grasp_seated_wrist_then_same_shell_visual_binding",
+  "outcome": "new_wrist_and_same_place_visual_reference_recorded",
+  "arm_motion_writes": 0,
+  "arm_stop_writes": 0,
+  "configuration_writes": 0,
+  "parent_SDK_loaded": false,
+  "execution_ready": false,
+  "exceptions": [
+    {
+      "error": "ValueError('预抓目标尚非35000/7500/9480/30000/65535/65535；h进入手部工具，pre设置后q返回。')",
+      "timestamp_utc": "2026-10-23T12:15:37.435063+00:00"
+    }
+  ],
+  "read_attempts": [
+    {
+      "timestamp_utc": "2026-10-23T12:15:25.713460+00:00",
+      "worker_file": "arm_reference_001.json",
+      "operator_confirms_seated_shell_pregrasp_before_lift_not_post_lift": true,
+      "hand_before": {
+        "ok": true,
+        "notice": "已读取；状态5或未到位可继续调，保护3/4通道只可退让",
+        "snapshot": {
+          "identity": [
+            512,
+            769,
+            151,
+            8193,
+            290,
+            2,
+            0,
+            0
+          ],
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ],
+          "speeds": [
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+          ],
+          "force_targets": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "targets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            728
+          ],
+          "positions": [
+            0,
+            17,
+            0,
+            0,
+            0,
+            728
+          ],
+          "current": [
+            2,
+            2,
+            1,
+            0,
+            10,
+            10
+          ],
+          "status": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "protected_channels": [],
+          "status5_channels": [],
+          "blockers": [],
+          "started_monotonic": 774009.253097278,
+          "finished_monotonic": 774013.129695186,
+          "reads_are_sequential": true,
+          "physical_stop_verified": false,
+          "holding_verified": false,
+          "actual_target_differences": [
+            0,
+            17,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "snapshot_stale": false,
+        "connected": true,
+        "needs_reconnect": false,
+        "configuration_matched": true,
+        "blockers": [],
+        "attempted": false,
+        "acknowledged": false,
+        "physical_stop_verified": false,
+        "holding_verified": false
+      }
+    },
+    {
+      "timestamp_utc": "2026-10-23T12:32:45.071996+00:00",
+      "worker_file": "arm_reference_002.json",
+      "operator_confirms_seated_shell_pregrasp_before_lift_not_post_lift": true,
+      "hand_before": {
+        "ok": true,
+        "notice": "已读取；状态5或未到位可继续调，保护3/4通道只可退让",
+        "snapshot": {
+          "identity": [
+            512,
+            769,
+            151,
+            8193,
+            290,
+            2,
+            0,
+            0
+          ],
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ],
+          "speeds": [
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+          ],
+          "force_targets": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "targets": [
+            34999,
+            7500,
+            9481,
+            30001,
+            65535,
+            65535
+          ],
+          "positions": [
+            34999,
+            7500,
+            9481,
+            30001,
+            65535,
+            65535
+          ],
+          "current": [
+            2,
+            16,
+            13,
+            2,
+            13,
+            17
+          ],
+          "status": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "protected_channels": [],
+          "status5_channels": [],
+          "blockers": [],
+          "started_monotonic": 775048.566567682,
+          "finished_monotonic": 775052.465741225,
+          "reads_are_sequential": true,
+          "physical_stop_verified": false,
+          "holding_verified": false,
+          "actual_target_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "snapshot_stale": false,
+        "connected": true,
+        "needs_reconnect": false,
+        "configuration_matched": true,
+        "blockers": [],
+        "attempted": false,
+        "acknowledged": false,
+        "physical_stop_verified": false,
+        "holding_verified": false
+      },
+      "worker_exit_code": 0,
+      "arm_result_sha256": "b29495edeb636e9d5dfbe57d4143c9ef543885375b2006b72f21cc359315a3d9",
+      "hand_after": {
+        "ok": true,
+        "notice": "已读取；状态5或未到位可继续调，保护3/4通道只可退让",
+        "snapshot": {
+          "identity": [
+            512,
+            769,
+            151,
+            8193,
+            290,
+            2,
+            0,
+            0
+          ],
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ],
+          "speeds": [
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+          ],
+          "force_targets": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "targets": [
+            34999,
+            7500,
+            9481,
+            30001,
+            65535,
+            65535
+          ],
+          "positions": [
+            34999,
+            7500,
+            9481,
+            30001,
+            65535,
+            65535
+          ],
+          "current": [
+            2,
+            19,
+            16,
+            2,
+            21,
+            1
+          ],
+          "status": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ],
+          "protected_channels": [],
+          "status5_channels": [],
+          "blockers": [],
+          "started_monotonic": 775065.887605563,
+          "finished_monotonic": 775069.773862097,
+          "reads_are_sequential": true,
+          "physical_stop_verified": false,
+          "holding_verified": false,
+          "actual_target_differences": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "snapshot_stale": false,
+        "connected": true,
+        "needs_reconnect": false,
+        "configuration_matched": true,
+        "blockers": [],
+        "attempted": false,
+        "acknowledged": false,
+        "physical_stop_verified": false,
+        "holding_verified": false
+      },
+      "new_reference_recorded": true
+    }
+  ],
+  "hand_console_can_send_only_explicit_targets": true,
+  "physical_grip_success_source": "operator_followup",
+  "checked_files": 459,
+  "vision_command": [
+    "/usr/bin/python3",
+    "/home/rm/test/battery-d435-preview/deployment/run_new_grasp_reference_vision_v1.py",
+    "--position-session",
+    "/home/rm/test/battery-d435-preview/calibration/position_rgbd_20261020_001259_216986",
+    "--anchor",
+    "/home/rm/test/battery-d435-preview/deployment/visual_reference_201634/task_anchor.json",
+    "--confirm-fixed-camera",
+    "--confirm-measured-shell-only",
+    "--confirm-unchanged-setup",
+    "--confirm-upright-equal-height-recesses",
+    "--finish-after-first-reference",
+    "--inference-python",
+    "/usr/bin/python3",
+    "--device",
+    "auto"
+  ],
+  "vision_sources": [
+    {
+      "file": "vision_reference_001.zip",
+      "sha256": "a03a2eba866b2b34e8a6e8e2f07a610e79f7bc94c55a0e8da372f7f6a7892e6d"
+    }
+  ],
+  "task_anchor": {
+    "schema_version": 2,
+    "scope": "new_grasp_wrist_equal_height_task_reference",
+    "reference_pregrasp_tcp_pose_m_rad": [
+      0.2369769960641861,
+      -0.4762890040874481,
+      -0.16992400586605072,
+      -2.263000011444092,
+      -0.019999999552965164,
+      3.0439999103546143
+    ],
+    "reference_top_center_world_m": [
+      0.20520440854400518,
+      -0.5725932024720276,
+      -0.3052039559752392
+    ],
+    "top_center_to_pregrasp_TCP_world_m": [
+      0.03177258752018092,
+      0.09630419838457949,
+      0.13527995010918847
+    ],
+    "reference_arm": {
+      "frames": {
+        "work": {
+          "frame_name": {
+            "name": "World"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tool": {
+          "frame_name": {
+            "name": "Arm_Tip"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "frame_names": {
+        "work": "World",
+        "tool": "Arm_Tip"
+      },
+      "frame_signatures": {
+        "work": {
+          "name": "World",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "tool": {
+          "name": "Arm_Tip",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      "joints": [
+        -57.67599868774414,
+        -79.6520004272461,
+        -40.571998596191406,
+        99.4990005493164,
+        4.656000137329102,
+        46.645999908447266
+      ],
+      "pose": [
+        0.2369769960641861,
+        -0.4762890040874481,
+        -0.16992400586605072,
+        -2.263000011444092,
+        -0.019999999552965164,
+        3.0439999103546143
+      ],
+      "limits": {
+        "minimum": [
+          -178.0,
+          -130.0,
+          -135.0,
+          -178.0,
+          -128.0,
+          -360.0
+        ],
+        "maximum": [
+          178.0,
+          130.0,
+          135.0,
+          178.0,
+          128.0,
+          360.0
+        ],
+        "speed": [
+          180.0,
+          180.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0
+        ],
+        "acceleration": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "reserve": [
+        120.32400131225586,
+        50.347999572753906,
+        94.4280014038086,
+        78.5009994506836,
+        123.3439998626709,
+        313.35400009155273
+      ],
+      "arm_error": 0,
+      "system_error": 0
+    },
+    "reference_hand": {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "current_limit_ma": [
+        1299,
+        1299,
+        1299,
+        1299,
+        1299,
+        1299
+      ],
+      "speeds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        65535
+      ],
+      "force_targets": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        34999,
+        7500,
+        9481,
+        30001,
+        65535,
+        65535
+      ],
+      "positions": [
+        34999,
+        7500,
+        9481,
+        30001,
+        65535,
+        65535
+      ],
+      "current": [
+        2,
+        19,
+        16,
+        2,
+        21,
+        1
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "protected_channels": [],
+      "status5_channels": [],
+      "blockers": [],
+      "started_monotonic": 775065.887605563,
+      "finished_monotonic": 775069.773862097,
+      "reads_are_sequential": true,
+      "physical_stop_verified": false,
+      "holding_verified": false,
+      "actual_target_differences": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "reference_burst": {
+      "scope": "equal_height_plane_live_repeatability_not_free3D_or_absolute_accuracy",
+      "elapsed_seconds": 3.619096481008455,
+      "frame_count": 8,
+      "rejected_frame_indices": [],
+      "all_frames_retained": true,
+      "maximum_repeatability_mm": 3.0,
+      "repeatability_threshold_source": "new_development_sampling_default",
+      "execution_ready": false,
+      "top_center_world_m": [
+        0.20520440854400518,
+        -0.5725932024720276,
+        -0.3052039559752392
+      ],
+      "top_center_repeatability_max_mm": 1.3991286234941798,
+      "top_center_repeatability_p95_mm": 1.356520986861051,
+      "top_center_all_inside_FIT_support": false,
+      "geometric_body_center_world_m": [
+        0.2048477019103445,
+        -0.5714080344522765,
+        -0.35418832222756974
+      ],
+      "geometric_body_center_repeatability_max_mm": 1.3991286234941798,
+      "geometric_body_center_repeatability_p95_mm": 1.356520986861051,
+      "geometric_body_center_all_inside_FIT_support": false,
+      "lower_half_inferred": true,
+      "frame_quality_pass": true,
+      "burst_qualified": true,
+      "completion_wall_time_known": true,
+      "reject_reasons": [],
+      "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+      "original_free3D_gate_pass_not_implied": true,
+      "height_inferred_from_task_plane": true,
+      "FIT_support_for_projected_points_not_evaluated": true
+    },
+    "equal_height_plane": {
+      "schema_version": 1,
+      "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+      "plane_point_world_m": [
+        0.23178726980562292,
+        -0.5479881977288621,
+        -0.3048022200072294
+      ],
+      "axis_from_top_into_body_world": [
+        -0.007279727217565114,
+        0.024187102443901,
+        -0.9996809439251136
+      ],
+      "plane_normal_source": "arithmetic_mean_of_all_original_reference_cylinder_axes",
+      "normal_reference_frame_count": 8,
+      "normal_reference_spread_max_degrees": 0.4211100653399225,
+      "plane_orientation_independently_measured": false,
+      "original_reference_observation_sha256": "003cbbb164807cac5f59fec08d8a398b85e6da0209f8ef9ba8b7fb9cf5b6ff8c",
+      "original_camera_context": {
+        "camera_serial": "344322075008",
+        "image_size": [
+          1280,
+          720
+        ],
+        "K": [
+          [
+            908.7157592773438,
+            0.0,
+            654.8253784179688
+          ],
+          [
+            0.0,
+            908.4488525390625,
+            372.3862609863281
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "distortion": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distortion_model": "distortion.inverse_brown_conrady",
+        "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+        "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+        "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+        "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+        "camera_fixed_confirmed": true,
+        "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+        "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+        "measured_shell": {
+          "diameter_mm": 45.8,
+          "total_height_mm": 98.0
+        },
+        "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+      },
+      "world_from_camera": [
+        [
+          -0.9998085722219823,
+          -0.01863066283493993,
+          -0.005976396386797045,
+          -0.06894546309745679
+        ],
+        [
+          -0.012635802428174275,
+          0.8480407390358173,
+          -0.5297803709392982,
+          -0.1060142765584126
+        ],
+        [
+          0.014938387076169828,
+          -0.5296034396960759,
+          -0.8481138138561637,
+          0.0974154939202833
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "same_upright_shell_equal_seated_top_plane_confirmed": true,
+      "old_reference_point_refitted": false,
+      "slot_lookup": false,
+      "grid_snap": false,
+      "absolute_position_accepted": false,
+      "motion_authorized": false,
+      "execution_ready": false,
+      "method_source_sha256": "eb50b15cff5cfa7712201df00cb5576aabfe673993cc9efbe0ff4bebe68946c6",
+      "original_task_anchor_sha256": "ed864e9c5f663902f3ed63075e28252dc120e1f6cee860c4993bebd74a9d9816",
+      "old_grasp_tcp_mapping_used": false
+    },
+    "camera_context": {
+      "camera_serial": "344322075008",
+      "image_size": [
+        1280,
+        720
+      ],
+      "K": [
+        [
+          908.7157592773438,
+          0.0,
+          654.8253784179688
+        ],
+        [
+          0.0,
+          908.4488525390625,
+          372.3862609863281
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "distortion.inverse_brown_conrady",
+      "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+      "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+      "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+      "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+      "camera_fixed_confirmed": true,
+      "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+      "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+      "measured_shell": {
+        "diameter_mm": 45.8,
+        "total_height_mm": 98.0
+      },
+      "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+    },
+    "recipe": {
+      "schema_version": 1,
+      "recipe_id": "black_shell_new_grasp_20261023_1945",
+      "channel_order": [
+        "thumb_flex",
+        "index",
+        "middle",
+        "ring",
+        "little",
+        "thumb_opposition"
+      ],
+      "logical_target_limits": {
+        "minimum": 0,
+        "maximum": 65535
+      },
+      "pregrasp_targets": [
+        35000,
+        7500,
+        9480,
+        30000,
+        65535,
+        65535
+      ],
+      "grasp_targets": [
+        40000,
+        12500,
+        14480,
+        30000,
+        65535,
+        65535
+      ],
+      "constant_channels": {
+        "ring": 30000,
+        "little": 65535,
+        "thumb_opposition": 65535
+      },
+      "pregrasp_sequence_after_palm_at_grasp_location": [
+        "little_to_65535",
+        "ring_to_30000"
+      ],
+      "grasp_sequence": [
+        "thumb_flex_to_40000",
+        "index_to_12500",
+        "middle_to_14480",
+        "lift_after_grasp_target_commands_ack_and_readback_match"
+      ],
+      "old_in_lift_ring_middle_tightening_used": false,
+      "grip_targets_must_not_be_automatically_reduced": true,
+      "target_values_source": "explicit latest operator instruction",
+      "physical_grasp_success_confirmed_by_operator": true,
+      "little_finger_addition_source": "operator added for appearance; not present in uploaded final record",
+      "exact_new_recipe_automatic_lift_accepted": false,
+      "new_wrist_or_palm_position_confirmed": true,
+      "new_seated_pregrasp_arm_reference_required": true,
+      "old_visual_anchor_and_2p8_plus_4p5_correction_reusable": false,
+      "execution_ready": false,
+      "raw_hand_evidence": {
+        "folder": "G:\\Code_Project\\battery_grasp_ws\\tmp\\hand_thumb_tuner_20261023_185814_291051",
+        "result_sha256": "e6bd2fad380849217744cda0cc0e50558b23159ce8dcd4562099e0c48ce217f0",
+        "saved_shape_sha256": "fad803f202c7b2436da9bb89ed51bb5e7c397c67ed9358fde9504d64d51ffa91",
+        "observed_final_targets": [
+          40001,
+          12501,
+          14501,
+          30001,
+          0,
+          65535
+        ],
+        "observed_final_positions": [
+          40001,
+          12501,
+          14498,
+          30004,
+          0,
+          65535
+        ],
+        "observed_final_status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ]
+      },
+      "actual_position_arrival_required_for_normal_stall": false,
+      "status5_or_unreached_is_grasp_failure": false,
+      "latest_operator_clarification": "目标写入/回读一致即可；正常堵转是握持所需，不要求实际位置到达目标，不因此退出或跳转"
+    },
+    "provenance": {
+      "arm_reference_file": "arm_reference_002.json",
+      "arm_reference_sha256": "b29495edeb636e9d5dfbe57d4143c9ef543885375b2006b72f21cc359315a3d9",
+      "vision_archive_file": "vision_reference_001.zip",
+      "vision_archive_sha256": "a03a2eba866b2b34e8a6e8e2f07a610e79f7bc94c55a0e8da372f7f6a7892e6d",
+      "recipe_sha256": "c3ea9b51cea950f272aa4127f621448bfc296db689e7af0269070991ee5dafee"
+    },
+    "seated_pregrasp_not_lifted_pose_confirmed_by_operator": true,
+    "same_shell_place_unchanged_between_arm_and_image_confirmed_by_operator": true,
+    "old_grasp_tcp_mapping_used": false,
+    "old_2p8_plus_4p5_offsets_applied": false,
+    "fault_last_state_used": false,
+    "actual_finger_arrival_required": false,
+    "task_binding_recorded": true,
+    "independent_absolute_accuracy_accepted": false,
+    "six_dimensional_TCP_calibrated": false,
+    "handeye_refitted": false,
+    "protection_ready_for_later_motion": true,
+    "motion_authorized": false,
+    "execution_ready": false
+  },
+  "task_anchor_sha256": "b6405647fe47db40885818163115e9b54f1acb8030f2faac01bcb004eacae8a5"
+}

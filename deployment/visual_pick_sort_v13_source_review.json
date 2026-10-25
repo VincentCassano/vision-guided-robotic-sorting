@@ -1,0 +1,109 @@
+{
+  "scope": "200928真实新绑定审阅与新视觉取放代码人工阅读，禁止扩大为整轮真机通过",
+  "accepted_reference": {
+    "parent_archive": "new_grasp_reference_20261023_200928_419672.zip",
+    "parent_sha256": "2ef44b8d135a0371b701634660caebbbca6a12c4bdefe4457ca190051cce5b38",
+    "anchor_sha256": "b6405647fe47db40885818163115e9b54f1acb8030f2faac01bcb004eacae8a5",
+    "reference_arm_pose_mm_rad": [
+      236.9769960641861,
+      -476.2890040874481,
+      -169.92400586605072,
+      -2.263000011444092,
+      -0.019999999552965164,
+      3.0439999103546143
+    ],
+    "current_pose_assumed_at_reference": false,
+    "historical_open_target_rejection_does_not_invalidate_final_success": true
+  },
+  "implementation": {
+    "parent": "run_visual_pick_sort_v13.py",
+    "vision": "run_visual_pick_target_v13.py",
+    "worker": "visual_pick_sort_v13_worker.py",
+    "hand": "visual_pick_sort_v13_hand.py",
+    "source": "visual_pick_sort_v13_source.py",
+    "prepare": [
+      35000,
+      7500,
+      9480,
+      30000,
+      65535,
+      65535
+    ],
+    "grip": [
+      40000,
+      12500,
+      14480,
+      30000,
+      65535,
+      65535
+    ],
+    "drop": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535
+    ],
+    "hold_pair_order": [
+      4,
+      3
+    ],
+    "grip_order": [
+      0,
+      1,
+      2
+    ],
+    "ordinary_status5_blocks_sequence": false,
+    "actual_finger_arrival_or_settling_required": false,
+    "automatic_target_reduction": false,
+    "target_readback_tolerance": 2,
+    "old_inflight_ring_middle_tightening_used": false,
+    "old_wrist_or_2p8_plus_4p5_offsets_used": false,
+    "fresh_current_start_low_raise_supported": true,
+    "arm_protection_limits_and_raw_configuration_frozen_this_run": true,
+    "payload_identification_or_setters": false,
+    "upfront_one_g_continuous_route": true,
+    "loaded_keyboard_waits": 0,
+    "lift_mm": 140,
+    "approach_speed_percent": 2,
+    "lift_speed_percent": 5,
+    "transfer_speed_percent": 10,
+    "connected_transfer_flags": [
+      1,
+      1,
+      0
+    ],
+    "blend_radius": 0,
+    "nonzero_corner_velocity_guaranteed": false,
+    "black_bin_toward_robot_offset_mm": 40,
+    "automatic_empty_return": false,
+    "actual_pickup_and_drop_requires_operator_verdict": true,
+    "fault_last_state_promoted_to_startup_reference": false,
+    "automatic_fault_open_or_retries": false,
+    "raw_TCP_SDK_and_notification_records_retained": true
+  },
+  "manual_review_repairs": [
+    "worker固定新锚点路径与父source正式目录一致",
+    "父/worker共同核对新腕姿源SHA及新图像/平面上下文，重算目标而不接受旧坐标补位",
+    "投放40mm使用新source中的固定相机方向换算，不导入旧握持配方来源",
+    "原SDK未承诺的非有限quaternion仅作明确字符串诊断保存，不猜零或参与几何",
+    "初次视觉采集取消/失败返回父界面，任何已动作目标失效且不自动重跑",
+    "提起前慢速静态检查在接触前完成，抓取ACK/新鲜反馈后直接提起，不等实际手指到位",
+    "已在高位目标/腕姿时跳过零距离臂指令，不因控制器没有生成零行程完成通知而假超时"
+  ],
+  "limits": [
+    "同一45.8mm×98mm直立断电黑壳、同高工作面、固定头/板/安装范围",
+    "新全程扫掠/带物留持和新投放端点仍需实机；前瞻净空许可不是传感器认证",
+    "真实保护3/4、过流/臂错误/坏通信仍阻断，不改硬件安全参数",
+    "新视觉取放整轮尚未真机，不把手动抓起或参考采集当整轮通过"
+  ],
+  "validation": {
+    "manual_source_interface_review": true,
+    "file_zip_crc_sha_only": "see delivery receipt",
+    "project_runtime_tests_compile_ast_mock_fk_ik": false,
+    "SDK_loaded_in_development": false,
+    "robot_connected_in_development": false,
+    "new_v13_real_device_accepted": false
+  }
+}

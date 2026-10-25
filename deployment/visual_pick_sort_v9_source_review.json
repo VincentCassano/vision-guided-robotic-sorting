@@ -1,0 +1,23 @@
+{
+  "scope": "manual source review plus file/raw evidence checks; no project runtime execution",
+  "source_raw_sha256": "414746babcba453b2344560ea713dd74a8e012bb901c59c0c869a9be6bc2db9f",
+  "manual_review_items": [
+    "Exact004527 zero-write input with full hash/parent-worker/deployed353 checks",
+    "Use only original successful nested visual endpoint for arm; both fault arm states excluded",
+    "Fresh current hand targets match original command±2 and actual±150; three quiet allstatus2 groups",
+    "Old fault actual20283 removed from before_retreat position qualification, not replaced by widened217/300 bounds",
+    "Post-g new fresh groups match current pre-g anchor±150 before one lower-than-current-and-target1138 write20000",
+    "All current3/4 block again using ordinary readiness and normal status checker; old3 exception removed becausev8 observed it clear",
+    "Normal cycle only from same-run healthy post-withdrawal groups and actual upfront14g; no fake second g",
+    "No new image capture, approach replay, other-finger close, protection reset or added-closure retry",
+    "Existing vertical lift/final bin/connected1/1/0 r0 gates retained; connection still unexecuted in source evidence",
+    "Parent and worker both verify original004527 input before SDK/write; reference path+SHA stored instead of duplicating large ZIP"
+  ],
+  "candidate_ring": 20000,
+  "candidate_grip_real_device_accepted": false,
+  "continuous_transfer_actual_accepted": false,
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_executed": false,
+  "compile_AST_mock_FK_IK_executed": false
+}

@@ -1,0 +1,95 @@
+{
+  "source_archive": "new_grasp_reference_20261023_200928_419672.zip",
+  "source_sha256": "2ef44b8d135a0371b701634660caebbbca6a12c4bdefe4457ca190051cce5b38",
+  "bytes": 14329983,
+  "members": 6,
+  "internal_hashed_files": 5,
+  "crc_and_internal_sha_pass": true,
+  "outcome": "new_wrist_and_same_place_visual_reference_recorded",
+  "new_binding_recorded": true,
+  "parent_historical_exceptions": [
+    {
+      "error": "ValueError('预抓目标尚非35000/7500/9480/30000/65535/65535；h进入手部工具，pre设置后q返回。')",
+      "timestamp_utc": "2026-10-23T12:15:37.435063+00:00"
+    }
+  ],
+  "initial_attempt": "OPEN targets; pregrasp mismatch, before arm SDK; retained history not final failure",
+  "qualified_attempt": 2,
+  "anchor_sha256": "b6405647fe47db40885818163115e9b54f1acb8030f2faac01bcb004eacae8a5",
+  "arm_reference_sha256": "b29495edeb636e9d5dfbe57d4143c9ef543885375b2006b72f21cc359315a3d9",
+  "vision_sha256": "a03a2eba866b2b34e8a6e8e2f07a610e79f7bc94c55a0e8da372f7f6a7892e6d",
+  "new_pregrasp_pose_mm_rad": [
+    236.9769960641861,
+    -476.2890040874481,
+    -169.92400586605072,
+    -2.263000011444092,
+    -0.019999999552965164,
+    3.0439999103546143
+  ],
+  "new_pregrasp_joints": [
+    -57.67599868774414,
+    -79.6520004272461,
+    -40.571998596191406,
+    99.4990005493164,
+    4.656000137329102,
+    46.645999908447266
+  ],
+  "hand_targets": [
+    34999,
+    7500,
+    9481,
+    30001,
+    65535,
+    65535
+  ],
+  "hand_positions": [
+    34999,
+    7500,
+    9481,
+    30001,
+    65535,
+    65535
+  ],
+  "hand_status": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "arm_drift_mm": 0.007880164605725838,
+  "max_joint_drift_degrees": 0.0019989013671875,
+  "arm_protection_before": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "arm_protection_after": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "SDK_cleanup_finished": true,
+  "worker_exceptions": [],
+  "worker_cleanup_errors": [],
+  "raw_reference_hand_reads": 99,
+  "raw_reference_hand_writes": 0,
+  "hand_write_count_scope": "reference reader wire only; h/pre child logs not present, no claim about total parent-session hand writes",
+  "source_chain_crosschecked": true,
+  "old_offsets_or_wrist_reused": false,
+  "current_robot_pose_not_assumed": true,
+  "automatic_visual_cycle_accepted": false,
+  "next": "Use qualified new anchor for fresh target selection and new ordered grasp/lift/bin cycle; no new reference capture required",
+  "offline_project_tests_executed": false
+}

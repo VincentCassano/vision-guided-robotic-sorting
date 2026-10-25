@@ -1,0 +1,53 @@
+<launch>
+  <arg name="api_port" default="18080"/>
+  <arg name="yolo" default="false"/>
+  <arg name="inference_python" default="$(env HOME)/battery_grasp_ws/.venv-yolo/bin/python"/>
+  <arg name="repository" default="$(env HOME)/battery_grasp_ws/deployment/yolov5-runtime"/>
+  <arg name="calibrated_v3" default="true"/>
+  <arg name="class_confidences" default=""/>
+  <arg name="square_confidence" default=""/>
+  <rosparam command="load" file="$(find battery_grasp)/config/sorting_simulation.yaml"/>
+  <param name="/battery_grasp_sim/max_age" value="$(eval 5.0 if arg('yolo') else 1.0)"/>
+  <node pkg="battery_grasp" type="camera_stream_test.py" name="camera_stream_test" output="screen" required="true">
+    <param name="rate" value="$(eval 1.0 if arg('yolo') else 10.0)"/>
+    <param if="$(arg yolo)" name="photo_directory" value="$(find battery_grasp)/test_data/battery_v1"/>
+  </node>
+  <node unless="$(arg yolo)" pkg="battery_grasp" type="battery_detector_test.py" name="battery_detector_test" output="screen" required="true"/>
+  <group if="$(arg yolo)">
+    <rosparam if="$(arg calibrated_v3)" command="load" file="$(find battery_grasp)/config/yolo_v3_calibrated.yaml"/>
+    <rosparam unless="$(arg calibrated_v3)" param="battery_detector_yolo/class_confidences">[0.25, 0.25, 0.25, 0.25]</rosparam>
+  </group>
+  <node if="$(arg yolo)" pkg="battery_grasp" type="battery_detector_yolo.py" name="battery_detector_yolo" output="screen" required="true" clear_params="true">
+    <param name="inference_python" value="$(arg inference_python)"/>
+    <param name="repository" value="$(arg repository)"/>
+    <param name="worker" value="$(find battery_grasp)/scripts/yolo_worker.py"/>
+    <param name="weights" value="$(find battery_grasp)/models/battery_yolov5s_v1.pt"/>
+    <rosparam if="$(eval arg('class_confidences') != '')" param="class_confidences" subst_value="true">$(arg class_confidences)</rosparam>
+    <param if="$(eval arg('square_confidence') != '')" name="square_confidence" value="$(arg square_confidence)" type="double"/>
+    <remap from="~image" to="/camera/color/image_raw"/>
+    <remap from="~detections" to="/battery_pixels"/>
+  </node>
+  <node pkg="battery_grasp" type="vision_depth_test.py" name="vision_depth_test" output="screen" required="true">
+    <remap from="~detections" to="/battery_pixels"/>
+    <remap from="~depth" to="/camera/depth/image_raw"/>
+    <remap from="~camera_info" to="/camera/color/camera_info"/>
+    <remap from="~objects" to="/battery_vision/objects_3d"/>
+  </node>
+  <node pkg="battery_grasp" type="vision_observation_tracker.py" name="vision_observation_tracker" output="screen" required="true">
+    <param name="source_frame" value="camera_test_frame"/>
+    <param name="max_gap" value="$(eval 3.0 if arg('yolo') else 1.0)"/>
+    <remap from="~objects" to="/battery_vision/objects_3d"/>
+    <remap from="~observations" to="/battery_vision/observations_base"/>
+  </node>
+  <node pkg="battery_grasp" type="observation_to_sim_scene.py" name="observation_to_sim_scene" output="screen" required="true">
+    <remap from="~observations" to="/battery_vision/observations_base"/>
+    <remap from="~scene" to="/battery_vision/sorting_scene"/>
+  </node>
+  <node pkg="battery_grasp" type="task_controller.py" name="task_controller" output="screen" required="true">
+    <remap from="/battery_objects" to="/battery_vision/sorting_scene"/>
+  </node>
+  <node pkg="battery_grasp" type="api_control_server.py" name="api_control_server" output="screen" required="true">
+    <param name="host" value="127.0.0.1"/>
+    <param name="port" value="$(arg api_port)"/>
+  </node>
+</launch>

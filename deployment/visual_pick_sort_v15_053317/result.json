@@ -1,0 +1,76 @@
+{
+  "version": 15,
+  "scope": "actual044001_new_grip_fresh_visual_single_black_shell_sort",
+  "outcome": "worker_not_completed_no_automatic_retry",
+  "success_source_sha256": "8a4a92c9cd2adf2b6976f6cdde823b8b33364d8a9522953bff8bc514f69b192b",
+  "attempts": [
+    {
+      "mode": "visual_cycle",
+      "folder": "cycle_001",
+      "request_sha256": "e01d347721d56587e534ef9e84b9032e3e4d94d4c1870dfb172d9cd70ce53892",
+      "exit_code": 0,
+      "result_file": "cycle_001/worker_result.json",
+      "result_sha256": "1024678ee10fcbd8d1063c5ace6e4d35dcbf82a287c721affda1f38bbf934733",
+      "outcome": "black_bin_motion_and_open_completed_waiting_operator",
+      "operator_result": "y",
+      "actual_observed_bin_success": true
+    },
+    {
+      "mode": "visual_cycle",
+      "folder": "cycle_002",
+      "request_sha256": "9d111b923e4902c5aa5e31207cb31c0208760f9412d7894ab50b8cd623598168",
+      "exit_code": 1,
+      "result_file": "cycle_002/worker_result.json",
+      "result_sha256": "bcdb48fb3e132f6332f6a067ad62bd0cc96555f769f5e16867f7c9cc8f3fb068",
+      "outcome": "worker_not_completed_no_automatic_retry"
+    }
+  ],
+  "captures": [
+    {
+      "role": "target",
+      "file": "target_001.zip",
+      "sha256": "963377b7a6463318f3da732b4a349979da198543f037c248f0a85ff111d37aac",
+      "evidence": {
+        "archive_sha256": "963377b7a6463318f3da732b4a349979da198543f037c248f0a85ff111d37aac",
+        "source": "/home/rm/test/battery-d435-preview/captures/visual_pick_point_v14_target_20261024_053327_387899.zip",
+        "hashed_files": 19,
+        "capture_outcome": "new_wrist_reference_point_saved",
+        "SDK_loaded": false,
+        "arm_writes": 0,
+        "hand_writes": 0
+      }
+    },
+    {
+      "role": "target",
+      "file": "target_002.zip",
+      "sha256": "a24abb922d345a37934ec224114a06f6ce1f4ce496d683136dea2d8616561359",
+      "evidence": {
+        "archive_sha256": "a24abb922d345a37934ec224114a06f6ce1f4ce496d683136dea2d8616561359",
+        "source": "/home/rm/test/battery-d435-preview/captures/visual_pick_point_v14_target_20261024_053619_684181.zip",
+        "hashed_files": 19,
+        "capture_outcome": "new_wrist_reference_point_saved",
+        "SDK_loaded": false,
+        "arm_writes": 0,
+        "hand_writes": 0
+      }
+    }
+  ],
+  "exceptions": [],
+  "parent_SDK_loaded": false,
+  "controller_configuration_writes": 0,
+  "offline_project_tests_executed": false,
+  "current_hand_state_must_be_confirmed": true,
+  "complete_visual_pick_sort_accepted": true,
+  "arbitrary_start_pose_universally_reachable_claimed": false,
+  "execution_ready": false,
+  "checked_files": 518,
+  "accepted_actual_pickup_mm": [
+    -0.009000301361083984,
+    0.006020069122314453,
+    179.98000152874738
+  ],
+  "loaded_anchor_sha256": "8121f258ce959cb446988eb99f46ddc32f64d85da10e314bc93a07f30a3cb750",
+  "operator_empty_confirmations": [
+    "2026-10-23T21:33:22.008496+00:00"
+  ]
+}

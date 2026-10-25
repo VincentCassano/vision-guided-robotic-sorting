@@ -1,0 +1,391 @@
+{
+  "source_archive": "G:\\Code_Project\\battery_grasp_ws\\tmp\\visual_pregrasp_alignment_v6_20261021_111031_018476.zip",
+  "sha256": "8ac04e04f1928b53770d382c91ab0aad7a5c25bfd0d49c88b204f78c953d4baf",
+  "bytes": 10817920,
+  "outer_members": 5,
+  "outer_internal_hashes": 4,
+  "inner_members": 17,
+  "inner_internal_hashes": 16,
+  "checks": {
+    "outer_crc": true,
+    "outer_unique": true,
+    "outer_inventory": true,
+    "outer_hashes": true,
+    "parent_bus_same": true,
+    "delivery248": true,
+    "nested_hash": true,
+    "inner_crc": true,
+    "inner_unique": true,
+    "inner_inventory": true,
+    "inner_hashes": true,
+    "worker_same": true,
+    "clean_worker_completed": true,
+    "four_completed_segments": true,
+    "endpoint_not_physical_accepted": true,
+    "no_grasp_or_lift": true,
+    "write_counts": true,
+    "mode_1_0_1": true,
+    "restored_original": true,
+    "bus_only_two_TX": true
+  },
+  "actual_result": "four_arm_segments_completed_feedback_operator_alignment_u",
+  "physical_alignment_accepted": false,
+  "write_counts": {
+    "arm": 4,
+    "hand": 1,
+    "communication_configuration": 2
+  },
+  "bus_mode_sequence": [
+    {
+      "baudrate": 115200,
+      "command": "get_tool_RS485_mode",
+      "modbus_timeout": 1,
+      "tool_RS485_mode": 1
+    },
+    {
+      "baudrate": 115200,
+      "command": "get_tool_RS485_mode",
+      "tool_RS485_mode": 0
+    },
+    {
+      "baudrate": 115200,
+      "command": "get_tool_RS485_mode",
+      "modbus_timeout": 1,
+      "tool_RS485_mode": 1
+    }
+  ],
+  "bus_exceptions": [],
+  "startup_elapsed_seconds": 4.254213206004351,
+  "segments": [
+    {
+      "phase": "raising_current_empty_hand_before_alignment",
+      "method": "Movel_Cmd",
+      "speed_percent": 2,
+      "elapsed_seconds": 40.83289544505533,
+      "target_pose_m_rad": [
+        0.25773900747299194,
+        -0.4446600079536438,
+        0.03608421655818639,
+        -3.0139999389648438,
+        -0.7889999747276306,
+        -2.322999954223633
+      ],
+      "actual_pose_m_rad": [
+        0.2577419877052307,
+        -0.44466400146484375,
+        0.03608600050210953,
+        -3.0139999389648438,
+        -0.7889999747276306,
+        -2.322999954223633
+      ],
+      "position_endpoint_error_mm": 0.0052926715203233925,
+      "notification": {
+        "acknowledged": true,
+        "acknowledgement_observed": true,
+        "event_seen": true,
+        "method": "Movel_Cmd",
+        "phase": "raising_current_empty_hand_before_alignment",
+        "acknowledgement_raw": 0
+      },
+      "arm_error": 0,
+      "system_error": 0
+    },
+    {
+      "phase": "aligning_above_visual_target",
+      "method": "Movej_P_Cmd",
+      "speed_percent": 5,
+      "elapsed_seconds": 16.561251826002263,
+      "target_pose_m_rad": [
+        0.1548528960027884,
+        -0.40125573475307785,
+        0.03608421655818639,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2149999141693115
+      ],
+      "actual_pose_m_rad": [
+        0.15486200153827667,
+        -0.4012489914894104,
+        0.03607799857854843,
+        -2.5739998817443848,
+        -1.1690000295639038,
+        -2.2139999866485596
+      ],
+      "position_endpoint_error_mm": 0.012924614199079601,
+      "notification": {
+        "acknowledged": true,
+        "acknowledgement_observed": true,
+        "event_seen": true,
+        "method": "Movej_P_Cmd",
+        "phase": "aligning_above_visual_target",
+        "acknowledgement_raw": 0
+      },
+      "arm_error": 0,
+      "system_error": 0
+    },
+    {
+      "phase": "approaching_visual_hover_140mm",
+      "method": "Movel_Cmd",
+      "speed_percent": 2,
+      "elapsed_seconds": 47.98538936499972,
+      "target_pose_m_rad": [
+        0.1548528960027884,
+        -0.40125573475307785,
+        -0.12391578344181359,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2149999141693115
+      ],
+      "actual_pose_m_rad": [
+        0.15481199324131012,
+        -0.4012399911880493,
+        -0.12393700331449509,
+        -2.5739998817443848,
+        -1.1690000295639038,
+        -2.2139999866485596
+      ],
+      "position_endpoint_error_mm": 0.04869475056898594,
+      "notification": {
+        "acknowledged": true,
+        "acknowledgement_observed": true,
+        "event_seen": true,
+        "method": "Movel_Cmd",
+        "phase": "approaching_visual_hover_140mm",
+        "acknowledgement_raw": 0
+      },
+      "arm_error": 0,
+      "system_error": 0
+    },
+    {
+      "phase": "descending_to_visual_noncontact_pregrasp",
+      "method": "Movel_Cmd",
+      "speed_percent": 2,
+      "elapsed_seconds": 41.692532870103605,
+      "target_pose_m_rad": [
+        0.1548528960027884,
+        -0.40125573475307785,
+        -0.2639157834418136,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2149999141693115
+      ],
+      "actual_pose_m_rad": [
+        0.15487200021743774,
+        -0.40126800537109375,
+        -0.26389598846435547,
+        -2.572999954223633,
+        -1.1699999570846558,
+        -2.2149999141693115
+      ],
+      "position_endpoint_error_mm": 0.030122752470985927,
+      "notification": {
+        "acknowledged": true,
+        "acknowledgement_observed": true,
+        "event_seen": true,
+        "method": "Movel_Cmd",
+        "phase": "descending_to_visual_noncontact_pregrasp",
+        "acknowledgement_raw": 0
+      },
+      "arm_error": 0,
+      "system_error": 0
+    }
+  ],
+  "final_arm": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.15487200021743774,
+      -0.40126800537109375,
+      -0.26389598846435547,
+      -2.572999954223633,
+      -1.1699999570846558,
+      -2.2149999141693115
+    ],
+    "joints": [
+      -44.89699935913086,
+      -101.83899688720703,
+      -41.48500061035156,
+      46.40999984741211,
+      46.16999816894531,
+      33.23699951171875
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      133.10300064086914,
+      28.16100311279297,
+      93.51499938964844,
+      131.5900001525879,
+      81.83000183105469,
+      326.76300048828125
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "operator_events": [
+    {
+      "event": "operator_answer",
+      "index": 1,
+      "phase": "await_visual_high_alignment",
+      "value": "m",
+      "timestamp_utc": "2026-10-21T03:11:50.959571+00:00"
+    },
+    {
+      "event": "operator_answer",
+      "index": 2,
+      "phase": "await_visual_final_descent",
+      "value": "d",
+      "timestamp_utc": "2026-10-21T03:14:42.719817+00:00"
+    },
+    {
+      "event": "operator_endpoint_verdict",
+      "value": "u",
+      "no_device_commands": true
+    }
+  ],
+  "operator_followup": {
+    "requested_offset_mm": 2.8,
+    "direction": "head_D435_live_image_left",
+    "contact": false,
+    "shell_removed": true,
+    "old_target_currently_valid": false,
+    "arm_movement_after_run_not_independently_measured": true
+  },
+  "limits": [
+    "One successful run after close/open does not prove persistent communication repair or root cause.",
+    "Endpoint feedback does not prove noncontact or full swept clearance.",
+    "No grasp/lift/bin transfer in this run.",
+    "Offset is requested task correction, not handeye recalibration or absolute accuracy acceptance."
+  ],
+  "local_scope": "original_JSON_ZIP_hash_statistics_and_source_review_only_no_project_tests_SDK_or_device_connection"
+}

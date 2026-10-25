@@ -1,0 +1,79 @@
+手指指令 >d -500
+PHASE: hand_target_in_progress
+PHASE: await_hand_command
+目标: [7999, 8001, 7999, 7136, 0, 64558] 实际: [4350, 4631, 8002, 7136, 0, 65329] 电流mA: [2, 2, 1, 77, 0, 1] 状态: [5, 5, 2, 2, 2, 5]
+上一指令: {'command': 'd -500', 'writes': 1, 'targets': [7999, 8001, 7999, 7135, 0, 64558], 'step_basis': {'channel': 3, 'counts': 7635, 'delta': -500, 'from_actual_for_opening': True, 'previous_target': 8000, 'previous_actual': 7635}, 'status5_channels_requalified_after_empty_retreat': [3], 'still_blocked_closure_channels': [0, 1, 5], 'contact_may_stop_short_of_target': False, 'holding_verified': False}
+a=拇指 b=食指 c=中指 d=无名指 e=小拇指；单字母=加弯250；如 d - =回退250。
+可输入 d +500 / a -100；单次1..1000计数。闭合候选上限30000/31500/29500/20250/65535。
+状态5历史限制通道(0拇指..4小拇指,5对掌): [0, 1, 5]
+仅空手预抓阶段：字母 -500 从实际位置退开；退行≥250、连续3组状态2后，该指可再单步加弯。
+回退以当前实际位置/目标较小者为基准，避免把未到位旧目标越加越大。
+数值不是角度/夹持力；没有整组夹持快捷键，不调整对掌。先弯无名指就输入 d。
+本阶段不要动臂或物体。x=保存本阶段并关闭SDK；q=保持退出。
+手指指令 > d -500
+PHASE: hand_target_in_progress
+PHASE: await_hand_command
+目标: [7999, 8001, 7999, 6635, 0, 64558] 实际: [4350, 4631, 7999, 6635, 0, 65329] 电流mA: [2, 2, 2, 67, 0, 1] 状态: [5, 5, 2, 2, 2, 5]
+上一指令: {'command': 'd -500', 'writes': 1, 'targets': [7999, 8001, 7999, 6636, 0, 64558], 'step_basis': {'channel': 3, 'counts': 7136, 'delta': -500, 'from_actual_for_opening': True, 'previous_target': 7136, 'previous_actual': 7136}, 'status5_channels_requalified_after_empty_retreat': [], 'still_blocked_closure_channels': [0, 1, 5], 'contact_may_stop_short_of_target': False, 'holding_verified': False}
+a=拇指 b=食指 c=中指 d=无名指 e=小拇指；单字母=加弯250；如 d - =回退250。
+可输入 d +500 / a -100；单次1..1000计数。闭合候选上限30000/31500/29500/20250/65535。
+状态5历史限制通道(0拇指..4小拇指,5对掌): [0, 1, 5]
+仅空手预抓阶段：字母 -500 从实际位置退开；退行≥250、连续3组状态2后，该指可再单步加弯。
+回退以当前实际位置/目标较小者为基准，避免把未到位旧目标越加越大。
+数值不是角度/夹持力；没有整组夹持快捷键，不调整对掌。先弯无名指就输入 d。
+本阶段不要动臂或物体。x=保存本阶段并关闭SDK；q=保持退出。
+手指指令 > d +1000
+PHASE: hand_target_in_progress
+PHASE: await_hand_command
+目标: [7999, 8001, 7999, 7635, 0, 64558] 实际: [4350, 4631, 7999, 7623, 0, 65329] 电流mA: [2, 2, 2, 0, 0, 1] 状态: [5, 5, 2, 2, 2, 5]
+上一指令: {'command': 'd +1000', 'writes': 1, 'targets': [7999, 8001, 7999, 7635, 0, 64558], 'step_basis': {'channel': 3, 'counts': 6635, 'delta': 1000, 'from_actual_for_opening': False, 'previous_target': 6635, 'previous_actual': 6626}, 'status5_channels_requalified_after_empty_retreat': [], 'still_blocked_closure_channels': [0, 1, 5], 'contact_may_stop_short_of_target': False, 'holding_verified': False}
+a=拇指 b=食指 c=中指 d=无名指 e=小拇指；单字母=加弯250；如 d - =回退250。
+可输入 d +500 / a -100；单次1..1000计数。闭合候选上限30000/31500/29500/20250/65535。
+状态5历史限制通道(0拇指..4小拇指,5对掌): [0, 1, 5]
+仅空手预抓阶段：字母 -500 从实际位置退开；退行≥250、连续3组状态2后，该指可再单步加弯。
+回退以当前实际位置/目标较小者为基准，避免把未到位旧目标越加越大。
+数值不是角度/夹持力；没有整组夹持快捷键，不调整对掌。先弯无名指就输入 d。
+本阶段不要动臂或物体。x=保存本阶段并关闭SDK；q=保持退出。
+手指指令 > d +1000 
+PHASE: hand_target_in_progress
+PHASE: await_hand_command
+目标: [7999, 8001, 7999, 8634, 0, 64558] 实际: [4350, 4631, 7999, 8655, 0, 65329] 电流mA: [2, 2, 2, 0, 0, 1] 状态: [5, 5, 2, 2, 2, 5]
+上一指令: {'command': 'd +1000', 'writes': 1, 'targets': [7999, 8001, 7999, 8635, 0, 64558], 'step_basis': {'channel': 3, 'counts': 7635, 'delta': 1000, 'from_actual_for_opening': False, 'previous_target': 7635, 'previous_actual': 7620}, 'status5_channels_requalified_after_empty_retreat': [], 'still_blocked_closure_channels': [0, 1, 3, 5], 'contact_may_stop_short_of_target': False, 'holding_verified': False}
+a=拇指 b=食指 c=中指 d=无名指 e=小拇指；单字母=加弯250；如 d - =回退250。
+可输入 d +500 / a -100；单次1..1000计数。闭合候选上限30000/31500/29500/20250/65535。
+状态5历史限制通道(0拇指..4小拇指,5对掌): [0, 1, 3, 5]
+仅空手预抓阶段：字母 -500 从实际位置退开；退行≥250、连续3组状态2后，该指可再单步加弯。
+回退以当前实际位置/目标较小者为基准，避免把未到位旧目标越加越大。
+数值不是角度/夹持力；没有整组夹持快捷键，不调整对掌。先弯无名指就输入 d。
+本阶段不要动臂或物体。x=保存本阶段并关闭SDK；q=保持退出。
+手指指令 > d +3000            
+目标: [7999, 8001, 7999, 8634, 0, 64558] 实际: [4350, 4631, 7999, 8652, 0, 65329] 电流mA: [2, 1, 2, 0, 0, 0] 状态: [5, 5, 2, 2, 2, 5]
+上一指令: {'command': 'd +3000', 'rejected_before_write': True, 'reason': 'One step must be1..1000 raw counts'}
+a=拇指 b=食指 c=中指 d=无名指 e=小拇指；单字母=加弯250；如 d - =回退250。
+可输入 d +500 / a -100；单次1..1000计数。闭合候选上限30000/31500/29500/20250/65535。
+状态5历史限制通道(0拇指..4小拇指,5对掌): [0, 1, 3, 5]
+仅空手预抓阶段：字母 -500 从实际位置退开；退行≥250、连续3组状态2后，该指可再单步加弯。
+回退以当前实际位置/目标较小者为基准，避免把未到位旧目标越加越大。
+数值不是角度/夹持力；没有整组夹持快捷键，不调整对掌。先弯无名指就输入 d。
+本阶段不要动臂或物体。x=保存本阶段并关闭SDK；q=保持退出。
+手指指令 > d +1000
+目标: [7999, 8001, 7999, 8634, 0, 64558] 实际: [4350, 4631, 7999, 8628, 0, 65329] 电流mA: [2, 2, 2, 0, 0, 0] 状态: [5, 5, 2, 2, 2, 5]
+上一指令: {'command': 'd +1000', 'rejected_before_write': True, 'reason': 'Status5 history/current: in EMPTY PRE-SHAPE use this letter -500 first; actual retreat>=250 and3 stable status2 groups required before a later explicit closure. No write sent'}
+a=拇指 b=食指 c=中指 d=无名指 e=小拇指；单字母=加弯250；如 d - =回退250。
+可输入 d +500 / a -100；单次1..1000计数。闭合候选上限30000/31500/29500/20250/65535。
+状态5历史限制通道(0拇指..4小拇指,5对掌): [0, 1, 3, 5]
+仅空手预抓阶段：字母 -500 从实际位置退开；退行≥250、连续3组状态2后，该指可再单步加弯。
+回退以当前实际位置/目标较小者为基准，避免把未到位旧目标越加越大。
+数值不是角度/夹持力；没有整组夹持快捷键，不调整对掌。先弯无名指就输入 d。
+本阶段不要动臂或物体。x=保存本阶段并关闭SDK；q=保持退出。
+手指指令 > d +1000
+目标: [7999, 8001, 7999, 8634, 0, 64558] 实际: [4350, 4631, 7999, 8652, 0, 65329] 电流mA: [2, 2, 2, 0, 0, 1] 状态: [5, 5, 2, 2, 2, 5]
+上一指令: {'command': 'd +1000', 'rejected_before_write': True, 'reason': 'Status5 history/current: in EMPTY PRE-SHAPE use this letter -500 first; actual retreat>=250 and3 stable status2 groups required before a later explicit closure. No write sent'}
+a=拇指 b=食指 c=中指 d=无名指 e=小拇指；单字母=加弯250；如 d - =回退250。
+可输入 d +500 / a -100；单次1..1000计数。闭合候选上限30000/31500/29500/20250/65535。
+状态5历史限制通道(0拇指..4小拇指,5对掌): [0, 1, 3, 5]
+仅空手预抓阶段：字母 -500 从实际位置退开；退行≥250、连续3组状态2后，该指可再单步加弯。
+回退以当前实际位置/目标较小者为基准，避免把未到位旧目标越加越大。
+数值不是角度/夹持力；没有整组夹持快捷键，不调整对掌。先弯无名指就输入 d。
+本阶段不要动臂或物体。x=保存本阶段并关闭SDK；q=保持退出。
+手指指令 > 

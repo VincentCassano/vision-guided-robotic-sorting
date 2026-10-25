@@ -1,0 +1,55 @@
+{
+  "scope": "manual source review and official register verification only; no real-device run",
+  "cause": "developer wrongly retained old per-finger trial caps as target input maxima; these were not manufacturer finger maxima",
+  "source": "https://oymotion.github.io/ROHand/ROH-Protocols/OHandModBusRTUProtocol_Gen2/",
+  "register_facts": {
+    "flex_target_addresses": [
+      1135,
+      1136,
+      1137,
+      1138,
+      1139
+    ],
+    "type": "uint16",
+    "logical_target_min": 0,
+    "logical_target_max": 65535,
+    "not_joint_angle_or_holding_force": true
+  },
+  "correction": {
+    "worker_caps": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "displayed_five_finger_caps": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "negative_inputs_clamped_to": 0,
+    "above_max_inputs_clamped_to": 65535,
+    "arbitrary_integer_absolute_input": true,
+    "removed_old_trial_caps": [
+      30000,
+      31500,
+      29500,
+      20250
+    ]
+  },
+  "retained": [
+    "no automatic initial hand pose overwrite; opposition untouched",
+    "two hand tuning phases, manual wrist/manual lift after SDK exit",
+    "exact one-attempt chosen-channel target write; actual current/config/status3/4/identity/transport/arm drift protections retained",
+    "current stuck5 is not bypassed; qualified transient5 recovery unchanged fromv4",
+    "no hardware limit/current/protection/reset writes; no force retry if controller refuses"
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_compile_AST_mock_FK_IK_executed": false,
+  "real_device_v5_accepted": false
+}

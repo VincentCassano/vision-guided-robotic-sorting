@@ -1,0 +1,75 @@
+{
+  "archive": "tmp/empty_prepare_recovery_20261023_060337_196981.zip",
+  "sha256": "8f17324b8fe40099f0ebe8cf61b7cfa728153fdfc53f0e06c1b2efd62cf379c5",
+  "bytes": 39257,
+  "members": 9,
+  "CRC_error": null,
+  "parent_worker_equal": true,
+  "deployed_file_hash_count": 386,
+  "deployed_mismatches": [],
+  "worker_return_code": 1,
+  "outcome": "blocked_no_position_write",
+  "exceptions": [
+    {
+      "error": "RuntimeError('Loaded target is not this position-grasp recipe; no release')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/empty_prepare_recovery_worker.py\", line 426, in main\n    sequence.run()\n  File \"/home/rm/test/battery-d435-preview/deployment/empty_prepare_recovery_worker.py\", line 320, in run\n    arm, initial, _ = self.loaded_preflight()\n  File \"/home/rm/test/battery-d435-preview/deployment/empty_prepare_recovery_worker.py\", line 272, in loaded_preflight\n    row = dict(hand.snapshot(), **critical)\n  File \"/home/rm/test/battery-d435-preview/deployment/vision_cycle_hand.py\", line 78, in snapshot\n    self.check_status(row)\n  File \"/home/rm/test/battery-d435-preview/deployment/empty_prepare_recovery_worker.py\", line 89, in check_status\n    loaded_bounds(self, row)\n  File \"/home/rm/test/battery-d435-preview/deployment/empty_prepare_recovery_worker.py\", line 42, in loaded_bounds\n    raise RuntimeError('Loaded target is not this position-grasp recipe; no release')\nRuntimeError: Loaded target is not this position-grasp recipe; no release\n"
+    }
+  ],
+  "arm_writes": 0,
+  "arm_stop_writes": 0,
+  "hand_writes": 0,
+  "configuration_writes": 0,
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      2
+    ],
+    "current": [
+      2,
+      2,
+      2,
+      0,
+      2,
+      30
+    ],
+    "positions": [
+      28750,
+      31500,
+      27499,
+      20249,
+      65535,
+      64558
+    ],
+    "targets": [
+      28750,
+      31500,
+      27499,
+      20249,
+      65535,
+      64558
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 722908.127792529,
+    "finished_monotonic": 722910.237510365,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "cleanup_errors": [],
+  "automatic_retry": false,
+  "cause": "Our v1 wrapper reused an outdated worker requiring legacy fixed grasp recipes, thumb CAP15000 and little/opposition65535; current dynamic-tuned targets are incompatible even though four-channel opening should anchor current state. No actuator command was issued.",
+  "next_change": "isolated current-state empty opening worker; exact one1135x4 to8000, no arm or untouched channel writes; retain current/identity/status/arm guards; relative actual-start withdrawal envelope instead of old grasp CAP/recipe."
+}

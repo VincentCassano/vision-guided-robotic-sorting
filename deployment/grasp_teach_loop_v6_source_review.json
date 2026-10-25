@@ -1,0 +1,33 @@
+{
+  "scope": "operator statement and manual source review only, no current raw runtime trace",
+  "operator_confirmed": "terminal exits after manually dragging arm, not a report of actual arm stop",
+  "old_source_paths": [
+    "grasp_teach_loop_v5_worker.Current.current_guard raises on all arm changes",
+    "inherited school_operational_pose_hand.CycleHand.guard also raises and disables on any arm drift"
+  ],
+  "changes": [
+    "isolated v6 hand.guard routes through idle-aware current_guard",
+    "w in idle finger prompt preserves current hand targets, sends no actuator command, closes SDK, then parent waits for manual wrist teaching",
+    "idle pose change yields a typed ManualWristHandoff instead of generic fault; parent remains running, drains existing input thread with Enter, never sends that stale input",
+    "parent waits actual child return/cleanup before SDK-exited message; s explicitly starts new child/fresh current arm state after manual movement",
+    "resume source SHA and completed healthy pause/cleanup/current hand targets/config verified; blocked finger channels carried forward, not reset",
+    "SDK sockets and old capability retired; no previous arm pose, fault last_arm_state or failed target reused as motion reference",
+    "only tuning idle state can yield; active target/startup/protection3/4/overcurrent/transport/identity/config errors remain errors and are not cleared",
+    "manual pause path skips inherited fault latch only for the explicit idle-yield exception, not actual hardware failures",
+    "new resume pose marked separately from noncontact pregrasp reference during grip; actual hand success does not certify visual rebind"
+  ],
+  "invariants": {
+    "logical_five_finger_range": [
+      0,
+      65535
+    ],
+    "automatic_arm_writes": false,
+    "arm_Stop_writes": false,
+    "configuration_or_reset_writes": false,
+    "automatic_resume": false
+  },
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_compile_AST_mock_FK_IK_executed": false,
+  "real_device_v6_accepted": false
+}

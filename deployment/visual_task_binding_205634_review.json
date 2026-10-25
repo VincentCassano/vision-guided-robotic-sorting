@@ -1,0 +1,895 @@
+{
+  "scope": "Actual v3 raw archive, recorded fields/images and source review only; no new image fitting or model execution",
+  "source_archive": "tmp/visual_task_binding_20261020_205634_341866.zip",
+  "sha256": "b4bd79efac9cd8352262b2312e0a0d4aeaa1742793d3ea76843831720fea7c37",
+  "bytes": 24496771,
+  "members": 28,
+  "internal_hashes_verified": 27,
+  "runtime_source_hashes_verified": {
+    "run_visual_task_binding_v3.py": "7bf11ac137a1d9d6f8bf4ee0b3414ac0ffad66c09c540dd4f860cdcaf07408a9",
+    "visual_task_anchor.py": "bc8aa09de86fd53cef6b0898145c9349562315f53fb935c1e63aaa6cf0ff2545",
+    "known_cylinder_geometry_axis.py": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c",
+    "known_cylinder_capture.py": "2d55d143833affd9e07e9ce0250c9f71eb4f5180334346708b6f3012f3da6772",
+    "known_cylinder_records.py": "40765392c0525ac1cde8c6dc18e3c504fcbfd852e11fd22d1ae1ce5a831a3cf6"
+  },
+  "frame_RGB_hashes_verified": 16,
+  "reference_anchor_bytes_identical_to201634": true,
+  "result": {
+    "delivery_version": "visual-task-binding-v3-20261020",
+    "outcome": "reference_task_binding_saved",
+    "saved_observations": 2,
+    "target_candidates": 0,
+    "robot_SDK_loaded": false,
+    "arm_connections": 0,
+    "arm_writes": 0,
+    "hand_writes": 0,
+    "controller_configuration_writes": 0,
+    "camera_option_writes": 0,
+    "error": null,
+    "cleanup_errors": [],
+    "execution_ready": false
+  },
+  "captures": [
+    {
+      "observation": 1,
+      "summary": {
+        "scope": "live_repeatability_only_not_absolute_accuracy",
+        "elapsed_seconds": 3.1951244159718044,
+        "frame_count": 8,
+        "rejected_frame_indices": [],
+        "all_frames_retained": true,
+        "maximum_repeatability_mm": 3.0,
+        "repeatability_threshold_source": "new_development_sampling_default",
+        "execution_ready": false,
+        "top_center_world_m": [
+          0.11333433861794784,
+          -0.5493591413248848,
+          -0.30398502385139065
+        ],
+        "top_center_repeatability_max_mm": 7.666126219342296,
+        "top_center_repeatability_p95_mm": 6.093505527875047,
+        "top_center_all_inside_FIT_support": false,
+        "geometric_body_center_world_m": [
+          0.11265893961292309,
+          -0.5477605527681122,
+          -0.3529525928947897
+        ],
+        "geometric_body_center_repeatability_max_mm": 5.87044227205358,
+        "geometric_body_center_repeatability_p95_mm": 4.666831924139966,
+        "geometric_body_center_all_inside_FIT_support": false,
+        "lower_half_inferred": true,
+        "frame_quality_pass": false,
+        "burst_qualified": false,
+        "completion_wall_time_known": true,
+        "reject_reasons": [
+          "top_center_repeatability_exceeds_3mm",
+          "geometric_body_center_repeatability_exceeds_3mm"
+        ]
+      },
+      "locked_measurement_bbox": [
+        326.0,
+        86.0,
+        108.0,
+        144.0
+      ],
+      "body_width_range_px": [
+        74.81137299108752,
+        74.81617112752741
+      ],
+      "ellipse_minor_range_px": [
+        47.01432006567372,
+        50.607751741273496
+      ],
+      "frames": [
+        {
+          "frame_number": 797,
+          "timestamp_ms": 1792501027773.641,
+          "raw_detector_bbox": [
+            326.0,
+            87.0,
+            108.0,
+            143.0
+          ],
+          "measurement_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11339790723459502,
+            -0.5495165026427943,
+            -0.3040204992082736
+          ],
+          "body_width_px": 74.81399052316426,
+          "ellipse": {
+            "center_px": [
+              365.6093556097647,
+              108.92610977009406
+            ],
+            "diameters_px": [
+              74.43960747781239,
+              47.01432006567372
+            ],
+            "angle_deg": 169.00725321708236
+          },
+          "top_center_camera_m": [
+            -0.18270126449223617,
+            -0.16690325064677838,
+            0.5743324287391766
+          ],
+          "axis_from_top_into_body_camera": [
+            8.724629875435053e-05,
+            0.5595538243885885,
+            0.8287940093896601
+          ],
+          "arc_p90_px": 0.6103986822735727,
+          "RGB_file": "burst_001_frame_001.png",
+          "RGB_sha256": "11ccc31023cc32b04da6d313987b83eb3fb3bf35d9312004051ade71a67bbd5f"
+        },
+        {
+          "frame_number": 809,
+          "timestamp_ms": 1792501028173.9243,
+          "raw_detector_bbox": [
+            328.0,
+            85.0,
+            106.0,
+            145.0
+          ],
+          "measurement_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11335748757120893,
+            -0.5494236057135673,
+            -0.3040310430117346
+          ],
+          "body_width_px": 74.8121989929415,
+          "ellipse": {
+            "center_px": [
+              365.6492264368847,
+              109.04206389323915
+            ],
+            "diameters_px": [
+              74.45656253964844,
+              47.22054452748334
+            ],
+            "angle_deg": 169.148374736164
+          },
+          "top_center_camera_m": [
+            -0.1826621839009577,
+            -0.16681813318656175,
+            0.5742923976788477
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.002373579696957626,
+            0.5573392768984634,
+            0.8302814562217563
+          ],
+          "arc_p90_px": 0.7092299805338236,
+          "RGB_file": "burst_001_frame_002.png",
+          "RGB_sha256": "35fe35ad9f412fbc4e4911717624c508e484f7a82ee07feec8372d539963b99c"
+        },
+        {
+          "frame_number": 821,
+          "timestamp_ms": 1792501028574.2073,
+          "raw_detector_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "measurement_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.1122439206148274,
+            -0.5469351690266896,
+            -0.30228442000575245
+          ],
+          "body_width_px": 74.81288309844653,
+          "ellipse": {
+            "center_px": [
+              365.98680167993246,
+              109.67144931909598
+            ],
+            "diameters_px": [
+              74.88663106707189,
+              48.76033866643391
+            ],
+            "angle_deg": 169.98106358754836
+          },
+          "top_center_camera_m": [
+            -0.18155418177601518,
+            -0.16561210856089012,
+            0.5714993927863767
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.016983313180318534,
+            0.5423274543299599,
+            0.8399955353175425
+          ],
+          "arc_p90_px": 0.6376084149921013,
+          "RGB_file": "burst_001_frame_003.png",
+          "RGB_sha256": "a03026b640e2e2f493576aa66a77af463e8282335e0b2f3f087d99fb205d1ae7"
+        },
+        {
+          "frame_number": 833,
+          "timestamp_ms": 1792501028974.4895,
+          "raw_detector_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "measurement_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11331699534483862,
+            -0.5493256253641771,
+            -0.3039900334669941
+          ],
+          "body_width_px": 74.81137299108752,
+          "ellipse": {
+            "center_px": [
+              365.66875052300156,
+              109.10037366711998
+            ],
+            "diameters_px": [
+              74.46849505218658,
+              47.401656063713524
+            ],
+            "angle_deg": 169.17545591832152
+          },
+          "top_center_camera_m": [
+            -0.1826223248698079,
+            -0.16675600625759185,
+            0.5742059508492039
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.0033228935557759864,
+            0.5551083043667226,
+            0.83177144024156
+          ],
+          "arc_p90_px": 0.7287990973238401,
+          "RGB_file": "burst_001_frame_004.png",
+          "RGB_sha256": "ea70a613df8f7c89f7e46cc067e0f5453e97406403c3383bcfd84224de681792"
+        },
+        {
+          "frame_number": 845,
+          "timestamp_ms": 1792501029374.7742,
+          "raw_detector_bbox": [
+            325.0,
+            87.0,
+            109.0,
+            143.0
+          ],
+          "measurement_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11087505328186921,
+            -0.5434242806698181,
+            -0.2998018628633845
+          ],
+          "body_width_px": 74.8119440527372,
+          "ellipse": {
+            "center_px": [
+              366.15831727220166,
+              110.5393561113691
+            ],
+            "diameters_px": [
+              75.37148799899668,
+              50.607751741273496
+            ],
+            "angle_deg": 169.78977711897969
+          },
+          "top_center_camera_m": [
+            -0.18019285397438234,
+            -0.16392400010015054,
+            0.567542082938
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.01967708423122157,
+            0.5210594143819111,
+            0.8532935597085785
+          ],
+          "arc_p90_px": 0.5397274070754534,
+          "RGB_file": "burst_001_frame_005.png",
+          "RGB_sha256": "a582866f291df9fa9267b696bdc87f03df049b9e25b82daa1bbc241c9629d066"
+        },
+        {
+          "frame_number": 857,
+          "timestamp_ms": 1792501029775.0652,
+          "raw_detector_bbox": [
+            326.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "measurement_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11335168189105706,
+            -0.5493926572855926,
+            -0.3039894600148045
+          ],
+          "body_width_px": 74.81317528845655,
+          "ellipse": {
+            "center_px": [
+              365.63305965786265,
+              109.02534288906489
+            ],
+            "diameters_px": [
+              74.46144144533676,
+              47.19464367249032
+            ],
+            "angle_deg": 169.1250351899067
+          },
+          "top_center_camera_m": [
+            -0.1826561492074917,
+            -0.1668138019933677,
+            0.5742407693921231
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.001983660434424865,
+            0.5576623434463618,
+            0.8300655249997995
+          ],
+          "arc_p90_px": 0.6155151409868935,
+          "RGB_file": "burst_001_frame_006.png",
+          "RGB_sha256": "cdd331b27bf9c27cd0ed1c7c64169bc7ed0f6de8141dcd56c97dd6d7986cf81b"
+        },
+        {
+          "frame_number": 869,
+          "timestamp_ms": 1792501030175.3564,
+          "raw_detector_bbox": [
+            326.0,
+            87.0,
+            108.0,
+            144.0
+          ],
+          "measurement_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11239752912224628,
+            -0.5468866997818906,
+            -0.3022309232152708
+          ],
+          "body_width_px": 74.8129016582588,
+          "ellipse": {
+            "center_px": [
+              365.7216013908587,
+              109.65411207007227
+            ],
+            "diameters_px": [
+              74.80587373014193,
+              48.644185679604476
+            ],
+            "angle_deg": 169.0251747239743
+          },
+          "top_center_camera_m": [
+            -0.18170757417053637,
+            -0.16560219857927239,
+            0.5714274253395548
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.0051054872120578874,
+            0.5411760742899973,
+            0.8408938046010298
+          ],
+          "arc_p90_px": 0.639677080909248,
+          "RGB_file": "burst_001_frame_007.png",
+          "RGB_sha256": "96e07b01277077a4a775e31c848dd313fc0531d2fdc95bc880e5555f9e707890"
+        },
+        {
+          "frame_number": 881,
+          "timestamp_ms": 1792501030575.6453,
+          "raw_detector_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "measurement_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11335795730718708,
+            -0.5494333970515607,
+            -0.3039805876879768
+          ],
+          "body_width_px": 74.81617112752741,
+          "ellipse": {
+            "center_px": [
+              365.6313669762643,
+              108.96962805765565
+            ],
+            "diameters_px": [
+              74.4582752908548,
+              47.120533543744074
+            ],
+            "angle_deg": 169.10595884095727
+          },
+          "top_center_camera_m": [
+            -0.1826617761044466,
+            -0.16685316670457553,
+            0.5742547902731318
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.0014823261485606028,
+            0.5585497470442662,
+            0.8294696997395237
+          ],
+          "arc_p90_px": 0.6490959312829148,
+          "RGB_file": "burst_001_frame_008.png",
+          "RGB_sha256": "11eefba99b51116ddf67c967de5a24d1d555d1abd133f60305983b3cc69e6284"
+        }
+      ]
+    },
+    {
+      "observation": 2,
+      "summary": {
+        "scope": "live_repeatability_only_not_absolute_accuracy",
+        "elapsed_seconds": 3.1840001519885845,
+        "frame_count": 8,
+        "rejected_frame_indices": [],
+        "all_frames_retained": true,
+        "maximum_repeatability_mm": 3.0,
+        "repeatability_threshold_source": "new_development_sampling_default",
+        "execution_ready": false,
+        "top_center_world_m": [
+          0.11330488072789556,
+          -0.5492938561016554,
+          -0.3039763699400353
+        ],
+        "top_center_repeatability_max_mm": 3.1470528106669686,
+        "top_center_repeatability_p95_mm": 3.0819891507314603,
+        "top_center_all_inside_FIT_support": false,
+        "geometric_body_center_world_m": [
+          0.11273970891513006,
+          -0.5478378751940322,
+          -0.3529530615546256
+        ],
+        "geometric_body_center_repeatability_max_mm": 2.589812080355708,
+        "geometric_body_center_repeatability_p95_mm": 2.5238046906541953,
+        "geometric_body_center_all_inside_FIT_support": false,
+        "lower_half_inferred": true,
+        "frame_quality_pass": false,
+        "burst_qualified": false,
+        "completion_wall_time_known": true,
+        "reject_reasons": [
+          "top_center_repeatability_exceeds_3mm"
+        ]
+      },
+      "locked_measurement_bbox": [
+        325.0,
+        86.0,
+        109.0,
+        144.0
+      ],
+      "body_width_range_px": [
+        74.8100461943449,
+        74.81564619525292
+      ],
+      "ellipse_minor_range_px": [
+        47.16406799202481,
+        48.82530963989076
+      ],
+      "frames": [
+        {
+          "frame_number": 1268,
+          "timestamp_ms": 1792501043484.7725,
+          "raw_detector_bbox": [
+            326.0,
+            87.0,
+            107.0,
+            143.0
+          ],
+          "measurement_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11333093093710885,
+            -0.5493613033602611,
+            -0.30400620622798624
+          ],
+          "body_width_px": 74.81059904269702,
+          "ellipse": {
+            "center_px": [
+              365.6632038007074,
+              109.08065245300764
+            ],
+            "diameters_px": [
+              74.46541750997956,
+              47.352313412005664
+            ],
+            "angle_deg": 169.18173160357472
+          },
+          "top_center_camera_m": [
+            -0.1826360485692729,
+            -0.16677795713122842,
+            0.574238485408586
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.0032344089378284866,
+            0.5557469290524486,
+            0.8313452287994413
+          ],
+          "arc_p90_px": 0.72359126353874,
+          "RGB_file": "burst_002_frame_001.png",
+          "RGB_sha256": "4cf126eb9d1642951d183548858930c180856badccf65e139d8dfc01de302677"
+        },
+        {
+          "frame_number": 1280,
+          "timestamp_ms": 1792501043885.0593,
+          "raw_detector_bbox": [
+            326.0,
+            86.0,
+            107.0,
+            144.0
+          ],
+          "measurement_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11328661593321611,
+            -0.5492309788883474,
+            -0.3039305682803928
+          ],
+          "body_width_px": 74.81460321382022,
+          "ellipse": {
+            "center_px": [
+              365.66694741196574,
+              109.13223581919274
+            ],
+            "diameters_px": [
+              74.4747060360155,
+              47.498246156389555
+            ],
+            "angle_deg": 169.1152487354054
+          },
+          "top_center_camera_m": [
+            -0.18259225889384273,
+            -0.16670666916907326,
+            0.5741055573173365
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.00290259553398909,
+            0.5537449032825622,
+            0.8326813057993749
+          ],
+          "arc_p90_px": 0.6733120276742497,
+          "RGB_file": "burst_002_frame_002.png",
+          "RGB_sha256": "341e06ce596c7d3b87755108e4f63e2ecab5e4307a4e86acc16ce0295d3b806d"
+        },
+        {
+          "frame_number": 1292,
+          "timestamp_ms": 1792501044285.346,
+          "raw_detector_bbox": [
+            326.0,
+            87.0,
+            109.0,
+            143.0
+          ],
+          "measurement_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11338826825840893,
+            -0.5495086415705029,
+            -0.30406494508263127
+          ],
+          "body_width_px": 74.8100461943449,
+          "ellipse": {
+            "center_px": [
+              365.63653138781245,
+              108.98933796944405
+            ],
+            "diameters_px": [
+              74.45890776036737,
+              47.16406799202481
+            ],
+            "angle_deg": 169.26255293846697
+          },
+          "top_center_camera_m": [
+            -0.1826923906418493,
+            -0.1668728658687673,
+            0.5743660168637361
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.0035985950612792794,
+            0.5583390522143474,
+            0.8296050583777616
+          ],
+          "arc_p90_px": 0.7284272687485895,
+          "RGB_file": "burst_002_frame_003.png",
+          "RGB_sha256": "1239585dbc6ff6aded861f5dcfeff69953dd0df64238204dc0d60142a0bb02fd"
+        },
+        {
+          "frame_number": 1304,
+          "timestamp_ms": 1792501044685.6323,
+          "raw_detector_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "measurement_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11331131605703702,
+            -0.5493080988261841,
+            -0.3039881788532154
+          ],
+          "body_width_px": 74.81320607068885,
+          "ellipse": {
+            "center_px": [
+              365.67212657734746,
+              109.11733472051415
+            ],
+            "diameters_px": [
+              74.4693512896063,
+              47.48405644096158
+            ],
+            "angle_deg": 169.17898051468364
+          },
+          "top_center_camera_m": [
+            -0.18261684042611256,
+            -0.16674201944029995,
+            0.5741951266515147
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.0036552328318626703,
+            0.5540245127419302,
+            0.8324923294265311
+          ],
+          "arc_p90_px": 0.7386246677330419,
+          "RGB_file": "burst_002_frame_004.png",
+          "RGB_sha256": "6ca28d4f048c2ef55201d5e5d2750fab7ba6402cca7181ca79aefe8b3c0668f0"
+        },
+        {
+          "frame_number": 1316,
+          "timestamp_ms": 1792501045085.9187,
+          "raw_detector_bbox": [
+            325.0,
+            86.0,
+            108.0,
+            145.0
+          ],
+          "measurement_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11221983050969721,
+            -0.5468918565611959,
+            -0.30225677532945205
+          ],
+          "body_width_px": 74.81216768524396,
+          "ellipse": {
+            "center_px": [
+              366.0001477896911,
+              109.685877982854
+            ],
+            "diameters_px": [
+              74.90112486358079,
+              48.82530963989076
+            ],
+            "angle_deg": 170.073478249388
+          },
+          "top_center_camera_m": [
+            -0.18153023060328177,
+            -0.16558956972667493,
+            0.5714531448325084
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.01830320129627441,
+            0.5417500948126367,
+            0.8403403046342638
+          ],
+          "arc_p90_px": 0.6440179677101234,
+          "RGB_file": "burst_002_frame_005.png",
+          "RGB_sha256": "05334db97b653cf182dba35fbdf32d3d3c70fb5ce48a74d02a07be2747e57839"
+        },
+        {
+          "frame_number": 1327,
+          "timestamp_ms": 1792501045452.848,
+          "raw_detector_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            145.0
+          ],
+          "measurement_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.1132984453987541,
+            -0.5492796133771267,
+            -0.30396456102685515
+          ],
+          "body_width_px": 74.81564619525292,
+          "ellipse": {
+            "center_px": [
+              365.67399852299235,
+              109.12005721417424
+            ],
+            "diameters_px": [
+              74.47905061021633,
+              47.516436583594114
+            ],
+            "angle_deg": 169.23419390781194
+          },
+          "top_center_camera_m": [
+            -0.18260397935590544,
+            -0.16673013091221311,
+            0.574160081935113
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.0044354672850567545,
+            0.5537957618932388,
+            0.8326407272882167
+          ],
+          "arc_p90_px": 0.6388256261825802,
+          "RGB_file": "burst_002_frame_006.png",
+          "RGB_sha256": "7e53f0b6b572b17996e3c59943735b80629a4d5a0568b764a50a656bd33f0750"
+        },
+        {
+          "frame_number": 1339,
+          "timestamp_ms": 1792501045853.1345,
+          "raw_detector_bbox": [
+            326.0,
+            86.0,
+            108.0,
+            145.0
+          ],
+          "measurement_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11246362967199706,
+            -0.5470353013837181,
+            -0.302255999081694
+          ],
+          "body_width_px": 74.81312574602558,
+          "ellipse": {
+            "center_px": [
+              365.6732908005501,
+              109.51950795190598
+            ],
+            "diameters_px": [
+              74.76776465901736,
+              48.3057658074126
+            ],
+            "angle_deg": 168.7324265386168
+          },
+          "top_center_camera_m": [
+            -0.18177215895932353,
+            -0.16571617002345254,
+            0.5715270236969143
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.00040136826796425477,
+            0.5447265401951554,
+            0.8386136388770035
+          ],
+          "arc_p90_px": 0.6153028756567274,
+          "RGB_file": "burst_002_frame_007.png",
+          "RGB_sha256": "5ac0c8d75a0b0d33526119d3121b84be4c5f1def5a16667cf7520c31f8fbd5c9"
+        },
+        {
+          "frame_number": 1352,
+          "timestamp_ms": 1792501046286.7783,
+          "raw_detector_bbox": [
+            326.0,
+            87.0,
+            108.0,
+            143.0
+          ],
+          "measurement_bbox": [
+            325.0,
+            86.0,
+            109.0,
+            144.0
+          ],
+          "top_center_world_m": [
+            0.11331459167470125,
+            -0.5493501698401582,
+            -0.3040043647131699
+          ],
+          "body_width_px": 74.81300544918061,
+          "ellipse": {
+            "center_px": [
+              365.6825169965013,
+              109.09119722324657
+            ],
+            "diameters_px": [
+              74.48246668861273,
+              47.37278459837354
+            ],
+            "angle_deg": 169.34767000590355
+          },
+          "top_center_camera_m": [
+            -0.1826198256063532,
+            -0.16676918631390442,
+            0.5742311229239306
+          ],
+          "axis_from_top_into_body_camera": [
+            -0.005336726989956076,
+            0.5559951063902491,
+            0.8311684311949836
+          ],
+          "arc_p90_px": 0.7012757206352553,
+          "RGB_file": "burst_002_frame_008.png",
+          "RGB_sha256": "693280e81e8e726cb2170aa12e8c897d7a089467ab16792dd50b2c6dbc0ebf24"
+        }
+      ]
+    }
+  ],
+  "diagnosis": "Fixed ROI did operate. Segmented transverse width is nearly constant while the upper-arc inferred ellipse minor axis and free circle pose vary. Evidence supports sensitivity in partial-rim/free3D reconstruction as a principal software issue, not a measured physical arm displacement; detector boxes alone cannot explain it.",
+  "new_method": {
+    "name": "live_camera_ray_intersection_with_equal_top_height_plane",
+    "assumption_source": "User previously confirmed same measured shell fully seats upright in another complete recess at equal exposed height",
+    "original_reference_point_preserved": true,
+    "normal_source": "all recorded accepted reference cylinder axes arithmetic mean; estimated, not surveyed",
+    "original_free3D_verdict_preserved": true,
+    "new_plane_repeatability_gate_mm": 3,
+    "new_gate_not_equivalent_to_free3D_validation": true,
+    "slot_lookup": false,
+    "independent_depth_measured": false,
+    "proposed_not_field_accepted": true
+  },
+  "transfer_note": "First open occurred while file was still growing; initial BadZipFile was transient incomplete copy. Final complete24,496,771-byte ZIP verifies; not classed as a damaged source archive.",
+  "reviewer_SDK_or_device_access": false,
+  "offline_project_tests_or_saved_image_fit_run": false,
+  "new_method_executed_locally": false,
+  "absolute_position_or_full_visual_grasp_accepted": false,
+  "execution_ready": false,
+  "motion_authorized": false
+}

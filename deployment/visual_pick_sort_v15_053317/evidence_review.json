@@ -1,0 +1,130 @@
+{
+  "source_archive": "visual_pick_sort_v15_20261024_053317_174649.zip",
+  "source_archive_sha256": "274a12d8cb76b7934ba58b0b2755186839b47adc16b4407ab474091ac95022ae",
+  "bytes": 28220806,
+  "root_CRC_and18_hashes_pass": true,
+  "nested_capture_CRC_and19_hashes_each_pass": true,
+  "cycle_001": {
+    "scope": "in_recess_new_grouped_postdescent_sequence",
+    "complete_visual_pick_sort_accepted": true,
+    "operator_result": "y",
+    "arm_writes": 7,
+    "hand_group_writes": 3,
+    "stop_writes": 0,
+    "SDK_cleanup_finished": true,
+    "exceptions": [],
+    "hand_groups": [
+      {
+        "label": "empty_travel_open",
+        "num": 5,
+        "attempted": false,
+        "acknowledged": false
+      },
+      {
+        "label": "prepare_after_descent",
+        "num": 6,
+        "attempted": true,
+        "acknowledged": true
+      },
+      {
+        "label": "grip_together",
+        "num": 3,
+        "attempted": true,
+        "acknowledged": true
+      },
+      {
+        "label": "normal_bin_open",
+        "num": 5,
+        "attempted": true,
+        "acknowledged": true
+      }
+    ],
+    "actual_open_during_empty_arm_motion_verified": false,
+    "reason": "Both starts already had zero flex targets; empty OPEN5 was skipped"
+  },
+  "cycle_002": {
+    "scope": "shell_on_acrylic_top",
+    "actual_outcome": "worker_not_completed_no_automatic_retry",
+    "failed_phase": "grouped_grip_then_immediate180mm_lift",
+    "arm_writes": 3,
+    "hand_group_writes": 2,
+    "stop_writes": 0,
+    "SDK_cleanup_finished": true,
+    "last_hand_protection": {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "current": [
+        530,
+        4,
+        447,
+        64,
+        7,
+        10
+      ],
+      "monotonic": 807779.191596008
+    },
+    "failed_channel": 1,
+    "failed_finger": "index",
+    "reported_status": 3,
+    "status3_meaning": "current protection stop",
+    "normal_stuck_status5_not_the_trigger": true,
+    "arm_error_at_descent": 0,
+    "system_error_at_descent": 0,
+    "grip_ACK_and_target_readback_confirmed": true,
+    "loaded_lift_writes": 0,
+    "transfer_writes": 0,
+    "automatic_release_writes": 0,
+    "protective_event_not_disproved_by_later4mA_index_read": true
+  },
+  "visual_captures": [
+    {
+      "plane_top_m": [
+        0.08697124343573039,
+        -0.574344978125674,
+        -0.30438535387561894
+      ],
+      "plane_repeatability_mm": 0.6912202226997498,
+      "free3d_repeatability_mm": 3.362302148739484,
+      "free3d_burst_qualified": false,
+      "all_original_RGB_frames_retained": true,
+      "absolute_accuracy_accepted": false
+    },
+    {
+      "plane_top_m": [
+        0.08763594310481672,
+        -0.5241163030009927,
+        -0.30317503740557317
+      ],
+      "plane_repeatability_mm": 0.32007139842301224,
+      "free3d_repeatability_mm": 1.8677107897160983,
+      "free3d_burst_qualified": true,
+      "all_original_RGB_frames_retained": true,
+      "absolute_accuracy_accepted": false
+    }
+  ],
+  "operator_confirmed_shell_supported_by_board_top_and_still_held": true,
+  "measured_board_top_above_recess_bottom_mm": 9.6,
+  "measurement_source": "operator vernier caliper",
+  "established_localization_gap": "v15 reused the same recess height plane for a different support height",
+  "exact_physical_cause_of_index_overcurrent_proven": false,
+  "manufacturer_protocol": "https://oymotion.github.io/ROHand/ROH-Protocols/OHandModBusRTUProtocol_Gen2/",
+  "v16_board_top_and_supported_open_actual_accepted": false,
+  "automatic_unknown_height_localization_complete": false,
+  "no_project_tests_or_imports_or_image_replay_or_FK_IK_or_SDK_executed": true
+}

@@ -1,0 +1,33 @@
+{
+  "scope": "manual source reading and original evidence/bytes only; no source execution",
+  "source_raw_sha256": "f493a23226cc4e532fb7f622150530e30921adb64864e2a968c6bcc7052f36a3",
+  "supported_source_sha256": "2eed977c200d1403e7edd6cbc6196717f2f51f55a46721977f4241f29d8a1c80",
+  "healthy_visual_sha256": "95986ac0c5abcda8479d47e35ccf434c28242075152264c989996baf1bae8644",
+  "manual_review_items": [
+    "Exact original fault ZIP, internal hashes, parent/worker and342 deployed sources; nested successful visual endpoint only",
+    "Current arm full fresh match keeps0.08degree/0.5mm/0.005rad; fault last state never selected",
+    "Readonly supported startup permits recorded ring3 solely for withdrawal, no motion readiness claim",
+    "Only old ring3 permitted, disappearance retained across TCP replacement, reappearance/new channel3/4/overcurrent/diagnostic fails",
+    "One exact1138 target20000, strictly lower than fresh actual and target, all other five channels unchanged, no retry",
+    "One explicit index14g authorizes support withdrawal and future normal cycle, not fabricated feedback or second g",
+    "Restore requires three new full groups allstatus2, target2/actual150, quiet span1second and critical config",
+    "New normal token only after those healthy current groups; no generic fault resume or protection reset",
+    "Normal VisualHand takes over without status3 exception, no four-finger reclose, no loaded read-pacing probe or cross-run100ms qualification",
+    "Drop/continuous permission accepts explicit14g only with supported scope flag; retains final endpoint and original guards",
+    "v7connected same-type1/1/0 r0 reused unchanged; no intermediate software endpoint wait, actual behavior pending",
+    "Global normal_drop_values import retained; normal drop writes five flex, not opposition",
+    "Parent extracts nested healthy source automatically and creates one result ZIP with input fault/original vision"
+  ],
+  "unknowns": [
+    "single retreat restores health or not",
+    "ring20000 real holding capacity",
+    "actual pickup and actual sorted drop",
+    "controller connected event form and continuity",
+    "full swept geometry and six-dimensional calibration/TCP/RGBD"
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests": false,
+  "compile_AST_mock_FK_IK": false,
+  "v8_actual_device_accepted": false
+}

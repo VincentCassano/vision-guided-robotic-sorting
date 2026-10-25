@@ -1,0 +1,14 @@
+{
+  "scope": "only_the_single_measured_black_test_shell",
+  "class_id": 0,
+  "diameter_mm": 45.8,
+  "diameter_reported_variation_mm": 0.1,
+  "total_height_mm": 98.0,
+  "source": "user_measured_2026-10-20",
+  "exposed_height_mm": null,
+  "visible_height_source": "image_silhouette_estimate_bounded_by_total_height_not_assumed_98mm",
+  "top_rim_is_outer_diameter_assumption_verified": false,
+  "geometry_method_field_accepted": false,
+  "red_white_or_other_black_shell_dimensions_known": false,
+  "execution_ready": false
+}

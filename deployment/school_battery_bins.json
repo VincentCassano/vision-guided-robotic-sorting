@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "source": {
+    "scripts/ohandtest.py": {
+      "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\ohandtest.py",
+      "sha256": "19a2aff810356e8a195e14eb37096b87a0536986f636435d5ff00af2c847b081",
+      "packaged_source": "deployment/school_bin_reference/ohandtest.py"
+    },
+    "scripts/arm_controller.py": {
+      "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\arm_controller.py",
+      "sha256": "6e96ab90d48b0cc0146a4f32f6bbfc7b7402467b6413077d6107e3947754dbc7",
+      "packaged_source": "deployment/school_bin_reference/arm_controller.py"
+    },
+    "scripts/hand_controller.py": {
+      "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\hand_controller.py",
+      "sha256": "4c7137705041a373ca0c169c8791bbd3faa5acd551e2daeda7ba8118caf471f3",
+      "packaged_source": "deployment/school_bin_reference/hand_controller.py"
+    },
+    "launch/grasp_demo_battery.launch": {
+      "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\launch\\grasp_demo_battery.launch",
+      "sha256": "11925d0c900b0fa9ad64a7a9ee629f7498009184dd5c5620fdb7bc308fea463d",
+      "packaged_source": "deployment/school_bin_reference/grasp_demo_battery.launch"
+    }
+  },
+  "robot_ip": "169.254.128.18",
+  "arm": "left",
+  "unit": "metres_radians",
+  "frame_names": {
+    "work": "World",
+    "tool": "Arm_Tip"
+  },
+  "source_bin_identity": "human_user_confirmed_school_bins_are_current_bins",
+  "source_bin_identity_is_not_new_path_acceptance": true,
+  "command_speed_percent": 10,
+  "loaded_lift_mm": 140,
+  "loaded_lift_source": "school from_pos=grasp+80mm; quit_pos=from_pos+60mm",
+  "bin_release_target": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    65535
+  ],
+  "bin_release_difference": "open_five_flex_preserve_opposition_instead_of_school_all_six_zero",
+  "transit": [
+    {
+      "phase": "school_high_transit",
+      "source": "HIGHT_POS",
+      "pose": [
+        0.38515201210975647,
+        -0.4414309859275818,
+        -0.023086000233888626,
+        -2.4130001068115234,
+        -1.3769999742507935,
+        -2.63100004196167
+      ]
+    },
+    {
+      "phase": "school_restart_transit",
+      "source": "SCAN_BATTERY_RESTART_POS",
+      "pose": [
+        0.5446869730949402,
+        -0.3363009989261627,
+        0.14712999761104584,
+        -1.9700000286102295,
+        -0.4860000014305115,
+        -2.4179999828338623
+      ]
+    }
+  ],
+  "bins": {
+    "black": {
+      "phase": "school_black_drop",
+      "source": "RECYCLE_AREA",
+      "pose": [
+        0.45028701424598694,
+        -0.418067991733551,
+        -0.14466699957847595,
+        -2.5940001010894775,
+        -1.2289999723434448,
+        -1.7489999532699585
+      ],
+      "logical_bin": "black_bin"
+    },
+    "red": {
+      "phase": "school_red_drop",
+      "source": "RECYCLE_RED_AREA",
+      "pose": [
+        0.5475559830665588,
+        -0.24783800542354584,
+        -0.17733100056648254,
+        -2.7190001010894775,
+        -1.2419999837875366,
+        -1.5700000524520874
+      ],
+      "logical_bin": "red_white_bin"
+    },
+    "white": {
+      "phase": "school_white_drop",
+      "source": "RECYCLE_WHITE_AREA",
+      "pose": [
+        0.47132399678230286,
+        -0.23525099456310272,
+        -0.181878000497818,
+        -2.736999988555908,
+        -1.3209999799728394,
+        -2.071000099182129
+      ],
+      "logical_bin": "red_white_bin"
+    }
+  },
+  "adapted_route": true,
+  "scan_waypoints_http_and_inspection_waits_omitted": true,
+  "adapted_high_to_restart_segment_not_claimed_original_school_path": true,
+  "numerical_collision_certificate": false,
+  "real_device_acceptance": false,
+  "calibration_used_for_motion": false,
+  "handeye_recalibration_still_required": true
+}

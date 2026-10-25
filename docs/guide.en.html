@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vision-Guided Robotic Grasping and Sorting System</title><style>
+:root{color-scheme:light dark;--paper:#f8fafc;--ink:#243247;--line:#d9e1eb;--panel:#eef2f7}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}
+main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-height:1.3;letter-spacing:-.6px;margin:0 0 18px}h2{font-size:23px;margin-top:42px;padding-bottom:9px;border-bottom:1px solid var(--line)}h3{font-size:18px;margin-top:26px}a{color:#3774c4;text-underline-offset:3px}p,ul{margin:16px 0}li{margin:7px 0}pre{padding:18px 20px;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;font:14px/1.65 ui-monospace,Consolas,monospace}code{font-size:.9em}p code,li code,td code{padding:2px 5px;background:var(--panel);border-radius:4px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top}th{background:var(--panel)}.selection-easter-egg{color:transparent;user-select:text;-webkit-user-select:text;margin-top:32px}.selection-easter-egg::selection{color:#102a43;background:#a5ceff}
+@media(prefers-color-scheme:dark){:root{--paper:#101722;--ink:#e2e8f0;--line:#344155;--panel:#1a2535}a{color:#92bfff}}
+@media(max-width:700px){main{padding:28px 20px}h1{font-size:26px}}
+</style><main><h1>Vision-Guided Robotic Grasping and Sorting System</h1>
+<p><a href="../README.md">简体中文</a> | <strong>English</strong></p>
+<p><a href="guide.en.html">HTML guide (download and open in a browser)</a> · <a href="guide.zh-CN.html">中文HTML说明</a></p>
+<h2>Project overview</h2>
+<p>This project connects visual detection, spatial localization, robotic grasping, and destination-based sorting into a continuous workflow. A head-mounted Intel RealSense D435 supplies live images. A YOLOv5 model identifies battery shapes and colors, the localization pipeline estimates the current target position, and a robotic arm with a dexterous hand approaches, grasps, lifts, deposits, and returns to its observation pose.</p>
+<p>Target coordinates come from current visual observations. Near and far wrist profiles handle different parts of the workspace. The present task uses upright cylindrical test objects of the same dimensions: black objects go to the normal-product bin, while red and white objects share the reject bin. Square objects are detected but are not grasped.</p>
+<p>The web dashboard combines continuous camera video, automatic and single-object operation, software stop/reset, stage feedback, and logs. Localization consumes original images rather than the browser video stream. A target must remain visible for at least <strong>two seconds</strong> before entering detection statistics; brief detections and repeated page updates do not increase the count.</p>
+<ul>
+<li><strong>Perception:</strong> D435 RGB acquisition, three-color detection, and localization on two measured support levels.</li>
+<li><strong>Execution:</strong> near/far wrist selection, preparation after descent, grasping, lifting, sorting, and return.</li>
+<li><strong>Interaction:</strong> a dark web dashboard, LAN access, live task status, and an optional ROS 1 bridge.</li>
+<li><strong>Traceability:</strong> original images, communication records, motion results, and file hashes. Motion-cycle counts remain separate from physical sorting outcomes.</li>
+</ul>
+<p>The underlying pipeline has field records for a four-object black-shell batch and some three-color operations. <strong>The current web integration is awaiting field acceptance.</strong> A completed motion cycle does not prove retention, delivery into the correct bin, or an end-to-end success rate.</p>
+<h2>Environment configuration</h2>
+<h3>Hardware and operating scope</h3>
+<div class="table-wrap"><table>
+<tr><th>Component</th><th>Current configuration</th></tr>
+<tr><td>Robot</td><td>RealMan RM65BI, left-arm execution; controller V1.6.5, SDK API 4.3.1</td></tr>
+<tr><td>Dexterous hand</td><td>OYMotion ROH-AP001 over RS485</td></tr>
+<tr><td>Camera</td><td>Intel RealSense D435, RGB 1280 × 720 at 30 fps</td></tr>
+<tr><td>Test objects</td><td>Unpowered cylinders/shells, 45.8 mm diameter and 98 mm height</td></tr>
+<tr><td>Support levels</td><td>Measured recess bottom and acrylic-board top, separated by 9.6 mm</td></tr>
+<tr><td>Installation</td><td>Device-specific calibration and near/far bindings; fixed head, board, and mounting relationship during operation</td></tr>
+</table></div>
+<h3>Software and device assets</h3>
+<p>The runtime uses Linux, Python 3.8 or later, NumPy, OpenCV with ArUco, PyTorch, PyYAML, and <code>pyrealsense2</code>. The web service uses the Python standard library; Node.js, a frontend build, and a cloud service are unnecessary. ROS 1 is optional and the web interface does not require a ROS Master.</p>
+<p>Reuse the existing robot environment where possible. For a new environment, the <a href="../requirements-web.txt">dependency list</a> provides a starting point; select PyTorch/CUDA and RealSense drivers for the actual host. It is not a compatibility certification for every version combination.</p>
+<pre><code>python3 -m venv --system-site-packages .venv
+source .venv/bin/activate
+python -m pip install -r requirements-web.txt</code></pre>
+<p>The GitHub source does not contain model weights, vendor SDK binaries, the on-site <code>calibration/</code> directory, or captured datasets. Before running the real robot, restore the device-specific assets listed in <a href="ASSETS.md">Asset configuration</a>. Calibration and taught coordinates from another installation are not substitutes.</p>
+<h2>Usage</h2>
+<h3>1. Prepare the workspace</h3>
+<p>For a new source checkout:</p>
+<pre><code>git clone https://github.com/VincentCassano/vision-guided-robotic-sorting.git
+cd vision-guided-robotic-sorting</code></pre>
+<p>An existing installation can keep using <code>~/test/battery-d435-preview</code>. Restore the required assets and exit other grasping or camera-preview programs to avoid competing access. SHA256 manifests require exact source bytes; regenerate the relevant release manifest after intentional source edits.</p>
+<h3>2. Start the web interface</h3>
+<pre><code>/usr/bin/python3 deployment/run_visual_task_control_v24.py --host 0.0.0.0</code></pre>
+<p>Startup opens the camera, inference process, and dashboard. Robot actions require a task-button command. The launcher requests a normal 1440 × 940 browser window without fullscreen; browsers other than Chromium retain their window preferences.</p>
+<ul>
+<li>Local access: <code>http://127.0.0.1:18081</code></li>
+<li>LAN access: <code>http://&lt;Ubuntu-host-IP&gt;:18081</code></li>
+<li>Find the Ubuntu host address: <code>hostname -I</code></li>
+<li>Add <code>--no-browser</code> to start the service without automatically opening a browser.</li>
+</ul>
+<p>When using a virtual environment, replace <code>/usr/bin/python3</code> with its interpreter and pass the absolute model-interpreter path through <code>--inference-python /absolute/path/to/python</code>.</p>
+<h3>3. Operate a task</h3>
+<div class="table-wrap"><table>
+<tr><th>Dashboard action</th><th>Behavior</th></tr>
+<tr><td>Automatic operation</td><td>Select qualified targets and run complete pick/sort/return cycles for the batch</td></tr>
+<tr><td>Single-object operation</td><td>Complete the full cycle for one target</td></tr>
+<tr><td>Continue recognition</td><td>Reobserve a vision-pending scene; does not resume a held-object recovery</td></tr>
+<tr><td>Stop</td><td>Latch a software stop request; do not automatically release the hand or return the arm</td></tr>
+<tr><td>Reset</td><td>Reset software task state only; do not clear device faults or move the robot</td></tr>
+</table></div>
+<p>Yellow boxes mark candidates awaiting two-second confirmation. Green boxes mark confirmed targets. A blue box marks the capture position of the target locked for the current cycle. Video stays live during motion, while the commanded target coordinates stay locked. Detection counts represent currently visible, confirmed objects rather than a sum across frames; completed motion cycles are reported separately.</p>
+<p>Current settings are 30% for positioning/transfer, 15% for descent/lifting, a 180 mm pickup lift, a 40 mm post-drop raise for red/white, and an 80 mm raise for black. These settings belong to this installation and workspace; they are not general clearance or speed recommendations.</p>
+<p>Use unpowered test objects, clear the full hand and carried-object route, and keep an on-site operator at the hardware emergency stop. A web stop or process exit does not establish physical standstill. Closing the browser leaves the service running; press <code>Ctrl+C</code> in its terminal to request stopping and wait for cleanup.</p>
+<h3>4. Records and optional interfaces</h3>
+<p>Records are written under <code>captures/</code>. On service exit, <code>real_task_control_v24_&lt;timestamp&gt;.zip</code> combines dashboard logs and the original robot session. A cycle that runs without lifting the object must not be counted as a successful physical sort.</p>
+<p>HTTP exposes <code>GET /api/status</code>, <code>GET /live.mjpg</code>, and <code>POST /api/command</code>. To enable the ROS bridge, use another terminal with the existing ROS environment:</p>
+<pre><code>source ~/catkin_ws/devel/setup.bash
+/usr/bin/python3 deployment/task_control_ros_v24.py</code></pre>
+<p>ROS and the dashboard share one real task-control service. See the <a href="../deployment/VISUAL_WEB_CONTROL_V24_README.txt">runtime notes</a> for interface details.</p>
+<h2>Structure and limitations</h2>
+<pre><code>deployment/             Dashboard, camera service, localization, motion pipeline, manifests
+src/battery_grasp/      ROS package, inference modules, configuration
+docs/                  Asset configuration and project documentation
+tools/release/         File packaging and GitHub publication preparation</code></pre>
+<p>The current scope is a fixed camera/board installation, same-size upright objects, and two measured support levels. Arbitrary heights, other dimensions, square-object grasping, right-arm collaboration, and automatic verification of retention, slips, and correct-bin delivery remain incomplete. See <a href="../THIRD_PARTY_NOTICES.md">Third-party notices</a> for dependency and reference-source information.</p><p class="selection-easter-egg">世上无难事，只要肯登攀。</p></main></html>

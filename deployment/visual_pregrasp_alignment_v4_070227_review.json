@@ -1,0 +1,577 @@
+{
+  "source_archive": "G:\\Code_Project\\battery_grasp_ws\\tmp\\visual_pregrasp_alignment_v4_20261021_070227_082062.zip",
+  "sha256": "9b1f8aac195cbb8e54eadc87ecc114ff5225944c0aafbf677c29f6f57bb72e0c",
+  "bytes": 10719151,
+  "members": 16,
+  "checks": {
+    "CRC_ok": true,
+    "unique_members": true,
+    "internal_inventory_complete": true,
+    "internal_hashes_match": true,
+    "deployed235_payload_matches": true,
+    "parent_worker_equal": true,
+    "nested_vision_matches": true,
+    "no_actuator_or_configuration_commands": true,
+    "no_hand_write_requests": true,
+    "m_permission_matches": true
+  },
+  "counts": {
+    "arm_actuator_writes": 0,
+    "hand_register_writes": 0,
+    "controller_configuration_writes": 0
+  },
+  "full_startup_read_collection": {
+    "passed": true,
+    "deadline_seconds": 45,
+    "sockets": [
+      {
+        "number": 1,
+        "started_monotonic": 553635.023229878,
+        "motion_capability": false,
+        "private_token": true,
+        "closed": true,
+        "broken": true,
+        "private_token_latched": true,
+        "finished_monotonic": 553638.934648676
+      },
+      {
+        "number": 2,
+        "started_monotonic": 553640.009111264,
+        "motion_capability": false,
+        "private_token": true,
+        "closed": true,
+        "broken": true,
+        "private_token_latched": true,
+        "finished_monotonic": 553642.769518787
+      },
+      {
+        "number": 3,
+        "started_monotonic": 553643.843473025,
+        "motion_capability": false,
+        "private_token": true,
+        "closed": true,
+        "broken": true,
+        "private_token_latched": true,
+        "finished_monotonic": 553644.579566834
+      },
+      {
+        "number": 4,
+        "started_monotonic": 553645.642866864,
+        "motion_capability": false,
+        "private_token": true,
+        "closed": true,
+        "broken": true,
+        "private_token_latched": true,
+        "finished_monotonic": 553646.147484628
+      },
+      {
+        "number": 5,
+        "started_monotonic": 553647.210546643,
+        "motion_capability": false,
+        "private_token": true,
+        "closed": true,
+        "broken": true,
+        "private_token_latched": true,
+        "finished_monotonic": 553653.474491592
+      },
+      {
+        "number": 6,
+        "started_monotonic": 553654.539023266,
+        "motion_capability": false,
+        "private_token": true,
+        "closed": true,
+        "broken": true,
+        "private_token_latched": true,
+        "finished_monotonic": 553663.026524905
+      },
+      {
+        "number": 7,
+        "started_monotonic": 553664.09339873,
+        "motion_capability": false,
+        "private_token": true,
+        "closed": true,
+        "broken": false,
+        "private_token_latched": false,
+        "finished_monotonic": 553664.978196164
+      }
+    ],
+    "rejected_reads": [
+      {
+        "address": 1065,
+        "count": 6,
+        "error": "TransportError('Read rejected')",
+        "rejected_request": {
+          "command": "read_multiple_holding_registers",
+          "port": 1,
+          "address": 1000,
+          "num": 8,
+          "device": 2
+        },
+        "socket": 1,
+        "monotonic": 553638.934521827,
+        "original_wire_preserved": true,
+        "request_not_executed_as_write": true
+      },
+      {
+        "address": 1185,
+        "count": 6,
+        "error": "TransportError('Read rejected')",
+        "rejected_request": {
+          "command": "read_multiple_holding_registers",
+          "port": 1,
+          "address": 1000,
+          "num": 8,
+          "device": 2
+        },
+        "socket": 2,
+        "monotonic": 553642.769398818,
+        "original_wire_preserved": true,
+        "request_not_executed_as_write": true
+      },
+      {
+        "address": 1185,
+        "count": 6,
+        "error": "TransportError('Read rejected')",
+        "rejected_request": {
+          "command": "read_multiple_holding_registers",
+          "port": 1,
+          "address": 1185,
+          "num": 6,
+          "device": 2
+        },
+        "socket": 3,
+        "monotonic": 553644.579426833,
+        "original_wire_preserved": true,
+        "request_not_executed_as_write": true
+      },
+      {
+        "address": 1185,
+        "count": 6,
+        "error": "TransportError('Read rejected')",
+        "rejected_request": {
+          "command": "read_multiple_holding_registers",
+          "port": 1,
+          "address": 1000,
+          "num": 8,
+          "device": 2
+        },
+        "socket": 4,
+        "monotonic": 553646.147350675,
+        "original_wire_preserved": true,
+        "request_not_executed_as_write": true
+      },
+      {
+        "address": 1125,
+        "count": 6,
+        "error": "TransportError('Read rejected')",
+        "rejected_request": {
+          "command": "read_multiple_holding_registers",
+          "port": 1,
+          "address": 1000,
+          "num": 8,
+          "device": 2
+        },
+        "socket": 5,
+        "monotonic": 553653.474372135,
+        "original_wire_preserved": true,
+        "request_not_executed_as_write": true
+      },
+      {
+        "address": 1085,
+        "count": 6,
+        "error": "TransportError('Read rejected')",
+        "rejected_request": {
+          "command": "read_multiple_holding_registers",
+          "port": 1,
+          "address": 1085,
+          "num": 6,
+          "device": 2
+        },
+        "socket": 6,
+        "monotonic": 553663.026389608,
+        "original_wire_preserved": true,
+        "request_not_executed_as_write": true
+      }
+    ],
+    "policy": "explicit_read_refusal_only_before_any_permission_or_write",
+    "old_socket_and_private_token_remain_latched": true,
+    "configuration_and_three_feedback_groups_still_required": true,
+    "actuator_or_settings_retries_allowed": false,
+    "stop_performance_verified": false,
+    "latest_identity_raw": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "elapsed_seconds": 30.00490812701173,
+    "scope": "this_run_full_configuration_and_startup_observation_only"
+  },
+  "configuration_checks": [
+    {
+      "monotonic": 553650.351043957,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    }
+  ],
+  "startup_hand": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      5
+    ],
+    "current": [
+      2,
+      1,
+      2,
+      21,
+      2,
+      1
+    ],
+    "positions": [
+      7999,
+      8001,
+      7996,
+      8000,
+      65535,
+      65535
+    ],
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      65056
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 553660.566023164,
+    "finished_monotonic": 553664.902740258,
+    "final_status_started_monotonic": 553662.50682337,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "speeds": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "force_targets": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ]
+  },
+  "operator_permissions": [
+    {
+      "index": 1,
+      "phase": "await_visual_high_alignment",
+      "value": "m",
+      "scene_unchanged_and_path_clear": true,
+      "timestamp_utc": "2026-10-20T23:05:45.543649+00:00"
+    }
+  ],
+  "current_protection": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "exceptions": [
+    {
+      "error": "TransportError('Read rejected')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pregrasp_motion_worker_v4.py\", line 340, in main\n    before=hand.preflight(expected=start_hand['targets'])\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_reads.py\", line 136, in preflight\n    row = dict(self.snapshot(), **critical)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_hand.py\", line 99, in snapshot\n    return super().snapshot()\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_pose_hand.py\", line 99, in snapshot\n    row=self.read_feedback_group()\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_hand.py\", line 79, in read_feedback_group\n    status = self.read('status', 1085, 6)\n  File \"/home/rm/test/battery-d435-preview/deployment/run_school_battery_hand.py\", line 40, in read\n    started=self.clock(); values=self.io.read(address,count)\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 265, in read\n    return self.exchange(dict(command=MULTI,port=1,address=address,num=count,device=2))\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pregrasp_motion_worker_v4.py\", line 90, in exchange\n    value=super().exchange(message)\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 229, in exchange\n    if response.get('read_state') is False: raise TransportError('Read rejected')\nschool_battery_transport.TransportError: Read rejected\n"
+    }
+  ],
+  "failed_transport_requests": [
+    {
+      "event": "transport_error",
+      "sequence": 10,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1000,
+        "num": 8,
+        "device": 2
+      },
+      "buffer_hex": "",
+      "startup_read_socket": 1
+    },
+    {
+      "event": "transport_error",
+      "sequence": 7,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1000,
+        "num": 8,
+        "device": 2
+      },
+      "buffer_hex": "",
+      "startup_read_socket": 2
+    },
+    {
+      "event": "transport_error",
+      "sequence": 2,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1185,
+        "num": 6,
+        "device": 2
+      },
+      "buffer_hex": "",
+      "startup_read_socket": 3
+    },
+    {
+      "event": "transport_error",
+      "sequence": 1,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1000,
+        "num": 8,
+        "device": 2
+      },
+      "buffer_hex": "",
+      "startup_read_socket": 4
+    },
+    {
+      "event": "transport_error",
+      "sequence": 16,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1000,
+        "num": 8,
+        "device": 2
+      },
+      "buffer_hex": "",
+      "startup_read_socket": 5
+    },
+    {
+      "event": "transport_error",
+      "sequence": 21,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1085,
+        "num": 6,
+        "device": 2
+      },
+      "buffer_hex": "",
+      "startup_read_socket": 6
+    },
+    {
+      "event": "transport_error",
+      "sequence": 16,
+      "error": "TransportError('Read rejected')",
+      "pending_request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1085,
+        "num": 6,
+        "device": 2
+      },
+      "buffer_hex": ""
+    }
+  ],
+  "last_arm_raw": [
+    0,
+    [
+      -58.93299865722656,
+      -60.702999114990234,
+      -51.22600173950195,
+      -14.378000259399414,
+      -29.597999572753906,
+      96.43299865722656
+    ],
+    [
+      0.25773200392723083,
+      -0.4446609914302826,
+      -0.09195200353860855,
+      -3.0139999389648438,
+      -0.7889999747276306,
+      -2.322999954223633
+    ],
+    0,
+    0
+  ],
+  "last_fault_state_not_future_start_reference": true,
+  "result": "full_startup_passed_m_received_but_address1085_read_false_before_any_actuator_write",
+  "underlying_bus_cause_proven": false,
+  "collision4109_recurred": false,
+  "prior_v4_wait_did_not_repair_normal_stage_bus_failures": true,
+  "missing_integration": {
+    "module": "deployment/hand_bus_startup.py",
+    "request": {
+      "command": "set_modbus_mode",
+      "port": 1,
+      "baudrate": 115200,
+      "timeout": 1
+    },
+    "absent_from_v1_v4_visual_workers": true,
+    "historical_issue": "214212 omitted startup configuration",
+    "historical_repair": "221041 ACK then full configuration/preflight and251 hand reads, later independent status3 failure",
+    "school_sources": [
+      "G:/Code_Project/bisai/catkin_ws/src/grasp_demo/scripts/grasp_object.py:306",
+      "G:/Code_Project/bisai/catkin_ws/src/grasp_demo/scripts/ohandtest.py:70"
+    ],
+    "official_protocol": "https://develop.realman-robotics.com/robot/json/modbus/",
+    "timeout_unit": "100ms",
+    "current_bus_mode_before_setup": "not_read_in_received_v4_archive",
+    "causal_claim": "implementation omission confirmed, physical cause not yet confirmed"
+  },
+  "proposed_delivery": "explicit single known bus configuration then unchanged v4 run; no widening retry after m, no unknown timeout/baudrate tuning",
+  "offline_project_tests_executed": false,
+  "SDK_loaded_locally": false,
+  "hardware_connected": false
+}

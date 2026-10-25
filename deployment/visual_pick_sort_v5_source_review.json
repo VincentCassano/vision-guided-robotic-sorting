@@ -1,0 +1,35 @@
+{
+  "scope": "source_reading_only_not_runtime_validation",
+  "trigger": "172744 v4 ACK close1135x6 followed by opposition64558 to65535; unchanged150 gate abort before arm command",
+  "changed": [
+    "Initial close write1135x4 only; same four flex caps and retained targets",
+    "Exact per-phase capability for one supported v4 four-flex withdrawal to8000; never loaded fault resumption",
+    "Separate empty confirmation and optional one-channel64556 alignment; skip redundant alignment when full fresh PREPARE already qualifies",
+    "Preserve actual target/sweep failure deltas in report"
+  ],
+  "preserved": [
+    "Original accepted v8 visual endpoint startup provenance and new current state match",
+    "Identity/full DH/model/SDK/native/configuration/frame/mode/limit checks",
+    "Collision8/selfTrue read gates; no setter",
+    "Raw wire and ACK; mark-before-send and no target retries",
+    "Six-channel actual150/target2 and anchor150; status3/4/current/diagnostic stops",
+    "Fresh healthy grip receipt before new continuous-delivery authority",
+    "Original school segment guard/notification and upfront route permission; no loaded keyboard waits",
+    "Original normal bin opening and post-drop actual operator observation"
+  ],
+  "review_repairs_before_delivery": [
+    "Do not create StartupReadSession after any permission/write; post-opening observations use strict no-retry direct alignment transport",
+    "Do not call legacy operator_prompt for new supported-open index3",
+    "Separate support-only retained current-to-target sweep from normal PREPARE/loaded gates"
+  ],
+  "physical_unknowns": [
+    "Redundant six-channel command versus physical coupling as cause of opposition excursion",
+    "Current supported condition and no arm movement/restart pending user answer",
+    "New four-channel close and new complete sequence have no real-device acceptance"
+  ],
+  "SDK_loaded": false,
+  "robot_connected": false,
+  "offline_tests": false,
+  "compile_AST_mock_FK_IK": false,
+  "real_device_accepted": false
+}

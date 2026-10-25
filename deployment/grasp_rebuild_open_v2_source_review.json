@@ -1,0 +1,26 @@
+{
+  "scope": "manual source review of isolated current-state empty opening repair",
+  "raw_failure_review": "deployment/grasp_rebuild_open_060337_review.json",
+  "removed_stale_assumptions": [
+    "exact ADAPTED_PLAN/CAP grasp target",
+    "thumb current position capped at historical15000",
+    "untouched little/opposition target/actual forced65535",
+    "post-opening whole-hand historicalCAP envelope"
+  ],
+  "retained": [
+    "u16/identity/diagnostics and complete raw groups",
+    "live hardware current limits and critical configuration checks",
+    "status4 blocks; existing3 only first4 explicit opening; new3 blocks",
+    "first4 actual and targets>=8000 so new target cannot add closure",
+    "first snapshot is fresh current anchor, targets2/positions150 across confirmation",
+    "untouched target pair exact current values and actual span150",
+    "single explicit r, exact1135 num4 values8000 once; no6-register write capability",
+    "post-write first4 actual-start to8000 corridor and monotonic minimum150; no reclosure",
+    "fresh model/DH/install/arm/ordinary-drive limits/protection and arm drift0.08deg/0.5mm/0.005rad",
+    "no motion/config/reset/current-force/auto retry writes; raw cleanup evidence"
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_tests_compile_AST_mock_FK_IK": false,
+  "real_device_accepted": false
+}

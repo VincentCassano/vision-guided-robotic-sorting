@@ -1,0 +1,7 @@
+cd ~/test/battery-d435-preview && \
+sha256sum --quiet -c deployment/new-grasp-reference-v2-files.sha256 && \
+/usr/bin/python3 deployment/run_new_grasp_reference_v2.py
+
+重新摆腕→r抓前→现场空手World Z+150mm→u升后→v原位空壳视觉并S→q统一ZIP。
+手型保持PRE，不变则不进入h/pre。空壳留在原位；两次只读完成/SDK关闭后才示教。
+无法升高则换腕姿，再r；不要继续运行旧v13。

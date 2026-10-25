@@ -1,0 +1,66 @@
+{
+  "scope": "source_reading_and_file_checks_only_not_runtime_validation",
+  "trigger": "v5 actual arm route reached4 endpoints; direct human confirms pickup failed; last normal opening opposition actual64858 target64558 exceeded original150 gate",
+  "changes": {
+    "grip": [
+      27500,
+      31500,
+      27000,
+      19000,
+      65535,
+      64556
+    ],
+    "grip_write": [
+      1135,
+      4
+    ],
+    "drop_write": [
+      1135,
+      5
+    ],
+    "opposition_target_unchanged": 64556,
+    "black_drop_back_mm": 40,
+    "delta_World_mm": [
+      0.4512070644401198,
+      39.99745507135422,
+      0
+    ],
+    "body_direction_definition": "reverse optical axis of unchanged fixed head projected into existing World XY; task offset only",
+    "lift_speed_percent": 5,
+    "transit_speed_percent": 10,
+    "read_to_read_candidate_seconds": 0.1,
+    "write_boundary_seconds": 0.3,
+    "probe": "3 complete readonly PREPARE groups at100ms plus original300ms before/after groups; full validation and no-fallback latch"
+  },
+  "preserved": [
+    "Full six-channel raw reads and actual150/target2/anchor150",
+    "status3/4/current/protection8/selfTrue/identity and diagnostics",
+    "Write once with ACK, no init/reset/PID/config setter",
+    "Full actual endpoint quiet3groups>=1s and trajectory event, exact-stop, vertical-before-transfer",
+    "School transit poses unchanged; only selected black drop has explicit40mm offset",
+    "Fresh successful visual p reference for normal grip; current-start match; no fault last state as authority"
+  ],
+  "new_start": "Fresh current matching completed v5 bin segment, explicit empty/route u, empty opposition health before one empty return; separate process before current image S/Q and m/d/p/g",
+  "visual_provenance": "New isolated copy uses five-flex PREPARE and retained64556; source verification uses actual3/4 branch chosen by initial height, no bound changes",
+  "reporting": "f explicitly records missed pickup; u/e require actual object in selected bin and empty hand. Finger position reached alone remains not holding proof.",
+  "limitations": [
+    "New paired1000 candidate not physically accepted",
+    "Read100ms and speed5/40mm new endpoint need current actual acceptance",
+    "Reduced waiting still endpoint-stop route, not blended corners",
+    "No object-presence sensor-based grasp proof added",
+    "Human reports hand opened and still at bin; empty/route u confirmation and fresh actual endpoint/configuration/hand reads remain mandatory. No movement/reboot facts inferred."
+  ],
+  "pre_delivery_review_repairs": [
+    "Do not reopen startup retry scope after any permission/write",
+    "No redundant opposition during fresh visual PREPARE",
+    "Do not instruct moving target back to old slot after fresh p",
+    "Use actual3/4 current visual branch counts",
+    "Bundle preserves failed raw artifacts on malformed nested source; deduplicates only exact source hashes"
+  ],
+  "SDK_loaded": false,
+  "robot_connected": false,
+  "offline_project_tests": false,
+  "compile_AST_mock_FK_IK": false,
+  "real_device_accepted": false,
+  "operator_latest_state": "已张开，手在投放位置"
+}

@@ -1,0 +1,48 @@
+{
+  "scope": "manual source review and file integrity only",
+  "real_device_loop_accepted": false,
+  "user_requested_sequence": [
+    "pre_shape a-e incremental flex",
+    "SDK exits; manual wrist adjustment",
+    "new current wrist capture; grip a-e incremental flex",
+    "SDK exits; manual pendant lift",
+    "failure: support/open/restore custom pre-shape; repeat from wrist",
+    "success: stop and record"
+  ],
+  "mapping": {
+    "a": "thumb flex",
+    "b": "index",
+    "c": "middle (NOT old group close)",
+    "d": "ring",
+    "e": "little"
+  },
+  "controls": {
+    "default_step": 250,
+    "signed_custom_step_min": 1,
+    "signed_custom_step_max": 1000,
+    "candidate_closure_caps": [
+      30000,
+      31500,
+      29500,
+      20250,
+      65535
+    ],
+    "opposition_writes": 0,
+    "automatic_initial_target_writes": 0
+  },
+  "manual_review": [
+    "isolated v2 parent/worker/manifest, original v1 members unchanged",
+    "no automatic PREPARE, group close seed, arm motion, arm Stop, reset or configuration writes",
+    "single intended finger exact one-attempt signature; x records stage and closes child before manual movements",
+    "same saved pre-shape source SHA/config/target2/actual150 verified after fresh manual wrist read; arm baseline always fresh",
+    "ordinary300ms read/write pacing, no inherited PREPARE-only timing probe",
+    "pre-shape must be reached150 before saving; grip may stop short only if quiet; holding requires actual operator unsupported lift",
+    "failed lift: explicit b support and empty-clear sweep, five zero targets then saved five pre-shape targets through separate children; opposition untouched",
+    "status5 blocks added closure,3/4 and current/identity/transport/config/drive-reserve/arm-drift guards retained",
+    "preserve original errors, no automatic retry/open on failure; incomplete success does not replace qualified success",
+    "end-stage capture only after explicit manual teaching exit/stationary confirmation"
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_compile_AST_mock_FK_IK_executed": false
+}

@@ -1,0 +1,196 @@
+{
+  "source_folder": "G:\\Code_Project\\battery_grasp_ws\\tmp\\hand_thumb_tuner_20261023_185814_291051",
+  "source_files": {
+    "events.jsonl": {
+      "bytes": 542749,
+      "sha256": "6d551604485f750731f3ae50b46d51dd65df173b6184ab3a4af4e2f3d2422438"
+    },
+    "events_memory_copy.json": {
+      "bytes": 769265,
+      "sha256": "d5261132a4742999796aec83d484519bfa6034b93976f14162e56bc3d3f14199"
+    },
+    "hand_shape_001.json": {
+      "bytes": 3068,
+      "sha256": "fad803f202c7b2436da9bb89ed51bb5e7c397c67ed9358fde9504d64d51ffa91"
+    },
+    "result.json": {
+      "bytes": 3389,
+      "sha256": "e6bd2fad380849217744cda0cc0e50558b23159ce8dcd4562099e0c48ce217f0"
+    }
+  },
+  "runtime_delivery_check": {
+    "checked": 446,
+    "differences": []
+  },
+  "operator_input_count": 21,
+  "raw_tx_count": 376,
+  "hand_position_writes": 13,
+  "hand_ack_report": 13,
+  "non_hand_or_configuration_tx": [],
+  "final_targets": [
+    40001,
+    12501,
+    14501,
+    30001,
+    0,
+    65535
+  ],
+  "final_positions": [
+    40001,
+    12501,
+    14498,
+    30004,
+    0,
+    65535
+  ],
+  "final_current_ma": [
+    87,
+    2,
+    2,
+    0,
+    0,
+    61
+  ],
+  "final_status": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "final_identity": [
+    512,
+    769,
+    151,
+    8193,
+    290,
+    2,
+    0,
+    0
+  ],
+  "outcome": "operator_exit_preserving_targets",
+  "ordinary_stall5_or_unreached_forced_process_exit_observed": false,
+  "faults": [
+    {
+      "event": "manual_bus_transport_fault",
+      "sequence": 80,
+      "monotonic": 769559.663830192,
+      "error": "TransportError('Unexpected or late hand response before send')",
+      "request": {
+        "command": "read_multiple_holding_registers",
+        "port": 1,
+        "address": 1000,
+        "num": 8,
+        "device": 2
+      },
+      "write_tx_started": true,
+      "write_acknowledged": true,
+      "buffer_hex": "7b22636f6d6d616e64223a2273746f705f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a7b22636f6d6d616e64223a2273746172745f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a7b22636f6d6d616e64223a2273746f705f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a7b22636f6d6d616e64223a2273746172745f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a7b22636f6d6d616e64223a2273746f705f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a7b22636f6d6d616e64223a2273746172745f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a7b22636f6d6d616e64223a2273746f705f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a7b22636f6d6d616e64223a2273746172745f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a7b22636f6d6d616e64223a2273746f705f647261675f7465616368222c22647261675f7465616368223a747275657d0d0a",
+      "connection_generation": 1
+    },
+    {
+      "event": "manual_operation_unavailable",
+      "monotonic": 769559.66499814,
+      "error": "TransportError('Unexpected or late hand response before send')",
+      "attempted": false,
+      "acknowledged": false,
+      "automatic_retry": false,
+      "physical_stop_verified": false,
+      "connection_generation": 1
+    }
+  ],
+  "fault_interpretation": "收到实际start_drag_teach/stop_drag_teach非手部应答，v1未分流而暂停socket；操作者r后继续调节、x保存、q退出。不是终端被拖臂强制退出。",
+  "grasp_result_source": "operator explicitly confirmed successful physical lift; hand-only logger did not query arm or sense lift",
+  "new_recipe_from_operator": {
+    "schema_version": 1,
+    "recipe_id": "black_shell_new_grasp_20261023_1945",
+    "channel_order": [
+      "thumb_flex",
+      "index",
+      "middle",
+      "ring",
+      "little",
+      "thumb_opposition"
+    ],
+    "logical_target_limits": {
+      "minimum": 0,
+      "maximum": 65535
+    },
+    "pregrasp_targets": [
+      35000,
+      7500,
+      9480,
+      30000,
+      65535,
+      65535
+    ],
+    "grasp_targets": [
+      40000,
+      12500,
+      14480,
+      30000,
+      65535,
+      65535
+    ],
+    "constant_channels": {
+      "ring": 30000,
+      "little": 65535,
+      "thumb_opposition": 65535
+    },
+    "pregrasp_sequence_after_palm_at_grasp_location": [
+      "little_to_65535",
+      "ring_to_30000"
+    ],
+    "grasp_sequence": [
+      "thumb_flex_to_40000",
+      "index_to_12500",
+      "middle_to_14480",
+      "lift_after_grasp_target_commands_ack_and_readback_match"
+    ],
+    "old_in_lift_ring_middle_tightening_used": false,
+    "grip_targets_must_not_be_automatically_reduced": true,
+    "target_values_source": "explicit latest operator instruction",
+    "physical_grasp_success_confirmed_by_operator": true,
+    "little_finger_addition_source": "operator added for appearance; not present in uploaded final record",
+    "exact_new_recipe_automatic_lift_accepted": false,
+    "new_wrist_or_palm_position_confirmed": true,
+    "new_seated_pregrasp_arm_reference_required": true,
+    "old_visual_anchor_and_2p8_plus_4p5_correction_reusable": false,
+    "execution_ready": false,
+    "raw_hand_evidence": {
+      "folder": "G:\\Code_Project\\battery_grasp_ws\\tmp\\hand_thumb_tuner_20261023_185814_291051",
+      "result_sha256": "e6bd2fad380849217744cda0cc0e50558b23159ce8dcd4562099e0c48ce217f0",
+      "saved_shape_sha256": "fad803f202c7b2436da9bb89ed51bb5e7c397c67ed9358fde9504d64d51ffa91",
+      "observed_final_targets": [
+        40001,
+        12501,
+        14501,
+        30001,
+        0,
+        65535
+      ],
+      "observed_final_positions": [
+        40001,
+        12501,
+        14498,
+        30004,
+        0,
+        65535
+      ],
+      "observed_final_status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    "actual_position_arrival_required_for_normal_stall": false,
+    "status5_or_unreached_is_grasp_failure": false,
+    "latest_operator_clarification": "目标写入/回读一致即可；正常堵转是握持所需，不要求实际位置到达目标，不因此退出或跳转"
+  },
+  "automatic_visual_pick_sort_accepted": false,
+  "latest_operator_clarification": "只要求目标写入/回读一致，普通堵转5和实际未到位不算失败或中断条件"
+}

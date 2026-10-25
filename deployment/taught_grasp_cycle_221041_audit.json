@@ -1,0 +1,501 @@
+{
+  "source_zip": "taught_grasp_cycle_20261014_221041_640061.zip",
+  "source_sha256": "438b764fa2114e9071d7025bef3a52fd28d0883f1ea098ce7c34a25a721729c9",
+  "source_bytes": 121219,
+  "zip_members": 16,
+  "audit_kind": "existing_real_field_capture_readonly",
+  "outcome": "aborted_no_further_writes",
+  "worker_return_code": 1,
+  "exceptions": [
+    {
+      "error": "ProtectionFault('Current protection or unexpected force-control status: [2, 2, 5, 3, 0, 2]')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/vision_cycle_worker.py\", line 119, in main\n    try:seq.run()\n  File \"/home/rm/test/battery-d435-preview/deployment/vision_cycle_sequence.py\", line 240, in run\n    targets,last=hand.close_candidate(PREPARE[:])\n  File \"/home/rm/test/battery-d435-preview/deployment/vision_cycle_hand.py\", line 57, in close_candidate\n    row=self.observe_position_contact(expected)\n  File \"/home/rm/test/battery-d435-preview/deployment/vision_cycle_hand.py\", line 25, in observe_position_contact\n    row=self.snapshot();self.check_targets(row,expected)\n  File \"/home/rm/test/battery-d435-preview/deployment/continuous_hand_cycle.py\", line 124, in snapshot\n    self._protection('Current protection or unexpected force-control status: '+str(status))\n  File \"/home/rm/test/battery-d435-preview/deployment/hand_feedback_policy.py\", line 38, in _protection\n    raise ProtectionFault(message)\nrun_school_battery_hand.ProtectionFault: Current protection or unexpected force-control status: [2, 2, 5, 3, 0, 2]\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "writes": {
+    "arm_actuator_writes": 1,
+    "hand_register_writes": 2,
+    "controller_configuration_writes": 2
+  },
+  "hand_bus_setup": {
+    "request": {
+      "command": "set_modbus_mode",
+      "port": 1,
+      "baudrate": 115200,
+      "timeout": 1
+    },
+    "attempted": true,
+    "power_changed": false,
+    "hand_register_writes": false,
+    "identity_pending": false,
+    "response": {
+      "command": "set_modbus_mode",
+      "set_state": true
+    },
+    "outcome": "ACK_followed_by_fresh_identity_full_configuration_and_hand_preflight",
+    "getter_support": "not_assumed_legacy_controller",
+    "physical_stop_verified": false,
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ]
+  },
+  "hand_tx_counts": {
+    "read_multiple_holding_registers": 239,
+    "read_holding_registers": 12,
+    "write_registers": 2
+  },
+  "hand_write_requests": [
+    {
+      "command": "write_registers",
+      "port": 1,
+      "address": 1135,
+      "num": 6,
+      "data": [
+        31,
+        64,
+        31,
+        64,
+        31,
+        64,
+        31,
+        64,
+        255,
+        255,
+        255,
+        255
+      ],
+      "device": 2
+    },
+    {
+      "command": "write_registers",
+      "port": 1,
+      "address": 1135,
+      "num": 6,
+      "data": [
+        58,
+        152,
+        117,
+        48,
+        136,
+        184,
+        156,
+        64,
+        255,
+        255,
+        255,
+        255
+      ],
+      "device": 2
+    }
+  ],
+  "hand_grasp_first_TX_monotonic": 3852.09967991,
+  "post_grasp_feedback_reads": [
+    {
+      "event": "read",
+      "monotonic": 3852.525941193,
+      "name": "identity_feedback",
+      "address": 1000,
+      "values": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "started_monotonic": 3852.17554825
+    },
+    {
+      "event": "read",
+      "monotonic": 3852.87536889,
+      "name": "status",
+      "address": 1085,
+      "values": [
+        2,
+        2,
+        5,
+        3,
+        0,
+        2
+      ],
+      "started_monotonic": 3852.526099529
+    }
+  ],
+  "post_grasp_actual_position_current_target_read": false,
+  "protection_status": [
+    2,
+    2,
+    5,
+    3,
+    0,
+    2
+  ],
+  "protection_cause": "ch3 ring current-protection status3, not status5 alone",
+  "status5_channel": 2,
+  "status3_channel": 3,
+  "last_snapshot_is_pre_grasp": true,
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      2,
+      2,
+      1,
+      7,
+      0,
+      8
+    ],
+    "positions": [
+      7999,
+      8016,
+      7996,
+      8000,
+      65535,
+      65535
+    ],
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      65535
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 3849.589769317,
+    "finished_monotonic": 3851.748483225,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "actual_descent_delta_mm": [
+    -0.014007091522216797,
+    -0.018984079360961914,
+    -97.89499640464783
+  ],
+  "actual_descent_endpoint": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.19865599274635315,
+      -0.41565999388694763,
+      -0.26042699813842773,
+      -2.734999895095825,
+      -1.1829999685287476,
+      -2.368000030517578
+    ],
+    "joints": [
+      -41.84600067138672,
+      -101.99099731445312,
+      -17.15999984741211,
+      101.49099731445312,
+      41.263999938964844,
+      -19.35700035095215
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      136.15399932861328,
+      28.009002685546875,
+      117.84000015258789,
+      76.50900268554688,
+      86.73600006103516,
+      340.64299964904785
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "accepted_runtime_sample_count": 25,
+  "numerical_attempts": 29,
+  "numerical_subdivisions": 4,
+  "observed_minimum_joint_reserve": 28.009002685546875,
+  "board_clearance_mm": 24.9,
+  "arm_stop_attempt": {
+    "result": 0,
+    "physical_stop_verified": false,
+    "hand_stop_or_release": false
+  },
+  "hand_released_or_returned": false,
+  "operator_report": "Shell held; not released; operator interprets status5 as intended contact",
+  "full_configuration": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "calibration_end_absolute": [
+      21539,
+      24972,
+      25993,
+      24169,
+      24866,
+      18946
+    ],
+    "calibration_start_absolute": [
+      3039,
+      2472,
+      3093,
+      2469,
+      2616,
+      2386
+    ],
+    "thumb_presets_absolute": [
+      2386,
+      18026,
+      18946
+    ],
+    "pid_p": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_i": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "pid_d": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_g": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ],
+    "stall_speed": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "stall_current_ma": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "stall_stop_ms": [
+      300,
+      300,
+      300,
+      300,
+      300,
+      300
+    ],
+    "stall_retry_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ]
+  },
+  "repair": {
+    "complete_fresh_snapshot_before_application_status_decision": true,
+    "status5_only_warning": true,
+    "latched_status5_channels_no_additional_closing_write": true,
+    "existing_targets_kept_not_replaced_by_actual": true,
+    "status3_and4_still_block": true,
+    "real_current_limits_unchanged": true,
+    "separate_current_loaded_supported_position_release": true,
+    "no_fault_auto_release": true,
+    "no_arm_motion_or_power_or_force_reset_in_release": true
+  },
+  "primary_status_reference": "https://oymotion.github.io/ROHand/ROH-Protocols/OHandModBusRTUProtocol_Gen1/#43-roh_finger_status",
+  "local_device_connection": false,
+  "offline_functional_tests_executed": false,
+  "field_acceptance": {
+    "modbus_readiness": true,
+    "taught_descent_feedback": true,
+    "supervised_grasp_observation": true,
+    "full_grasp_release_return": false,
+    "new_release_fix_pending": true
+  }
+}

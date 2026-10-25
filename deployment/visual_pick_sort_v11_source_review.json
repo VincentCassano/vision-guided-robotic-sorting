@@ -1,0 +1,21 @@
+{
+  "scope": "operator terminal plus manual source audit only",
+  "reported_error": "Current TCP below corrected target+140mm; no low-start recovery",
+  "raw_actuator_zip_received": false,
+  "cause_confirmed": "inherited startup floor rejected before existing supervised raise branch; actual initial-vs-hover delta not available from pasted LAST ARM RAW",
+  "changes": [
+    "isolated v11 names; all v10 archive members byte unchanged",
+    "reuse qualified032920 vision only with explicit unchanged shell/head/board/mount and current empty-hand confirmation",
+    "no cached arm startup: new SDK read and current quiet/identity/DH/frames/limits/protection",
+    "m grants original vertical empty raise in current wrist and retained current hand shape, before PREPARE and lateral alignment",
+    "retained hand anchored to fresh startup actual positions150 and targets2, only statuses2/5, original snapshot current/identity diagnostics checks",
+    "same fixed wrist XY1mm/orientation0.005 corridor, endpoint0.5mm/0.005 and quiet/event requirements; no drift-bound widening",
+    "after successful actual raise anchor becomes its completed endpoint; only then original single PREPARE and high approach/hover/descent, d/p unchanged",
+    "v10 grip tuning and full connected lift/drop implementation unchanged; v11 namespace points new successful pregrasp validator to v11 manifest"
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_tests_compile_AST_mock_FK_IK_executed": false,
+  "real_device_accepted": false,
+  "physical_grip_solved": false
+}

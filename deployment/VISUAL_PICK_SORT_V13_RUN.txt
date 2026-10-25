@@ -1,0 +1,8 @@
+cd ~/test/battery-d435-preview && \
+sha256sum --quiet -c deployment/visual-pick-sort-v13-files.sha256 && \
+/usr/bin/python3 deployment/run_visual_pick_sort_v13.py
+
+手空、仅同一断电黑壳、头/板/安装保持不变，关闭其他控制并现场守急停。
+当前为v13-fix2：原XY只到100mm中间点，再直线连接目标140mm高位；不再原XY直升140mm。若仍在本次J4靠近限位停止位置，先q退出、确认停稳/SDK关闭/空手同腕姿原路畅通，再现场示教World Z负向退40mm，退出示教后启动。已移臂则不套历史回退。
+窗口点当前要抓的黑壳→S保存→终端确认升高/手型/含物整条路线清空后输入g并回车执行整轮→结束按y真实入框或f失败；q不确定/退出。
+不用h/pre/r，不重录参考；正常堵转或实际未到位不阻断目标序列。

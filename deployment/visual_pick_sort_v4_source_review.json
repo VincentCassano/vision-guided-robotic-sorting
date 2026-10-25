@@ -1,0 +1,74 @@
+{
+  "scope": "source_and_original_evidence_review_only_no_project_execution",
+  "source_sha256": {
+    "deployment/run_visual_pick_sort_v4.py": "d8ff154bea4697370cceb5a4e8fdc9dbc24716a49019852e55df82c4da4965e5",
+    "deployment/visual_pick_sort_v4_source.py": "4d6cceb65652c368571c41ed7e5d0fc43ddb60dbd25b6b8544d2052c2e04e012",
+    "deployment/visual_pick_sort_v4_hand.py": "52e39b03b6619de6e337ab5dc2ee3d20a3d6ee56e1f656ecaf4899eabf97ee02",
+    "deployment/visual_pick_sort_v4_worker.py": "65d7874c2e60e1c4c5dab0df364a611bf30131cf5f89c8778d747d916ca0d0a0",
+    "deployment/visual_pick_sort_v4_alignment.py": "07d5f8f5bfe54a5bde7aa20502639c59c31256e8e4da7be7795aa92e8a855488"
+  },
+  "actual_result_review": "deployment/visual_pick_sort_v3_154749_review.json",
+  "source_for_sdk_arm_start": "fresh actual state matched only qualified174304 successful p endpoint; fault last_arm_state not used",
+  "specific_next_command": {
+    "register": 1140,
+    "values": [
+      64556
+    ],
+    "starting_target": 65056,
+    "actual_seen": 65535,
+    "only_while_empty": true,
+    "explicit_permission_index": 4,
+    "explicit_value": "r",
+    "arm_motion_during_alignment": false,
+    "new_target_must_be_below_both_live_actual_and_target": true,
+    "maximum_writes": 1,
+    "new_candidate_not_calibration_correction": true
+  },
+  "normal_PREPARE": [
+    8000,
+    8000,
+    8000,
+    8000,
+    65535,
+    64556
+  ],
+  "normal_recipe": [
+    26500,
+    30500,
+    27000,
+    19000,
+    65535,
+    64556
+  ],
+  "source_checks": [
+    "Original v3 four-channel withdrawal succeeded numerically; do not repeat four targets or wait for passive opposition return",
+    "Current first five positions/targets qualify against original PREPARE; old opposition target65056 and quiet complete groups required",
+    "Alignment write capability is one exact1140x1 target64556; raw attempt before send; ACK required; no reset/force/protection setters",
+    "Unchanged first five channels plus monotonic opposition withdrawal sweep; no increased closure; original150/2 tolerances",
+    "Three healthy all-six new PREPARE groups over1second required; no normal token from faulted/uncertain command",
+    "New opposition target propagated consistently to normal PREPARE/grasp/load/drop; no global tolerance enlargement",
+    "Normal continuous sequence reuses v2 physical feedback/current/error/arm safety/notifications and loaded-no-input logic",
+    "g explicitly confirms new noncontact hand pose and opposed thumb/index grip; historical p only qualifies wrist provenance",
+    "capture-current-target selects empty opposition stage after qualified original v8 endpoint; no contradictory65056/64556 hand requirement",
+    "Source review is not runtime or real-device acceptance"
+  ],
+  "official_references": [
+    {
+      "url": "https://oymotion.github.io/ROHand/ROH-Protocols/OHandModBusRTUProtocol_Gen2/",
+      "supports": "1140 opposition target; status2 reached and status5 stuck, not equivalent"
+    },
+    {
+      "url": "https://oymotion.github.io/ROHand/FAQs/FAQs/",
+      "supports": "position0..65535 and thumb side-palm to opposed-palm direction"
+    }
+  ],
+  "unresolved": [
+    "Why existing65056 did not reach is not proven",
+    "Single64556 retreat and new hand pose have not been run onsite",
+    "No full new visual pick/lift/bin cycle accepted; no unattended object retention or swept-geometry sensor proof"
+  ],
+  "SDK_loaded_locally": false,
+  "offline_project_tests_executed": false,
+  "compile_AST_mock_FK_IK_executed": false,
+  "new_full_cycle_real_device_accepted": false
+}

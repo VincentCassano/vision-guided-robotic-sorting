@@ -1,0 +1,114 @@
+{
+  "scope": "actual_v13_g_received_then_preflight_python_error_no_motion",
+  "archive": "visual_pick_sort_v13_20261023_220531_412983.zip",
+  "sha256": "bddfc32d850f1a8258097f804dee1be519b320dc41ddf69532df0dd7165f6d5e",
+  "members": 13,
+  "internal_hashed_files": 12,
+  "crc_and_internal_sha_pass": true,
+  "runtime_source_files_matched_to_delivered_v13": 474,
+  "parent_outcome": "worker_not_completed_no_automatic_retry",
+  "worker_outcome": "worker_aborted_no_automatic_retry",
+  "worker_phase": "fault",
+  "actual_exception": [
+    {
+      "error": "TypeError(\"event() got multiple values for argument 'name'\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v13_worker.py\", line 324, in main\n    hand=factory(seq,True);hand.configuration();startup=hand.snapshot()\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v13_hand.py\", line 191, in configuration\n    actual={name:self.read(name,address,count) for name,address,count in CONFIG_BLOCKS}\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v13_hand.py\", line 191, in <dictcomp>\n    actual={name:self.read(name,address,count) for name,address,count in CONFIG_BLOCKS}\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v13_hand.py\", line 185, in read\n    self.event('v13_hand_read',name=name,address=address,values=values,started_monotonic=began)\nTypeError: event() got multiple values for argument 'name'\n"
+    }
+  ],
+  "g_received": true,
+  "attempts": 1,
+  "fault_location": "first hand configuration read succeeded, event method parameter name collided with field name",
+  "arm_actuator_writes": 0,
+  "hand_register_writes": 0,
+  "configuration_writes": 0,
+  "arm_stop_writes": 0,
+  "hand_tx_count": 1,
+  "hand_tx_commands": [
+    "read_multiple_holding_registers"
+  ],
+  "protections": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "SDK_cleanup_finished": true,
+  "cleanup_errors": [],
+  "vision_internal_hashed_files": 19,
+  "vision_burst_summary": {
+    "scope": "equal_height_plane_live_repeatability_not_free3D_or_absolute_accuracy",
+    "elapsed_seconds": 3.557759204064496,
+    "frame_count": 8,
+    "rejected_frame_indices": [],
+    "all_frames_retained": true,
+    "maximum_repeatability_mm": 3.0,
+    "repeatability_threshold_source": "new_development_sampling_default",
+    "execution_ready": false,
+    "top_center_world_m": [
+      0.20502407502221684,
+      -0.5724708908052378,
+      -0.30519968346840837
+    ],
+    "top_center_repeatability_max_mm": 0.6499249929191111,
+    "top_center_repeatability_p95_mm": 0.6184519165985073,
+    "top_center_all_inside_FIT_support": false,
+    "geometric_body_center_world_m": [
+      0.20466736838855615,
+      -0.5712857227854867,
+      -0.3541840497207389
+    ],
+    "geometric_body_center_repeatability_max_mm": 0.6499249929191111,
+    "geometric_body_center_repeatability_p95_mm": 0.6184519165985073,
+    "geometric_body_center_all_inside_FIT_support": false,
+    "lower_half_inferred": true,
+    "frame_quality_pass": true,
+    "burst_qualified": true,
+    "completion_wall_time_known": true,
+    "reject_reasons": [],
+    "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+    "original_free3D_gate_pass_not_implied": true,
+    "height_inferred_from_task_plane": true,
+    "FIT_support_for_projected_points_not_evaluated": true
+  },
+  "original_free3D_burst_summary": {
+    "scope": "live_repeatability_only_not_absolute_accuracy",
+    "elapsed_seconds": 3.557759204064496,
+    "frame_count": 8,
+    "rejected_frame_indices": [],
+    "all_frames_retained": true,
+    "maximum_repeatability_mm": 3.0,
+    "repeatability_threshold_source": "new_development_sampling_default",
+    "execution_ready": false,
+    "top_center_world_m": [
+      0.20935681429247618,
+      -0.5798142429929055,
+      -0.3114308178421079
+    ],
+    "top_center_repeatability_max_mm": 4.545032350318907,
+    "top_center_repeatability_p95_mm": 4.5209152246924456,
+    "top_center_all_inside_FIT_support": false,
+    "geometric_body_center_world_m": [
+      0.20804199254263234,
+      -0.5787013835471891,
+      -0.3603990625956396
+    ],
+    "geometric_body_center_repeatability_max_mm": 4.580234532932334,
+    "geometric_body_center_repeatability_p95_mm": 4.269242223595049,
+    "geometric_body_center_all_inside_FIT_support": false,
+    "lower_half_inferred": true,
+    "frame_quality_pass": false,
+    "burst_qualified": false,
+    "completion_wall_time_known": true,
+    "reject_reasons": [
+      "top_center_repeatability_exceeds_3mm",
+      "geometric_body_center_repeatability_exceeds_3mm"
+    ]
+  },
+  "actual_pickup": false,
+  "actual_sorting": false,
+  "postfix_real_device_accepted": false
+}

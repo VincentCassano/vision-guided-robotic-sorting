@@ -1,0 +1,31 @@
+{
+  "scope": "source_reading_and_archive_integrity_only",
+  "user_direction": "return_to_live_visual_grasp_integration_no_more_payload_identification_prerequisite",
+  "changes": [
+    "Isolated v3 reuses v2 ACK synchronization and first-rejected/latest raw arm evidence",
+    "Record existing controller configuration inside device worker; do not estimate, set or physically certify mass/COM",
+    "Preserve zero World/flange geometry; freeze raw current tool/work/install and full SDK frames per run",
+    "Fresh v4 image acquisition in same entry, close camera before device worker, use unique new archive only",
+    "Restore original task reference images/JSON byte-for-byte from accepted 215223 evidence; do not fit or recapture reference",
+    "Explicit m permits optional current-orientation vertical rise at2percent before5percent high alignment; minimum start target+140mm",
+    "Explicit d required at140mm hover before2percent noncontact final descent"
+  ],
+  "preserved": [
+    "Collision8/self-collisionTrue; no protection setters or automatic error clearing",
+    "Fresh actual state reference,3degree joint reserve,0.08degree/0.5mm/0.005rad drift gates",
+    "Fixed XY1mm vertical corridor, hand configuration/current/status checks and single PREPARE",
+    "Original vision2px/3mm/8frames/2seconds and complete target provenance gates",
+    "Fault stops with no automatic retry/open/return; prior packages immutable"
+  ],
+  "open_issues": [
+    "Controller4109 root cause not confirmed; protected movement may still fail",
+    "Mass/COM physical validity unknown; observing settings is not qualification",
+    "Swept geometry, physical stop response and new-target alignment not certified",
+    "Grasp/lift/bin/return not connected to this entry; complete visual sorting unfinished"
+  ],
+  "offline_project_tests_executed": false,
+  "project_import_compile_AST_mock_FK_IK_executed": false,
+  "SDK_loaded": false,
+  "hardware_connected": false,
+  "runtime_or_real_device_accepted": false
+}

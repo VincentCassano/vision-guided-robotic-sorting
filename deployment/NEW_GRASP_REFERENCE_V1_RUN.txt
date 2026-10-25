@@ -1,0 +1,7 @@
+cd ~/test/battery-d435-preview && \
+sha256sum --quiet -c deployment/new-grasp-reference-v1-files.sha256 && \
+/usr/bin/python3 deployment/run_new_grasp_reference_v1.py
+
+壳落底承托，恢复新成功抓取前的腕姿和位置。
+h调手，pre指定预抓，q返回；r记录腕姿；保持壳/头/板不动，空手挡视野可只移开手；v打开视觉，点选同一空壳按S；合格返回后q统一打包。
+普通堵转/未到位不按失败处理；程序不自动移动机械臂。

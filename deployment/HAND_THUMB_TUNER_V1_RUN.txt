@@ -1,0 +1,6 @@
+cd ~/test/battery-d435-preview && \
+sha256sum --quiet -c deployment/hand-thumb-tuner-v1-files.sha256 && \
+/usr/bin/python3 deployment/run_hand_thumb_tuner.py --execute
+
+启动只读；p对掌，a-e/o选择，d 18000绝对值，d +500或d -500相对值。
+x保存并继续，r重新读取，q退出。数值由操作者任意输入，统一0..65535限幅。

@@ -1,0 +1,430 @@
+{
+  "archive": "tmp/visual_pick_sort_v5_20261022_213659_210991.zip",
+  "sha256": "e17d83cb92364e0d595b619e3aea28dac8c7d6e9a3e58e8a1417b7bff44211b9",
+  "bytes": 12184167,
+  "members": 18,
+  "crc_pass": true,
+  "internal_hashes": 17,
+  "deployed_files_matched": 309,
+  "parent_worker_equal": true,
+  "actual_outcome": "aborted_no_further_writes",
+  "exceptions": [
+    {
+      "error": "RuntimeError('Normal opening target/withdrawal sweep changed')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v5_worker.py\", line 265, in main\n    save();seq.deliver_held_shell(initial)\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v2_sequence.py\", line 59, in deliver_held_shell\n    opened=hand.open_at_bin(self.load_targets,self.load_anchor)\n  File \"/home/rm/test/battery-d435-preview/deployment/tuned_grip_bin_hand.py\", line 135, in open_at_bin\n    raise RuntimeError('Normal opening target/withdrawal sweep changed')\nRuntimeError: Normal opening target/withdrawal sweep changed\n"
+    }
+  ],
+  "arm_writes": 4,
+  "hand_writes": 4,
+  "configuration_writes": 0,
+  "arm_route_feedback_completed": true,
+  "actual_object_picked_up": false,
+  "actual_sort_success": false,
+  "actual_object_outcome_source": "direct_human_user_report_not_inferred_from_position_feedback",
+  "operator_report": "流程跑完，但没夹紧电池没被提起；投放位置朝机器人机身方向后移40mm；段间停顿长",
+  "grip_feedback": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      278,
+      471,
+      134,
+      201,
+      0,
+      1
+    ],
+    "positions": [
+      26501,
+      30504,
+      27001,
+      18999,
+      65529,
+      64558
+    ],
+    "targets": [
+      26501,
+      30501,
+      27001,
+      18999,
+      65535,
+      64558
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 692755.480064973,
+    "finished_monotonic": 692757.602005079,
+    "final_status_started_monotonic": 692757.247094517,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "grip_scope": {
+    "address": 1135,
+    "count": 4,
+    "values": [
+      26500,
+      30500,
+      27000,
+      19000
+    ],
+    "uncommanded_channels": [
+      4,
+      5
+    ],
+    "retained_targets": [
+      65535,
+      64558
+    ],
+    "retained_actual": [
+      65535,
+      64558
+    ]
+  },
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      5
+    ],
+    "current": [
+      52,
+      2,
+      2,
+      0,
+      0,
+      62
+    ],
+    "positions": [
+      14,
+      0,
+      3,
+      0,
+      0,
+      64858
+    ],
+    "targets": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      64558
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 692861.593902715,
+    "finished_monotonic": 692863.734401495,
+    "final_status_started_monotonic": 692863.383951535,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "bin_opening_before": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      2,
+      190,
+      31,
+      48,
+      0,
+      74
+    ],
+    "positions": [
+      26501,
+      30501,
+      27001,
+      18999,
+      65535,
+      64558
+    ],
+    "targets": [
+      26501,
+      30501,
+      27001,
+      18999,
+      65535,
+      64558
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 692858.969218263,
+    "finished_monotonic": 692861.089412998,
+    "final_status_started_monotonic": 692860.739200668,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "timing": [
+    {
+      "phase": "lifting_loaded_140mm",
+      "elapsed_seconds": 41.92573881498538,
+      "command_monotonic": 692769.12910378,
+      "next_command_gap_seconds": 5.25398822594434
+    },
+    {
+      "phase": "school_high_transit",
+      "elapsed_seconds": 10.755364495911635,
+      "command_monotonic": 692816.308830821,
+      "next_command_gap_seconds": 5.244456849177368
+    },
+    {
+      "phase": "school_restart_transit",
+      "elapsed_seconds": 7.930175674962811,
+      "command_monotonic": 692832.308652166,
+      "next_command_gap_seconds": 5.254688012995757
+    },
+    {
+      "phase": "school_black_drop",
+      "elapsed_seconds": 10.712363322963938,
+      "command_monotonic": 692845.493515854,
+      "next_command_gap_seconds": null
+    }
+  ],
+  "successful_segment_endpoint_reference": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.45026201009750366,
+      -0.4180850088596344,
+      -0.14466699957847595,
+      -2.5940001010894775,
+      -1.2280000448226929,
+      -1.7480000257492065
+    ],
+    "joints": [
+      -39.40999984741211,
+      -77.56400299072266,
+      -20.261999130249023,
+      64.68599700927734,
+      25.451000213623047,
+      -12.487000465393066
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      138.5900001525879,
+      52.435997009277344,
+      114.73800086975098,
+      113.31400299072266,
+      102.54899978637695,
+      347.51299953460693
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "reference_scope": "completed_ACK_and_event_qualified_school_black_drop_segment_only_not_fault_last_arm_state",
+  "startup_requires_new_current_match": true,
+  "sdk_cleanup": [
+    {
+      "method": "Arm_Socket_Close",
+      "raw_repr": "None"
+    },
+    {
+      "method": "RM_API_UnInit",
+      "raw_repr": "0"
+    }
+  ],
+  "cleanup_errors": [],
+  "planned_changes": [
+    "Thumb flex/index +1000 each as one bounded unaccepted grip candidate; middle/ring/little/opposition unchanged",
+    "Drop only1135x5; preserve opposition without rewriting1140",
+    "Per-run readonly100ms candidate probe before grip; writes keep300ms, malformed/refused/late frames still abort",
+    "Lift5percent instead of2percent; transits10 unchanged; exact-stop/trajectory notification and vertical-before-transfer unchanged",
+    "Black drop toward fixed head camera reverse optical-axis horizontal projection40mm, Z/wrist unchanged"
+  ],
+  "new_runtime_accepted": false,
+  "SDK_loaded": false,
+  "offline_project_tests_executed": false,
+  "fault_software_stop_records": [
+    {
+      "event": "sdk_call_before",
+      "monotonic": 692863.827616133,
+      "method": "Move_Stop_Cmd",
+      "args": [],
+      "kwargs": {
+        "block": false
+      }
+    },
+    {
+      "event": "sdk_call_result",
+      "monotonic": 692863.828052267,
+      "method": "Move_Stop_Cmd",
+      "result": 0
+    }
+  ],
+  "software_stop_is_not_physical_stop_proof": true,
+  "operator_latest_state": "已张开，手在投放位置"
+}

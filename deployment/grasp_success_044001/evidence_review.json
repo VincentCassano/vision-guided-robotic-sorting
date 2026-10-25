@@ -1,0 +1,37 @@
+{
+  "source_archive": "grasp_rebuild_v1_20261024_044001_108791.zip",
+  "source_archive_sha256": "cde372173619f3a1ce5256fa64affcc9dfc7f04ae7d001e27743e26859761565",
+  "success_record_sha256": "8a4a92c9cd2adf2b6976f6cdde823b8b33364d8a9522953bff8bc514f69b192b",
+  "worker_result_sha256": "c38608575c62b257aff05d62f45e8e3d8e4db175d749e24a3650459c0c59ffff",
+  "archive_crc_and36_hashes_pass": true,
+  "actual_lift_world_mm": [
+    -0.009000301361083984,
+    0.006020069122314453,
+    179.98000152874738
+  ],
+  "grip_targets": [
+    26001,
+    16899,
+    19100,
+    32000,
+    65535,
+    65535
+  ],
+  "prepare_targets": [
+    6001,
+    6000,
+    6001,
+    32000,
+    65535,
+    65535
+  ],
+  "arm_writes": 1,
+  "hand_writes": 3,
+  "SDK_cleanup_finished": true,
+  "exceptions": [],
+  "cleanup_errors": [],
+  "operator_observed_pickup_success": true,
+  "acceptance_scope": "Actual new wrist/hand single-shell pickup and World-Z179.980mm endpoint; no new visual-position or full-bin-cycle acceptance",
+  "holding_sensor_verified": false,
+  "full_visual_pick_sort_accepted": false
+}

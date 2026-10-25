@@ -1,0 +1,86 @@
+{
+  "scope": "new seated wrist plus actual empty vertical raise and same-place visual reference; no automatic arm motion",
+  "user_changed_plan": true,
+  "old_200928_wrist_retired_for_motion": true,
+  "hand_recipe_unchanged": true,
+  "flow": [
+    "r current seated PRE wrist read",
+    "onsite empty hand fixed XY/RPY World Z plus150mm",
+    "u current raised PRE wrist read",
+    "v unchanged shell visual burst S",
+    "q one recursive ZIP"
+  ],
+  "interfaces": {
+    "parent": "run_new_grasp_reference_v2.py",
+    "anchor": "new_grasp_task_anchor_v2.py",
+    "arm_reader": "new_grasp_reference_worker_v1.py --output; parent assigns seated/upper role, raw reader record retained",
+    "optional_hand_console": "run_hand_thumb_tuner_v2.py --execute; only if PRE changed",
+    "vision": "run_new_grasp_reference_vision_v1.py existing reviewed arguments",
+    "helper_exports": [
+      "validate_lift_reference",
+      "make_lift_anchor"
+    ]
+  },
+  "constraints": {
+    "ordinary_joint_reserve_both_ends_degrees": 3,
+    "actual_z_increase_minimum_mm": 140,
+    "suggested_manual_increase_mm": 150,
+    "xy_maximum_mm": 1,
+    "orientation_SO3_maximum_rad": 0.005,
+    "required_hand_targets": [
+      35000,
+      7500,
+      9480,
+      30000,
+      65535,
+      65535
+    ],
+    "target_tolerance": 2,
+    "actual_finger_arrival_required": false,
+    "normal_status5_is_failure": false,
+    "endpoint_frame_signatures_and_limits_unchanged": true,
+    "SDK_cleanup_must_finish": true
+  },
+  "semantics": {
+    "empty_hand_endpoint_evidence_only": true,
+    "object_pickup_proved": false,
+    "continuous_path_sensed": false,
+    "automatic_grasp_cycle_accepted": false,
+    "other_target_reachability_accepted": false,
+    "current_pose_from_fresh_read_not_old_fault": true,
+    "operator_u_explicitly_confirms_empty_manual_vertical_teaching": true
+  },
+  "retirement": {
+    "file": "calibration/new_wrist_reference_pending.json",
+    "local_file_only": true,
+    "old_v13_parent_and_worker_accepted_anchor_refuse_while_marker_exists": true,
+    "new_reference_recorded_does_not_enable_motion": true,
+    "new_motion_integration_pending": true,
+    "historical_reference_files_preserved": true
+  },
+  "persistence": {
+    "r_or_h_clears_both_endpoint_and_visual_caches": true,
+    "u_resampling_clears_upper_and_binding_before_attempt": true,
+    "v_resampling_clears_binding_before_attempt": true,
+    "old_attempts_and_superseded_anchor_files_retained": true,
+    "old_pointer_bytes_backed_up_before_new_pointer": true,
+    "optional_h_child_directory_copied_into_parent_ZIP": true,
+    "SDK_absent_during_parent_prompts_teaching_and_vision": true
+  },
+  "source_review": "root manual reading and independent source review; no executable validation",
+  "validation": {
+    "project_execution": false,
+    "compile_AST_tests_mock_FK_IK": false,
+    "SDK_loaded": false,
+    "robot_connected": false,
+    "hardware_or_camera_used": false,
+    "file_crc_sha_only": true,
+    "new_flow_real_device_accepted": false
+  },
+  "known_limits": [
+    "The old wrist had only static binding; this workflow adds actual manually taught lift endpoint evidence.",
+    "No automatic lifting is performed and no object pickup is inferred.",
+    "User must keep shell/head/board/mount unchanged; new capture needs real onsite records.",
+    "Interruption of a child does not imply physical stop or SDK cleanup; raw result is checked before acceptance."
+  ]
+}

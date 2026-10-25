@@ -1,0 +1,3035 @@
+{
+  "start_record": {
+    "arm": {
+      "schema_version": 1,
+      "scope": "new_seated_pregrasp_current_arm_readonly_bracket",
+      "timestamp_utc": "2026-10-24T05:38:09.130620+00:00",
+      "read_only": true,
+      "reference_qualified": true,
+      "reference_arm": {
+        "frames": {
+          "work": {
+            "frame_name": {
+              "name": "World"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "tool": {
+            "frame_name": {
+              "name": "Arm_Tip"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "frame_names": {
+          "work": "World",
+          "tool": "Arm_Tip"
+        },
+        "frame_signatures": {
+          "work": {
+            "name": "World",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "tool": {
+            "name": "Arm_Tip",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "joints": [
+          -39.981998443603516,
+          -63.57899856567383,
+          -79.28700256347656,
+          -50.358001708984375,
+          -33.89799880981445,
+          249.66099548339844
+        ],
+        "pose": [
+          0.18271000683307648,
+          -0.2962709963321686,
+          -0.18082599341869354,
+          -2.1440000534057617,
+          -0.006000000052154064,
+          2.1659998893737793
+        ],
+        "limits": {
+          "minimum": [
+            -178.0,
+            -130.0,
+            -135.0,
+            -178.0,
+            -128.0,
+            -360.0
+          ],
+          "maximum": [
+            178.0,
+            130.0,
+            135.0,
+            178.0,
+            128.0,
+            360.0
+          ],
+          "speed": [
+            180.0,
+            180.0,
+            225.0,
+            225.0,
+            225.0,
+            225.0
+          ],
+          "acceleration": [
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0
+          ]
+        },
+        "reserve": [
+          138.01800155639648,
+          66.42100143432617,
+          55.71299743652344,
+          127.64199829101562,
+          94.10200119018555,
+          110.33900451660156
+        ],
+        "arm_error": 0,
+        "system_error": 0
+      },
+      "execution_ready": false,
+      "arm_actuator_writes": 0,
+      "arm_stop_writes": 0,
+      "hand_register_writes": 0,
+      "controller_configuration_writes": 0,
+      "physical_stop_verified": false,
+      "offline_project_tests_executed": false,
+      "SDK_cleanup_finished": true,
+      "raw_before": {
+        "Get_Current_Work_Frame": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ]
+        },
+        "Get_Current_Tool_Frame": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ]
+        },
+        "Get_Current_Arm_State": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              -39.981998443603516,
+              -63.58000183105469,
+              -79.28700256347656,
+              -50.35900115966797,
+              -33.89899826049805,
+              249.66099548339844
+            ],
+            [
+              0.1826999932527542,
+              -0.2962700128555298,
+              -0.18082700669765472,
+              -2.1440000534057617,
+              -0.006000000052154064,
+              2.1659998893737793
+            ],
+            0,
+            0
+          ]
+        },
+        "Get_Joint_Speed": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ]
+          ]
+        },
+        "Get_Joint_Acc": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          ]
+        },
+        "Get_Joint_Min_Pos": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ]
+          ]
+        },
+        "Get_Joint_Max_Pos": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ]
+          ]
+        }
+      },
+      "raw_after": {
+        "Get_Current_Work_Frame": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ]
+        },
+        "Get_Current_Tool_Frame": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ]
+        },
+        "Get_Current_Arm_State": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              -39.981998443603516,
+              -63.57899856567383,
+              -79.28700256347656,
+              -50.358001708984375,
+              -33.89799880981445,
+              249.66099548339844
+            ],
+            [
+              0.18271000683307648,
+              -0.2962709963321686,
+              -0.18082599341869354,
+              -2.1440000534057617,
+              -0.006000000052154064,
+              2.1659998893737793
+            ],
+            0,
+            0
+          ]
+        },
+        "Get_Joint_Speed": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ]
+          ]
+        },
+        "Get_Joint_Acc": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          ]
+        },
+        "Get_Joint_Min_Pos": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ]
+          ]
+        },
+        "Get_Joint_Max_Pos": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ]
+          ]
+        }
+      },
+      "queries": {
+        "before": {
+          "Get_Current_Work_Frame": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              {
+                "frame_name": {
+                  "name": "World"
+                },
+                "pose": {
+                  "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "quaternion": {
+                    "w": 0.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "euler": {
+                    "rx": 0.0,
+                    "ry": 0.0,
+                    "rz": 0.0
+                  }
+                },
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            ]
+          },
+          "Get_Current_Tool_Frame": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              {
+                "frame_name": {
+                  "name": "Arm_Tip"
+                },
+                "pose": {
+                  "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "quaternion": {
+                    "w": 0.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "euler": {
+                    "rx": 0.0,
+                    "ry": 0.0,
+                    "rz": 0.0
+                  }
+                },
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            ]
+          },
+          "Get_Current_Arm_State": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                -39.981998443603516,
+                -63.58000183105469,
+                -79.28700256347656,
+                -50.35900115966797,
+                -33.89899826049805,
+                249.66099548339844
+              ],
+              [
+                0.1826999932527542,
+                -0.2962700128555298,
+                -0.18082700669765472,
+                -2.1440000534057617,
+                -0.006000000052154064,
+                2.1659998893737793
+              ],
+              0,
+              0
+            ]
+          },
+          "Get_Joint_Speed": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                180.0,
+                180.0,
+                225.0,
+                225.0,
+                225.0,
+                225.0
+              ]
+            ]
+          },
+          "Get_Joint_Acc": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                600.0,
+                600.0,
+                600.0,
+                600.0,
+                600.0,
+                600.0
+              ]
+            ]
+          },
+          "Get_Joint_Min_Pos": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                -178.0,
+                -130.0,
+                -135.0,
+                -178.0,
+                -128.0,
+                -360.0
+              ]
+            ]
+          },
+          "Get_Joint_Max_Pos": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                178.0,
+                130.0,
+                135.0,
+                178.0,
+                128.0,
+                360.0
+              ]
+            ]
+          }
+        },
+        "after": {
+          "Get_Current_Work_Frame": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              {
+                "frame_name": {
+                  "name": "World"
+                },
+                "pose": {
+                  "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "quaternion": {
+                    "w": 0.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "euler": {
+                    "rx": 0.0,
+                    "ry": 0.0,
+                    "rz": 0.0
+                  }
+                },
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            ]
+          },
+          "Get_Current_Tool_Frame": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              {
+                "frame_name": {
+                  "name": "Arm_Tip"
+                },
+                "pose": {
+                  "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "quaternion": {
+                    "w": 0.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "euler": {
+                    "rx": 0.0,
+                    "ry": 0.0,
+                    "rz": 0.0
+                  }
+                },
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            ]
+          },
+          "Get_Current_Arm_State": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                -39.981998443603516,
+                -63.57899856567383,
+                -79.28700256347656,
+                -50.358001708984375,
+                -33.89799880981445,
+                249.66099548339844
+              ],
+              [
+                0.18271000683307648,
+                -0.2962709963321686,
+                -0.18082599341869354,
+                -2.1440000534057617,
+                -0.006000000052154064,
+                2.1659998893737793
+              ],
+              0,
+              0
+            ]
+          },
+          "Get_Joint_Speed": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                180.0,
+                180.0,
+                225.0,
+                225.0,
+                225.0,
+                225.0
+              ]
+            ]
+          },
+          "Get_Joint_Acc": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                600.0,
+                600.0,
+                600.0,
+                600.0,
+                600.0,
+                600.0
+              ]
+            ]
+          },
+          "Get_Joint_Min_Pos": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                -178.0,
+                -130.0,
+                -135.0,
+                -178.0,
+                -128.0,
+                -360.0
+              ]
+            ]
+          },
+          "Get_Joint_Max_Pos": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                178.0,
+                130.0,
+                135.0,
+                178.0,
+                128.0,
+                360.0
+              ]
+            ]
+          }
+        }
+      },
+      "sdk_calls": [
+        {
+          "method": "Get_Current_Work_Frame",
+          "started_monotonic": 836569.261910565,
+          "raw": [
+            0,
+            {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ],
+          "finished_monotonic": 836569.283797734
+        },
+        {
+          "method": "Get_Current_Tool_Frame",
+          "started_monotonic": 836569.283855911,
+          "raw": [
+            0,
+            {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ],
+          "finished_monotonic": 836569.305252928
+        },
+        {
+          "method": "Get_Current_Arm_State",
+          "started_monotonic": 836569.30535453,
+          "raw": [
+            0,
+            [
+              -39.981998443603516,
+              -63.58000183105469,
+              -79.28700256347656,
+              -50.35900115966797,
+              -33.89899826049805,
+              249.66099548339844
+            ],
+            [
+              0.1826999932527542,
+              -0.2962700128555298,
+              -0.18082700669765472,
+              -2.1440000534057617,
+              -0.006000000052154064,
+              2.1659998893737793
+            ],
+            0,
+            0
+          ],
+          "finished_monotonic": 836569.336746478
+        },
+        {
+          "method": "Get_Joint_Speed",
+          "started_monotonic": 836569.336823855,
+          "raw": [
+            0,
+            [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ]
+          ],
+          "finished_monotonic": 836569.367660499
+        },
+        {
+          "method": "Get_Joint_Acc",
+          "started_monotonic": 836569.367697939,
+          "raw": [
+            0,
+            [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          ],
+          "finished_monotonic": 836569.388493956
+        },
+        {
+          "method": "Get_Joint_Min_Pos",
+          "started_monotonic": 836569.388542821,
+          "raw": [
+            0,
+            [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ]
+          ],
+          "finished_monotonic": 836569.409370518
+        },
+        {
+          "method": "Get_Joint_Max_Pos",
+          "started_monotonic": 836569.409419254,
+          "raw": [
+            0,
+            [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ]
+          ],
+          "finished_monotonic": 836569.430178759
+        },
+        {
+          "method": "Get_Current_Work_Frame",
+          "started_monotonic": 836569.433672378,
+          "raw": [
+            0,
+            {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ],
+          "finished_monotonic": 836569.444485176
+        },
+        {
+          "method": "Get_Current_Tool_Frame",
+          "started_monotonic": 836569.444572986,
+          "raw": [
+            0,
+            {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ],
+          "finished_monotonic": 836569.465368234
+        },
+        {
+          "method": "Get_Current_Arm_State",
+          "started_monotonic": 836569.465426507,
+          "raw": [
+            0,
+            [
+              -39.981998443603516,
+              -63.57899856567383,
+              -79.28700256347656,
+              -50.358001708984375,
+              -33.89799880981445,
+              249.66099548339844
+            ],
+            [
+              0.18271000683307648,
+              -0.2962709963321686,
+              -0.18082599341869354,
+              -2.1440000534057617,
+              -0.006000000052154064,
+              2.1659998893737793
+            ],
+            0,
+            0
+          ],
+          "finished_monotonic": 836569.48663837
+        },
+        {
+          "method": "Get_Joint_Speed",
+          "started_monotonic": 836569.486694563,
+          "raw": [
+            0,
+            [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ]
+          ],
+          "finished_monotonic": 836569.507456115
+        },
+        {
+          "method": "Get_Joint_Acc",
+          "started_monotonic": 836569.507498068,
+          "raw": [
+            0,
+            [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          ],
+          "finished_monotonic": 836569.528241571
+        },
+        {
+          "method": "Get_Joint_Min_Pos",
+          "started_monotonic": 836569.528277796,
+          "raw": [
+            0,
+            [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ]
+          ],
+          "finished_monotonic": 836569.54905794
+        },
+        {
+          "method": "Get_Joint_Max_Pos",
+          "started_monotonic": 836569.549102933,
+          "raw": [
+            0,
+            [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ]
+          ],
+          "finished_monotonic": 836569.569986951
+        }
+      ],
+      "protection_wire": [
+        {
+          "label": "before_sdk_connection",
+          "event": "transaction_begin",
+          "sequence": 1,
+          "monotonic": 836564.837695191,
+          "request": {
+            "command": "get_collision_stage"
+          },
+          "fresh_socket": true
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "connected",
+          "sequence": 1,
+          "endpoint": [
+            "169.254.128.18",
+            8080
+          ],
+          "monotonic": 836564.84160136
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "tx",
+          "sequence": 1,
+          "monotonic": 836565.142134538,
+          "request": {
+            "command": "get_collision_stage"
+          },
+          "hex": "7b22636f6d6d616e64223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "rx",
+          "sequence": 1,
+          "monotonic": 836565.155291179,
+          "hex": "7b22636f6c6c6973696f6e5f7374616765223a382c227374617465223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "response",
+          "sequence": 1,
+          "monotonic": 836565.205701007,
+          "elapsed_s": 0.36800805595703423,
+          "response": {
+            "collision_stage": 8,
+            "state": "get_collision_stage"
+          },
+          "value": [
+            0,
+            8
+          ]
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "closed",
+          "sequence": 1,
+          "monotonic": 836565.20591717
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "transaction_begin",
+          "sequence": 2,
+          "monotonic": 836565.205962579,
+          "request": {
+            "command": "get_self_collision_enable"
+          },
+          "fresh_socket": true
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "connected",
+          "sequence": 2,
+          "endpoint": [
+            "169.254.128.18",
+            8080
+          ],
+          "monotonic": 836565.207122692
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "tx",
+          "sequence": 2,
+          "monotonic": 836565.507656606,
+          "request": {
+            "command": "get_self_collision_enable"
+          },
+          "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65227d0d0a"
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "rx",
+          "sequence": 2,
+          "monotonic": 836565.511511223,
+          "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65222c22656e61626c655f7374617465223a747275657d0d0a"
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "response",
+          "sequence": 2,
+          "monotonic": 836565.561799193,
+          "elapsed_s": 0.3558395899599418,
+          "response": {
+            "command": "get_self_collision_enable",
+            "enable_state": true
+          },
+          "value": [
+            0,
+            true
+          ]
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "closed",
+          "sequence": 2,
+          "monotonic": 836565.5620215
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "transaction_begin",
+          "sequence": 1,
+          "monotonic": 836569.575916958,
+          "request": {
+            "command": "get_collision_stage"
+          },
+          "fresh_socket": true
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "connected",
+          "sequence": 1,
+          "endpoint": [
+            "169.254.128.18",
+            8080
+          ],
+          "monotonic": 836569.57730725
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "tx",
+          "sequence": 1,
+          "monotonic": 836569.877874277,
+          "request": {
+            "command": "get_collision_stage"
+          },
+          "hex": "7b22636f6d6d616e64223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "rx",
+          "sequence": 1,
+          "monotonic": 836569.895478855,
+          "hex": "7b22636f6c6c6973696f6e5f7374616765223a382c227374617465223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "response",
+          "sequence": 1,
+          "monotonic": 836569.945876297,
+          "elapsed_s": 0.36996154801454395,
+          "response": {
+            "collision_stage": 8,
+            "state": "get_collision_stage"
+          },
+          "value": [
+            0,
+            8
+          ]
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "closed",
+          "sequence": 1,
+          "monotonic": 836569.946069228
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "transaction_begin",
+          "sequence": 2,
+          "monotonic": 836569.946118445,
+          "request": {
+            "command": "get_self_collision_enable"
+          },
+          "fresh_socket": true
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "connected",
+          "sequence": 2,
+          "endpoint": [
+            "169.254.128.18",
+            8080
+          ],
+          "monotonic": 836569.947381216
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "tx",
+          "sequence": 2,
+          "monotonic": 836570.247896689,
+          "request": {
+            "command": "get_self_collision_enable"
+          },
+          "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65227d0d0a"
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "rx",
+          "sequence": 2,
+          "monotonic": 836570.253333057,
+          "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65222c22656e61626c655f7374617465223a747275657d0d0a"
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "response",
+          "sequence": 2,
+          "monotonic": 836570.303649122,
+          "elapsed_s": 0.357532404945232,
+          "response": {
+            "command": "get_self_collision_enable",
+            "enable_state": true
+          },
+          "value": [
+            0,
+            true
+          ]
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "closed",
+          "sequence": 2,
+          "monotonic": 836570.303808068
+        }
+      ],
+      "exceptions": [],
+      "cleanup_errors": [],
+      "warnings": [],
+      "outcome": "current_new_pregrasp_arm_reference_recorded",
+      "protection_ready_for_later_motion": true,
+      "tolerances": {
+        "joint_degrees": 0.08,
+        "position_m": 0.0005,
+        "orientation_rad": 0.005
+      },
+      "role_confirmation_required_from_parent": true,
+      "seated_shell_or_noncontact_geometry_verified": false,
+      "sdk_provenance": {
+        "sdk_directory": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package",
+        "sdk_source_sha256": {
+          "robotic_arm.py": "a15e4695426325c590f89d3e05b6bb36186793a06f72dd6a500cc828504f74b8",
+          "log_setting.py": "f37e27d8e34b0d00c33cad732e83163e57efe9104a1551e36deafaf6b2b9e90f"
+        },
+        "native_sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+        "native_bytes": 690912,
+        "host_machine": "aarch64"
+      },
+      "source_sha256": {
+        "new_grasp_reference_worker_v1.py": "79d7eefcbb3042a2a45d57a6e97686f6d6c4692cdd0377efb107fe254de3b2a1",
+        "inspect_left_arm.py": "c2aaa48ee9e561a58b126976319868014bc6bfe141f6d908c26a56312ade4644",
+        "arm_protection_transport.py": "2a0c03b84c452053b4ef81b4ec403ff92aa5629ca7464bdbf2dbebefe15931b7",
+        "arm_sdk_reviewed_hashes.json": "1f79be547928508bd02016922e7d6c2fb7cc4c1f009cce48549dd7ca9efd6b6e"
+      },
+      "protection_before": {
+        "Get_Collision_Stage": [
+          0,
+          8
+        ],
+        "Get_Self_Collision_Enable": [
+          0,
+          true
+        ]
+      },
+      "sdk_socket_state_raw": 0,
+      "bracket_delta": {
+        "joint_degrees": [
+          0.0,
+          0.001003265380859375,
+          0.0,
+          0.00099945068359375,
+          0.00099945068359375,
+          0.0
+        ],
+        "position_m": [
+          1.0013580322265625e-05,
+          -9.834766387939453e-07,
+          1.0132789611816406e-06
+        ],
+        "position_distance_m": 1.0112653035810737e-05,
+        "orientation_angle_rad": 0.0,
+        "frame_signatures_unchanged": true,
+        "limits_unchanged": true
+      },
+      "reference_source": "two_healthy_current_SDK_GET_brackets_not_fault_or_historical_pose",
+      "sdk_cleanup_results": [
+        {
+          "method": "Arm_Socket_Close",
+          "raw": null
+        },
+        {
+          "method": "RM_API_UnInit",
+          "raw": 0
+        }
+      ],
+      "protection_after": {
+        "Get_Collision_Stage": [
+          0,
+          8
+        ],
+        "Get_Self_Collision_Enable": [
+          0,
+          true
+        ]
+      },
+      "closed_timestamp_utc": "2026-10-24T05:38:14.606665+00:00"
+    },
+    "hand": {
+      "ok": true,
+      "notice": "已读取；状态5或未到位可继续调，保护3/4通道只可退让",
+      "snapshot": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "targets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "positions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "current": [
+          2,
+          2,
+          2,
+          0,
+          40,
+          1
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "protected_channels": [],
+        "status5_channels": [],
+        "blockers": [],
+        "started_monotonic": 836578.112635487,
+        "finished_monotonic": 836582.006909243,
+        "reads_are_sequential": true,
+        "physical_stop_verified": false,
+        "holding_verified": false,
+        "actual_target_differences": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "snapshot_stale": false,
+      "connected": true,
+      "needs_reconnect": false,
+      "configuration_matched": true,
+      "blockers": [],
+      "attempted": false,
+      "acknowledged": false,
+      "physical_stop_verified": false,
+      "holding_verified": false
+    },
+    "source_folder": "/home/rm/test/battery-d435-preview/captures/grasp_near_record_v1_20261024_133754_143728/cycle_001/start_133757_324162",
+    "timestamp_utc": "2026-10-24T05:38:26.312042+00:00"
+  },
+  "wrist_record": {
+    "arm": {
+      "schema_version": 1,
+      "scope": "new_seated_pregrasp_current_arm_readonly_bracket",
+      "timestamp_utc": "2026-10-24T05:40:11.153069+00:00",
+      "read_only": true,
+      "reference_qualified": true,
+      "reference_arm": {
+        "frames": {
+          "work": {
+            "frame_name": {
+              "name": "World"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "tool": {
+            "frame_name": {
+              "name": "Arm_Tip"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "frame_names": {
+          "work": "World",
+          "tool": "Arm_Tip"
+        },
+        "frame_signatures": {
+          "work": {
+            "name": "World",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "tool": {
+            "name": "Arm_Tip",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "joints": [
+          -39.981998443603516,
+          -63.58000183105469,
+          -79.28700256347656,
+          -50.356998443603516,
+          -33.89899826049805,
+          249.66200256347656
+        ],
+        "pose": [
+          0.18269799649715424,
+          -0.29626700282096863,
+          -0.1808280050754547,
+          -2.1440000534057617,
+          -0.006000000052154064,
+          2.1659998893737793
+        ],
+        "limits": {
+          "minimum": [
+            -178.0,
+            -130.0,
+            -135.0,
+            -178.0,
+            -128.0,
+            -360.0
+          ],
+          "maximum": [
+            178.0,
+            130.0,
+            135.0,
+            178.0,
+            128.0,
+            360.0
+          ],
+          "speed": [
+            180.0,
+            180.0,
+            225.0,
+            225.0,
+            225.0,
+            225.0
+          ],
+          "acceleration": [
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0
+          ]
+        },
+        "reserve": [
+          138.01800155639648,
+          66.41999816894531,
+          55.71299743652344,
+          127.64300155639648,
+          94.10100173950195,
+          110.33799743652344
+        ],
+        "arm_error": 0,
+        "system_error": 0
+      },
+      "execution_ready": false,
+      "arm_actuator_writes": 0,
+      "arm_stop_writes": 0,
+      "hand_register_writes": 0,
+      "controller_configuration_writes": 0,
+      "physical_stop_verified": false,
+      "offline_project_tests_executed": false,
+      "SDK_cleanup_finished": true,
+      "raw_before": {
+        "Get_Current_Work_Frame": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ]
+        },
+        "Get_Current_Tool_Frame": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ]
+        },
+        "Get_Current_Arm_State": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              -39.981998443603516,
+              -63.58000183105469,
+              -79.28700256347656,
+              -50.358001708984375,
+              -33.89699935913086,
+              249.66099548339844
+            ],
+            [
+              0.18270300328731537,
+              -0.2962679862976074,
+              -0.18083299696445465,
+              -2.1440000534057617,
+              -0.006000000052154064,
+              2.1659998893737793
+            ],
+            0,
+            0
+          ]
+        },
+        "Get_Joint_Speed": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ]
+          ]
+        },
+        "Get_Joint_Acc": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          ]
+        },
+        "Get_Joint_Min_Pos": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ]
+          ]
+        },
+        "Get_Joint_Max_Pos": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ]
+          ]
+        }
+      },
+      "raw_after": {
+        "Get_Current_Work_Frame": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ]
+        },
+        "Get_Current_Tool_Frame": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ]
+        },
+        "Get_Current_Arm_State": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              -39.981998443603516,
+              -63.58000183105469,
+              -79.28700256347656,
+              -50.356998443603516,
+              -33.89899826049805,
+              249.66200256347656
+            ],
+            [
+              0.18269799649715424,
+              -0.29626700282096863,
+              -0.1808280050754547,
+              -2.1440000534057617,
+              -0.006000000052154064,
+              2.1659998893737793
+            ],
+            0,
+            0
+          ]
+        },
+        "Get_Joint_Speed": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ]
+          ]
+        },
+        "Get_Joint_Acc": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          ]
+        },
+        "Get_Joint_Min_Pos": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ]
+          ]
+        },
+        "Get_Joint_Max_Pos": {
+          "status": 0,
+          "ok": true,
+          "data": [
+            [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ]
+          ]
+        }
+      },
+      "queries": {
+        "before": {
+          "Get_Current_Work_Frame": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              {
+                "frame_name": {
+                  "name": "World"
+                },
+                "pose": {
+                  "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "quaternion": {
+                    "w": 0.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "euler": {
+                    "rx": 0.0,
+                    "ry": 0.0,
+                    "rz": 0.0
+                  }
+                },
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            ]
+          },
+          "Get_Current_Tool_Frame": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              {
+                "frame_name": {
+                  "name": "Arm_Tip"
+                },
+                "pose": {
+                  "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "quaternion": {
+                    "w": 0.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "euler": {
+                    "rx": 0.0,
+                    "ry": 0.0,
+                    "rz": 0.0
+                  }
+                },
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            ]
+          },
+          "Get_Current_Arm_State": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                -39.981998443603516,
+                -63.58000183105469,
+                -79.28700256347656,
+                -50.358001708984375,
+                -33.89699935913086,
+                249.66099548339844
+              ],
+              [
+                0.18270300328731537,
+                -0.2962679862976074,
+                -0.18083299696445465,
+                -2.1440000534057617,
+                -0.006000000052154064,
+                2.1659998893737793
+              ],
+              0,
+              0
+            ]
+          },
+          "Get_Joint_Speed": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                180.0,
+                180.0,
+                225.0,
+                225.0,
+                225.0,
+                225.0
+              ]
+            ]
+          },
+          "Get_Joint_Acc": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                600.0,
+                600.0,
+                600.0,
+                600.0,
+                600.0,
+                600.0
+              ]
+            ]
+          },
+          "Get_Joint_Min_Pos": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                -178.0,
+                -130.0,
+                -135.0,
+                -178.0,
+                -128.0,
+                -360.0
+              ]
+            ]
+          },
+          "Get_Joint_Max_Pos": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                178.0,
+                130.0,
+                135.0,
+                178.0,
+                128.0,
+                360.0
+              ]
+            ]
+          }
+        },
+        "after": {
+          "Get_Current_Work_Frame": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              {
+                "frame_name": {
+                  "name": "World"
+                },
+                "pose": {
+                  "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "quaternion": {
+                    "w": 0.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "euler": {
+                    "rx": 0.0,
+                    "ry": 0.0,
+                    "rz": 0.0
+                  }
+                },
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            ]
+          },
+          "Get_Current_Tool_Frame": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              {
+                "frame_name": {
+                  "name": "Arm_Tip"
+                },
+                "pose": {
+                  "position": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "quaternion": {
+                    "w": 0.0,
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                  },
+                  "euler": {
+                    "rx": 0.0,
+                    "ry": 0.0,
+                    "rz": 0.0
+                  }
+                },
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            ]
+          },
+          "Get_Current_Arm_State": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                -39.981998443603516,
+                -63.58000183105469,
+                -79.28700256347656,
+                -50.356998443603516,
+                -33.89899826049805,
+                249.66200256347656
+              ],
+              [
+                0.18269799649715424,
+                -0.29626700282096863,
+                -0.1808280050754547,
+                -2.1440000534057617,
+                -0.006000000052154064,
+                2.1659998893737793
+              ],
+              0,
+              0
+            ]
+          },
+          "Get_Joint_Speed": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                180.0,
+                180.0,
+                225.0,
+                225.0,
+                225.0,
+                225.0
+              ]
+            ]
+          },
+          "Get_Joint_Acc": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                600.0,
+                600.0,
+                600.0,
+                600.0,
+                600.0,
+                600.0
+              ]
+            ]
+          },
+          "Get_Joint_Min_Pos": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                -178.0,
+                -130.0,
+                -135.0,
+                -178.0,
+                -128.0,
+                -360.0
+              ]
+            ]
+          },
+          "Get_Joint_Max_Pos": {
+            "status": 0,
+            "ok": true,
+            "data": [
+              [
+                178.0,
+                130.0,
+                135.0,
+                178.0,
+                128.0,
+                360.0
+              ]
+            ]
+          }
+        }
+      },
+      "sdk_calls": [
+        {
+          "method": "Get_Current_Work_Frame",
+          "started_monotonic": 836691.29013874,
+          "raw": [
+            0,
+            {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ],
+          "finished_monotonic": 836691.321295497
+        },
+        {
+          "method": "Get_Current_Tool_Frame",
+          "started_monotonic": 836691.321394379,
+          "raw": [
+            0,
+            {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ],
+          "finished_monotonic": 836691.342309937
+        },
+        {
+          "method": "Get_Current_Arm_State",
+          "started_monotonic": 836691.34236981,
+          "raw": [
+            0,
+            [
+              -39.981998443603516,
+              -63.58000183105469,
+              -79.28700256347656,
+              -50.358001708984375,
+              -33.89699935913086,
+              249.66099548339844
+            ],
+            [
+              0.18270300328731537,
+              -0.2962679862976074,
+              -0.18083299696445465,
+              -2.1440000534057617,
+              -0.006000000052154064,
+              2.1659998893737793
+            ],
+            0,
+            0
+          ],
+          "finished_monotonic": 836691.353269131
+        },
+        {
+          "method": "Get_Joint_Speed",
+          "started_monotonic": 836691.353318027,
+          "raw": [
+            0,
+            [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ]
+          ],
+          "finished_monotonic": 836691.374163536
+        },
+        {
+          "method": "Get_Joint_Acc",
+          "started_monotonic": 836691.374214193,
+          "raw": [
+            0,
+            [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          ],
+          "finished_monotonic": 836691.395009717
+        },
+        {
+          "method": "Get_Joint_Min_Pos",
+          "started_monotonic": 836691.395052854,
+          "raw": [
+            0,
+            [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ]
+          ],
+          "finished_monotonic": 836691.415944603
+        },
+        {
+          "method": "Get_Joint_Max_Pos",
+          "started_monotonic": 836691.415990844,
+          "raw": [
+            0,
+            [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ]
+          ],
+          "finished_monotonic": 836691.436805216
+        },
+        {
+          "method": "Get_Current_Work_Frame",
+          "started_monotonic": 836691.439590567,
+          "raw": [
+            0,
+            {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ],
+          "finished_monotonic": 836691.461051765
+        },
+        {
+          "method": "Get_Current_Tool_Frame",
+          "started_monotonic": 836691.461134518,
+          "raw": [
+            0,
+            {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          ],
+          "finished_monotonic": 836691.471941006
+        },
+        {
+          "method": "Get_Current_Arm_State",
+          "started_monotonic": 836691.471999727,
+          "raw": [
+            0,
+            [
+              -39.981998443603516,
+              -63.58000183105469,
+              -79.28700256347656,
+              -50.356998443603516,
+              -33.89899826049805,
+              249.66200256347656
+            ],
+            [
+              0.18269799649715424,
+              -0.29626700282096863,
+              -0.1808280050754547,
+              -2.1440000534057617,
+              -0.006000000052154064,
+              2.1659998893737793
+            ],
+            0,
+            0
+          ],
+          "finished_monotonic": 836691.492870324
+        },
+        {
+          "method": "Get_Joint_Speed",
+          "started_monotonic": 836691.492928789,
+          "raw": [
+            0,
+            [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ]
+          ],
+          "finished_monotonic": 836691.516111259
+        },
+        {
+          "method": "Get_Joint_Acc",
+          "started_monotonic": 836691.516209788,
+          "raw": [
+            0,
+            [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          ],
+          "finished_monotonic": 836691.53698544
+        },
+        {
+          "method": "Get_Joint_Min_Pos",
+          "started_monotonic": 836691.537029376,
+          "raw": [
+            0,
+            [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ]
+          ],
+          "finished_monotonic": 836691.557786436
+        },
+        {
+          "method": "Get_Joint_Max_Pos",
+          "started_monotonic": 836691.557827941,
+          "raw": [
+            0,
+            [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ]
+          ],
+          "finished_monotonic": 836691.578608233
+        }
+      ],
+      "protection_wire": [
+        {
+          "label": "before_sdk_connection",
+          "event": "transaction_begin",
+          "sequence": 1,
+          "monotonic": 836686.857739914,
+          "request": {
+            "command": "get_collision_stage"
+          },
+          "fresh_socket": true
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "connected",
+          "sequence": 1,
+          "endpoint": [
+            "169.254.128.18",
+            8080
+          ],
+          "monotonic": 836686.861694882
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "tx",
+          "sequence": 1,
+          "monotonic": 836687.162280198,
+          "request": {
+            "command": "get_collision_stage"
+          },
+          "hex": "7b22636f6d6d616e64223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "rx",
+          "sequence": 1,
+          "monotonic": 836687.174722229,
+          "hex": "7b22636f6c6c6973696f6e5f7374616765223a382c227374617465223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "response",
+          "sequence": 1,
+          "monotonic": 836687.225052217,
+          "elapsed_s": 0.36731444706674665,
+          "response": {
+            "collision_stage": 8,
+            "state": "get_collision_stage"
+          },
+          "value": [
+            0,
+            8
+          ]
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "closed",
+          "sequence": 1,
+          "monotonic": 836687.225275004
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "transaction_begin",
+          "sequence": 2,
+          "monotonic": 836687.225319453,
+          "request": {
+            "command": "get_self_collision_enable"
+          },
+          "fresh_socket": true
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "connected",
+          "sequence": 2,
+          "endpoint": [
+            "169.254.128.18",
+            8080
+          ],
+          "monotonic": 836687.226513966
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "tx",
+          "sequence": 2,
+          "monotonic": 836687.527057714,
+          "request": {
+            "command": "get_self_collision_enable"
+          },
+          "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65227d0d0a"
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "rx",
+          "sequence": 2,
+          "monotonic": 836687.536810011,
+          "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65222c22656e61626c655f7374617465223a747275657d0d0a"
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "response",
+          "sequence": 2,
+          "monotonic": 836687.587137823,
+          "elapsed_s": 0.36182115389965475,
+          "response": {
+            "command": "get_self_collision_enable",
+            "enable_state": true
+          },
+          "value": [
+            0,
+            true
+          ]
+        },
+        {
+          "label": "before_sdk_connection",
+          "event": "closed",
+          "sequence": 2,
+          "monotonic": 836687.587346754
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "transaction_begin",
+          "sequence": 1,
+          "monotonic": 836691.585402664,
+          "request": {
+            "command": "get_collision_stage"
+          },
+          "fresh_socket": true
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "connected",
+          "sequence": 1,
+          "endpoint": [
+            "169.254.128.18",
+            8080
+          ],
+          "monotonic": 836691.586594649
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "tx",
+          "sequence": 1,
+          "monotonic": 836691.887183543,
+          "request": {
+            "command": "get_collision_stage"
+          },
+          "hex": "7b22636f6d6d616e64223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "rx",
+          "sequence": 1,
+          "monotonic": 836691.899664038,
+          "hex": "7b22636f6c6c6973696f6e5f7374616765223a382c227374617465223a226765745f636f6c6c6973696f6e5f7374616765227d0d0a"
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "response",
+          "sequence": 1,
+          "monotonic": 836691.950044554,
+          "elapsed_s": 0.3646444500191137,
+          "response": {
+            "collision_stage": 8,
+            "state": "get_collision_stage"
+          },
+          "value": [
+            0,
+            8
+          ]
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "closed",
+          "sequence": 1,
+          "monotonic": 836691.950244813
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "transaction_begin",
+          "sequence": 2,
+          "monotonic": 836691.950285773,
+          "request": {
+            "command": "get_self_collision_enable"
+          },
+          "fresh_socket": true
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "connected",
+          "sequence": 2,
+          "endpoint": [
+            "169.254.128.18",
+            8080
+          ],
+          "monotonic": 836691.951641312
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "tx",
+          "sequence": 2,
+          "monotonic": 836692.252248126,
+          "request": {
+            "command": "get_self_collision_enable"
+          },
+          "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65227d0d0a"
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "rx",
+          "sequence": 2,
+          "monotonic": 836692.262791538,
+          "hex": "7b22636f6d6d616e64223a226765745f73656c665f636f6c6c6973696f6e5f656e61626c65222c22656e61626c655f7374617465223a747275657d0d0a"
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "response",
+          "sequence": 2,
+          "monotonic": 836692.313202262,
+          "elapsed_s": 0.36291821696795523,
+          "response": {
+            "command": "get_self_collision_enable",
+            "enable_state": true
+          },
+          "value": [
+            0,
+            true
+          ]
+        },
+        {
+          "label": "after_sdk_cleanup",
+          "event": "closed",
+          "sequence": 2,
+          "monotonic": 836692.313420185
+        }
+      ],
+      "exceptions": [],
+      "cleanup_errors": [],
+      "warnings": [],
+      "outcome": "current_new_pregrasp_arm_reference_recorded",
+      "protection_ready_for_later_motion": true,
+      "tolerances": {
+        "joint_degrees": 0.08,
+        "position_m": 0.0005,
+        "orientation_rad": 0.005
+      },
+      "role_confirmation_required_from_parent": true,
+      "seated_shell_or_noncontact_geometry_verified": false,
+      "sdk_provenance": {
+        "sdk_directory": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package",
+        "sdk_source_sha256": {
+          "robotic_arm.py": "a15e4695426325c590f89d3e05b6bb36186793a06f72dd6a500cc828504f74b8",
+          "log_setting.py": "f37e27d8e34b0d00c33cad732e83163e57efe9104a1551e36deafaf6b2b9e90f"
+        },
+        "native_sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+        "native_bytes": 690912,
+        "host_machine": "aarch64"
+      },
+      "source_sha256": {
+        "new_grasp_reference_worker_v1.py": "79d7eefcbb3042a2a45d57a6e97686f6d6c4692cdd0377efb107fe254de3b2a1",
+        "inspect_left_arm.py": "c2aaa48ee9e561a58b126976319868014bc6bfe141f6d908c26a56312ade4644",
+        "arm_protection_transport.py": "2a0c03b84c452053b4ef81b4ec403ff92aa5629ca7464bdbf2dbebefe15931b7",
+        "arm_sdk_reviewed_hashes.json": "1f79be547928508bd02016922e7d6c2fb7cc4c1f009cce48549dd7ca9efd6b6e"
+      },
+      "protection_before": {
+        "Get_Collision_Stage": [
+          0,
+          8
+        ],
+        "Get_Self_Collision_Enable": [
+          0,
+          true
+        ]
+      },
+      "sdk_socket_state_raw": 0,
+      "bracket_delta": {
+        "joint_degrees": [
+          0.0,
+          0.0,
+          0.0,
+          0.001003265380859375,
+          -0.0019989013671875,
+          0.001007080078125
+        ],
+        "position_m": [
+          -5.0067901611328125e-06,
+          9.834766387939453e-07,
+          4.991888999938965e-06
+        ],
+        "position_distance_m": 7.138216150018254e-06,
+        "orientation_angle_rad": 0.0,
+        "frame_signatures_unchanged": true,
+        "limits_unchanged": true
+      },
+      "reference_source": "two_healthy_current_SDK_GET_brackets_not_fault_or_historical_pose",
+      "sdk_cleanup_results": [
+        {
+          "method": "Arm_Socket_Close",
+          "raw": null
+        },
+        {
+          "method": "RM_API_UnInit",
+          "raw": 0
+        }
+      ],
+      "protection_after": {
+        "Get_Collision_Stage": [
+          0,
+          8
+        ],
+        "Get_Self_Collision_Enable": [
+          0,
+          true
+        ]
+      },
+      "closed_timestamp_utc": "2026-10-24T05:40:16.616314+00:00"
+    },
+    "hand": {
+      "ok": true,
+      "notice": "已读取；状态5或未到位可继续调，保护3/4通道只可退让",
+      "snapshot": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "targets": [
+          6001,
+          6000,
+          6001,
+          32000,
+          65535,
+          65535
+        ],
+        "positions": [
+          6001,
+          6000,
+          6001,
+          32000,
+          65535,
+          65535
+        ],
+        "current": [
+          2,
+          1,
+          2,
+          30,
+          0,
+          8
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "protected_channels": [],
+        "status5_channels": [],
+        "blockers": [],
+        "started_monotonic": 836700.172920418,
+        "finished_monotonic": 836704.097216101,
+        "reads_are_sequential": true,
+        "physical_stop_verified": false,
+        "holding_verified": false,
+        "actual_target_differences": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "snapshot_stale": false,
+      "connected": true,
+      "needs_reconnect": false,
+      "configuration_matched": true,
+      "blockers": [],
+      "attempted": false,
+      "acknowledged": false,
+      "physical_stop_verified": false,
+      "holding_verified": false
+    },
+    "source_folder": "/home/rm/test/battery-d435-preview/captures/grasp_near_record_v1_20261024_133754_143728/cycle_001/wrist_133959_407393",
+    "timestamp_utc": "2026-10-24T05:40:28.403893+00:00"
+  },
+  "grip_targets": [
+    26001,
+    16899,
+    19100,
+    32000,
+    65535,
+    65535
+  ],
+  "prepare_targets": [
+    6001,
+    6000,
+    6001,
+    32000,
+    65535,
+    65535
+  ],
+  "manifest_sha256": "d7e4e7e7bf56410b01b2a3bc8fcb9c4406afa4744044e83b6a5378c149f6c040",
+  "mode": "lift",
+  "operator_confirms_lift_path_and_sweep_clear": true
+}

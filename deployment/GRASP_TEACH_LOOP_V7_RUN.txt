@@ -1,0 +1,6 @@
+在项目根目录运行：
+/usr/bin/python3 deployment/run_grasp_teach_loop_v7.py --execute --confirm-inert-shell-exclusive --confirm-onsite-stop
+
+手空且五指活动范围清空时按s：先恢复预抓，再a-e调节。
+d 18000设绝对目标；d +500/d -500按实际加减，步幅可自定；0..65535限幅。
+w退出连接调腕；x保存。程序不要求事先填写最终抓握值。

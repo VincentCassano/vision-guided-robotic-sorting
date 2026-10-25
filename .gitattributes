@@ -1,0 +1,2 @@
+# Preserve exact source bytes required by the deployment SHA256 manifests.
+* -text

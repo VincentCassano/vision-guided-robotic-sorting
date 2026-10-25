@@ -1,0 +1,15 @@
+<launch>
+  <arg name="inference_python"/>
+  <arg name="repository"/>
+  <arg name="square_confidence" default=""/>
+  <arg name="class_confidences" default=""/>
+  <arg name="calibrated_v3" default="true"/>
+  <include file="$(find battery_grasp)/launch/rgbd_replay.launch">
+    <arg name="inference_python" value="$(arg inference_python)"/>
+    <arg name="repository" value="$(arg repository)"/>
+    <arg name="square_confidence" value="$(arg square_confidence)"/>
+    <arg name="class_confidences" value="$(arg class_confidences)"/>
+    <arg name="calibrated_v3" value="$(arg calibrated_v3)"/>
+  </include>
+  <include file="$(find battery_grasp)/launch/observation_tracker.launch"/>
+</launch>

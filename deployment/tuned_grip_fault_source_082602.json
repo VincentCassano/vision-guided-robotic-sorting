@@ -1,0 +1,1791 @@
+{
+  "scope": "current_tuned_grip_lift_school_bin_drop_no_reclose",
+  "phase": "fault",
+  "outcome": "aborted_no_further_writes",
+  "exceptions": [
+    {
+      "error": "RuntimeError('Loaded lift left this run fixed-wrist vertical corridor')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/tuned_grip_bin_worker.py\", line 133, in main\n    seq.deliver_held_shell(arm)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v4_sequence.py\", line 197, in deliver_held_shell\n    upper = self.move_bin_segment(arm,upper_target,'Movel_Cmd',\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v4_sequence.py\", line 112, in move_bin_segment\n    q,p = self.arm_state()\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v4_sequence.py\", line 43, in arm_state\n    raise RuntimeError('Loaded lift left this run fixed-wrist vertical corridor')\nRuntimeError: Loaded lift left this run fixed-wrist vertical corridor\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "arm_actuator_writes": 1,
+  "hand_register_writes": 0,
+  "configuration_writes": 0,
+  "execution_ready": false,
+  "selected_color": "black",
+  "source_fault_last_arm_state_used": false,
+  "loaded_lift_performed": false,
+  "load_lift_or_transfer_performed": false,
+  "object_lift": false,
+  "automatic_open": false,
+  "automatic_return": false,
+  "automatic_force_zero": false,
+  "physical_stop_verified": false,
+  "torque_release_verified": false,
+  "grip_holding_verified": false,
+  "vision_used": false,
+  "camera_extrinsics_used_for_motion": false,
+  "offline_tests_executed": false,
+  "no_prepare_descent_or_new_close": true,
+  "SDK_in_parent": false,
+  "source_success_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+  "source_recipe": [
+    25500,
+    30000,
+    28000,
+    21250,
+    65535,
+    65222
+  ],
+  "source_success_hand": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      166,
+      72,
+      2,
+      0,
+      0,
+      1
+    ],
+    "positions": [
+      25498,
+      30000,
+      28008,
+      21273,
+      65535,
+      65108
+    ],
+    "targets": [
+      25498,
+      30000,
+      28000,
+      21249,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 471617.610475889,
+    "finished_monotonic": 471619.735224305,
+    "final_status_started_monotonic": 471619.384899054,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "qualified_success_reference": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.27491000294685364,
+      -0.40129199624061584,
+      -0.26479101181030273,
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2149999141693115
+    ],
+    "joints": [
+      -37.020999908447266,
+      -99.99400329589844,
+      -16.04400062561035,
+      81.947998046875,
+      39.459999084472656,
+      -7.252999782562256
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      140.97900009155273,
+      30.005996704101562,
+      118.95599937438965,
+      96.052001953125,
+      88.54000091552734,
+      352.74700021743774
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "source_reference_kind": "original_completed_descent_plus_successful_stationary_tuning",
+  "source_audit": {
+    "host_os": "Linux",
+    "host_machine": "aarch64",
+    "sdk_source_sha256": {
+      "robotic_arm.py": "a15e4695426325c590f89d3e05b6bb36186793a06f72dd6a500cc828504f74b8",
+      "log_setting.py": "f37e27d8e34b0d00c33cad732e83163e57efe9104a1551e36deafaf6b2b9e90f"
+    },
+    "loaded_native": {
+      "path": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package/libRM_Base.so",
+      "sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+      "byte_count": 690912,
+      "architecture": "aarch64"
+    },
+    "connection_constructor_review": "API init/version/socket start/state only; no actuator or configuration method",
+    "live_controller_identity_firmware_dh_read": false
+  },
+  "load_targets": [
+    25500,
+    30000,
+    28000,
+    21250,
+    65535,
+    65222
+  ],
+  "fresh_model": {
+    "schema_version": 1,
+    "endpoint": [
+      "169.254.128.18",
+      8080
+    ],
+    "network_connection_requested": true,
+    "hardware_writes": 0,
+    "controller_configuration_writes": 0,
+    "actuator_writes": 0,
+    "execution_ready": false,
+    "model_data_applied": false,
+    "fitted_correction_applied": false,
+    "dh_valid": true,
+    "identity_valid": true,
+    "installed_controller_generation": "unknown",
+    "dh_command_generation_support": "this_controller_returned_documented_schema",
+    "parameters_origin": "controller_readback_not_manufacturer_default",
+    "official_references": {
+      "identity": "https://develop.realman-robotics.com/robot/json/systemConfig/",
+      "dh": "https://develop.realman-robotics.com/robot/json/armConfig/"
+    },
+    "units": {
+      "alpha": "1000 raw units per degree",
+      "a": "1000000 raw units per meter",
+      "d": "1000000 raw units per meter",
+      "offset": "1000 raw units per degree"
+    },
+    "transactions": [
+      {
+        "command": "get_arm_software_info",
+        "endpoint": [
+          "169.254.128.18",
+          8080
+        ],
+        "request_hex": "7b22636f6d6d616e64223a226765745f61726d5f736f6674776172655f696e666f227d0d0a",
+        "response_hex": "7b2250726f647563745f76657273696f6e223a22524d36352d4249222c22616c676f726974686d5f696e666f223a7b2276657273696f6e223a22312e342e3130227d2c22636f6d6d616e64223a2261726d5f736f6674776172655f696e666f222c226374726c5f696e666f223a7b226275696c645f74696d65223a22323032342f31312f32322031313a32343a3437222c22636f6d6d69745f6964223a2239346562333939222c2276657273696f6e223a2256312e362e35227d2c2264796e616d69635f696e666f223a7b226d6f64656c5f76657273696f6e223a2232227d2c22706c616e5f696e666f223a7b226275696c645f74696d65223a22323032342f31312f32322031313a32353a3033222c22636f6d6d69745f6964223a2265383735656530222c2276657273696f6e223a2256312e362e35227d7d0d0a",
+        "connection_requested": true,
+        "request_send_completed": true,
+        "socket_closed": true,
+        "response": {
+          "Product_version": "RM65-BI",
+          "algorithm_info": {
+            "version": "1.4.10"
+          },
+          "command": "arm_software_info",
+          "ctrl_info": {
+            "build_time": "2024/11/22 11:24:47",
+            "commit_id": "94eb399",
+            "version": "V1.6.5"
+          },
+          "dynamic_info": {
+            "model_version": "2"
+          },
+          "plan_info": {
+            "build_time": "2024/11/22 11:25:03",
+            "commit_id": "e875ee0",
+            "version": "V1.6.5"
+          }
+        }
+      },
+      {
+        "command": "get_DH_data",
+        "endpoint": [
+          "169.254.128.18",
+          8080
+        ],
+        "request_hex": "7b22636f6d6d616e64223a226765745f44485f64617461227d0d0a",
+        "response_hex": "7b22636f6d6d616e64223a226765745f44485f64617461222c226a6f696e745f31223a5b302c302c3138313036302c305d2c226a6f696e745f32223a5b39303030302c302c302c39303030305d2c226a6f696e745f33223a5b302c3235363030302c302c39303030305d2c226a6f696e745f34223a5b39303030302c302c3231303030302c305d2c226a6f696e745f35223a5b2d39303030302c302c302c305d2c226a6f696e745f36223a5b39303030302c302c3134343030302c305d7d0d0a",
+        "connection_requested": true,
+        "request_send_completed": true,
+        "socket_closed": true,
+        "response": {
+          "command": "get_DH_data",
+          "joint_1": [
+            0,
+            0,
+            181060,
+            0
+          ],
+          "joint_2": [
+            90000,
+            0,
+            0,
+            90000
+          ],
+          "joint_3": [
+            0,
+            256000,
+            0,
+            90000
+          ],
+          "joint_4": [
+            90000,
+            0,
+            210000,
+            0
+          ],
+          "joint_5": [
+            -90000,
+            0,
+            0,
+            0
+          ],
+          "joint_6": [
+            90000,
+            0,
+            144000,
+            0
+          ]
+        }
+      }
+    ],
+    "errors": [],
+    "host": {
+      "system": "Linux",
+      "machine": "aarch64"
+    },
+    "identity_response": {
+      "Product_version": "RM65-BI",
+      "algorithm_info": {
+        "version": "1.4.10"
+      },
+      "command": "arm_software_info",
+      "ctrl_info": {
+        "build_time": "2024/11/22 11:24:47",
+        "commit_id": "94eb399",
+        "version": "V1.6.5"
+      },
+      "dynamic_info": {
+        "model_version": "2"
+      },
+      "plan_info": {
+        "build_time": "2024/11/22 11:25:03",
+        "commit_id": "e875ee0",
+        "version": "V1.6.5"
+      }
+    },
+    "dh_response": {
+      "command": "get_DH_data",
+      "joint_1": [
+        0,
+        0,
+        181060,
+        0
+      ],
+      "joint_2": [
+        90000,
+        0,
+        0,
+        90000
+      ],
+      "joint_3": [
+        0,
+        256000,
+        0,
+        90000
+      ],
+      "joint_4": [
+        90000,
+        0,
+        210000,
+        0
+      ],
+      "joint_5": [
+        -90000,
+        0,
+        0,
+        0
+      ],
+      "joint_6": [
+        90000,
+        0,
+        144000,
+        0
+      ]
+    },
+    "dh_parameters": [
+      {
+        "joint": 1,
+        "raw": [
+          0,
+          0,
+          181060,
+          0
+        ],
+        "alpha_degrees": 0.0,
+        "a_meters": 0.0,
+        "d_meters": 0.18106,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 2,
+        "raw": [
+          90000,
+          0,
+          0,
+          90000
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.0,
+        "offset_degrees": 90.0
+      },
+      {
+        "joint": 3,
+        "raw": [
+          0,
+          256000,
+          0,
+          90000
+        ],
+        "alpha_degrees": 0.0,
+        "a_meters": 0.256,
+        "d_meters": 0.0,
+        "offset_degrees": 90.0
+      },
+      {
+        "joint": 4,
+        "raw": [
+          90000,
+          0,
+          210000,
+          0
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.21,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 5,
+        "raw": [
+          -90000,
+          0,
+          0,
+          0
+        ],
+        "alpha_degrees": -90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.0,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 6,
+        "raw": [
+          90000,
+          0,
+          144000,
+          0
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.144,
+        "offset_degrees": 0.0
+      }
+    ],
+    "elapsed_seconds": 0.03884837299119681,
+    "outcome": "readback_recorded_not_applied"
+  },
+  "explicit_supported_opening_requested": false,
+  "sdk_environment": {
+    "schema_version": 1,
+    "read_only": true,
+    "execution_ready": false,
+    "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+    "host_system": "Linux",
+    "host_machine": "aarch64",
+    "python_pointer_bits": 64,
+    "errors": [],
+    "note": "Provenance only. Does not certify the native algorithm or approve IK/trajectory execution.",
+    "loaded_native": {
+      "path": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package/libRM_Base.so",
+      "bytes": 690912,
+      "sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+      "binary": {
+        "format": "ELF",
+        "bits": 64,
+        "byteorder": "little",
+        "machine": 183,
+        "architecture": "aarch64"
+      }
+    },
+    "api_version": "4.3.1",
+    "controller_software_info": {
+      "status": 0,
+      "ok": true,
+      "data": [
+        {
+          "product_version": "RM65-BI",
+          "algorithm_info": {
+            "version": "1.4.10"
+          },
+          "ctrl_info": {
+            "build_time": "",
+            "version": " 11:24:47"
+          },
+          "dynamic_info": {
+            "model_version": "V1.6."
+          },
+          "plan_info": {
+            "build_time": "5",
+            "version": " 11:25:03"
+          }
+        }
+      ]
+    },
+    "controller_run_mode_raw": {
+      "status": 0,
+      "ok": true,
+      "data": [
+        1
+      ]
+    },
+    "metadata_complete": true
+  },
+  "fresh_protection_values": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "unknowns": [
+    "Actual payload/center-of-mass not certified",
+    "Full scene geometry and pick trajectory not certified",
+    "Automatic contact stop/release not verified",
+    "Software_Info ctrl/plan fields not reliable semantic version decoding",
+    "Optional safety GET failures are recorded and never replaced by guesses"
+  ],
+  "arm_safety_reads": {
+    "Get_Joint_EN_State": [
+      0,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "Get_Joint_Err_Flag": [
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Joint_Drive_Min_Pos": [
+      0,
+      [
+        -183.0,
+        -135.0,
+        -140.0,
+        -360.0,
+        -133.0,
+        -365.0
+      ]
+    ],
+    "Get_Joint_Drive_Max_Pos": [
+      0,
+      [
+        183.0,
+        135.0,
+        140.0,
+        360.0,
+        133.0,
+        365.0
+      ]
+    ],
+    "Get_Joint_Current": [
+      0,
+      [
+        -1249.0,
+        653.0,
+        -438.0,
+        339.0,
+        1042.0,
+        -159.0
+      ]
+    ],
+    "Get_Joint_Temperature": [
+      0,
+      [
+        34.0,
+        34.0,
+        33.0,
+        35.0,
+        37.0,
+        38.0
+      ]
+    ],
+    "Get_Joint_Voltage": [
+      0,
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ],
+    "Get_Arm_Software_Version": [
+      0,
+      "6B0165",
+      "0",
+      "0",
+      "0",
+      "RM65-BI"
+    ],
+    "Get_Install_Pose": [
+      0,
+      0.0,
+      45.0,
+      0.0
+    ]
+  },
+  "arm_protection_read_source": "fresh_socket_raw_controller_JSON_not_SDK_cache",
+  "last_arm_state": {
+    "joints": [
+      -37.590999603271484,
+      -94.88200378417969,
+      -26.238000869750977,
+      75.90499877929688,
+      39.87699890136719,
+      0.3630000054836273
+    ],
+    "pose": [
+      0.2736380100250244,
+      -0.40102100372314453,
+      -0.2554360032081604,
+      -2.5820000171661377,
+      -1.1690000295639038,
+      -2.2100000381469727
+    ],
+    "raw": [
+      0,
+      [
+        -37.590999603271484,
+        -94.88200378417969,
+        -26.238000869750977,
+        75.90499877929688,
+        39.87699890136719,
+        0.3630000054836273
+      ],
+      [
+        0.2736380100250244,
+        -0.40102100372314453,
+        -0.2554360032081604,
+        -2.5820000171661377,
+        -1.1690000295639038,
+        -2.2100000381469727
+      ],
+      0,
+      0
+    ]
+  },
+  "live_tip_parameters": {
+    "line_speed_m_s": 0.25,
+    "line_acc_m_s2": 1.6,
+    "angular_speed_rad_s": 0.6,
+    "angular_acc_rad_s2": 4.0
+  },
+  "feedback_policy": {
+    "name": "continuous_actual_position_three_groups",
+    "status5_firmware_bug_confirmed": false,
+    "status5_alone_aborts": false,
+    "position_tolerance": 150,
+    "target_readback_tolerance": 2,
+    "position_window_criterion": "all_sampled_positions_within_target_tolerance",
+    "adjacent_position_gate": false,
+    "observed_settling_seconds": 1.0,
+    "reads_are_sequential": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "empty_hand_only": false,
+    "minimum_complete_groups": 3,
+    "feedback_read_order": [
+      1000,
+      1135,
+      1105,
+      1145,
+      1110,
+      1085
+    ],
+    "no_automatic_fault_open": true,
+    "no_speed_writes": true,
+    "physical_stop": false,
+    "continuous_execution_only": true,
+    "supported_position_contact_only": true,
+    "holding_verified": false,
+    "no_force_target_writes": true,
+    "status5_blocks_additional_closure": true,
+    "protection_feedback_saved_before_application_decision": true
+  },
+  "moves": [],
+  "required_speeds": [
+    65535,
+    65535,
+    65535,
+    65535,
+    65535,
+    65535
+  ],
+  "hand_feedback_policy": {
+    "name": "continuous_actual_position_three_groups",
+    "status5_firmware_bug_confirmed": false,
+    "status5_alone_aborts": false,
+    "position_tolerance": 150,
+    "target_readback_tolerance": 2,
+    "position_window_criterion": "all_sampled_positions_within_target_tolerance",
+    "adjacent_position_gate": false,
+    "observed_settling_seconds": 1.0,
+    "reads_are_sequential": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "empty_hand_only": false,
+    "minimum_complete_groups": 3,
+    "feedback_read_order": [
+      1000,
+      1135,
+      1105,
+      1145,
+      1110,
+      1085
+    ],
+    "no_automatic_fault_open": true,
+    "no_speed_writes": true,
+    "physical_stop": false,
+    "continuous_execution_only": true,
+    "supported_position_contact_only": true,
+    "holding_verified": false,
+    "no_force_target_writes": true,
+    "status5_blocks_additional_closure": true,
+    "protection_feedback_saved_before_application_decision": true
+  },
+  "configuration": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "calibration_end_absolute": [
+      21539,
+      24972,
+      25993,
+      24169,
+      24866,
+      18946
+    ],
+    "calibration_start_absolute": [
+      3039,
+      2472,
+      3093,
+      2469,
+      2616,
+      2386
+    ],
+    "thumb_presets_absolute": [
+      2386,
+      18026,
+      18946
+    ],
+    "pid_p": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_i": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "pid_d": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_g": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ],
+    "stall_speed": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "stall_current_ma": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "stall_stop_ms": [
+      300,
+      300,
+      300,
+      300,
+      300,
+      300
+    ],
+    "stall_retry_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ]
+  },
+  "configuration_checks": [
+    {
+      "monotonic": 472251.643906219,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    }
+  ],
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      147,
+      56,
+      2,
+      0,
+      0,
+      1
+    ],
+    "positions": [
+      25498,
+      30000,
+      27997,
+      21273,
+      65535,
+      65104
+    ],
+    "targets": [
+      25498,
+      30000,
+      28000,
+      21249,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 472283.8999864,
+    "finished_monotonic": 472286.051012775,
+    "final_status_started_monotonic": 472285.685707128,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "closure_blocked_channels": [
+    4,
+    5
+  ],
+  "status5_warning_count": 6,
+  "last_loaded_preflight": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      160,
+      53,
+      3,
+      0,
+      0,
+      1
+    ],
+    "positions": [
+      25498,
+      30000,
+      27997,
+      21240,
+      65535,
+      65104
+    ],
+    "targets": [
+      25498,
+      30000,
+      28000,
+      21249,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 472279.074289937,
+    "finished_monotonic": 472281.195010907,
+    "final_status_started_monotonic": 472280.845209716,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "speeds": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "force_targets": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ]
+  },
+  "last_loaded_monitor": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      147,
+      56,
+      2,
+      0,
+      0,
+      1
+    ],
+    "positions": [
+      25498,
+      30000,
+      27997,
+      21273,
+      65535,
+      65104
+    ],
+    "targets": [
+      25498,
+      30000,
+      28000,
+      21249,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 472283.8999864,
+    "finished_monotonic": 472286.051012775,
+    "final_status_started_monotonic": 472285.685707128,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "load_anchor": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      143,
+      53,
+      2,
+      0,
+      0,
+      0
+    ],
+    "positions": [
+      25498,
+      30000,
+      27997,
+      21240,
+      65535,
+      65104
+    ],
+    "targets": [
+      25498,
+      30000,
+      28000,
+      21249,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 472259.974629762,
+    "finished_monotonic": 472262.093708401,
+    "final_status_started_monotonic": 472261.743579254,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "tuned_grip_fresh_groups": [
+    {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "current": [
+        141,
+        64,
+        2,
+        0,
+        0,
+        0
+      ],
+      "positions": [
+        25498,
+        30000,
+        27997,
+        21273,
+        65535,
+        65104
+      ],
+      "targets": [
+        25498,
+        30000,
+        28000,
+        21249,
+        65535,
+        65222
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 472255.62516362,
+      "finished_monotonic": 472257.747829361,
+      "final_status_started_monotonic": 472257.397374395,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    },
+    {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "current": [
+        137,
+        72,
+        2,
+        0,
+        0,
+        1
+      ],
+      "positions": [
+        25498,
+        30000,
+        27997,
+        21240,
+        65535,
+        65104
+      ],
+      "targets": [
+        25498,
+        30000,
+        28000,
+        21249,
+        65535,
+        65222
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 472257.798141932,
+      "finished_monotonic": 472259.923861412,
+      "final_status_started_monotonic": 472259.568734802,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    },
+    {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        5,
+        5
+      ],
+      "current": [
+        143,
+        53,
+        2,
+        0,
+        0,
+        0
+      ],
+      "positions": [
+        25498,
+        30000,
+        27997,
+        21240,
+        65535,
+        65104
+      ],
+      "targets": [
+        25498,
+        30000,
+        28000,
+        21249,
+        65535,
+        65222
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 472259.974629762,
+      "finished_monotonic": 472262.093708401,
+      "final_status_started_monotonic": 472261.743579254,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    }
+  ],
+  "read_pacing_seconds": 0.3,
+  "new_timing_probe": false,
+  "school_bin_route": {
+    "schema_version": 1,
+    "source": {
+      "scripts/ohandtest.py": {
+        "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\ohandtest.py",
+        "sha256": "19a2aff810356e8a195e14eb37096b87a0536986f636435d5ff00af2c847b081",
+        "packaged_source": "deployment/school_bin_reference/ohandtest.py"
+      },
+      "scripts/arm_controller.py": {
+        "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\arm_controller.py",
+        "sha256": "6e96ab90d48b0cc0146a4f32f6bbfc7b7402467b6413077d6107e3947754dbc7",
+        "packaged_source": "deployment/school_bin_reference/arm_controller.py"
+      },
+      "scripts/hand_controller.py": {
+        "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\hand_controller.py",
+        "sha256": "4c7137705041a373ca0c169c8791bbd3faa5acd551e2daeda7ba8118caf471f3",
+        "packaged_source": "deployment/school_bin_reference/hand_controller.py"
+      },
+      "launch/grasp_demo_battery.launch": {
+        "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\launch\\grasp_demo_battery.launch",
+        "sha256": "11925d0c900b0fa9ad64a7a9ee629f7498009184dd5c5620fdb7bc308fea463d",
+        "packaged_source": "deployment/school_bin_reference/grasp_demo_battery.launch"
+      }
+    },
+    "robot_ip": "169.254.128.18",
+    "arm": "left",
+    "unit": "metres_radians",
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "source_bin_identity": "human_user_confirmed_school_bins_are_current_bins",
+    "source_bin_identity_is_not_new_path_acceptance": true,
+    "command_speed_percent": 10,
+    "loaded_lift_mm": 140,
+    "loaded_lift_source": "school from_pos=grasp+80mm; quit_pos=from_pos+60mm",
+    "bin_release_target": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535
+    ],
+    "bin_release_difference": "open_five_flex_preserve_opposition_instead_of_school_all_six_zero",
+    "transit": [
+      {
+        "phase": "school_high_transit",
+        "source": "HIGHT_POS",
+        "pose": [
+          0.38515201210975647,
+          -0.4414309859275818,
+          -0.023086000233888626,
+          -2.4130001068115234,
+          -1.3769999742507935,
+          -2.63100004196167
+        ]
+      },
+      {
+        "phase": "school_restart_transit",
+        "source": "SCAN_BATTERY_RESTART_POS",
+        "pose": [
+          0.5446869730949402,
+          -0.3363009989261627,
+          0.14712999761104584,
+          -1.9700000286102295,
+          -0.4860000014305115,
+          -2.4179999828338623
+        ]
+      }
+    ],
+    "bins": {
+      "black": {
+        "phase": "school_black_drop",
+        "source": "RECYCLE_AREA",
+        "pose": [
+          0.45028701424598694,
+          -0.418067991733551,
+          -0.14466699957847595,
+          -2.5940001010894775,
+          -1.2289999723434448,
+          -1.7489999532699585
+        ],
+        "logical_bin": "black_bin"
+      },
+      "red": {
+        "phase": "school_red_drop",
+        "source": "RECYCLE_RED_AREA",
+        "pose": [
+          0.5475559830665588,
+          -0.24783800542354584,
+          -0.17733100056648254,
+          -2.7190001010894775,
+          -1.2419999837875366,
+          -1.5700000524520874
+        ],
+        "logical_bin": "red_white_bin"
+      },
+      "white": {
+        "phase": "school_white_drop",
+        "source": "RECYCLE_WHITE_AREA",
+        "pose": [
+          0.47132399678230286,
+          -0.23525099456310272,
+          -0.181878000497818,
+          -2.736999988555908,
+          -1.3209999799728394,
+          -2.071000099182129
+        ],
+        "logical_bin": "red_white_bin"
+      }
+    },
+    "adapted_route": true,
+    "scan_waypoints_http_and_inspection_waits_omitted": true,
+    "adapted_high_to_restart_segment_not_claimed_original_school_path": true,
+    "numerical_collision_certificate": false,
+    "real_device_acceptance": false,
+    "calibration_used_for_motion": false,
+    "handeye_recalibration_still_required": true
+  },
+  "school_bin_target": {
+    "phase": "school_black_drop",
+    "source": "RECYCLE_AREA",
+    "pose": [
+      0.45028701424598694,
+      -0.418067991733551,
+      -0.14466699957847595,
+      -2.5940001010894775,
+      -1.2289999723434448,
+      -1.7489999532699585
+    ],
+    "logical_bin": "black_bin"
+  },
+  "school_route_adapted": true,
+  "original_scan_poses_omitted": true,
+  "actual_continuous_swept_geometry_verified": false,
+  "automatic_lateral_motion": false,
+  "lateral_transfer_ready": false,
+  "normal_transfer_requires_fresh_loaded_clearance_permission": true,
+  "permission_index": 8,
+  "operator_inputs": [
+    {
+      "index": 8,
+      "phase": "await_bin_lift",
+      "value": "l",
+      "timestamp_utc": "2026-10-20T00:26:41.279523+00:00",
+      "opposed_grip_and_loaded_up140_clear": true,
+      "no_uncontrolled_motion_slip_or_overheating_observed": true
+    }
+  ],
+  "loaded_profile_source": "same_exclusive_run_full_profile_plus_fresh_critical_and_complete_group",
+  "protection_hand_channel_boundaries": [
+    {
+      "phase": "lifting_loaded_140mm",
+      "hand_socket_closed_before_protection_GET": true,
+      "fresh_hand_socket_after_protection_GET": true,
+      "unsolicited_frames_ignored": 0
+    }
+  ],
+  "plan": null,
+  "current_school_motion": {
+    "method": "Movel_Cmd",
+    "target": [
+      0.2749210000038147,
+      -0.40128201246261597,
+      -0.12480799913406371,
+      -2.572999954223633,
+      -1.1690000295639038,
+      -2.2160000801086426
+    ],
+    "start": {
+      "frames": {
+        "work": {
+          "frame_name": {
+            "name": "World"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tool": {
+          "frame_name": {
+            "name": "Arm_Tip"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "frame_signatures": {
+        "work": {
+          "name": "World",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "tool": {
+          "name": "Arm_Tip",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      "frame_names": {
+        "work": "World",
+        "tool": "Arm_Tip"
+      },
+      "pose": [
+        0.2749069929122925,
+        -0.4012790024280548,
+        -0.26481500267982483,
+        -2.572999954223633,
+        -1.1690000295639038,
+        -2.2160000801086426
+      ],
+      "joints": [
+        -37.01900100708008,
+        -99.99700164794922,
+        -16.040000915527344,
+        81.95500183105469,
+        39.45600128173828,
+        -7.23799991607666
+      ],
+      "limits": {
+        "minimum": [
+          -178.0,
+          -130.0,
+          -135.0,
+          -178.0,
+          -128.0,
+          -360.0
+        ],
+        "maximum": [
+          178.0,
+          130.0,
+          135.0,
+          178.0,
+          128.0,
+          360.0
+        ],
+        "speed": [
+          180.0,
+          180.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0
+        ],
+        "acceleration": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "reserve": [
+        140.98099899291992,
+        30.00299835205078,
+        118.95999908447266,
+        96.04499816894531,
+        88.54399871826172,
+        352.76200008392334
+      ],
+      "arm_error": 0,
+      "system_error": 0
+    }
+  },
+  "controller_planned_joint_path": false,
+  "straight_cartesian_path_claimed": false,
+  "arm_command_attempted": true,
+  "arm_stop_attempt": {
+    "result": 0,
+    "physical_stop_verified": false,
+    "hand_stop_or_release": false
+  },
+  "onsite_hardware_stop_required": true
+}

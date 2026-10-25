@@ -1,0 +1,53 @@
+{
+  "scope": "手部真实回传审阅和人工源码/接口阅读；不执行项目代码",
+  "user_confirmed_physical_grip_success": true,
+  "new_recipe": {
+    "pregrasp": [35000,7500,9480,30000,65535,65535],
+    "grip": [40000,12500,14480,30000,65535,65535],
+    "pregrasp_pair_order": [4,3],
+    "grasp_order": [0,1,2],
+    "normal_stall5_or_unreached_blocks_grasp": false,
+    "target_ack_and_readback_required": true,
+    "finger_actual_arrival_required": false,
+    "in_lift_ring_middle_added_closure_used": false,
+    "targets_automatically_reduced": false
+  },
+  "implementation": {
+    "entry": "run_new_grasp_reference_v1.py",
+    "hand_console": "run_hand_thumb_tuner_v2.py",
+    "hand_transport": "manual_hand_bus_v2.py",
+    "wrist_reader": "new_grasp_reference_worker_v1.py",
+    "image_reference": "run_new_grasp_reference_vision_v1.py",
+    "new_anchor": "new_grasp_task_anchor_v1.py",
+    "every_channel_range_visible": [0,65535],
+    "known_external_drag_notifications_separated_from_hand_ack": true,
+    "SDK_only_in_short_readonly_child": true,
+    "no_active_SDK_during_hand_read_or_operator_wait_or_camera_capture": true,
+    "protection_reads_separate_from_active_SDK_connection": true,
+    "new_seated_before_lift_wrist_required": true,
+    "fault_or_post_lift_pose_promoted_to_reference": false,
+    "old_grasp_tcp_or_2p8_plus_4p5_offsets_reused": false,
+    "original_visual_equal_height_geometry_reused": true,
+    "original_image_8_frames_2_seconds_3mm_gates_retained": true,
+    "new_target_candidates_check_current_camera_and_plane_context": true,
+    "changed_hand_or_new_reference_attempt_retires_owned_old_anchor": true,
+    "grip_and_drop_motion_authority": false,
+    "hardware_protection_reset_or_limit_or_PID_writes": false
+  },
+  "manual_review_corrections": [
+    "新r/h开始使本轮旧锚点及同SHA全局指针失效，不影响其他记录",
+    "新候选函数要求完整同源相机/平面/图像burst记录，不接受裸坐标",
+    "保护只读移到SDK前后，不并开控制器连接",
+    "保护GET不完整仅记运动未就绪；健康只读腕姿可单独保存",
+    "用户最新目标一致规则覆盖此前实际到位表述，正常5和未到位不加门"
+  ],
+  "validation": {
+    "manual_source_and_interface_review": true,
+    "file_zip_crc_sha_only": "see delivery receipt",
+    "project_runtime_tests_compile_ast_mock_fk_ik": false,
+    "SDK_loaded": false,
+    "robot_connected": false,
+    "new_reference_real_device_accepted": false,
+    "new_automatic_visual_cycle_accepted": false
+  }
+}

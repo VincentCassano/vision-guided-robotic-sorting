@@ -1,0 +1,34 @@
+{
+  "scope": "fix observed Python logging argument conflict and visible terminal feedback only",
+  "raw_evidence": "visual_pick_sort_v13_20261023_220531_412983.zip",
+  "raw_sha256": "bddfc32d850f1a8258097f804dee1be519b320dc41ddf69532df0dd7165f6d5e",
+  "actual_fault": "TypeError: event() got multiple values for argument 'name'",
+  "repaired_source": "CycleHand.event(self,event_type,**fields); field name preserved in raw read records",
+  "covered_calls": [
+    "read(name,address,count)",
+    "snapshot opposition_current_ma"
+  ],
+  "parent_changes": [
+    "g immediately acknowledged before starting worker",
+    "worker exit code, phase and concrete exception printed",
+    "terminal prompt explicitly requires Enter"
+  ],
+  "unchanged": [
+    "PRE/GRIP/DROP targets",
+    "ordered thumb/index/middle grip",
+    "actual arrival not required; normal5 allowed",
+    "fresh visual target, reference, thresholds and protection",
+    "arm route, speeds and bin offset",
+    "no automatic retries or reuse of old target"
+  ],
+  "source_review": "manual reading of callback declaration, both call sites, surrounding configuration/snapshot/transport/worker interfaces; independent read-only review agreed",
+  "validation": {
+    "file_zip_crc_sha_only": true,
+    "project_execution": false,
+    "offline_tests": false,
+    "compile_AST_mock_FK_IK": false,
+    "SDK_loaded": false,
+    "robot_connected": false,
+    "postfix_real_device_accepted": false
+  }
+}

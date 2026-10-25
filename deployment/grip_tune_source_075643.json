@@ -1,0 +1,838 @@
+{
+  "scope": "new_explicit_supported_hand_adjustment_not_fault_authority_resume",
+  "phase": "fault",
+  "arm_actuator_writes": 0,
+  "hand_register_writes": 2,
+  "configuration_writes": 0,
+  "automatic_fault_release": false,
+  "source_fault_last_arm_state_used": false,
+  "user_observed_loose_grip": true,
+  "grip_holding_verified": false,
+  "execution_ready": false,
+  "physical_stop_verified": false,
+  "torque_release_verified": false,
+  "exceptions": [],
+  "source_worker_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+  "qualified_reference": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.27491000294685364,
+      -0.40129199624061584,
+      -0.26479101181030273,
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2149999141693115
+    ],
+    "joints": [
+      -37.020999908447266,
+      -99.99400329589844,
+      -16.04400062561035,
+      81.947998046875,
+      39.459999084472656,
+      -7.252999782562256
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      140.97900009155273,
+      30.005996704101562,
+      118.95599937438965,
+      96.052001953125,
+      88.54000091552734,
+      352.74700021743774
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "reference_source": "completed_descent_endpoint_not_last_fault_state",
+  "active_targets": [
+    17500,
+    30000,
+    28000,
+    20000,
+    65535,
+    65222
+  ],
+  "source_previous_target_verified_by_fresh_reads": true,
+  "blocked_closure_channels": [
+    4
+  ],
+  "moves": [
+    {
+      "key": "t",
+      "address": 1135,
+      "values": [
+        17500
+      ],
+      "active_targets": [
+        17500,
+        30000,
+        28000,
+        20000,
+        65535,
+        65222
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          129,
+          13,
+          2,
+          0,
+          0,
+          0
+        ],
+        "positions": [
+          17500,
+          30000,
+          28000,
+          19984,
+          65535,
+          65179
+        ],
+        "targets": [
+          17500,
+          30000,
+          28000,
+          19999,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 470540.753289099,
+        "finished_monotonic": 470542.878756228,
+        "final_status_started_monotonic": 470542.523606382,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    }
+  ],
+  "sdk_environment": {
+    "schema_version": 1,
+    "read_only": true,
+    "execution_ready": false,
+    "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+    "host_system": "Linux",
+    "host_machine": "aarch64",
+    "python_pointer_bits": 64,
+    "errors": [],
+    "note": "Provenance only. Does not certify the native algorithm or approve IK/trajectory execution.",
+    "loaded_native": {
+      "path": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package/libRM_Base.so",
+      "bytes": 690912,
+      "sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+      "binary": {
+        "format": "ELF",
+        "bits": 64,
+        "byteorder": "little",
+        "machine": 183,
+        "architecture": "aarch64"
+      }
+    },
+    "api_version": "4.3.1",
+    "controller_software_info": {
+      "status": 0,
+      "ok": true,
+      "data": [
+        {
+          "product_version": "RM65-BI",
+          "algorithm_info": {
+            "version": "1.4.10"
+          },
+          "ctrl_info": {
+            "build_time": "",
+            "version": " 11:24:47"
+          },
+          "dynamic_info": {
+            "model_version": "V1.6."
+          },
+          "plan_info": {
+            "build_time": "5",
+            "version": " 11:25:03"
+          }
+        }
+      ]
+    },
+    "controller_run_mode_raw": {
+      "status": 0,
+      "ok": true,
+      "data": [
+        1
+      ]
+    },
+    "metadata_complete": true
+  },
+  "fresh_protection_values": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "unknowns": [
+    "Actual payload/center-of-mass not certified",
+    "Full scene geometry and pick trajectory not certified",
+    "Automatic contact stop/release not verified",
+    "Software_Info ctrl/plan fields not reliable semantic version decoding",
+    "Optional safety GET failures are recorded and never replaced by guesses"
+  ],
+  "arm_safety_reads": {
+    "Get_Joint_EN_State": [
+      0,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "Get_Joint_Err_Flag": [
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Joint_Drive_Min_Pos": [
+      0,
+      [
+        -183.0,
+        -135.0,
+        -140.0,
+        -360.0,
+        -133.0,
+        -365.0
+      ]
+    ],
+    "Get_Joint_Drive_Max_Pos": [
+      0,
+      [
+        183.0,
+        135.0,
+        140.0,
+        360.0,
+        133.0,
+        365.0
+      ]
+    ],
+    "Get_Joint_Current": [
+      0,
+      [
+        -1430.0,
+        1443.0,
+        659.0,
+        -112.0,
+        1079.0,
+        81.0
+      ]
+    ],
+    "Get_Joint_Temperature": [
+      0,
+      [
+        33.0,
+        34.0,
+        32.0,
+        33.0,
+        35.0,
+        36.0
+      ]
+    ],
+    "Get_Joint_Voltage": [
+      0,
+      [
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0
+      ]
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ],
+    "Get_Arm_Software_Version": [
+      0,
+      "6B0165",
+      "0",
+      "0",
+      "0",
+      "RM65-BI"
+    ],
+    "Get_Install_Pose": [
+      0,
+      0.0,
+      45.0,
+      0.0
+    ]
+  },
+  "arm_protection_read_source": "fresh_socket_raw_controller_JSON_not_SDK_cache",
+  "last_arm_state": {
+    "joints": [
+      -37.02199935913086,
+      -99.99600219726562,
+      -16.040000915527344,
+      81.9520034790039,
+      39.45800018310547,
+      -7.239999771118164
+    ],
+    "pose": [
+      0.2749069929122925,
+      -0.4013020098209381,
+      -0.2647880017757416,
+      -2.572999954223633,
+      -1.1699999570846558,
+      -2.2160000801086426
+    ],
+    "raw": [
+      0,
+      [
+        -37.02199935913086,
+        -99.99600219726562,
+        -16.040000915527344,
+        81.9520034790039,
+        39.45800018310547,
+        -7.239999771118164
+      ],
+      [
+        0.2749069929122925,
+        -0.4013020098209381,
+        -0.2647880017757416,
+        -2.572999954223633,
+        -1.1699999570846558,
+        -2.2160000801086426
+      ],
+      0,
+      0
+    ]
+  },
+  "feedback_policy": {
+    "name": "continuous_actual_position_three_groups",
+    "status5_firmware_bug_confirmed": false,
+    "status5_alone_aborts": false,
+    "position_tolerance": 150,
+    "target_readback_tolerance": 2,
+    "position_window_criterion": "all_sampled_positions_within_target_tolerance",
+    "adjacent_position_gate": false,
+    "observed_settling_seconds": 1.0,
+    "reads_are_sequential": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "empty_hand_only": false,
+    "minimum_complete_groups": 3,
+    "feedback_read_order": [
+      1000,
+      1135,
+      1105,
+      1145,
+      1110,
+      1085
+    ],
+    "no_automatic_fault_open": true,
+    "no_speed_writes": true,
+    "physical_stop": false,
+    "continuous_execution_only": true,
+    "supported_position_contact_only": true,
+    "holding_verified": false,
+    "no_force_target_writes": true,
+    "status5_blocks_additional_closure": true,
+    "protection_feedback_saved_before_application_decision": true
+  },
+  "required_speeds": [
+    65535,
+    65535,
+    65535,
+    65535,
+    65535,
+    65535
+  ],
+  "hand_feedback_policy": {
+    "name": "continuous_actual_position_three_groups",
+    "status5_firmware_bug_confirmed": false,
+    "status5_alone_aborts": false,
+    "position_tolerance": 150,
+    "target_readback_tolerance": 2,
+    "position_window_criterion": "all_sampled_positions_within_target_tolerance",
+    "adjacent_position_gate": false,
+    "observed_settling_seconds": 1.0,
+    "reads_are_sequential": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "empty_hand_only": false,
+    "minimum_complete_groups": 3,
+    "feedback_read_order": [
+      1000,
+      1135,
+      1105,
+      1145,
+      1110,
+      1085
+    ],
+    "no_automatic_fault_open": true,
+    "no_speed_writes": true,
+    "physical_stop": false,
+    "continuous_execution_only": true,
+    "supported_position_contact_only": true,
+    "holding_verified": false,
+    "no_force_target_writes": true,
+    "status5_blocks_additional_closure": true,
+    "protection_feedback_saved_before_application_decision": true
+  },
+  "configuration": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "calibration_end_absolute": [
+      21539,
+      24972,
+      25993,
+      24169,
+      24866,
+      18946
+    ],
+    "calibration_start_absolute": [
+      3039,
+      2472,
+      3093,
+      2469,
+      2616,
+      2386
+    ],
+    "thumb_presets_absolute": [
+      2386,
+      18026,
+      18946
+    ],
+    "pid_p": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_i": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "pid_d": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_g": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ],
+    "stall_speed": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "stall_current_ma": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "stall_stop_ms": [
+      300,
+      300,
+      300,
+      300,
+      300,
+      300
+    ],
+    "stall_retry_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ]
+  },
+  "configuration_checks": [
+    {
+      "monotonic": 470492.768710398,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    }
+  ],
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      3,
+      5,
+      2
+    ],
+    "current": [
+      2,
+      96,
+      2,
+      0,
+      0,
+      1
+    ],
+    "positions": [
+      17517,
+      30000,
+      27997,
+      22270,
+      65535,
+      65171
+    ],
+    "targets": [
+      17500,
+      30000,
+      28000,
+      22499,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 470628.486073821,
+    "finished_monotonic": 470630.602644186,
+    "final_status_started_monotonic": 470630.246971885,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "closure_blocked_channels": [
+    4
+  ],
+  "status5_warning_count": 7,
+  "read_pacing": {
+    "seconds": 0.3,
+    "new_timing_probe": false
+  },
+  "permission_index": 1,
+  "protection_latched": true,
+  "outcome": "aborted_no_further_writes",
+  "error": "ProtectionFault('Current protection or unexpected force-control status: [2, 2, 2, 3, 5, 2]')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_grip_tune_worker.py\", line 201, in main\n    row=hand.snapshot();hand.check_targets(row,active)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_pose_hand.py\", line 124, in snapshot\n    self.check_status(row)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_pose_hand.py\", line 134, in check_status\n    self._protection('Current protection or unexpected force-control status: '+str(row['status']))\n  File \"/home/rm/test/battery-d435-preview/deployment/hand_feedback_policy.py\", line 38, in _protection\n    raise ProtectionFault(message)\nrun_school_battery_hand.ProtectionFault: Current protection or unexpected force-control status: [2, 2, 2, 3, 5, 2]\n"
+}

@@ -1,0 +1,26 @@
+schema_version: 1
+source: user_verified_2026_10_06
+arm: left
+coordinate_frame: controller_work_frame
+execution_enabled: false
+position_unit: mm
+workspace:
+  x: {min: 45, max: 560, positive_direction: left}
+  y: {min: -550, max: -220, positive_direction: backward}
+  z: {min: -290, max: 180, positive_direction: up}
+joint_angle_unit: degree
+speed_unit: degree_per_second
+acceleration_unit: degree_per_second_squared
+unit_evidence: school_sdk_Set_Joint_Speed_and_Set_Joint_Acc_docstrings
+motion_command_speed_is_separate_percent: true
+joints:
+  - {joint: 1, min_angle: -178, max_angle: 178, min_speed: 1, max_speed: 180, min_acceleration: 1, max_acceleration: 600}
+  - {joint: 2, min_angle: -130, max_angle: 130, min_speed: 1, max_speed: 180, min_acceleration: 1, max_acceleration: 600}
+  - {joint: 3, min_angle: -135, max_angle: 135, min_speed: 1, max_speed: 225, min_acceleration: 1, max_acceleration: 600}
+  - {joint: 4, min_angle: -178, max_angle: 178, min_speed: 1, max_speed: 225, min_acceleration: 1, max_acceleration: 600}
+  - {joint: 5, min_angle: -128, max_angle: 128, min_speed: 1, max_speed: 225, min_acceleration: 1, max_acceleration: 600}
+  - {joint: 6, min_angle: -360, max_angle: 360, min_speed: 1, max_speed: 225, min_acceleration: 1, max_acceleration: 600}
+requirements:
+  - Validate the entire TCP trajectory and joint trajectory before motion.
+  - Validate active work and tool frames and SDK units before using these limits.
+  - These limits alone do not prove collision-free motion.

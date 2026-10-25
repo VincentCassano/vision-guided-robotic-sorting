@@ -1,0 +1,53 @@
+{
+  "scope": "人工阅读源码和接口；不执行项目代码",
+  "implementation": {
+    "entry": "deployment/run_hand_thumb_tuner.py",
+    "transport": "deployment/manual_hand_bus_v1.py",
+    "one_persistent_console": true,
+    "startup_readonly_no_prepare_or_opposition_write": true,
+    "p_opposition_candidate": 64556,
+    "opposition_candidate_source": "本项目历史候选，可由o输入任意目标修改，不是厂家默认或握持验收",
+    "five_fingers_and_opposition_range": [0, 65535],
+    "absolute_and_delta_from_fresh_actual": true,
+    "arbitrary_integer_input_clamped": true,
+    "status5_and_unreached_do_not_exit": true,
+    "arm_drag_does_not_trigger_pose_gate": true,
+    "status3_4_restrict_only_protected_channel_to_retreat": true,
+    "healthy_channels_remain_available": true,
+    "communication_fault_returns_ui_no_target_replay": true,
+    "invalid_input_and_ctrl_c_return_ui": true,
+    "only_explicit_q_or_closed_terminal_input_leave_console": true,
+    "save_keeps_console_open": true,
+    "stale_snapshot_does_not_replace_current_hand_shape": true,
+    "source_check_failure_closes_old_connection": true,
+    "only_single_position_register_1135_through_1140_writable": true,
+    "profile_and_protection_configuration_readonly": true,
+    "SDK_imports": false,
+    "arm_queries_or_motion_or_stop": false,
+    "wait_for_target_or_settling": false,
+    "automatic_retries_resets_or_protection_writes": false,
+    "raw_crlf_frames_and_operator_requests_recorded": true
+  },
+  "manual_review_corrections": [
+    "初次读取与界面刷新期间Ctrl+C也保留控制台",
+    "r文件校验失败前先关闭旧连接，不留可继续写的旧bus",
+    "旧读数可保存故障证据但不覆盖最新手型",
+    "原始记录已失败后不发送后续人工目标，仍保留控制台"
+  ],
+  "known_limits": [
+    "保留真实硬件限流、保护状态和通信约束；不保证保护中或故障硬件仍能转动",
+    "ACK不是实际到位或握持成功；数值不是角度或力",
+    "保存没有机械臂坐标，不可作为自动运动启动参考",
+    "同一控制器手部仍需独占；不查询或改变示教器的机械臂规则",
+    "每条目标前后读取反馈与ACK会耗时，没有等待手指到位的循环"
+  ],
+  "validation": {
+    "manual_source_and_interface_review": true,
+    "file_zip_crc_sha_integrity_only": "见delivery_receipt",
+    "project_runtime_executed": false,
+    "tests_compile_ast_mock_fk_ik": false,
+    "SDK_loaded": false,
+    "robot_connected": false,
+    "real_device_acceptance": false
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "scope": "source_review_and_file_delivery_only_v7_not_runtime_or_real_device_acceptance",
+  "source_actual_review": "deployment/visual_pregrasp_alignment_v6_111031_review.json",
+  "operator_followup": {
+    "direction": "head_D435_live_image_left",
+    "distance_mm": 2.8,
+    "no_contact": true,
+    "shell_removed": true
+  },
+  "requirements": [
+    "Old visual target invalid after shell move; force new acquisition for alignment.",
+    "Retreat current fresh arm must match clean111031 completed final endpoint using original same_pose/limits gates.",
+    "Retreat is fixed-XY/fixed-wrist World-Z only, to actual former hover+10mm; no hand write.",
+    "Only retreat branch admits the old low endpoint. Normal new-target startup height gate remains unchanged.",
+    "Current startup authority and normal post-startup feedback/current/configuration/protection gates retained.",
+    "Fresh target correction is horizontal2.8mm toward camera image-left; object/calibration/source unchanged.",
+    "Every corrected high/hover/final target derives from the same offset goal; no low lateral nudge.",
+    "New full source manifest checked parent/worker; fixed original v6 raw SHA independently checked before continuation."
+  ],
+  "correction_definition": "negative camera-X ray differential in constant World-Z plane at current selected top center; normalize horizontal displacement to2.8mm; apply same delta to TCP XYZ only",
+  "manual_source_findings": [
+    "All v4 transport/feedback/quiet/permission/SDK call/move/abort code remains byte-for-byte in copied v7 class body.",
+    "Retreat transitions out of startup observation before normal motion checks.",
+    "Original0.08degree/0.5mm/0.005rad matching and vertical1mm/0.005rad gates not widened.",
+    "Top parent opens no SDK; each device stage owns and closes its SDK. Fresh target capture occurs between SDK stages.",
+    "Original v4-v6 files retained unchanged; no payload/protection/hand reset added."
+  ],
+  "source_sha256": {
+    "deployment/run_visual_pregrasp_motion_v7.py": "87c7c3aaf57ba2ebd4c63680a8f1e8b8ecf482f5bba1e6971680e9a37ede5e2e",
+    "deployment/run_visual_pregrasp_stage_v7.py": "7839b9eddbea4c30e6cbe10330220fc94dcf0c4b2ea1fac70fb74b2da580f4f3",
+    "deployment/visual_pregrasp_motion_worker_v7.py": "22054784515e706656913770a1820b92a9ac05f7393e331a51dc627d83a645c8",
+    "deployment/visual_image_left_correction.py": "d58522d284dc207aba8255b15edcbdf0c82d4deb37cd6e39592f3581a70d9177"
+  },
+  "no_claims": [
+    "No guarantee of perpetual communication recovery.",
+    "No current physical clearance/correction accuracy acceptance.",
+    "No grasp/lift/drop/full sorting in this delivery."
+  ],
+  "SDK_loaded": false,
+  "device_contacted": false,
+  "offline_project_tests_executed": false,
+  "compile_AST_mock_FK_IK_executed": false
+}

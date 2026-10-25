@@ -1,0 +1,217 @@
+{
+  "scope": "original_live_v4_perception_archive_and_file_provenance_review_only",
+  "source_archive": "tmp\\visual_task_binding_20261020_215223_105730.zip",
+  "source_archive_sha256": "805db7c55f70fcf260dcee9549773e7d089fda5557338389285ace68d95e0cff",
+  "source_archive_bytes": 13048632,
+  "members": 20,
+  "internal_hashes_matched": 19,
+  "runtime_source_hashes_matched": 6,
+  "burst_RGB_hashes_matched": 8,
+  "original201634_anchor_bytes_unchanged": true,
+  "reference_observation_and_image_hashes_match": true,
+  "target001_latest_report_observation_equal": true,
+  "locked_measurement_bbox": [
+    327.0,
+    87.0,
+    108.0,
+    144.0
+  ],
+  "all8_frames_locked_same_measurement_bbox": true,
+  "delivery_version": "visual-task-binding-v4-20261020",
+  "outcome": "equal_height_plane_target_candidates_saved",
+  "target_candidates": 1,
+  "burst_summary": {
+    "scope": "equal_height_plane_live_repeatability_not_free3D_or_absolute_accuracy",
+    "elapsed_seconds": 3.2751608439721167,
+    "frame_count": 8,
+    "rejected_frame_indices": [],
+    "all_frames_retained": true,
+    "maximum_repeatability_mm": 3.0,
+    "repeatability_threshold_source": "new_development_sampling_default",
+    "execution_ready": false,
+    "top_center_world_m": [
+      0.11252018286665091,
+      -0.5481086483432338,
+      -0.303936625326388
+    ],
+    "top_center_repeatability_max_mm": 0.7133595384082329,
+    "top_center_repeatability_p95_mm": 0.6167380656113994,
+    "top_center_all_inside_FIT_support": false,
+    "geometric_body_center_world_m": [
+      0.11216347623299022,
+      -0.5469234803234828,
+      -0.3529209915787186
+    ],
+    "geometric_body_center_repeatability_max_mm": 0.7133595384081306,
+    "geometric_body_center_repeatability_p95_mm": 0.6167380656112986,
+    "geometric_body_center_all_inside_FIT_support": false,
+    "lower_half_inferred": true,
+    "frame_quality_pass": true,
+    "burst_qualified": true,
+    "completion_wall_time_known": true,
+    "reject_reasons": [],
+    "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+    "original_free3D_gate_pass_not_implied": true,
+    "height_inferred_from_task_plane": true,
+    "FIT_support_for_projected_points_not_evaluated": true
+  },
+  "original_free3D_burst_summary": {
+    "scope": "live_repeatability_only_not_absolute_accuracy",
+    "elapsed_seconds": 3.2751608439721167,
+    "frame_count": 8,
+    "rejected_frame_indices": [],
+    "all_frames_retained": true,
+    "maximum_repeatability_mm": 3.0,
+    "repeatability_threshold_source": "new_development_sampling_default",
+    "execution_ready": false,
+    "top_center_world_m": [
+      0.11143081384094909,
+      -0.5454765059891493,
+      -0.3015064820730051
+    ],
+    "top_center_repeatability_max_mm": 2.4250325169374545,
+    "top_center_repeatability_p95_mm": 2.400404738834496,
+    "top_center_all_inside_FIT_support": false,
+    "geometric_body_center_world_m": [
+      0.11133372252223857,
+      -0.5452857696798836,
+      -0.3505010944405554
+    ],
+    "geometric_body_center_repeatability_max_mm": 2.349069328150383,
+    "geometric_body_center_repeatability_p95_mm": 2.0730226285620854,
+    "geometric_body_center_all_inside_FIT_support": false,
+    "lower_half_inferred": true,
+    "frame_quality_pass": true,
+    "burst_qualified": true,
+    "completion_wall_time_known": true,
+    "reject_reasons": []
+  },
+  "pregrasp_tcp_candidate_m_rad": [
+    0.15564291600788163,
+    -0.40141244685498756,
+    -0.2639254171294613,
+    -2.5739998817443848,
+    -1.1699999570846558,
+    -2.2149999141693115
+  ],
+  "delta_from_reference_world_mm": [
+    -119.267086938972,
+    -0.12045061437171434,
+    0.8655946808414083
+  ],
+  "plane": {
+    "schema_version": 1,
+    "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+    "plane_point_world_m": [
+      0.23178726980562292,
+      -0.5479881977288621,
+      -0.3048022200072294
+    ],
+    "axis_from_top_into_body_world": [
+      -0.007279727217565114,
+      0.024187102443901,
+      -0.9996809439251136
+    ],
+    "plane_normal_source": "arithmetic_mean_of_all_original_reference_cylinder_axes",
+    "normal_reference_frame_count": 8,
+    "normal_reference_spread_max_degrees": 0.4211100653399225,
+    "plane_orientation_independently_measured": false,
+    "original_reference_observation_sha256": "003cbbb164807cac5f59fec08d8a398b85e6da0209f8ef9ba8b7fb9cf5b6ff8c",
+    "original_camera_context": {
+      "camera_serial": "344322075008",
+      "image_size": [
+        1280,
+        720
+      ],
+      "K": [
+        [
+          908.7157592773438,
+          0.0,
+          654.8253784179688
+        ],
+        [
+          0.0,
+          908.4488525390625,
+          372.3862609863281
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "distortion.inverse_brown_conrady",
+      "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+      "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+      "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+      "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+      "camera_fixed_confirmed": true,
+      "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+      "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+      "measured_shell": {
+        "diameter_mm": 45.8,
+        "total_height_mm": 98.0
+      },
+      "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+    },
+    "world_from_camera": [
+      [
+        -0.9998085722219823,
+        -0.01863066283493993,
+        -0.005976396386797045,
+        -0.06894546309745679
+      ],
+      [
+        -0.012635802428174275,
+        0.8480407390358173,
+        -0.5297803709392982,
+        -0.1060142765584126
+      ],
+      [
+        0.014938387076169828,
+        -0.5296034396960759,
+        -0.8481138138561637,
+        0.0974154939202833
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "same_upright_shell_equal_seated_top_plane_confirmed": true,
+    "old_reference_point_refitted": false,
+    "slot_lookup": false,
+    "grid_snap": false,
+    "absolute_position_accepted": false,
+    "motion_authorized": false,
+    "execution_ready": false,
+    "method_source_sha256": "eb50b15cff5cfa7712201df00cb5576aabfe673993cc9efbe0ff4bebe68946c6",
+    "original_task_anchor_sha256": "ed864e9c5f663902f3ed63075e28252dc120e1f6cee860c4993bebd74a9d9816"
+  },
+  "robot_SDK_loaded": false,
+  "arm_connections": 0,
+  "hardware_writes": {
+    "arm_writes": 0,
+    "hand_writes": 0,
+    "controller_configuration_writes": 0,
+    "camera_option_writes": 0
+  },
+  "errors": [],
+  "cleanup_errors": [],
+  "result": "PASS limited live equal-height plane burst and actual target-file generation; physical pregrasp alignment pending",
+  "previous_failed_bursts_reclassified": false,
+  "absolute_accuracy_accepted": false,
+  "full6D_or_RGBD_failure_overridden": false,
+  "target_motion_executed": false,
+  "whole_visual_grasp_accepted": false,
+  "offline_project_tests_or_new_algorithm_execution": false
+}

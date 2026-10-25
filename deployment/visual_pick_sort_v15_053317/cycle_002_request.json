@@ -1,0 +1,730 @@
+{
+  "mode": "visual_cycle",
+  "success_source_sha256": "8a4a92c9cd2adf2b6976f6cdde823b8b33364d8a9522953bff8bc514f69b192b",
+  "manifest_sha256": "64f4880f18a5861a417c1d1d8c9f31426411d8e18ddaf2ec30c686a743ca4605",
+  "scene_permission": {
+    "exclusive": true,
+    "onsite_stop": true,
+    "inert_shell": true,
+    "fixed_head_board_mount": true,
+    "whole_route_and_sweep_clear": true,
+    "hand_empty": true,
+    "target_unchanged_since_capture": true,
+    "continuous_pick_sort_authorized": true
+  },
+  "timestamp_utc": "2026-10-23T21:37:12.105565+00:00",
+  "anchor": {
+    "schema_version": 14,
+    "scope": "actual044001_grip_wrist_equal_height_visual_binding",
+    "success_source_sha256": "8a4a92c9cd2adf2b6976f6cdde823b8b33364d8a9522953bff8bc514f69b192b",
+    "task_binding_recorded": true,
+    "reference_pregrasp_tcp_pose_m_rad": [
+      0.23607699573040009,
+      -0.4627450108528137,
+      -0.18161100149154663,
+      -2.1059999465942383,
+      -0.003000000026077032,
+      3.063999891281128
+    ],
+    "reference_top_center_world_m": [
+      0.20596837198125414,
+      -0.5733843721022389,
+      -0.3052286614039801
+    ],
+    "top_center_to_pregrasp_TCP_world_m": [
+      0.03010862374914594,
+      0.1106393612494252,
+      0.12361765991243345
+    ],
+    "reference_point_record": {
+      "schema_version": 1,
+      "scope": "new_wrist_reference_visual_top_point_only",
+      "top_center_world_m": [
+        0.20596837198125414,
+        -0.5733843721022389,
+        -0.3052286614039801
+      ],
+      "burst_summary": {
+        "scope": "equal_height_plane_live_repeatability_not_free3D_or_absolute_accuracy",
+        "elapsed_seconds": 3.5129066079389304,
+        "frame_count": 8,
+        "rejected_frame_indices": [],
+        "all_frames_retained": true,
+        "maximum_repeatability_mm": 3.0,
+        "repeatability_threshold_source": "new_development_sampling_default",
+        "execution_ready": false,
+        "top_center_world_m": [
+          0.20596837198125414,
+          -0.5733843721022389,
+          -0.3052286614039801
+        ],
+        "top_center_repeatability_max_mm": 1.209307543538434,
+        "top_center_repeatability_p95_mm": 1.1410752315211226,
+        "top_center_all_inside_FIT_support": false,
+        "geometric_body_center_world_m": [
+          0.20561166534759345,
+          -0.5721992040824878,
+          -0.35421302765631063
+        ],
+        "geometric_body_center_repeatability_max_mm": 1.209307543538434,
+        "geometric_body_center_repeatability_p95_mm": 1.1410752315211226,
+        "geometric_body_center_all_inside_FIT_support": false,
+        "lower_half_inferred": true,
+        "frame_quality_pass": true,
+        "burst_qualified": true,
+        "completion_wall_time_known": true,
+        "reject_reasons": [],
+        "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+        "original_free3D_gate_pass_not_implied": true,
+        "height_inferred_from_task_plane": true,
+        "FIT_support_for_projected_points_not_evaluated": true
+      },
+      "original_free3D_burst_summary": {
+        "scope": "live_repeatability_only_not_absolute_accuracy",
+        "elapsed_seconds": 3.5129066079389304,
+        "frame_count": 8,
+        "rejected_frame_indices": [],
+        "all_frames_retained": true,
+        "maximum_repeatability_mm": 3.0,
+        "repeatability_threshold_source": "new_development_sampling_default",
+        "execution_ready": false,
+        "top_center_world_m": [
+          0.2076856871886998,
+          -0.5763039030015804,
+          -0.3077425051867423
+        ],
+        "top_center_repeatability_max_mm": 8.260454876182873,
+        "top_center_repeatability_p95_mm": 7.98580046440891,
+        "top_center_all_inside_FIT_support": false,
+        "geometric_body_center_world_m": [
+          0.2069985964849059,
+          -0.5753972107274365,
+          -0.3567286435780903
+        ],
+        "geometric_body_center_repeatability_max_mm": 7.182390754961807,
+        "geometric_body_center_repeatability_p95_mm": 6.926258472522394,
+        "geometric_body_center_all_inside_FIT_support": false,
+        "lower_half_inferred": true,
+        "frame_quality_pass": false,
+        "burst_qualified": false,
+        "completion_wall_time_known": true,
+        "reject_reasons": [
+          "top_center_repeatability_exceeds_3mm",
+          "geometric_body_center_repeatability_exceeds_3mm"
+        ]
+      },
+      "equal_height_plane": {
+        "schema_version": 1,
+        "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+        "plane_point_world_m": [
+          0.23178726980562292,
+          -0.5479881977288621,
+          -0.3048022200072294
+        ],
+        "axis_from_top_into_body_world": [
+          -0.007279727217565114,
+          0.024187102443901,
+          -0.9996809439251136
+        ],
+        "plane_normal_source": "arithmetic_mean_of_all_original_reference_cylinder_axes",
+        "normal_reference_frame_count": 8,
+        "normal_reference_spread_max_degrees": 0.4211100653399225,
+        "plane_orientation_independently_measured": false,
+        "original_reference_observation_sha256": "003cbbb164807cac5f59fec08d8a398b85e6da0209f8ef9ba8b7fb9cf5b6ff8c",
+        "original_camera_context": {
+          "camera_serial": "344322075008",
+          "image_size": [
+            1280,
+            720
+          ],
+          "K": [
+            [
+              908.7157592773438,
+              0.0,
+              654.8253784179688
+            ],
+            [
+              0.0,
+              908.4488525390625,
+              372.3862609863281
+            ],
+            [
+              0.0,
+              0.0,
+              1.0
+            ]
+          ],
+          "distortion": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "distortion_model": "distortion.inverse_brown_conrady",
+          "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+          "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+          "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+          "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+          "camera_fixed_confirmed": true,
+          "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+          "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+          "measured_shell": {
+            "diameter_mm": 45.8,
+            "total_height_mm": 98.0
+          },
+          "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+        },
+        "world_from_camera": [
+          [
+            -0.9998085722219823,
+            -0.01863066283493993,
+            -0.005976396386797045,
+            -0.06894546309745679
+          ],
+          [
+            -0.012635802428174275,
+            0.8480407390358173,
+            -0.5297803709392982,
+            -0.1060142765584126
+          ],
+          [
+            0.014938387076169828,
+            -0.5296034396960759,
+            -0.8481138138561637,
+            0.0974154939202833
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "same_upright_shell_equal_seated_top_plane_confirmed": true,
+        "old_reference_point_refitted": false,
+        "slot_lookup": false,
+        "grid_snap": false,
+        "absolute_position_accepted": false,
+        "motion_authorized": false,
+        "execution_ready": false,
+        "method_source_sha256": "eb50b15cff5cfa7712201df00cb5576aabfe673993cc9efbe0ff4bebe68946c6",
+        "original_task_anchor_sha256": "ed864e9c5f663902f3ed63075e28252dc120e1f6cee860c4993bebd74a9d9816",
+        "old_grasp_tcp_mapping_used": false
+      },
+      "binding_camera_context": {
+        "camera_serial": "344322075008",
+        "image_size": [
+          1280,
+          720
+        ],
+        "K": [
+          [
+            908.7157592773438,
+            0.0,
+            654.8253784179688
+          ],
+          [
+            0.0,
+            908.4488525390625,
+            372.3862609863281
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "distortion": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distortion_model": "distortion.inverse_brown_conrady",
+        "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+        "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+        "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+        "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+        "camera_fixed_confirmed": true,
+        "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+        "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+        "measured_shell": {
+          "diameter_mm": 45.8,
+          "total_height_mm": 98.0
+        },
+        "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+      },
+      "observation": "observation_001",
+      "observation_file": "observation_001.json",
+      "reference_index": 1,
+      "historical_geometry_anchor_sha256": "ed864e9c5f663902f3ed63075e28252dc120e1f6cee860c4993bebd74a9d9816",
+      "old_grasp_tcp_mapping_used": false,
+      "old_2p8_plus_4p5_offsets_used": false,
+      "wrist_pose_not_inferred_from_image": true,
+      "motion_authorized": false,
+      "execution_ready": false
+    },
+    "camera_context": {
+      "camera_serial": "344322075008",
+      "image_size": [
+        1280,
+        720
+      ],
+      "K": [
+        [
+          908.7157592773438,
+          0.0,
+          654.8253784179688
+        ],
+        [
+          0.0,
+          908.4488525390625,
+          372.3862609863281
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "distortion.inverse_brown_conrady",
+      "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+      "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+      "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+      "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+      "camera_fixed_confirmed": true,
+      "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+      "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+      "measured_shell": {
+        "diameter_mm": 45.8,
+        "total_height_mm": 98.0
+      },
+      "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+    },
+    "equal_height_plane": {
+      "schema_version": 1,
+      "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+      "plane_point_world_m": [
+        0.23178726980562292,
+        -0.5479881977288621,
+        -0.3048022200072294
+      ],
+      "axis_from_top_into_body_world": [
+        -0.007279727217565114,
+        0.024187102443901,
+        -0.9996809439251136
+      ],
+      "plane_normal_source": "arithmetic_mean_of_all_original_reference_cylinder_axes",
+      "normal_reference_frame_count": 8,
+      "normal_reference_spread_max_degrees": 0.4211100653399225,
+      "plane_orientation_independently_measured": false,
+      "original_reference_observation_sha256": "003cbbb164807cac5f59fec08d8a398b85e6da0209f8ef9ba8b7fb9cf5b6ff8c",
+      "original_camera_context": {
+        "camera_serial": "344322075008",
+        "image_size": [
+          1280,
+          720
+        ],
+        "K": [
+          [
+            908.7157592773438,
+            0.0,
+            654.8253784179688
+          ],
+          [
+            0.0,
+            908.4488525390625,
+            372.3862609863281
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "distortion": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distortion_model": "distortion.inverse_brown_conrady",
+        "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+        "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+        "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+        "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+        "camera_fixed_confirmed": true,
+        "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+        "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+        "measured_shell": {
+          "diameter_mm": 45.8,
+          "total_height_mm": 98.0
+        },
+        "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+      },
+      "world_from_camera": [
+        [
+          -0.9998085722219823,
+          -0.01863066283493993,
+          -0.005976396386797045,
+          -0.06894546309745679
+        ],
+        [
+          -0.012635802428174275,
+          0.8480407390358173,
+          -0.5297803709392982,
+          -0.1060142765584126
+        ],
+        [
+          0.014938387076169828,
+          -0.5296034396960759,
+          -0.8481138138561637,
+          0.0974154939202833
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "same_upright_shell_equal_seated_top_plane_confirmed": true,
+      "old_reference_point_refitted": false,
+      "slot_lookup": false,
+      "grid_snap": false,
+      "absolute_position_accepted": false,
+      "motion_authorized": false,
+      "execution_ready": false,
+      "method_source_sha256": "eb50b15cff5cfa7712201df00cb5576aabfe673993cc9efbe0ff4bebe68946c6",
+      "original_task_anchor_sha256": "ed864e9c5f663902f3ed63075e28252dc120e1f6cee860c4993bebd74a9d9816",
+      "old_grasp_tcp_mapping_used": false
+    },
+    "prepare_targets": [
+      6001,
+      6000,
+      6001,
+      32000,
+      65535,
+      65535
+    ],
+    "grip_targets": [
+      26001,
+      16899,
+      19100,
+      32000,
+      65535,
+      65535
+    ],
+    "drop_targets": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535
+    ],
+    "lift_mm": 180,
+    "original_actual_pickup_place_confirmed": true,
+    "old_wrist_mapping_used": false,
+    "old_2p8_plus_4p5_offsets_used": false,
+    "slot_lookup_used": false,
+    "grid_snap_used": false,
+    "fault_last_state_used": false,
+    "handeye_refitted": false,
+    "full6D_TCP_calibrated": false,
+    "absolute_position_accuracy_accepted": false,
+    "complete_visual_pick_sort_accepted": false,
+    "motion_authorized": false,
+    "execution_ready": false
+  },
+  "point_record": {
+    "schema_version": 1,
+    "scope": "new_wrist_reference_visual_top_point_only",
+    "top_center_world_m": [
+      0.08763594310481672,
+      -0.5241163030009927,
+      -0.30317503740557317
+    ],
+    "burst_summary": {
+      "scope": "equal_height_plane_live_repeatability_not_free3D_or_absolute_accuracy",
+      "elapsed_seconds": 3.1944116910453886,
+      "frame_count": 8,
+      "rejected_frame_indices": [],
+      "all_frames_retained": true,
+      "maximum_repeatability_mm": 3.0,
+      "repeatability_threshold_source": "new_development_sampling_default",
+      "execution_ready": false,
+      "top_center_world_m": [
+        0.08763594310481672,
+        -0.5241163030009927,
+        -0.30317503740557317
+      ],
+      "top_center_repeatability_max_mm": 0.32007139842301224,
+      "top_center_repeatability_p95_mm": 0.31088940637620727,
+      "top_center_all_inside_FIT_support": false,
+      "geometric_body_center_world_m": [
+        0.08727923647115603,
+        -0.5229311349812416,
+        -0.35215940365790377
+      ],
+      "geometric_body_center_repeatability_max_mm": 0.3200713984230137,
+      "geometric_body_center_repeatability_p95_mm": 0.3108894063762077,
+      "geometric_body_center_all_inside_FIT_support": false,
+      "lower_half_inferred": true,
+      "frame_quality_pass": true,
+      "burst_qualified": true,
+      "completion_wall_time_known": true,
+      "reject_reasons": [],
+      "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+      "original_free3D_gate_pass_not_implied": true,
+      "height_inferred_from_task_plane": true,
+      "FIT_support_for_projected_points_not_evaluated": true
+    },
+    "original_free3D_burst_summary": {
+      "scope": "live_repeatability_only_not_absolute_accuracy",
+      "elapsed_seconds": 3.1944116910453886,
+      "frame_count": 8,
+      "rejected_frame_indices": [],
+      "all_frames_retained": true,
+      "maximum_repeatability_mm": 3.0,
+      "repeatability_threshold_source": "new_development_sampling_default",
+      "execution_ready": false,
+      "top_center_world_m": [
+        0.08341327478030953,
+        -0.5128206334014669,
+        -0.2924055310807898
+      ],
+      "top_center_repeatability_max_mm": 1.8677107897160983,
+      "top_center_repeatability_p95_mm": 1.8485241635304122,
+      "top_center_all_inside_FIT_support": false,
+      "geometric_body_center_world_m": [
+        0.08390375662760648,
+        -0.5132594564367148,
+        -0.3414006456540709
+      ],
+      "geometric_body_center_repeatability_max_mm": 1.713560696560759,
+      "geometric_body_center_repeatability_p95_mm": 1.6558223961624867,
+      "geometric_body_center_all_inside_FIT_support": false,
+      "lower_half_inferred": true,
+      "frame_quality_pass": true,
+      "burst_qualified": true,
+      "completion_wall_time_known": true,
+      "reject_reasons": []
+    },
+    "equal_height_plane": {
+      "schema_version": 1,
+      "method": "live_camera_ray_intersection_with_equal_top_height_plane",
+      "plane_point_world_m": [
+        0.23178726980562292,
+        -0.5479881977288621,
+        -0.3048022200072294
+      ],
+      "axis_from_top_into_body_world": [
+        -0.007279727217565114,
+        0.024187102443901,
+        -0.9996809439251136
+      ],
+      "plane_normal_source": "arithmetic_mean_of_all_original_reference_cylinder_axes",
+      "normal_reference_frame_count": 8,
+      "normal_reference_spread_max_degrees": 0.4211100653399225,
+      "plane_orientation_independently_measured": false,
+      "original_reference_observation_sha256": "003cbbb164807cac5f59fec08d8a398b85e6da0209f8ef9ba8b7fb9cf5b6ff8c",
+      "original_camera_context": {
+        "camera_serial": "344322075008",
+        "image_size": [
+          1280,
+          720
+        ],
+        "K": [
+          [
+            908.7157592773438,
+            0.0,
+            654.8253784179688
+          ],
+          [
+            0.0,
+            908.4488525390625,
+            372.3862609863281
+          ],
+          [
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "distortion": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "distortion_model": "distortion.inverse_brown_conrady",
+        "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+        "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+        "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+        "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+        "camera_fixed_confirmed": true,
+        "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+        "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+        "measured_shell": {
+          "diameter_mm": 45.8,
+          "total_height_mm": 98.0
+        },
+        "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+      },
+      "world_from_camera": [
+        [
+          -0.9998085722219823,
+          -0.01863066283493993,
+          -0.005976396386797045,
+          -0.06894546309745679
+        ],
+        [
+          -0.012635802428174275,
+          0.8480407390358173,
+          -0.5297803709392982,
+          -0.1060142765584126
+        ],
+        [
+          0.014938387076169828,
+          -0.5296034396960759,
+          -0.8481138138561637,
+          0.0974154939202833
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "same_upright_shell_equal_seated_top_plane_confirmed": true,
+      "old_reference_point_refitted": false,
+      "slot_lookup": false,
+      "grid_snap": false,
+      "absolute_position_accepted": false,
+      "motion_authorized": false,
+      "execution_ready": false,
+      "method_source_sha256": "eb50b15cff5cfa7712201df00cb5576aabfe673993cc9efbe0ff4bebe68946c6",
+      "original_task_anchor_sha256": "ed864e9c5f663902f3ed63075e28252dc120e1f6cee860c4993bebd74a9d9816",
+      "old_grasp_tcp_mapping_used": false
+    },
+    "binding_camera_context": {
+      "camera_serial": "344322075008",
+      "image_size": [
+        1280,
+        720
+      ],
+      "K": [
+        [
+          908.7157592773438,
+          0.0,
+          654.8253784179688
+        ],
+        [
+          0.0,
+          908.4488525390625,
+          372.3862609863281
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "distortion": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distortion_model": "distortion.inverse_brown_conrady",
+      "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+      "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+      "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+      "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+      "camera_fixed_confirmed": true,
+      "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+      "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+      "measured_shell": {
+        "diameter_mm": 45.8,
+        "total_height_mm": 98.0
+      },
+      "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+    },
+    "observation": "observation_001",
+    "observation_file": "observation_001.json",
+    "reference_index": 1,
+    "historical_geometry_anchor_sha256": "ed864e9c5f663902f3ed63075e28252dc120e1f6cee860c4993bebd74a9d9816",
+    "old_grasp_tcp_mapping_used": false,
+    "old_2p8_plus_4p5_offsets_used": false,
+    "wrist_pose_not_inferred_from_image": true,
+    "motion_authorized": false,
+    "execution_ready": false
+  },
+  "candidate": {
+    "scope": "live_visual_translation_from_actual044001_pickup",
+    "pregrasp_tcp_candidate_m_rad": [
+      0.11774456685396266,
+      -0.41347694175156746,
+      -0.1795573774931397,
+      -2.1059999465942383,
+      -0.003000000026077032,
+      3.063999891281128
+    ],
+    "hover_tcp_candidate_m_rad": [
+      0.11774456685396266,
+      -0.41347694175156746,
+      0.0004426225068602796,
+      -2.1059999465942383,
+      -0.003000000026077032,
+      3.063999891281128
+    ],
+    "delta_from_reference_world_mm": [
+      -118.33242887643743,
+      49.26806910124626,
+      2.053623998406917
+    ],
+    "fixed_wrist_rpy_rad": [
+      -2.1059999465942383,
+      -0.003000000026077032,
+      3.063999891281128
+    ],
+    "prepare_recipe": [
+      6001,
+      6000,
+      6001,
+      32000,
+      65535,
+      65535
+    ],
+    "grip_recipe": [
+      26001,
+      16899,
+      19100,
+      32000,
+      65535,
+      65535
+    ],
+    "lift_mm": 180,
+    "slot_lookup_used": false,
+    "grid_snap_used": false,
+    "old_offsets_applied": false,
+    "actual_finger_arrival_required": false,
+    "motion_authorized": false,
+    "execution_ready": false
+  },
+  "vision_archive_sha256": "a24abb922d345a37934ec224114a06f6ce1f4ce496d683136dea2d8616561359"
+}

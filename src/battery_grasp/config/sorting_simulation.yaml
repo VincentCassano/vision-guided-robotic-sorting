@@ -1,0 +1,54 @@
+battery_grasp_sim:
+  simulation_only: true
+  frame_id: base_link
+  max_age: 1.0
+  max_target_shift: 0.02
+  min_depth: 0.30
+  max_depth: 1.50
+  depth_window: 2
+  step_delay: 0.25
+  camera:
+    frame_id: camera_test_frame
+    intrinsics: [600.0, 600.0, 320.0, 240.0]
+    row_pixels: [340, 240, 140]
+    column_pixels: [200, 320, 440]
+    depth: 0.80
+    rotation: [[0.0, -1.0, 0.0], [-1.0, 0.0, 0.0], [0.0, 0.0, -1.0]]
+    translation: [0.65, 0.0, 1.10]
+  grid:
+    row_x: [0.516666667, 0.65, 0.783333333]
+    column_y: [0.16, 0.0, -0.16]
+    tolerance: 0.035
+  scene_categories:
+    - [NORMAL_BLACK, DEFECT_RED, NORMAL_BLACK]
+    - [NORMAL_BLACK, NORMAL_BLACK, NORMAL_BLACK]
+    - [NORMAL_BLACK, NORMAL_BLACK, DEFECT_WHITE]
+  workspace:
+    x_min: 0.25
+    x_max: 0.90
+    y_min: -0.50
+    y_max: 0.55
+    z_min: 0.10
+    z_max: 0.80
+  motion:
+    safe_z: 0.65
+    hand_radius: 0.025
+    battery_radius: 0.025
+    clearance: 0.04
+  bins:
+    LEFT_UPPER_BIN: [0.75, 0.42, 0.65]
+    LEFT_LOWER_BIN: [0.48, 0.42, 0.65]
+  arms:
+    right_enabled: false
+    right_paths_verified: false
+    LEFT:
+      home: [0.35, 0.30, 0.65]
+      reach: {x_min: 0.25, x_max: 0.90, y_min: -0.22, y_max: 0.55, z_min: 0.10, z_max: 0.80}
+    RIGHT:
+      home: [0.35, -0.30, 0.65]
+      reach: {x_min: 0.25, x_max: 0.90, y_min: -0.50, y_max: 0.55, z_min: 0.10, z_max: 0.80}
+  obstacles:
+    - name: right_parts_envelope
+      bounds: {x_min: 0.40, x_max: 0.85, y_min: -0.45, y_max: -0.28, z_min: 0.0, z_max: 0.40}
+    - name: left_bins_envelope
+      bounds: {x_min: 0.38, x_max: 0.85, y_min: 0.34, y_max: 0.50, z_min: 0.0, z_max: 0.40}

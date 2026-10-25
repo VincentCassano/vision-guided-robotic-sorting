@@ -1,0 +1,143 @@
+{
+  "archive": "tmp/visual_pick_sort_v1_20261021_205814_392322.zip",
+  "sha256": "2abff1627f767e7d564e5fc0fbaf7f9960009dfce3c783d2080a9e0f1bb4aa89",
+  "bytes": 12084602,
+  "members": 15,
+  "internal_hashes": 14,
+  "CRC_ok": true,
+  "internal_inventory_exact": true,
+  "internal_hashes_match": true,
+  "deployed_payload_matches_v1": true,
+  "parent_worker_match": true,
+  "outcome": "aborted_no_further_writes",
+  "phase": "fault",
+  "exceptions": [
+    {
+      "error": "ProtectionFault('Current protection or unexpected force-control status: [2, 5, 3, 3, 5, 5]')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_worker.py\", line 183, in main\n    active,row=hand.close_recipe();seq.tuned_recipe=active[:]\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_hand.py\", line 92, in close_recipe\n    row=self.snapshot()\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_pose_hand.py\", line 124, in snapshot\n    self.check_status(row)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_pose_hand.py\", line 134, in check_status\n    self._protection('Current protection or unexpected force-control status: '+str(row['status']))\n  File \"/home/rm/test/battery-d435-preview/deployment/hand_feedback_policy.py\", line 38, in _protection\n    raise ProtectionFault(message)\nrun_school_battery_hand.ProtectionFault: Current protection or unexpected force-control status: [2, 5, 3, 3, 5, 5]\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "counts": {
+    "arm": 0,
+    "hand": 1,
+    "configuration": 0
+  },
+  "operator_events": [
+    {
+      "index": 5,
+      "phase": "await_grasp",
+      "value": "g",
+      "timestamp_utc": "2026-10-21T12:59:01.026321+00:00",
+      "only_intended_shell_contact_and_closure_clear": true,
+      "current_noncontact_pose_and_same_shell_scene_confirmed": true,
+      "freeze_supported_contact_while_shell_supported": true
+    }
+  ],
+  "raw_writes": [
+    {
+      "event": "tx",
+      "sequence": 24,
+      "monotonic": 603826.602877489,
+      "request": {
+        "command": "write_registers",
+        "port": 1,
+        "address": 1135,
+        "num": 6,
+        "data": [
+          103,
+          132,
+          119,
+          36,
+          115,
+          60,
+          85,
+          240,
+          255,
+          255,
+          254,
+          32
+        ],
+        "device": 2
+      },
+      "pre_send_quiet_seconds": 0.3,
+      "hex": "7b22636f6d6d616e64223a2277726974655f726567697374657273222c22706f7274223a312c2261646472657373223a313133352c226e756d223a362c2264617461223a5b3130332c3133322c3131392c33362c3131352c36302c38352c3234302c3235352c3235352c3235342c33325d2c22646576696365223a327d0d0a"
+    }
+  ],
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      5,
+      3,
+      3,
+      5,
+      5
+    ],
+    "current": [
+      3,
+      702,
+      3,
+      0,
+      3,
+      3
+    ],
+    "positions": [
+      26504,
+      30551,
+      27794,
+      19941,
+      65535,
+      65127
+    ],
+    "targets": [
+      26501,
+      30501,
+      29499,
+      22001,
+      65535,
+      65056
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 603826.673029713,
+    "finished_monotonic": 603828.788558323,
+    "final_status_started_monotonic": 603828.43822108,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "fresh_protection": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "source_accepted_pregrasp_sha256": "69df11068ab539fe09f0ed7e2cdc31ff70addf4d4350a45a86198918c076b663",
+  "arm_segments": [],
+  "grip_receipt_present": false,
+  "actual_blocker": "First complete post-close group contains current-protection status3 on middle/ring; failure occurred inside close_recipe, before any l/loaded lift/transfer wait",
+  "current_raw_values_not_over_live_1299mA": true,
+  "current_values_sequential_not_peak_current_proof": true,
+  "no_claim_that_status3_is_false_alarm": true,
+  "onsite_current_scene_after_fault_unknown": false,
+  "previous_visual_pregrasp_remains_accepted": true,
+  "new_grip_lift_sort_accepted": false,
+  "no_local_device_or_project_execution": true,
+  "operator_followup": "User removed shell; hand/arm not moved",
+  "current_hand_empty_by_operator": true,
+  "current_motor_status_not_measured": true,
+  "next_start_requires_fresh_reads_and_explicit_empty_withdrawal": true
+}

@@ -1,0 +1,117 @@
+{
+  "source": "user_executed_stdlib_reader_of_existing_robot_files",
+  "file": "captures/visual_pick_sort_v13_20261023_222259_605118/cycle_001/worker_result.json",
+  "scope": "selected values pasted by onsite operator; full new archive not received",
+  "startup": {
+    "joints": [
+      -51.792999267578125,
+      -89.78399658203125,
+      -1.350000023841858,
+      161.38999938964844,
+      31.593000411987305,
+      -14.753000259399414
+    ],
+    "pose": [
+      0.3169260025024414,
+      -0.476283997297287,
+      -0.1699109971523285,
+      -2.263000011444092,
+      -0.019999999552965164,
+      3.0439999103546143
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ]
+    }
+  },
+  "command": {
+    "method": "Movel_Cmd",
+    "target": [
+      0.3169260025024414,
+      -0.476283997297287,
+      -0.029931556144932703,
+      -2.263000011444092,
+      -0.019999999552965164,
+      3.0439999103546143
+    ]
+  },
+  "last_sdk_result": {
+    "event": "sdk_call_result",
+    "monotonic": 782146.918195866,
+    "method": "Get_Current_Arm_State",
+    "result": [
+      0,
+      [
+        -61.66400146484375,
+        -56.375,
+        -48.6150016784668,
+        175.6750030517578,
+        15.979000091552734,
+        -31.68400001525879
+      ],
+      [
+        0.3167459964752197,
+        -0.47629499435424805,
+        -0.041669998317956924,
+        -2.263000011444092,
+        -0.019999999552965164,
+        3.0429999828338623
+      ],
+      0,
+      0
+    ]
+  },
+  "drive": {
+    "Get_Joint_Drive_Min_Pos": [
+      0,
+      [
+        -183.0,
+        -135.0,
+        -140.0,
+        -360.0,
+        -133.0,
+        -365.0
+      ]
+    ],
+    "Get_Joint_Drive_Max_Pos": [
+      0,
+      [
+        183.0,
+        135.0,
+        140.0,
+        360.0,
+        133.0,
+        365.0
+      ]
+    ]
+  },
+  "error": "RuntimeError('Arm joint reserve dropped below3 degrees')",
+  "phase": "raising_empty_current_hand",
+  "failed_joint": 4,
+  "ordinary_upper_degrees": 178.0,
+  "failed_angle_degrees": 175.6750030517578,
+  "software_required_margin_degrees": 3.0,
+  "ordinary_actual_margin_degrees": 2.3249969482421875,
+  "climbed_from_start_mm": 128.24099883437157,
+  "remaining_command_z_mm": 11.738442173024222,
+  "raw_is_prefault_rejected_sample_not_poststop_or_resume_reference": true,
+  "actual_stop_pose_after_Move_Stop_not_observed": true,
+  "ordinary_limit_not_drive_limit": true,
+  "automatic_recovery_authorized": false,
+  "physical_stop_verified": false,
+  "actual_pick_sort_accepted": false
+}

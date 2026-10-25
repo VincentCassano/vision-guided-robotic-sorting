@@ -1,0 +1,6232 @@
+{
+  "schema_version": 1,
+  "scope": "current_operational_reads_separate_diagnostic_then_school_bin_drop",
+  "timestamp_utc": "2026-10-19T18:44:12.650033+00:00",
+  "outcome": "aborted_no_further_writes",
+  "phase": "fault",
+  "diagnostic_pass": true,
+  "execution_ready": false,
+  "full_pregrasp_execution_ready": false,
+  "sdk_in_parent": false,
+  "exceptions": [
+    {
+      "error": "TransportError('Unsolicited or late response before send')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v6_worker.py\", line 215, in main\n    sequence.run()\n  File \"/home/rm/test/battery-d435-preview/deployment/school_startup_contact_sequence.py\", line 255, in run\n    self.complete_grasp_cycle(end,tip,return_z)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v4_sequence.py\", line 183, in complete_grasp_cycle\n    upper = self.move_bin_segment(arm,upper_target,'Movel_Cmd',\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v4_sequence.py\", line 79, in move_bin_segment\n    hand._critical_configuration()\n  File \"/home/rm/test/battery-d435-preview/deployment/continuous_hand_cycle.py\", line 97, in _critical_configuration\n    identity = self.read('identity_before_pose', 1000, 8)\n  File \"/home/rm/test/battery-d435-preview/deployment/run_school_battery_hand.py\", line 40, in read\n    started=self.clock(); values=self.io.read(address,count)\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 265, in read\n    return self.exchange(dict(command=MULTI,port=1,address=address,num=count,device=2))\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v6_worker.py\", line 129, in exchange\n    return super().exchange(message)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_reads.py\", line 43, in exchange\n    value = super().exchange(message)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_contact_transport.py\", line 152, in exchange\n    result = super().exchange(message)\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 210, in exchange\n    self.receive(); raise TransportError('Unsolicited or late response before send')\nschool_battery_transport.TransportError: Unsolicited or late response before send\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "arm_actuator_writes": 2,
+  "hand_register_writes": 2,
+  "controller_configuration_writes": 0,
+  "hand_bus_configuration_writes": 0,
+  "hand_register_writes_count_kind": "raw_TX_attempts_not_acknowledged_or_stopped",
+  "hand_bus_configuration_writes_count_kind": "raw_TX_attempts_not_ACK_or_physical_stop",
+  "hand_bus_initialization_requested": false,
+  "explicit_supported_opening_requested": false,
+  "arm_protection_configuration_requested": false,
+  "physical_stop_verified": false,
+  "torque_release_verified": false,
+  "automatic_open": false,
+  "automatic_return": false,
+  "automatic_grip": false,
+  "automatic_force_zero": false,
+  "object_lift": false,
+  "load_lift_or_transfer_performed": false,
+  "loaded_lift_performed": false,
+  "grip_holding_verified": false,
+  "holding_verified": false,
+  "offline_tests_executed": false,
+  "functional_validation": "field_execution_pending",
+  "vision_used": false,
+  "vision_binding_scope": "not_used_handeye_recalibration_deferred",
+  "camera_extrinsics_used_for_motion": false,
+  "previous_result_reused": false,
+  "historical_clearances_reused": false,
+  "automatic_old_point_alignment": false,
+  "automatic_lateral_motion": false,
+  "lateral_transfer_ready": false,
+  "hand_above_target_top_confirmed": false,
+  "autonomous_other_targets_ready": false,
+  "fresh_teaching_required": true,
+  "fresh_start_after_restart_allowed": true,
+  "onsite_hardware_stop_required_on_unexpected_contact": true,
+  "contact_sound_alone_aborts": false,
+  "temperature_sensor_monitoring": false,
+  "selected_color": "black",
+  "smaller_first_close": [
+    15000,
+    30000,
+    28000,
+    20000,
+    65535,
+    65222
+  ],
+  "source_audit": {
+    "host_os": "Linux",
+    "host_machine": "aarch64",
+    "sdk_source_sha256": {
+      "robotic_arm.py": "a15e4695426325c590f89d3e05b6bb36186793a06f72dd6a500cc828504f74b8",
+      "log_setting.py": "f37e27d8e34b0d00c33cad732e83163e57efe9104a1551e36deafaf6b2b9e90f"
+    },
+    "loaded_native": {
+      "path": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package/libRM_Base.so",
+      "sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+      "byte_count": 690912,
+      "architecture": "aarch64"
+    },
+    "connection_constructor_review": "API init/version/socket start/state only; no actuator or configuration method",
+    "live_controller_identity_firmware_dh_read": false
+  },
+  "fresh_model": {
+    "schema_version": 1,
+    "endpoint": [
+      "169.254.128.18",
+      8080
+    ],
+    "network_connection_requested": true,
+    "hardware_writes": 0,
+    "controller_configuration_writes": 0,
+    "actuator_writes": 0,
+    "execution_ready": false,
+    "model_data_applied": false,
+    "fitted_correction_applied": false,
+    "dh_valid": true,
+    "identity_valid": true,
+    "installed_controller_generation": "unknown",
+    "dh_command_generation_support": "this_controller_returned_documented_schema",
+    "parameters_origin": "controller_readback_not_manufacturer_default",
+    "official_references": {
+      "identity": "https://develop.realman-robotics.com/robot/json/systemConfig/",
+      "dh": "https://develop.realman-robotics.com/robot/json/armConfig/"
+    },
+    "units": {
+      "alpha": "1000 raw units per degree",
+      "a": "1000000 raw units per meter",
+      "d": "1000000 raw units per meter",
+      "offset": "1000 raw units per degree"
+    },
+    "transactions": [
+      {
+        "command": "get_arm_software_info",
+        "endpoint": [
+          "169.254.128.18",
+          8080
+        ],
+        "request_hex": "7b22636f6d6d616e64223a226765745f61726d5f736f6674776172655f696e666f227d0d0a",
+        "response_hex": "7b2250726f647563745f76657273696f6e223a22524d36352d4249222c22616c676f726974686d5f696e666f223a7b2276657273696f6e223a22312e342e3130227d2c22636f6d6d616e64223a2261726d5f736f6674776172655f696e666f222c226374726c5f696e666f223a7b226275696c645f74696d65223a22323032342f31312f32322031313a32343a3437222c22636f6d6d69745f6964223a2239346562333939222c2276657273696f6e223a2256312e362e35227d2c2264796e616d69635f696e666f223a7b226d6f64656c5f76657273696f6e223a2232227d2c22706c616e5f696e666f223a7b226275696c645f74696d65223a22323032342f31312f32322031313a32353a3033222c22636f6d6d69745f6964223a2265383735656530222c2276657273696f6e223a2256312e362e35227d7d0d0a",
+        "connection_requested": true,
+        "request_send_completed": true,
+        "socket_closed": true,
+        "response": {
+          "Product_version": "RM65-BI",
+          "algorithm_info": {
+            "version": "1.4.10"
+          },
+          "command": "arm_software_info",
+          "ctrl_info": {
+            "build_time": "2024/11/22 11:24:47",
+            "commit_id": "94eb399",
+            "version": "V1.6.5"
+          },
+          "dynamic_info": {
+            "model_version": "2"
+          },
+          "plan_info": {
+            "build_time": "2024/11/22 11:25:03",
+            "commit_id": "e875ee0",
+            "version": "V1.6.5"
+          }
+        }
+      },
+      {
+        "command": "get_DH_data",
+        "endpoint": [
+          "169.254.128.18",
+          8080
+        ],
+        "request_hex": "7b22636f6d6d616e64223a226765745f44485f64617461227d0d0a",
+        "response_hex": "7b22636f6d6d616e64223a226765745f44485f64617461222c226a6f696e745f31223a5b302c302c3138313036302c305d2c226a6f696e745f32223a5b39303030302c302c302c39303030305d2c226a6f696e745f33223a5b302c3235363030302c302c39303030305d2c226a6f696e745f34223a5b39303030302c302c3231303030302c305d2c226a6f696e745f35223a5b2d39303030302c302c302c305d2c226a6f696e745f36223a5b39303030302c302c3134343030302c305d7d0d0a",
+        "connection_requested": true,
+        "request_send_completed": true,
+        "socket_closed": true,
+        "response": {
+          "command": "get_DH_data",
+          "joint_1": [
+            0,
+            0,
+            181060,
+            0
+          ],
+          "joint_2": [
+            90000,
+            0,
+            0,
+            90000
+          ],
+          "joint_3": [
+            0,
+            256000,
+            0,
+            90000
+          ],
+          "joint_4": [
+            90000,
+            0,
+            210000,
+            0
+          ],
+          "joint_5": [
+            -90000,
+            0,
+            0,
+            0
+          ],
+          "joint_6": [
+            90000,
+            0,
+            144000,
+            0
+          ]
+        }
+      }
+    ],
+    "errors": [],
+    "host": {
+      "system": "Linux",
+      "machine": "aarch64"
+    },
+    "identity_response": {
+      "Product_version": "RM65-BI",
+      "algorithm_info": {
+        "version": "1.4.10"
+      },
+      "command": "arm_software_info",
+      "ctrl_info": {
+        "build_time": "2024/11/22 11:24:47",
+        "commit_id": "94eb399",
+        "version": "V1.6.5"
+      },
+      "dynamic_info": {
+        "model_version": "2"
+      },
+      "plan_info": {
+        "build_time": "2024/11/22 11:25:03",
+        "commit_id": "e875ee0",
+        "version": "V1.6.5"
+      }
+    },
+    "dh_response": {
+      "command": "get_DH_data",
+      "joint_1": [
+        0,
+        0,
+        181060,
+        0
+      ],
+      "joint_2": [
+        90000,
+        0,
+        0,
+        90000
+      ],
+      "joint_3": [
+        0,
+        256000,
+        0,
+        90000
+      ],
+      "joint_4": [
+        90000,
+        0,
+        210000,
+        0
+      ],
+      "joint_5": [
+        -90000,
+        0,
+        0,
+        0
+      ],
+      "joint_6": [
+        90000,
+        0,
+        144000,
+        0
+      ]
+    },
+    "dh_parameters": [
+      {
+        "joint": 1,
+        "raw": [
+          0,
+          0,
+          181060,
+          0
+        ],
+        "alpha_degrees": 0.0,
+        "a_meters": 0.0,
+        "d_meters": 0.18106,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 2,
+        "raw": [
+          90000,
+          0,
+          0,
+          90000
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.0,
+        "offset_degrees": 90.0
+      },
+      {
+        "joint": 3,
+        "raw": [
+          0,
+          256000,
+          0,
+          90000
+        ],
+        "alpha_degrees": 0.0,
+        "a_meters": 0.256,
+        "d_meters": 0.0,
+        "offset_degrees": 90.0
+      },
+      {
+        "joint": 4,
+        "raw": [
+          90000,
+          0,
+          210000,
+          0
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.21,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 5,
+        "raw": [
+          -90000,
+          0,
+          0,
+          0
+        ],
+        "alpha_degrees": -90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.0,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 6,
+        "raw": [
+          90000,
+          0,
+          144000,
+          0
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.144,
+        "offset_degrees": 0.0
+      }
+    ],
+    "elapsed_seconds": 0.029427903005853295,
+    "outcome": "readback_recorded_not_applied"
+  },
+  "startup_readiness": {
+    "passed": true,
+    "deadline_seconds": 45,
+    "attempts": [
+      {
+        "number": 1,
+        "started_monotonic": 451728.422728087,
+        "initial_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "operational_reads": {
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ],
+          "speeds": [
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+          ],
+          "force_targets": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "targets": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            728
+          ],
+          "positions": [
+            0,
+            0,
+            0,
+            9,
+            0,
+            728
+          ],
+          "current_ma_0_to_4": [
+            2,
+            2,
+            2,
+            0,
+            0
+          ],
+          "current": [
+            2,
+            2,
+            2,
+            0,
+            0,
+            55
+          ],
+          "status": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "final_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "outcome": "work_registers_accepted_not_motion_certified",
+        "finished_monotonic": 451732.674693549
+      }
+    ],
+    "no_actuator_writes": true,
+    "diagnostic_zero_required": false,
+    "no_claim_that_subexception1_is_stale": true,
+    "automatic_reset_or_start_init": false,
+    "normal_full_profile_still_required": true,
+    "final_identity_raw": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "initial_diagnostic": 0,
+    "final_diagnostic": 0,
+    "current_work_registers_readable": true,
+    "elapsed_seconds": 4.2505797240301035,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "sdk_environment": {
+    "schema_version": 1,
+    "read_only": true,
+    "execution_ready": false,
+    "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+    "host_system": "Linux",
+    "host_machine": "aarch64",
+    "python_pointer_bits": 64,
+    "errors": [],
+    "note": "Provenance only. Does not certify the native algorithm or approve IK/trajectory execution.",
+    "loaded_native": {
+      "path": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package/libRM_Base.so",
+      "bytes": 690912,
+      "sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+      "binary": {
+        "format": "ELF",
+        "bits": 64,
+        "byteorder": "little",
+        "machine": 183,
+        "architecture": "aarch64"
+      }
+    },
+    "api_version": "4.3.1",
+    "controller_software_info": {
+      "status": 0,
+      "ok": true,
+      "data": [
+        {
+          "product_version": "RM65-BI",
+          "algorithm_info": {
+            "version": "1.4.10"
+          },
+          "ctrl_info": {
+            "build_time": "",
+            "version": " 11:24:47"
+          },
+          "dynamic_info": {
+            "model_version": "V1.6."
+          },
+          "plan_info": {
+            "build_time": "5",
+            "version": " 11:25:03"
+          }
+        }
+      ]
+    },
+    "controller_run_mode_raw": {
+      "status": 0,
+      "ok": true,
+      "data": [
+        1
+      ]
+    },
+    "metadata_complete": true
+  },
+  "startup_reference": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.21193400025367737,
+      -0.41827601194381714,
+      -0.008559999987483025,
+      -2.9809999465942383,
+      -0.6740000247955322,
+      -2.565000057220459
+    ],
+    "joints": [
+      -70.94000244140625,
+      -45.67900085449219,
+      -70.84600067138672,
+      8.083999633789062,
+      -32.14400100708008,
+      78.58699798583984
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      107.05999755859375,
+      84.32099914550781,
+      64.15399932861328,
+      169.91600036621094,
+      95.85599899291992,
+      281.41300201416016
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "reference_source": "this_session_fresh_controller_readback",
+  "fresh_protection_values": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "unknowns": [
+    "Actual payload/center-of-mass not certified",
+    "Full scene geometry and pick trajectory not certified",
+    "Automatic contact stop/release not verified",
+    "Software_Info ctrl/plan fields not reliable semantic version decoding",
+    "Optional safety GET failures are recorded and never replaced by guesses"
+  ],
+  "arm_safety_reads": {
+    "Get_Joint_EN_State": [
+      0,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "Get_Joint_Err_Flag": [
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Joint_Drive_Min_Pos": [
+      0,
+      [
+        -183.0,
+        -135.0,
+        -140.0,
+        -360.0,
+        -133.0,
+        -365.0
+      ]
+    ],
+    "Get_Joint_Drive_Max_Pos": [
+      0,
+      [
+        183.0,
+        135.0,
+        140.0,
+        360.0,
+        133.0,
+        365.0
+      ]
+    ],
+    "Get_Joint_Current": [
+      0,
+      [
+        -791.0,
+        863.0,
+        373.0,
+        -202.0,
+        509.0,
+        -162.0
+      ]
+    ],
+    "Get_Joint_Temperature": [
+      0,
+      [
+        34.0,
+        35.0,
+        33.0,
+        35.0,
+        37.0,
+        38.0
+      ]
+    ],
+    "Get_Joint_Voltage": [
+      0,
+      [
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0
+      ]
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ],
+    "Get_Arm_Software_Version": [
+      0,
+      "6B0165",
+      "0",
+      "0",
+      "0",
+      "RM65-BI"
+    ],
+    "Get_Install_Pose": [
+      0,
+      0.0,
+      45.0,
+      0.0
+    ]
+  },
+  "arm_protection_read_source": "fresh_socket_raw_controller_JSON_not_SDK_cache",
+  "feedback_policy": {
+    "name": "continuous_actual_position_three_groups",
+    "status5_firmware_bug_confirmed": false,
+    "status5_alone_aborts": false,
+    "position_tolerance": 150,
+    "target_readback_tolerance": 2,
+    "position_window_criterion": "all_sampled_positions_within_target_tolerance",
+    "adjacent_position_gate": false,
+    "observed_settling_seconds": 1.0,
+    "reads_are_sequential": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "empty_hand_only": false,
+    "minimum_complete_groups": 3,
+    "feedback_read_order": [
+      1000,
+      1135,
+      1105,
+      1145,
+      1110,
+      1085
+    ],
+    "no_automatic_fault_open": true,
+    "no_speed_writes": true,
+    "physical_stop": false,
+    "continuous_execution_only": true,
+    "supported_position_contact_only": true,
+    "holding_verified": false,
+    "no_force_target_writes": true,
+    "status5_blocks_additional_closure": true,
+    "protection_feedback_saved_before_application_decision": true
+  },
+  "moves": [],
+  "required_speeds": [
+    65535,
+    65535,
+    65535,
+    65535,
+    65535,
+    65535
+  ],
+  "hand_feedback_policy": {
+    "name": "continuous_actual_position_three_groups",
+    "status5_firmware_bug_confirmed": false,
+    "status5_alone_aborts": false,
+    "position_tolerance": 150,
+    "target_readback_tolerance": 2,
+    "position_window_criterion": "all_sampled_positions_within_target_tolerance",
+    "adjacent_position_gate": false,
+    "observed_settling_seconds": 1.0,
+    "reads_are_sequential": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "empty_hand_only": false,
+    "minimum_complete_groups": 3,
+    "feedback_read_order": [
+      1000,
+      1135,
+      1105,
+      1145,
+      1110,
+      1085
+    ],
+    "no_automatic_fault_open": true,
+    "no_speed_writes": true,
+    "physical_stop": false,
+    "continuous_execution_only": true,
+    "supported_position_contact_only": true,
+    "holding_verified": false,
+    "no_force_target_writes": true,
+    "status5_blocks_additional_closure": true,
+    "protection_feedback_saved_before_application_decision": true
+  },
+  "configuration": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "calibration_end_absolute": [
+      21539,
+      24972,
+      25993,
+      24169,
+      24866,
+      18946
+    ],
+    "calibration_start_absolute": [
+      3039,
+      2472,
+      3093,
+      2469,
+      2616,
+      2386
+    ],
+    "thumb_presets_absolute": [
+      2386,
+      18026,
+      18946
+    ],
+    "pid_p": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_i": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "pid_d": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_g": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ],
+    "stall_speed": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "stall_current_ma": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "stall_stop_ms": [
+      300,
+      300,
+      300,
+      300,
+      300,
+      300
+    ],
+    "stall_retry_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ]
+  },
+  "last_identity_raw": [
+    512,
+    769,
+    151,
+    8193,
+    290,
+    2,
+    0,
+    0
+  ],
+  "static_device_identity": [
+    512,
+    769,
+    151,
+    8193,
+    290,
+    2
+  ],
+  "last_subexception_raw": 0,
+  "configuration_checks": [
+    {
+      "monotonic": 451745.892573221,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    },
+    {
+      "monotonic": 451767.856609047,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    },
+    {
+      "monotonic": 451995.048936348,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    },
+    {
+      "monotonic": 452025.125802554,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    },
+    {
+      "monotonic": 452105.977828965,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    },
+    {
+      "monotonic": 452159.341367673,
+      "values": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "calibration_end_absolute": [
+          21539,
+          24972,
+          25993,
+          24169,
+          24866,
+          18946
+        ],
+        "calibration_start_absolute": [
+          3039,
+          2472,
+          3093,
+          2469,
+          2616,
+          2386
+        ],
+        "thumb_presets_absolute": [
+          2386,
+          18026,
+          18946
+        ],
+        "pid_p": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_i": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "pid_d": [
+          25000,
+          25000,
+          25000,
+          25000,
+          25000,
+          25000
+        ],
+        "pid_g": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          100
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ],
+        "stall_speed": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          16
+        ],
+        "stall_current_ma": [
+          200,
+          200,
+          200,
+          200,
+          200,
+          200
+        ],
+        "stall_stop_ms": [
+          300,
+          300,
+          300,
+          300,
+          300,
+          300
+        ],
+        "stall_retry_ms": [
+          500,
+          500,
+          500,
+          500,
+          500,
+          500
+        ]
+      },
+      "phase": "entry",
+      "matched": true,
+      "static_identity_and_all_settings_matched": true,
+      "diagnostic_raw": 0,
+      "diagnostic_not_a_setting": true
+    }
+  ],
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      72,
+      202,
+      23,
+      36,
+      0,
+      1
+    ],
+    "positions": [
+      14999,
+      30000,
+      28000,
+      19999,
+      65535,
+      65214
+    ],
+    "targets": [
+      14999,
+      30000,
+      28000,
+      19999,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 452217.5636625,
+    "finished_monotonic": 452218.478809902,
+    "final_status_started_monotonic": 452218.333532094,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "last_arm_state": {
+    "joints": [
+      -37.018001556396484,
+      -99.9990005493164,
+      -16.040000915527344,
+      81.95600128173828,
+      39.457000732421875,
+      -7.239999771118164
+    ],
+    "pose": [
+      0.2748979926109314,
+      -0.40126800537109375,
+      -0.26482701301574707,
+      -2.5739998817443848,
+      -1.1690000295639038,
+      -2.2149999141693115
+    ],
+    "raw": [
+      0,
+      [
+        -37.018001556396484,
+        -99.9990005493164,
+        -16.040000915527344,
+        81.95600128173828,
+        39.457000732421875,
+        -7.239999771118164
+      ],
+      [
+        0.2748979926109314,
+        -0.40126800537109375,
+        -0.26482701301574707,
+        -2.5739998817443848,
+        -1.1690000295639038,
+        -2.2149999141693115
+      ],
+      0,
+      0
+    ]
+  },
+  "startup_observed_stalled_channels": [],
+  "startup_hand_observation": {
+    "groups": [
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          0,
+          1,
+          0,
+          0,
+          46
+        ],
+        "positions": [
+          0,
+          9,
+          0,
+          0,
+          9,
+          728
+        ],
+        "targets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 451777.940439076,
+        "finished_monotonic": 451780.065253069,
+        "final_status_started_monotonic": 451779.710115977,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false,
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ]
+      },
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          2,
+          2,
+          0,
+          0,
+          51
+        ],
+        "positions": [
+          0,
+          9,
+          0,
+          0,
+          9,
+          728
+        ],
+        "targets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 451780.09350554,
+        "finished_monotonic": 451782.215361975,
+        "final_status_started_monotonic": 451781.86503228,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false,
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ]
+      },
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          2,
+          2,
+          0,
+          0,
+          68
+        ],
+        "positions": [
+          0,
+          0,
+          0,
+          6,
+          9,
+          728
+        ],
+        "targets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 451782.265136432,
+        "finished_monotonic": 451784.369969603,
+        "final_status_started_monotonic": 451784.015359811,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false,
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "current_limit_ma": [
+          1299,
+          1299,
+          1299,
+          1299,
+          1299,
+          1299
+        ]
+      }
+    ],
+    "old_targets_reached": false,
+    "position_tolerance": 150,
+    "target_tolerance": 2,
+    "motion_authorized": false,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "last_preflight": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      2,
+      2,
+      2,
+      0,
+      0,
+      1
+    ],
+    "positions": [
+      7999,
+      7989,
+      7999,
+      8003,
+      65535,
+      65222
+    ],
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 452161.136369279,
+    "finished_monotonic": 452163.281362601,
+    "final_status_started_monotonic": 452162.926007773,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "speeds": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "force_targets": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ]
+  },
+  "live_tip_parameters": {
+    "line_speed_m_s": 0.25,
+    "line_acc_m_s2": 1.6,
+    "angular_speed_rad_s": 0.6,
+    "angular_acc_rad_s2": 4.0
+  },
+  "initial_arm": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.21193400025367737,
+      -0.41827601194381714,
+      -0.008559999987483025,
+      -2.9809999465942383,
+      -0.6740000247955322,
+      -2.565000057220459
+    ],
+    "joints": [
+      -70.94000244140625,
+      -45.67900085449219,
+      -70.84600067138672,
+      8.083999633789062,
+      -32.14400100708008,
+      78.58699798583984
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      107.05999755859375,
+      84.32099914550781,
+      64.15399932861328,
+      169.91600036621094,
+      95.85599899291992,
+      281.41300201416016
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "permission_index": 8,
+  "operator_inputs": [
+    {
+      "index": 0,
+      "phase": "await_prepare",
+      "value": "h",
+      "timestamp_utc": "2026-10-19T18:44:42.504278+00:00",
+      "empty_hand_high_clear_confirmed": true
+    },
+    {
+      "lowest_hand_to_board_mm": 22.3,
+      "index": 1,
+      "phase": "await_goal",
+      "value": "t",
+      "timestamp_utc": "2026-10-19T18:48:29.676385+00:00",
+      "noncontact_same_supported_shell": true,
+      "battery_in_grasp_space_no_contact": true,
+      "teaching_exited_and_hands_removed": true
+    },
+    {
+      "index": 2,
+      "phase": "await_empty_lift",
+      "value": "u",
+      "timestamp_utc": "2026-10-19T18:48:59.794343+00:00",
+      "whole_path_clear_and_actual_stop": true,
+      "onsite_world_Z_corridor_rehearsed_noncontact": true
+    },
+    {
+      "index": 4,
+      "phase": "await_descend",
+      "value": "d",
+      "timestamp_utc": "2026-10-19T18:50:20.410702+00:00",
+      "same_corridor_scene_and_stop_confirmed": true
+    },
+    {
+      "index": 5,
+      "phase": "await_grasp",
+      "value": "g",
+      "timestamp_utc": "2026-10-19T18:51:13.798396+00:00",
+      "only_intended_shell_contact_and_closure_clear": true,
+      "current_noncontact_pose_and_same_shell_scene_confirmed": true,
+      "freeze_supported_contact_while_shell_supported": true
+    },
+    {
+      "index": 8,
+      "phase": "await_bin_lift",
+      "value": "l",
+      "timestamp_utc": "2026-10-19T18:52:20.654032+00:00",
+      "opposed_grip_and_loaded_up140_clear": true,
+      "no_uncontrolled_motion_slip_or_overheating_observed": true
+    }
+  ],
+  "startup_prepare_before": {
+    "snapshot": {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "current": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        68
+      ],
+      "positions": [
+        0,
+        0,
+        0,
+        6,
+        9,
+        728
+      ],
+      "targets": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        728
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 451782.265136432,
+      "finished_monotonic": 451784.369969603,
+      "final_status_started_monotonic": 451784.015359811,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false,
+      "speeds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        65535
+      ],
+      "force_targets": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "current_limit_ma": [
+        1299,
+        1299,
+        1299,
+        1299,
+        1299,
+        1299
+      ]
+    },
+    "targets": [
+      8000,
+      8000,
+      8000,
+      8000,
+      65535,
+      65222
+    ],
+    "one_attempt": true,
+    "no_protection_reset": true,
+    "previous_target_is_not_position_anchor": true
+  },
+  "startup_prepare_feedback": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      2,
+      76,
+      21,
+      81,
+      0,
+      47
+    ],
+    "positions": [
+      7999,
+      8004,
+      7999,
+      8000,
+      65535,
+      65222
+    ],
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 451789.147875901,
+    "finished_monotonic": 451791.265277776,
+    "final_status_started_monotonic": 451790.915222834,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "startup_normalized": true,
+  "taught_goal": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.27487701177597046,
+      -0.40125399827957153,
+      -0.2648189961910248,
+      -2.5759999752044678,
+      -1.1710000038146973,
+      -2.2160000801086426
+    ],
+    "joints": [
+      -36.99100112915039,
+      -100.09700012207031,
+      -15.746999740600586,
+      82.41200256347656,
+      39.54199981689453,
+      -7.736999988555908
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      141.0089988708496,
+      29.902999877929688,
+      119.25300025939941,
+      95.58799743652344,
+      88.45800018310547,
+      352.2630000114441
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "board_clearance_mm": 22.3,
+  "board_clearance_is_not_battery_clearance": true,
+  "battery_side_clearance_mm": null,
+  "target_source": "this_invocation_explicitly_taught_current_TCP",
+  "last_runtime_ik_candidate": {
+    "event": "runtime_ik_candidate",
+    "attempt": 30,
+    "from_fraction": 0.9761904761904762,
+    "to_fraction": 1.0,
+    "interval_mm": 2.3812619703156632,
+    "depth": 1,
+    "seed_joint_degrees": [
+      -37.15166614731539,
+      -98.53712344997378,
+      -18.9552087720648,
+      80.13212566650482,
+      39.565769191231325,
+      -4.953428510474675
+    ],
+    "target_world_mm": [
+      274.90100264549255,
+      -401.27599239349365,
+      -264.8189961910248
+    ],
+    "joint_degrees": [
+      -37.019499649040995,
+      -99.99761760759587,
+      -16.041629762030812,
+      81.95469605897118,
+      39.45683324760123,
+      -7.238573187018552
+    ],
+    "joint_delta_degrees": [
+      0.13216649827439397,
+      -1.4604941576220938,
+      2.9135790100339882,
+      1.8225703924663605,
+      -0.10893594363009385,
+      -2.2851446765438777
+    ],
+    "total_excursion_degrees": [
+      6.300500045783224,
+      -29.522619133474777,
+      49.61736682000044,
+      27.80769669984032,
+      -2.8911663251526747,
+      -31.47657405676953
+    ],
+    "ordinary_reserve_degrees": 30.00238239240413,
+    "drive_reserve_degrees": 35.00238239240413,
+    "position_residual_mm": 8.452665808398652e-06,
+    "rotation_residual_degrees": 2.091309789151873e-06,
+    "decision": "accepted"
+  },
+  "arm_after_runtime_calculation": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.2748900055885315,
+      -0.4012700021266937,
+      -0.16481100022792816,
+      -2.575000047683716,
+      -1.1710000038146973,
+      -2.2160000801086426
+    ],
+    "joints": [
+      -43.31999969482422,
+      -70.4749984741211,
+      -65.66200256347656,
+      54.145999908447266,
+      42.347999572753906,
+      24.238000869750977
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      134.68000030517578,
+      59.525001525878906,
+      69.33799743652344,
+      123.85400009155273,
+      85.6520004272461,
+      335.761999130249
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "plan": {
+    "start": {
+      "frames": {
+        "work": {
+          "frame_name": {
+            "name": "World"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tool": {
+          "frame_name": {
+            "name": "Arm_Tip"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "frame_signatures": {
+        "work": {
+          "name": "World",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "tool": {
+          "name": "Arm_Tip",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      "frame_names": {
+        "work": "World",
+        "tool": "Arm_Tip"
+      },
+      "pose": [
+        0.27490100264549255,
+        -0.40127599239349365,
+        -0.16480599343776703,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2160000801086426
+      ],
+      "joints": [
+        -43.31999969482422,
+        -70.4749984741211,
+        -65.65899658203125,
+        54.14699935913086,
+        42.347999572753906,
+        24.238000869750977
+      ],
+      "limits": {
+        "minimum": [
+          -178.0,
+          -130.0,
+          -135.0,
+          -178.0,
+          -128.0,
+          -360.0
+        ],
+        "maximum": [
+          178.0,
+          130.0,
+          135.0,
+          178.0,
+          128.0,
+          360.0
+        ],
+        "speed": [
+          180.0,
+          180.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0
+        ],
+        "acceleration": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "reserve": [
+        134.68000030517578,
+        59.525001525878906,
+        69.34100341796875,
+        123.85300064086914,
+        85.6520004272461,
+        335.761999130249
+      ],
+      "arm_error": 0,
+      "system_error": 0
+    },
+    "drive_limits": {
+      "minimum": [
+        -183.0,
+        -135.0,
+        -140.0,
+        -360.0,
+        -133.0,
+        -365.0
+      ],
+      "maximum": [
+        183.0,
+        135.0,
+        140.0,
+        360.0,
+        133.0,
+        365.0
+      ]
+    },
+    "target_sdk_pose_m_rad": [
+      0.27490100264549255,
+      -0.40127599239349365,
+      -0.2648189961910248,
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2160000801086426
+    ],
+    "target_world_mm": [
+      274.90100264549255,
+      -401.27599239349365,
+      -264.8189961910248
+    ],
+    "distance_mm": -100.01300275325775,
+    "speed_percent": 2,
+    "nominal_speed_mm_s": 5.0,
+    "arm_timeout_seconds": 35.31510055065155,
+    "local_ik_rows": [
+      {
+        "joint_degrees": [
+          -43.34141818736157,
+          -70.46656379858605,
+          -65.70837042679061,
+          53.97905650534417,
+          42.33746320734614,
+          24.406837408683355
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -164.80599343776703
+        ],
+        "position_residual_mm": 0.00043770414485449225,
+        "rotation_residual_degrees": 0.00017535022554118743,
+        "ordinary_reserve_degrees": 59.53343620141395,
+        "drive_reserve_degrees": 64.53343620141395
+      },
+      {
+        "joint_degrees": [
+          -43.00111483594333,
+          -71.4860285657715,
+          -64.32037483564052,
+          54.70386795075897,
+          42.31490249763777,
+          23.7574806155539
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -169.56851737839835
+        ],
+        "position_residual_mm": 6.203449314491409e-06,
+        "rotation_residual_degrees": 0.0,
+        "ordinary_reserve_degrees": 58.513971434228495,
+        "drive_reserve_degrees": 63.513971434228495
+      },
+      {
+        "joint_degrees": [
+          -42.66507746660667,
+          -72.51897256607569,
+          -62.88894586732452,
+          55.45101008933465,
+          42.27953348088574,
+          23.072008795869756
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -174.33104131902968
+        ],
+        "position_residual_mm": 6.756112712008457e-06,
+        "rotation_residual_degrees": 1.2074182697257333e-06,
+        "ordinary_reserve_degrees": 57.48102743392431,
+        "drive_reserve_degrees": 62.48102743392431
+      },
+      {
+        "joint_degrees": [
+          -42.333263099384304,
+          -73.56670062070006,
+          -61.41143814224622,
+          56.22239475651032,
+          42.2316750908142,
+          22.347884800217066
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -179.093565259661
+        ],
+        "position_residual_mm": 7.451487416196626e-06,
+        "rotation_residual_degrees": 1.7075472925031877e-06,
+        "ordinary_reserve_degrees": 56.43329937929994,
+        "drive_reserve_degrees": 61.43329937929994
+      },
+      {
+        "joint_degrees": [
+          -42.005614467489195,
+          -74.63063829845417,
+          -59.88492139388023,
+          57.020225930933954,
+          42.171497798709616,
+          21.582254225872497
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -183.8560892002923
+        ],
+        "position_residual_mm": 8.329636401341504e-06,
+        "rotation_residual_degrees": 1.7075472925031877e-06,
+        "ordinary_reserve_degrees": 55.36936170154583,
+        "drive_reserve_degrees": 60.36936170154583
+      },
+      {
+        "joint_degrees": [
+          -41.682074643001066,
+          -75.71241047309135,
+          -58.30602804797315,
+          57.84701082579508,
+          42.09916573768788,
+          20.771875817237472
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -188.61861314092363
+        ],
+        "position_residual_mm": 9.446316782209887e-06,
+        "rotation_residual_degrees": 1.7075472925031877e-06,
+        "ordinary_reserve_degrees": 54.28758952690865,
+        "drive_reserve_degrees": 59.28758952690865
+      },
+      {
+        "joint_degrees": [
+          -41.362587068480984,
+          -76.81388141017152,
+          -56.67086411241368,
+          58.70562182923831,
+          42.014836838714366,
+          19.913041147089523
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -193.38113708155495
+        ],
+        "position_residual_mm": 1.0877678566441881e-05,
+        "rotation_residual_degrees": 2.4148365394514667e-06,
+        "ordinary_reserve_degrees": 53.18611858982848,
+        "drive_reserve_degrees": 58.18611858982848
+      },
+      {
+        "joint_degrees": [
+          -41.04709558615171,
+          -77.93720620880163,
+          -54.9748949861991,
+          59.5993756906161,
+          41.91866320155019,
+          19.00147200352238
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -198.14366102218628
+        ],
+        "position_residual_mm": 1.2729636448608213e-05,
+        "rotation_residual_degrees": 2.699869328381916e-06,
+        "ordinary_reserve_degrees": 52.062793791198374,
+        "drive_reserve_degrees": 57.062793791198374
+      },
+      {
+        "joint_degrees": [
+          -40.735544464731035,
+          -79.08489776080657,
+          -53.21279697310886,
+          60.53213625459855,
+          41.810791804932244,
+          18.03218733438416
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -202.9061849628176
+        ],
+        "position_residual_mm": 1.515263928909325e-05,
+        "rotation_residual_degrees": 3.6222548091772e-06,
+        "ordinary_reserve_degrees": 50.91510223919343,
+        "drive_reserve_degrees": 55.91510223919343
+      },
+      {
+        "joint_degrees": [
+          -40.427878424032144,
+          -80.25991532609332,
+          -51.37826099815561,
+          61.50844996434523,
+          41.69136571909587,
+          16.99932782511133
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -207.66870890344893
+        ],
+        "position_residual_mm": 1.8365511696512013e-05,
+        "rotation_residual_degrees": 4.353408482428142e-06,
+        "ordinary_reserve_degrees": 49.74008467390668,
+        "drive_reserve_degrees": 54.74008467390668
+      },
+      {
+        "joint_degrees": [
+          -40.12404265743479,
+          -81.46578388006317,
+          -49.46372825459952,
+          62.53372795949319,
+          41.56052607968842,
+          15.895920230285848
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -212.43123284408023
+        ],
+        "position_residual_mm": 2.269515124634622e-05,
+        "rotation_residual_degrees": 5.122641877509565e-06,
+        "ordinary_reserve_degrees": 48.53421611993683,
+        "drive_reserve_degrees": 53.53421611993683
+      },
+      {
+        "joint_degrees": [
+          -39.82398285230558,
+          -82.70675836382794,
+          -47.46002649038342,
+          63.614496080682315,
+          41.418415244335534,
+          14.713553896759741
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -217.19375678471158
+        ],
+        "position_residual_mm": 2.8644898578891232e-05,
+        "rotation_residual_degrees": 6.9360898910140305e-06,
+        "ordinary_reserve_degrees": 47.293241636172056,
+        "drive_reserve_degrees": 52.293241636172056
+      },
+      {
+        "joint_degrees": [
+          -39.52764295186632,
+          -83.98801827184064,
+          -45.355944130257754,
+          64.75869009065701,
+          41.26518479511307,
+          13.442004438455564
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -221.95628072534288
+        ],
+        "position_residual_mm": 0.00016068383448796398,
+        "rotation_residual_degrees": 3.035402462505872e-05,
+        "ordinary_reserve_degrees": 46.011981728159355,
+        "drive_reserve_degrees": 51.011981728159355
+      },
+      {
+        "joint_degrees": [
+          -39.23496356055729,
+          -85.3159669729999,
+          -43.137576066717884,
+          65.97610638778029,
+          41.101016226682724,
+          12.068652037881975
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -226.7188046659742
+        ],
+        "position_residual_mm": 0.0007666868557817868,
+        "rotation_residual_degrees": 0.00012377067944686687,
+        "ordinary_reserve_degrees": 44.6840330270001,
+        "drive_reserve_degrees": 49.6840330270001
+      },
+      {
+        "joint_degrees": [
+          -38.94589149207634,
+          -86.69883569747172,
+          -40.786956651405866,
+          67.27932112389058,
+          40.926104196412005,
+          10.577273728309402
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -231.48132860660553
+        ],
+        "position_residual_mm": 0.0020039097365801037,
+        "rotation_residual_degrees": 0.000313728998172139,
+        "ordinary_reserve_degrees": 43.30116430252828,
+        "drive_reserve_degrees": 48.30116430252828
+      },
+      {
+        "joint_degrees": [
+          -38.66037376731388,
+          -88.14737065459633,
+          -38.28055350409411,
+          68.6847252172139,
+          40.74069052712449,
+          8.946718304264584
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -236.24385254723686
+        ],
+        "position_residual_mm": 0.004155517968171234,
+        "rotation_residual_degrees": 0.0006546378677883685,
+        "ordinary_reserve_degrees": 41.85262934540367,
+        "drive_reserve_degrees": 46.85262934540367
+      },
+      {
+        "joint_degrees": [
+          -38.37835757564002,
+          -89.67607195939047,
+          -35.586525192545395,
+          70.21439016800012,
+          40.54510638586702,
+          7.148492352037856
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -241.00637648786818
+        ],
+        "position_residual_mm": 0.007699736809947977,
+        "rotation_residual_degrees": 0.0012393011937514933,
+        "ordinary_reserve_degrees": 40.32392804060953,
+        "drive_reserve_degrees": 45.32392804060953
+      },
+      {
+        "joint_degrees": [
+          -38.099944188510484,
+          -91.31127501478528,
+          -32.646406432185,
+          71.90835535093417,
+          40.339496785662206,
+          5.130514998026347
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -245.76890042849948
+        ],
+        "position_residual_mm": 2.5380778481923586e-06,
+        "rotation_residual_degrees": 0.0,
+        "ordinary_reserve_degrees": 38.68872498521472,
+        "drive_reserve_degrees": 43.68872498521472
+      },
+      {
+        "joint_degrees": [
+          -37.961969059111155,
+          -92.17481058308367,
+          -31.071149699316326,
+          72.82598762447765,
+          40.23341776439841,
+          4.027686562006808
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -248.15016239881516
+        ],
+        "position_residual_mm": 2.2060887328441086e-05,
+        "rotation_residual_degrees": 5.122641877509565e-06,
+        "ordinary_reserve_degrees": 37.82518941691633,
+        "drive_reserve_degrees": 42.82518941691633
+      },
+      {
+        "joint_degrees": [
+          -37.82484040316388,
+          -93.07690001174622,
+          -29.408149238454623,
+          73.80272521223876,
+          40.12526971305016,
+          2.846701408273903
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -250.53142436913083
+        ],
+        "position_residual_mm": 3.0061210107112077e-05,
+        "rotation_residual_degrees": 7.143182815269534e-06,
+        "ordinary_reserve_degrees": 36.92309998825378,
+        "drive_reserve_degrees": 41.92309998825378
+      },
+      {
+        "joint_degrees": [
+          -37.68855202097519,
+          -94.02465793771006,
+          -27.64167927243722,
+          74.84930441058306,
+          40.01526533613913,
+          1.5736816602748969
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -252.91268633944648
+        ],
+        "position_residual_mm": 4.2432323709364235e-05,
+        "rotation_residual_degrees": 1.010198601586461e-05,
+        "ordinary_reserve_degrees": 35.97534206228994,
+        "drive_reserve_degrees": 40.97534206228994
+      },
+      {
+        "joint_degrees": [
+          -37.5530977386045,
+          -95.02766437386332,
+          -25.75055079016235,
+          75.98015653308445,
+          39.90370998114954,
+          0.18996953983799264
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -255.29394830976213
+        ],
+        "position_residual_mm": 6.262542644080002e-05,
+        "rotation_residual_degrees": 1.4837004097464935e-05,
+        "ordinary_reserve_degrees": 34.97233562613668,
+        "drive_reserve_degrees": 39.97233562613668
+      },
+      {
+        "joint_degrees": [
+          -37.418471417951125,
+          -96.0993427346944,
+          -23.705056255546353,
+          77.2154684212823,
+          39.791058959798704,
+          -1.3305368066233552
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -257.6752102800778
+        ],
+        "position_residual_mm": 9.796024501645266e-05,
+        "rotation_residual_degrees": 2.3225154141253322e-05,
+        "ordinary_reserve_degrees": 33.9006572653056,
+        "drive_reserve_degrees": 38.9006572653056
+      },
+      {
+        "joint_degrees": [
+          -37.28466423624835,
+          -97.25905165819682,
+          -21.46233687675062,
+          78.5843095598461,
+          39.67801672780669,
+          -3.025414597087169
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -260.0564722503934
+        ],
+        "position_residual_mm": 0.0008473452250533285,
+        "rotation_residual_degrees": 0.00017486734963248344,
+        "ordinary_reserve_degrees": 32.740948341803175,
+        "drive_reserve_degrees": 37.740948341803175
+      },
+      {
+        "joint_degrees": [
+          -37.15166614731539,
+          -98.53712344997378,
+          -18.9552087720648,
+          80.13212566650482,
+          39.565769191231325,
+          -4.953428510474675
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -262.4377342207091
+        ],
+        "position_residual_mm": 0.003714972421058173,
+        "rotation_residual_degrees": 0.000745587380781348,
+        "ordinary_reserve_degrees": 31.462876550026223,
+        "drive_reserve_degrees": 36.46287655002622
+      },
+      {
+        "joint_degrees": [
+          -37.019499649040995,
+          -99.99761760759587,
+          -16.041629762030812,
+          81.95469605897118,
+          39.45683324760123,
+          -7.238573187018552
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -264.8189961910248
+        ],
+        "position_residual_mm": 8.452665808398652e-06,
+        "rotation_residual_degrees": 2.091309789151873e-06,
+        "ordinary_reserve_degrees": 30.00238239240413,
+        "drive_reserve_degrees": 35.00238239240413
+      }
+    ],
+    "live_joint_guard_limits": {
+      "minimum": [
+        -44.34141818736157,
+        -100.99761760759587,
+        -66.70837042679061,
+        52.97905650534417,
+        38.45683324760123,
+        -8.238573187018552
+      ],
+      "maximum": [
+        -36.019499649040995,
+        -69.46656379858605,
+        -15.041629762030812,
+        82.95469605897118,
+        43.347999572753906,
+        25.406837408683355
+      ]
+    },
+    "numerical_attempts": 30,
+    "numerical_subdivisions": 4,
+    "sampling_policy": "adaptive_max5mm_and_max3degrees_unchanged_bounds",
+    "collision_certificate": false
+  },
+  "arm_command_attempted": true,
+  "last_wrist_orientation_check": {
+    "metric": "RzRyRx_relative_rotation_angle",
+    "physical_rotation_rad": 0.0010001659390589982,
+    "limit_rad": 0.005,
+    "current_rpy_rad": [
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2149999141693115
+    ],
+    "start_rpy_rad": [
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2160000801086426
+    ]
+  },
+  "arm_segments": [
+    {
+      "phase": "lifting_empty_100mm",
+      "plan": {
+        "start": {
+          "frames": {
+            "work": {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "tool": {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "frame_signatures": {
+            "work": {
+              "name": "World",
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              },
+              "payload": {
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "tool": {
+              "name": "Arm_Tip",
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              },
+              "payload": {
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          },
+          "frame_names": {
+            "work": "World",
+            "tool": "Arm_Tip"
+          },
+          "pose": [
+            0.2749049961566925,
+            -0.4012640118598938,
+            -0.26479199528694153,
+            -2.575000047683716,
+            -1.1710000038146973,
+            -2.2160000801086426
+          ],
+          "joints": [
+            -36.99100112915039,
+            -100.09500122070312,
+            -15.746000289916992,
+            82.41100311279297,
+            39.54600143432617,
+            -7.73799991607666
+          ],
+          "limits": {
+            "minimum": [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ],
+            "maximum": [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ],
+            "speed": [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ],
+            "acceleration": [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          },
+          "reserve": [
+            141.0089988708496,
+            29.904998779296875,
+            119.25399971008301,
+            95.58899688720703,
+            88.45399856567383,
+            352.26200008392334
+          ],
+          "arm_error": 0,
+          "system_error": 0
+        },
+        "drive_limits": {
+          "minimum": [
+            -183.0,
+            -135.0,
+            -140.0,
+            -360.0,
+            -133.0,
+            -365.0
+          ],
+          "maximum": [
+            183.0,
+            135.0,
+            140.0,
+            360.0,
+            133.0,
+            365.0
+          ]
+        },
+        "target_sdk_pose_m_rad": [
+          0.2749049961566925,
+          -0.4012640118598938,
+          -0.16481899619102477,
+          -2.575000047683716,
+          -1.1710000038146973,
+          -2.2160000801086426
+        ],
+        "target_world_mm": [
+          274.9049961566925,
+          -401.2640118598938,
+          -164.81899619102478
+        ],
+        "distance_mm": 99.97299909591675,
+        "speed_percent": 2,
+        "nominal_speed_mm_s": 5.0,
+        "arm_timeout_seconds": 35.30709981918335,
+        "local_ik_rows": [
+          {
+            "joint_degrees": [
+              -37.00342512570998,
+              -100.0464014014268,
+              -15.902374307742559,
+              82.1528098773867,
+              39.51347974864489,
+              -7.475072772567278
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -264.7919952869415
+            ],
+            "position_residual_mm": 0.001058447814937423,
+            "rotation_residual_degrees": 0.00045485226703090694,
+            "ordinary_reserve_degrees": 29.953598598573194,
+            "drive_reserve_degrees": 34.953598598573194
+          },
+          {
+            "joint_degrees": [
+              -37.07266545208813,
+              -99.24907165545001,
+              -17.500046529267063,
+              81.1517015036271,
+              39.56869446676067,
+              -6.2168855565999825
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -263.54233279824257
+            ],
+            "position_residual_mm": 9.279183405594498e-05,
+            "rotation_residual_degrees": 2.1699963539503996e-05,
+            "ordinary_reserve_degrees": 30.75092834454999,
+            "drive_reserve_degrees": 35.75092834454999
+          },
+          {
+            "joint_degrees": [
+              -37.14211036478477,
+              -98.51227190512257,
+              -18.96297391521818,
+              80.241662124953,
+              39.6250909214811,
+              -5.076946852936248
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -262.2926703095436
+            ],
+            "position_residual_mm": 5.411118611694822e-05,
+            "rotation_residual_degrees": 1.277811388052082e-05,
+            "ordinary_reserve_degrees": 31.487728094877426,
+            "drive_reserve_degrees": 36.487728094877426
+          },
+          {
+            "joint_degrees": [
+              -37.281637633406596,
+              -97.16835484408779,
+              -21.599773201287114,
+              78.61648671508046,
+              39.74025629159192,
+              -3.050782624857747
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -259.7933453321457
+            ],
+            "position_residual_mm": 0.006060339282000723,
+            "rotation_residual_degrees": 0.0010979416227615234,
+            "ordinary_reserve_degrees": 32.83164515591221,
+            "drive_reserve_degrees": 37.83164515591221
+          },
+          {
+            "joint_degrees": [
+              -37.42211616657325,
+              -95.96216632837613,
+              -23.92886888377324,
+              77.1991192158272,
+              39.856541121358696,
+              -1.2955638027796872
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -257.2940203547478
+            ],
+            "position_residual_mm": 0.0016697787211936855,
+            "rotation_residual_degrees": 0.00028134141167975073,
+            "ordinary_reserve_degrees": 34.03783367162387,
+            "drive_reserve_degrees": 39.03783367162387
+          },
+          {
+            "joint_degrees": [
+              -37.563489806294186,
+              -94.84851083550842,
+              -26.05056068355802,
+              75.92176356698894,
+              39.97247011776451,
+              0.2765345400275129
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -254.79469537734985
+            ],
+            "position_residual_mm": 0.00024963636299278196,
+            "rotation_residual_degrees": 3.5015129822046806e-05,
+            "ordinary_reserve_degrees": 35.15148916449158,
+            "drive_reserve_degrees": 40.15148916449158
+          },
+          {
+            "joint_degrees": [
+              -37.70576955567887,
+              -93.80712354874242,
+              -28.009705049159525,
+              74.75408890821524,
+              40.087261673587285,
+              1.7047724882540476
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -252.29537039995193
+            ],
+            "position_residual_mm": 2.596042660093512e-05,
+            "rotation_residual_degrees": 7.244509618354405e-06,
+            "ordinary_reserve_degrees": 36.192876451257575,
+            "drive_reserve_degrees": 41.192876451257575
+          },
+          {
+            "joint_degrees": [
+              -37.84896635914818,
+              -92.82405815989189,
+              -29.837153511701974,
+              73.67517409977076,
+              40.20040990265296,
+              3.016217494025769
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -249.79604542255402
+            ],
+            "position_residual_mm": 5.423732722360803e-05,
+            "rotation_residual_degrees": 1.2948118433879161e-05,
+            "ordinary_reserve_degrees": 37.17594184010811,
+            "drive_reserve_degrees": 42.17594184010811
+          },
+          {
+            "joint_degrees": [
+              -37.99309045301307,
+              -91.88914101067955,
+              -31.55539470634219,
+              72.66974850038204,
+              40.31155653177412,
+              4.230635210570967
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -247.2967204451561
+            ],
+            "position_residual_mm": 3.7619711658530324e-05,
+            "rotation_residual_degrees": 8.954453545231656e-06,
+            "ordinary_reserve_degrees": 38.11085898932045,
+            "drive_reserve_degrees": 43.11085898932045
+          },
+          {
+            "joint_degrees": [
+              -38.138148833588914,
+              -90.99470699372752,
+              -33.18136792774708,
+              71.72627727589237,
+              40.42045911801461,
+              5.362954794339124
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -244.79739546775818
+            ],
+            "position_residual_mm": 2.7148016095545498e-05,
+            "rotation_residual_degrees": 6.722620413208828e-06,
+            "ordinary_reserve_degrees": 39.00529300627248,
+            "drive_reserve_degrees": 44.00529300627248
+          },
+          {
+            "joint_degrees": [
+              -38.28414874093297,
+              -90.13492364558668,
+              -34.72795193004743,
+              70.83596671562614,
+              40.526944179877304,
+              6.42455376194078
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -242.29807049036026
+            ],
+            "position_residual_mm": 2.022122799708784e-05,
+            "rotation_residual_degrees": 4.9783130603797145e-06,
+            "ordinary_reserve_degrees": 39.86507635441332,
+            "drive_reserve_degrees": 44.86507635441332
+          },
+          {
+            "joint_degrees": [
+              -38.43109745891905,
+              -89.305215124151,
+              -36.20524166838488,
+              69.99190710953746,
+              40.63088258870264,
+              7.424370459442075
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -239.79874551296234
+            ],
+            "position_residual_mm": 1.5457874057875927e-05,
+            "rotation_residual_degrees": 3.6222548091772e-06,
+            "ordinary_reserve_degrees": 40.694784875848995,
+            "drive_reserve_degrees": 45.694784875848995
+          },
+          {
+            "joint_degrees": [
+              -38.72787066704136,
+              -87.72202400879108,
+              -38.982783473108945,
+              68.42136437304595,
+              40.83074630641048,
+              9.26604350097725
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -234.8000955581665
+            ],
+            "position_residual_mm": 9.55282789997048e-07,
+            "rotation_residual_degrees": 0.0,
+            "ordinary_reserve_degrees": 42.27797599120892,
+            "drive_reserve_degrees": 47.27797599120892
+          },
+          {
+            "joint_degrees": [
+              -39.02841395538904,
+              -86.22102422489736,
+              -41.56742073462026,
+              66.97801891486498,
+              41.01985310092519,
+              10.935543858481337
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -229.80144560337067
+            ],
+            "position_residual_mm": 0.006102077105367652,
+            "rotation_residual_degrees": 0.0007961969122733104,
+            "ordinary_reserve_degrees": 43.77897577510264,
+            "drive_reserve_degrees": 48.77897577510264
+          },
+          {
+            "joint_degrees": [
+              -39.33305995795071,
+              -84.79143994678753,
+              -43.98188212971138,
+              65.64574366195751,
+              41.196936647384874,
+              12.453209415580856
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -224.80279564857483
+            ],
+            "position_residual_mm": 0.0032363586005230236,
+            "rotation_residual_degrees": 0.0003847365895340084,
+            "ordinary_reserve_degrees": 45.208560053212466,
+            "drive_reserve_degrees": 50.208560053212466
+          },
+          {
+            "joint_degrees": [
+              -39.641696424168416,
+              -83.41844741804806,
+              -46.25920873858324,
+              64.40183455970123,
+              41.362267815799484,
+              13.848694699132642
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -219.804145693779
+            ],
+            "position_residual_mm": 0.0015536082645821584,
+            "rotation_residual_degrees": 0.00016371986236302238,
+            "ordinary_reserve_degrees": 46.58155258195194,
+            "drive_reserve_degrees": 51.58155258195194
+          },
+          {
+            "joint_degrees": [
+              -39.95438824981564,
+              -82.09356200256344,
+              -48.41788143179922,
+              63.233357872503355,
+              41.51561305839833,
+              15.138691635057517
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -214.80549573898315
+            ],
+            "position_residual_mm": 0.000573155333743605,
+            "rotation_residual_degrees": 4.8762360793220514e-05,
+            "ordinary_reserve_degrees": 47.906437997436555,
+            "drive_reserve_degrees": 52.906437997436555
+          },
+          {
+            "joint_degrees": [
+              -40.271197808801666,
+              -80.81007407916967,
+              -50.472462997560804,
+              62.13006952136988,
+              41.65677584531119,
+              16.33642068347425
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -209.80684578418732
+            ],
+            "position_residual_mm": 0.0001029565642506446,
+            "rotation_residual_degrees": 3.818191820832846e-06,
+            "ordinary_reserve_degrees": 49.18992592083033,
+            "drive_reserve_degrees": 54.18992592083033
+          },
+          {
+            "joint_degrees": [
+              -40.59218793468971,
+              -79.56260059721733,
+              -52.43458283685269,
+              61.08374063887175,
+              41.78557498508951,
+              17.45249822278342
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -204.80819582939148
+            ],
+            "position_residual_mm": 1.9701068407905283e-05,
+            "rotation_residual_degrees": 4.829673078902934e-06,
+            "ordinary_reserve_degrees": 50.437399402782674,
+            "drive_reserve_degrees": 55.437399402782674
+          },
+          {
+            "joint_degrees": [
+              -40.91742774773945,
+              -78.34679361899248,
+              -54.313568141287874,
+              60.08771910860367,
+              41.901825593887196,
+              18.495491902800726
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -199.80954587459564
+            ],
+            "position_residual_mm": 2.123354829946625e-05,
+            "rotation_residual_degrees": 5.263014220319208e-06,
+            "ordinary_reserve_degrees": 51.65320638100752,
+            "drive_reserve_degrees": 56.65320638100752
+          },
+          {
+            "joint_degrees": [
+              -41.24698424984653,
+              -77.15900048204881,
+              -56.11721081247057,
+              59.136413527091094,
+              42.00533851742412,
+              19.472610619680626
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -194.8108959197998
+            ],
+            "position_residual_mm": 1.7429972433700782e-05,
+            "rotation_residual_degrees": 4.182619578303747e-06,
+            "ordinary_reserve_degrees": 52.84099951795119,
+            "drive_reserve_degrees": 57.84099951795119
+          },
+          {
+            "joint_degrees": [
+              -41.5809215717467,
+              -75.99614400222347,
+              -57.85204551598388,
+              58.2251061713779,
+              42.09593800706189,
+              20.38994186364895
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -189.81224596500397
+            ],
+            "position_residual_mm": 1.4591753434099965e-05,
+            "rotation_residual_degrees": 3.4150945850063763e-06,
+            "ordinary_reserve_degrees": 54.003855997776526,
+            "drive_reserve_degrees": 59.003855997776526
+          },
+          {
+            "joint_degrees": [
+              -41.91930450542174,
+              -74.85561546016783,
+              -59.523573268473584,
+              57.34979370564091,
+              42.1734436963947,
+              21.25265348638807
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -184.81359601020813
+            ],
+            "position_residual_mm": 1.2444312498770584e-05,
+            "rotation_residual_degrees": 2.9575586669421963e-06,
+            "ordinary_reserve_degrees": 55.144384539832174,
+            "drive_reserve_degrees": 60.144384539832174
+          },
+          {
+            "joint_degrees": [
+              -42.26219833849566,
+              -73.73517983542031,
+              -61.13647164271561,
+              56.507042410279425,
+              42.23766917782858,
+              22.0651817835677
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -179.8149460554123
+            ],
+            "position_residual_mm": 1.0800912605333629e-05,
+            "rotation_residual_degrees": 2.699869328381916e-06,
+            "ordinary_reserve_degrees": 56.26482016457969,
+            "drive_reserve_degrees": 61.26482016457969
+          },
+          {
+            "joint_degrees": [
+              -42.60966881797855,
+              -72.63290574720907,
+              -62.69475024099807,
+              55.69388074360237,
+              42.288421283242876,
+              22.831370848385927
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -174.81629610061646
+            ],
+            "position_residual_mm": 9.53122622425709e-06,
+            "rotation_residual_degrees": 2.091309789151873e-06,
+            "ordinary_reserve_degrees": 57.367094252790935,
+            "drive_reserve_degrees": 62.367094252790935
+          },
+          {
+            "joint_degrees": [
+              -42.96178211074055,
+              -71.54711171525588,
+              -64.20187011509068,
+              54.9077166150551,
+              42.3254997393309,
+              23.554579945184603
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -169.81764614582062
+            ],
+            "position_residual_mm": 8.542276724914885e-06,
+            "rotation_residual_degrees": 2.091309789151873e-06,
+            "ordinary_reserve_degrees": 58.45288828474412,
+            "drive_reserve_degrees": 63.45288828474412
+          },
+          {
+            "joint_degrees": [
+              -43.31860476056226,
+              -70.47632434747487,
+              -65.66083685698766,
+              54.14627273059475,
+              42.34869708393119,
+              24.23776749608135
+            ],
+            "target_world_mm": [
+              274.9049961566925,
+              -401.2640118598938,
+              -164.81899619102478
+            ],
+            "position_residual_mm": 7.766484747511528e-06,
+            "rotation_residual_degrees": 2.091309789151873e-06,
+            "ordinary_reserve_degrees": 59.52367565252513,
+            "drive_reserve_degrees": 64.52367565252513
+          }
+        ],
+        "live_joint_guard_limits": {
+          "minimum": [
+            -44.31860476056226,
+            -101.09500122070312,
+            -66.66083685698766,
+            53.14627273059475,
+            38.51347974864489,
+            -8.73799991607666
+          ],
+          "maximum": [
+            -35.99100112915039,
+            -69.47632434747487,
+            -14.746000289916992,
+            83.41100311279297,
+            43.34869708393119,
+            25.23776749608135
+          ]
+        },
+        "numerical_attempts": 33,
+        "numerical_subdivisions": 6,
+        "sampling_policy": "adaptive_max5mm_and_max3degrees_unchanged_bounds",
+        "collision_certificate": false
+      },
+      "endpoint": {
+        "frames": {
+          "work": {
+            "frame_name": {
+              "name": "World"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "tool": {
+            "frame_name": {
+              "name": "Arm_Tip"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "frame_signatures": {
+          "work": {
+            "name": "World",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "tool": {
+            "name": "Arm_Tip",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "frame_names": {
+          "work": "World",
+          "tool": "Arm_Tip"
+        },
+        "pose": [
+          0.27493101358413696,
+          -0.4012340009212494,
+          -0.16484999656677246,
+          -2.5739998817443848,
+          -1.1699999570846558,
+          -2.2160000801086426
+        ],
+        "joints": [
+          -43.3120002746582,
+          -70.47799682617188,
+          -65.65799713134766,
+          54.14699935913086,
+          42.35200119018555,
+          24.242000579833984
+        ],
+        "limits": {
+          "minimum": [
+            -178.0,
+            -130.0,
+            -135.0,
+            -178.0,
+            -128.0,
+            -360.0
+          ],
+          "maximum": [
+            178.0,
+            130.0,
+            135.0,
+            178.0,
+            128.0,
+            360.0
+          ],
+          "speed": [
+            180.0,
+            180.0,
+            225.0,
+            225.0,
+            225.0,
+            225.0
+          ],
+          "acceleration": [
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0
+          ]
+        },
+        "reserve": [
+          134.6879997253418,
+          59.522003173828125,
+          69.34200286865234,
+          123.85300064086914,
+          85.64799880981445,
+          335.757999420166
+        ],
+        "arm_error": 0,
+        "system_error": 0
+      }
+    },
+    {
+      "phase": "descending_to_supported_shell",
+      "plan": {
+        "start": {
+          "frames": {
+            "work": {
+              "frame_name": {
+                "name": "World"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "tool": {
+              "frame_name": {
+                "name": "Arm_Tip"
+              },
+              "pose": {
+                "position": {
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "quaternion": {
+                  "w": 0.0,
+                  "x": 0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "euler": {
+                  "rx": 0.0,
+                  "ry": 0.0,
+                  "rz": 0.0
+                }
+              },
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "frame_signatures": {
+            "work": {
+              "name": "World",
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              },
+              "payload": {
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            },
+            "tool": {
+              "name": "Arm_Tip",
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              },
+              "payload": {
+                "payload": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              }
+            }
+          },
+          "frame_names": {
+            "work": "World",
+            "tool": "Arm_Tip"
+          },
+          "pose": [
+            0.27490100264549255,
+            -0.40127599239349365,
+            -0.16480599343776703,
+            -2.5739998817443848,
+            -1.1699999570846558,
+            -2.2160000801086426
+          ],
+          "joints": [
+            -43.31999969482422,
+            -70.4749984741211,
+            -65.65899658203125,
+            54.14699935913086,
+            42.347999572753906,
+            24.238000869750977
+          ],
+          "limits": {
+            "minimum": [
+              -178.0,
+              -130.0,
+              -135.0,
+              -178.0,
+              -128.0,
+              -360.0
+            ],
+            "maximum": [
+              178.0,
+              130.0,
+              135.0,
+              178.0,
+              128.0,
+              360.0
+            ],
+            "speed": [
+              180.0,
+              180.0,
+              225.0,
+              225.0,
+              225.0,
+              225.0
+            ],
+            "acceleration": [
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0,
+              600.0
+            ]
+          },
+          "reserve": [
+            134.68000030517578,
+            59.525001525878906,
+            69.34100341796875,
+            123.85300064086914,
+            85.6520004272461,
+            335.761999130249
+          ],
+          "arm_error": 0,
+          "system_error": 0
+        },
+        "drive_limits": {
+          "minimum": [
+            -183.0,
+            -135.0,
+            -140.0,
+            -360.0,
+            -133.0,
+            -365.0
+          ],
+          "maximum": [
+            183.0,
+            135.0,
+            140.0,
+            360.0,
+            133.0,
+            365.0
+          ]
+        },
+        "target_sdk_pose_m_rad": [
+          0.27490100264549255,
+          -0.40127599239349365,
+          -0.2648189961910248,
+          -2.5739998817443848,
+          -1.1699999570846558,
+          -2.2160000801086426
+        ],
+        "target_world_mm": [
+          274.90100264549255,
+          -401.27599239349365,
+          -264.8189961910248
+        ],
+        "distance_mm": -100.01300275325775,
+        "speed_percent": 2,
+        "nominal_speed_mm_s": 5.0,
+        "arm_timeout_seconds": 35.31510055065155,
+        "local_ik_rows": [
+          {
+            "joint_degrees": [
+              -43.34141818736157,
+              -70.46656379858605,
+              -65.70837042679061,
+              53.97905650534417,
+              42.33746320734614,
+              24.406837408683355
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -164.80599343776703
+            ],
+            "position_residual_mm": 0.00043770414485449225,
+            "rotation_residual_degrees": 0.00017535022554118743,
+            "ordinary_reserve_degrees": 59.53343620141395,
+            "drive_reserve_degrees": 64.53343620141395
+          },
+          {
+            "joint_degrees": [
+              -43.00111483594333,
+              -71.4860285657715,
+              -64.32037483564052,
+              54.70386795075897,
+              42.31490249763777,
+              23.7574806155539
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -169.56851737839835
+            ],
+            "position_residual_mm": 6.203449314491409e-06,
+            "rotation_residual_degrees": 0.0,
+            "ordinary_reserve_degrees": 58.513971434228495,
+            "drive_reserve_degrees": 63.513971434228495
+          },
+          {
+            "joint_degrees": [
+              -42.66507746660667,
+              -72.51897256607569,
+              -62.88894586732452,
+              55.45101008933465,
+              42.27953348088574,
+              23.072008795869756
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -174.33104131902968
+            ],
+            "position_residual_mm": 6.756112712008457e-06,
+            "rotation_residual_degrees": 1.2074182697257333e-06,
+            "ordinary_reserve_degrees": 57.48102743392431,
+            "drive_reserve_degrees": 62.48102743392431
+          },
+          {
+            "joint_degrees": [
+              -42.333263099384304,
+              -73.56670062070006,
+              -61.41143814224622,
+              56.22239475651032,
+              42.2316750908142,
+              22.347884800217066
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -179.093565259661
+            ],
+            "position_residual_mm": 7.451487416196626e-06,
+            "rotation_residual_degrees": 1.7075472925031877e-06,
+            "ordinary_reserve_degrees": 56.43329937929994,
+            "drive_reserve_degrees": 61.43329937929994
+          },
+          {
+            "joint_degrees": [
+              -42.005614467489195,
+              -74.63063829845417,
+              -59.88492139388023,
+              57.020225930933954,
+              42.171497798709616,
+              21.582254225872497
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -183.8560892002923
+            ],
+            "position_residual_mm": 8.329636401341504e-06,
+            "rotation_residual_degrees": 1.7075472925031877e-06,
+            "ordinary_reserve_degrees": 55.36936170154583,
+            "drive_reserve_degrees": 60.36936170154583
+          },
+          {
+            "joint_degrees": [
+              -41.682074643001066,
+              -75.71241047309135,
+              -58.30602804797315,
+              57.84701082579508,
+              42.09916573768788,
+              20.771875817237472
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -188.61861314092363
+            ],
+            "position_residual_mm": 9.446316782209887e-06,
+            "rotation_residual_degrees": 1.7075472925031877e-06,
+            "ordinary_reserve_degrees": 54.28758952690865,
+            "drive_reserve_degrees": 59.28758952690865
+          },
+          {
+            "joint_degrees": [
+              -41.362587068480984,
+              -76.81388141017152,
+              -56.67086411241368,
+              58.70562182923831,
+              42.014836838714366,
+              19.913041147089523
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -193.38113708155495
+            ],
+            "position_residual_mm": 1.0877678566441881e-05,
+            "rotation_residual_degrees": 2.4148365394514667e-06,
+            "ordinary_reserve_degrees": 53.18611858982848,
+            "drive_reserve_degrees": 58.18611858982848
+          },
+          {
+            "joint_degrees": [
+              -41.04709558615171,
+              -77.93720620880163,
+              -54.9748949861991,
+              59.5993756906161,
+              41.91866320155019,
+              19.00147200352238
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -198.14366102218628
+            ],
+            "position_residual_mm": 1.2729636448608213e-05,
+            "rotation_residual_degrees": 2.699869328381916e-06,
+            "ordinary_reserve_degrees": 52.062793791198374,
+            "drive_reserve_degrees": 57.062793791198374
+          },
+          {
+            "joint_degrees": [
+              -40.735544464731035,
+              -79.08489776080657,
+              -53.21279697310886,
+              60.53213625459855,
+              41.810791804932244,
+              18.03218733438416
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -202.9061849628176
+            ],
+            "position_residual_mm": 1.515263928909325e-05,
+            "rotation_residual_degrees": 3.6222548091772e-06,
+            "ordinary_reserve_degrees": 50.91510223919343,
+            "drive_reserve_degrees": 55.91510223919343
+          },
+          {
+            "joint_degrees": [
+              -40.427878424032144,
+              -80.25991532609332,
+              -51.37826099815561,
+              61.50844996434523,
+              41.69136571909587,
+              16.99932782511133
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -207.66870890344893
+            ],
+            "position_residual_mm": 1.8365511696512013e-05,
+            "rotation_residual_degrees": 4.353408482428142e-06,
+            "ordinary_reserve_degrees": 49.74008467390668,
+            "drive_reserve_degrees": 54.74008467390668
+          },
+          {
+            "joint_degrees": [
+              -40.12404265743479,
+              -81.46578388006317,
+              -49.46372825459952,
+              62.53372795949319,
+              41.56052607968842,
+              15.895920230285848
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -212.43123284408023
+            ],
+            "position_residual_mm": 2.269515124634622e-05,
+            "rotation_residual_degrees": 5.122641877509565e-06,
+            "ordinary_reserve_degrees": 48.53421611993683,
+            "drive_reserve_degrees": 53.53421611993683
+          },
+          {
+            "joint_degrees": [
+              -39.82398285230558,
+              -82.70675836382794,
+              -47.46002649038342,
+              63.614496080682315,
+              41.418415244335534,
+              14.713553896759741
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -217.19375678471158
+            ],
+            "position_residual_mm": 2.8644898578891232e-05,
+            "rotation_residual_degrees": 6.9360898910140305e-06,
+            "ordinary_reserve_degrees": 47.293241636172056,
+            "drive_reserve_degrees": 52.293241636172056
+          },
+          {
+            "joint_degrees": [
+              -39.52764295186632,
+              -83.98801827184064,
+              -45.355944130257754,
+              64.75869009065701,
+              41.26518479511307,
+              13.442004438455564
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -221.95628072534288
+            ],
+            "position_residual_mm": 0.00016068383448796398,
+            "rotation_residual_degrees": 3.035402462505872e-05,
+            "ordinary_reserve_degrees": 46.011981728159355,
+            "drive_reserve_degrees": 51.011981728159355
+          },
+          {
+            "joint_degrees": [
+              -39.23496356055729,
+              -85.3159669729999,
+              -43.137576066717884,
+              65.97610638778029,
+              41.101016226682724,
+              12.068652037881975
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -226.7188046659742
+            ],
+            "position_residual_mm": 0.0007666868557817868,
+            "rotation_residual_degrees": 0.00012377067944686687,
+            "ordinary_reserve_degrees": 44.6840330270001,
+            "drive_reserve_degrees": 49.6840330270001
+          },
+          {
+            "joint_degrees": [
+              -38.94589149207634,
+              -86.69883569747172,
+              -40.786956651405866,
+              67.27932112389058,
+              40.926104196412005,
+              10.577273728309402
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -231.48132860660553
+            ],
+            "position_residual_mm": 0.0020039097365801037,
+            "rotation_residual_degrees": 0.000313728998172139,
+            "ordinary_reserve_degrees": 43.30116430252828,
+            "drive_reserve_degrees": 48.30116430252828
+          },
+          {
+            "joint_degrees": [
+              -38.66037376731388,
+              -88.14737065459633,
+              -38.28055350409411,
+              68.6847252172139,
+              40.74069052712449,
+              8.946718304264584
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -236.24385254723686
+            ],
+            "position_residual_mm": 0.004155517968171234,
+            "rotation_residual_degrees": 0.0006546378677883685,
+            "ordinary_reserve_degrees": 41.85262934540367,
+            "drive_reserve_degrees": 46.85262934540367
+          },
+          {
+            "joint_degrees": [
+              -38.37835757564002,
+              -89.67607195939047,
+              -35.586525192545395,
+              70.21439016800012,
+              40.54510638586702,
+              7.148492352037856
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -241.00637648786818
+            ],
+            "position_residual_mm": 0.007699736809947977,
+            "rotation_residual_degrees": 0.0012393011937514933,
+            "ordinary_reserve_degrees": 40.32392804060953,
+            "drive_reserve_degrees": 45.32392804060953
+          },
+          {
+            "joint_degrees": [
+              -38.099944188510484,
+              -91.31127501478528,
+              -32.646406432185,
+              71.90835535093417,
+              40.339496785662206,
+              5.130514998026347
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -245.76890042849948
+            ],
+            "position_residual_mm": 2.5380778481923586e-06,
+            "rotation_residual_degrees": 0.0,
+            "ordinary_reserve_degrees": 38.68872498521472,
+            "drive_reserve_degrees": 43.68872498521472
+          },
+          {
+            "joint_degrees": [
+              -37.961969059111155,
+              -92.17481058308367,
+              -31.071149699316326,
+              72.82598762447765,
+              40.23341776439841,
+              4.027686562006808
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -248.15016239881516
+            ],
+            "position_residual_mm": 2.2060887328441086e-05,
+            "rotation_residual_degrees": 5.122641877509565e-06,
+            "ordinary_reserve_degrees": 37.82518941691633,
+            "drive_reserve_degrees": 42.82518941691633
+          },
+          {
+            "joint_degrees": [
+              -37.82484040316388,
+              -93.07690001174622,
+              -29.408149238454623,
+              73.80272521223876,
+              40.12526971305016,
+              2.846701408273903
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -250.53142436913083
+            ],
+            "position_residual_mm": 3.0061210107112077e-05,
+            "rotation_residual_degrees": 7.143182815269534e-06,
+            "ordinary_reserve_degrees": 36.92309998825378,
+            "drive_reserve_degrees": 41.92309998825378
+          },
+          {
+            "joint_degrees": [
+              -37.68855202097519,
+              -94.02465793771006,
+              -27.64167927243722,
+              74.84930441058306,
+              40.01526533613913,
+              1.5736816602748969
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -252.91268633944648
+            ],
+            "position_residual_mm": 4.2432323709364235e-05,
+            "rotation_residual_degrees": 1.010198601586461e-05,
+            "ordinary_reserve_degrees": 35.97534206228994,
+            "drive_reserve_degrees": 40.97534206228994
+          },
+          {
+            "joint_degrees": [
+              -37.5530977386045,
+              -95.02766437386332,
+              -25.75055079016235,
+              75.98015653308445,
+              39.90370998114954,
+              0.18996953983799264
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -255.29394830976213
+            ],
+            "position_residual_mm": 6.262542644080002e-05,
+            "rotation_residual_degrees": 1.4837004097464935e-05,
+            "ordinary_reserve_degrees": 34.97233562613668,
+            "drive_reserve_degrees": 39.97233562613668
+          },
+          {
+            "joint_degrees": [
+              -37.418471417951125,
+              -96.0993427346944,
+              -23.705056255546353,
+              77.2154684212823,
+              39.791058959798704,
+              -1.3305368066233552
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -257.6752102800778
+            ],
+            "position_residual_mm": 9.796024501645266e-05,
+            "rotation_residual_degrees": 2.3225154141253322e-05,
+            "ordinary_reserve_degrees": 33.9006572653056,
+            "drive_reserve_degrees": 38.9006572653056
+          },
+          {
+            "joint_degrees": [
+              -37.28466423624835,
+              -97.25905165819682,
+              -21.46233687675062,
+              78.5843095598461,
+              39.67801672780669,
+              -3.025414597087169
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -260.0564722503934
+            ],
+            "position_residual_mm": 0.0008473452250533285,
+            "rotation_residual_degrees": 0.00017486734963248344,
+            "ordinary_reserve_degrees": 32.740948341803175,
+            "drive_reserve_degrees": 37.740948341803175
+          },
+          {
+            "joint_degrees": [
+              -37.15166614731539,
+              -98.53712344997378,
+              -18.9552087720648,
+              80.13212566650482,
+              39.565769191231325,
+              -4.953428510474675
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -262.4377342207091
+            ],
+            "position_residual_mm": 0.003714972421058173,
+            "rotation_residual_degrees": 0.000745587380781348,
+            "ordinary_reserve_degrees": 31.462876550026223,
+            "drive_reserve_degrees": 36.46287655002622
+          },
+          {
+            "joint_degrees": [
+              -37.019499649040995,
+              -99.99761760759587,
+              -16.041629762030812,
+              81.95469605897118,
+              39.45683324760123,
+              -7.238573187018552
+            ],
+            "target_world_mm": [
+              274.90100264549255,
+              -401.27599239349365,
+              -264.8189961910248
+            ],
+            "position_residual_mm": 8.452665808398652e-06,
+            "rotation_residual_degrees": 2.091309789151873e-06,
+            "ordinary_reserve_degrees": 30.00238239240413,
+            "drive_reserve_degrees": 35.00238239240413
+          }
+        ],
+        "live_joint_guard_limits": {
+          "minimum": [
+            -44.34141818736157,
+            -100.99761760759587,
+            -66.70837042679061,
+            52.97905650534417,
+            38.45683324760123,
+            -8.238573187018552
+          ],
+          "maximum": [
+            -36.019499649040995,
+            -69.46656379858605,
+            -15.041629762030812,
+            82.95469605897118,
+            43.347999572753906,
+            25.406837408683355
+          ]
+        },
+        "numerical_attempts": 30,
+        "numerical_subdivisions": 4,
+        "sampling_policy": "adaptive_max5mm_and_max3degrees_unchanged_bounds",
+        "collision_certificate": false
+      },
+      "endpoint": {
+        "frames": {
+          "work": {
+            "frame_name": {
+              "name": "World"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "tool": {
+            "frame_name": {
+              "name": "Arm_Tip"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "frame_signatures": {
+          "work": {
+            "name": "World",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "tool": {
+            "name": "Arm_Tip",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "frame_names": {
+          "work": "World",
+          "tool": "Arm_Tip"
+        },
+        "pose": [
+          0.27491000294685364,
+          -0.40129199624061584,
+          -0.26479101181030273,
+          -2.5739998817443848,
+          -1.1699999570846558,
+          -2.2149999141693115
+        ],
+        "joints": [
+          -37.020999908447266,
+          -99.99400329589844,
+          -16.04400062561035,
+          81.947998046875,
+          39.459999084472656,
+          -7.252999782562256
+        ],
+        "limits": {
+          "minimum": [
+            -178.0,
+            -130.0,
+            -135.0,
+            -178.0,
+            -128.0,
+            -360.0
+          ],
+          "maximum": [
+            178.0,
+            130.0,
+            135.0,
+            178.0,
+            128.0,
+            360.0
+          ],
+          "speed": [
+            180.0,
+            180.0,
+            225.0,
+            225.0,
+            225.0,
+            225.0
+          ],
+          "acceleration": [
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0
+          ]
+        },
+        "reserve": [
+          140.97900009155273,
+          30.005996704101562,
+          118.95599937438965,
+          96.052001953125,
+          88.54000091552734,
+          352.74700021743774
+        ],
+        "arm_error": 0,
+        "system_error": 0
+      }
+    }
+  ],
+  "upper": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.27493101358413696,
+      -0.4012340009212494,
+      -0.16484999656677246,
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2160000801086426
+    ],
+    "joints": [
+      -43.3120002746582,
+      -70.47799682617188,
+      -65.65799713134766,
+      54.14699935913086,
+      42.35200119018555,
+      24.242000579833984
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      134.6879997253418,
+      59.522003173828125,
+      69.34200286865234,
+      123.85300064086914,
+      85.64799880981445,
+      335.757999420166
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "school_bin_route": {
+    "schema_version": 1,
+    "source": {
+      "scripts/ohandtest.py": {
+        "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\ohandtest.py",
+        "sha256": "19a2aff810356e8a195e14eb37096b87a0536986f636435d5ff00af2c847b081",
+        "packaged_source": "deployment/school_bin_reference/ohandtest.py"
+      },
+      "scripts/arm_controller.py": {
+        "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\arm_controller.py",
+        "sha256": "6e96ab90d48b0cc0146a4f32f6bbfc7b7402467b6413077d6107e3947754dbc7",
+        "packaged_source": "deployment/school_bin_reference/arm_controller.py"
+      },
+      "scripts/hand_controller.py": {
+        "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\hand_controller.py",
+        "sha256": "4c7137705041a373ca0c169c8791bbd3faa5acd551e2daeda7ba8118caf471f3",
+        "packaged_source": "deployment/school_bin_reference/hand_controller.py"
+      },
+      "launch/grasp_demo_battery.launch": {
+        "original": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\launch\\grasp_demo_battery.launch",
+        "sha256": "11925d0c900b0fa9ad64a7a9ee629f7498009184dd5c5620fdb7bc308fea463d",
+        "packaged_source": "deployment/school_bin_reference/grasp_demo_battery.launch"
+      }
+    },
+    "robot_ip": "169.254.128.18",
+    "arm": "left",
+    "unit": "metres_radians",
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "source_bin_identity": "human_user_confirmed_school_bins_are_current_bins",
+    "source_bin_identity_is_not_new_path_acceptance": true,
+    "command_speed_percent": 10,
+    "loaded_lift_mm": 140,
+    "loaded_lift_source": "school from_pos=grasp+80mm; quit_pos=from_pos+60mm",
+    "bin_release_target": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65535
+    ],
+    "bin_release_difference": "open_five_flex_preserve_opposition_instead_of_school_all_six_zero",
+    "transit": [
+      {
+        "phase": "school_high_transit",
+        "source": "HIGHT_POS",
+        "pose": [
+          0.38515201210975647,
+          -0.4414309859275818,
+          -0.023086000233888626,
+          -2.4130001068115234,
+          -1.3769999742507935,
+          -2.63100004196167
+        ]
+      },
+      {
+        "phase": "school_restart_transit",
+        "source": "SCAN_BATTERY_RESTART_POS",
+        "pose": [
+          0.5446869730949402,
+          -0.3363009989261627,
+          0.14712999761104584,
+          -1.9700000286102295,
+          -0.4860000014305115,
+          -2.4179999828338623
+        ]
+      }
+    ],
+    "bins": {
+      "black": {
+        "phase": "school_black_drop",
+        "source": "RECYCLE_AREA",
+        "pose": [
+          0.45028701424598694,
+          -0.418067991733551,
+          -0.14466699957847595,
+          -2.5940001010894775,
+          -1.2289999723434448,
+          -1.7489999532699585
+        ],
+        "logical_bin": "black_bin"
+      },
+      "red": {
+        "phase": "school_red_drop",
+        "source": "RECYCLE_RED_AREA",
+        "pose": [
+          0.5475559830665588,
+          -0.24783800542354584,
+          -0.17733100056648254,
+          -2.7190001010894775,
+          -1.2419999837875366,
+          -1.5700000524520874
+        ],
+        "logical_bin": "red_white_bin"
+      },
+      "white": {
+        "phase": "school_white_drop",
+        "source": "RECYCLE_WHITE_AREA",
+        "pose": [
+          0.47132399678230286,
+          -0.23525099456310272,
+          -0.181878000497818,
+          -2.736999988555908,
+          -1.3209999799728394,
+          -2.071000099182129
+        ],
+        "logical_bin": "red_white_bin"
+      }
+    },
+    "adapted_route": true,
+    "scan_waypoints_http_and_inspection_waits_omitted": true,
+    "adapted_high_to_restart_segment_not_claimed_original_school_path": true,
+    "numerical_collision_certificate": false,
+    "real_device_acceptance": false,
+    "calibration_used_for_motion": false,
+    "handeye_recalibration_still_required": true
+  },
+  "school_bin_target": {
+    "phase": "school_black_drop",
+    "source": "RECYCLE_AREA",
+    "pose": [
+      0.45028701424598694,
+      -0.418067991733551,
+      -0.14466699957847595,
+      -2.5940001010894775,
+      -1.2289999723434448,
+      -1.7489999532699585
+    ],
+    "logical_bin": "black_bin"
+  },
+  "school_route_adapted": true,
+  "original_scan_poses_omitted": true,
+  "actual_continuous_swept_geometry_verified": false,
+  "normal_transfer_requires_fresh_loaded_clearance_permission": true,
+  "known_read_pacing_qualification": {
+    "passed": true,
+    "groups": [
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          0,
+          2,
+          0,
+          0,
+          1
+        ],
+        "positions": [
+          7999,
+          8016,
+          7999,
+          8003,
+          65535,
+          65222
+        ],
+        "targets": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 452167.421207207,
+        "finished_monotonic": 452168.353312497,
+        "final_status_started_monotonic": 452168.203230685,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          2,
+          2,
+          0,
+          0,
+          1
+        ],
+        "positions": [
+          7999,
+          7989,
+          7999,
+          8003,
+          65535,
+          65222
+        ],
+        "targets": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 452168.418314943,
+        "finished_monotonic": 452169.358383686,
+        "final_status_started_monotonic": 452169.198071012,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          2,
+          2,
+          0,
+          0,
+          1
+        ],
+        "positions": [
+          7999,
+          7989,
+          7999,
+          8003,
+          65535,
+          65222
+        ],
+        "targets": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 452169.423721782,
+        "finished_monotonic": 452170.348437928,
+        "final_status_started_monotonic": 452170.188118086,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      }
+    ],
+    "before": {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "current": [
+        2,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "positions": [
+        7999,
+        8016,
+        7999,
+        8003,
+        65535,
+        65222
+      ],
+      "targets": [
+        7999,
+        8001,
+        7999,
+        8000,
+        65535,
+        65222
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 452165.207551988,
+      "finished_monotonic": 452167.333414412,
+      "final_status_started_monotonic": 452166.96829471,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    },
+    "after": {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "current": [
+        2,
+        0,
+        3,
+        0,
+        0,
+        0
+      ],
+      "positions": [
+        7999,
+        7989,
+        7999,
+        8003,
+        65535,
+        65222
+      ],
+      "targets": [
+        7999,
+        8001,
+        7999,
+        8000,
+        65535,
+        65222
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 452170.426414969,
+      "finished_monotonic": 452172.558302687,
+      "final_status_started_monotonic": 452172.203202325,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    },
+    "actuator_writes_for_probe": 0,
+    "read_to_read_seconds": 0.1,
+    "write_and_postwrite_read_seconds": 0.3,
+    "same_run_only": true,
+    "first_read_on_each_socket_seconds": 0.3,
+    "each_new_socket_requires_exact_identity": true,
+    "no_reserved_registers": true,
+    "manufacturer_minimum_interval_claimed": false,
+    "loaded_pacing_guaranteed": false
+  },
+  "grasp_target_steps_planned": 1,
+  "contact_freeze_is_not_force_control": true,
+  "maximum_contact_reductions": 4,
+  "maximum_reductions_per_channel": 1,
+  "contact_reduction_scope": "only_new_status5_channels_0_to_3",
+  "no_additional_school_index_close": true,
+  "load_targets": [
+    15000,
+    30000,
+    28000,
+    20000,
+    65535,
+    65222
+  ],
+  "loaded_contact_settling": {
+    "targets": [
+      15000,
+      30000,
+      28000,
+      20000,
+      65535,
+      65222
+    ],
+    "final": {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "current": [
+        125,
+        246,
+        33,
+        111,
+        0,
+        1
+      ],
+      "positions": [
+        14999,
+        29989,
+        28000,
+        19999,
+        65535,
+        65214
+      ],
+      "targets": [
+        14999,
+        30000,
+        28000,
+        19999,
+        65535,
+        65222
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 452177.064405341,
+      "finished_monotonic": 452177.96857394,
+      "final_status_started_monotonic": 452177.818125404,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false,
+      "speeds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        65535
+      ],
+      "force_targets": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "current_limit_ma": [
+        1299,
+        1299,
+        1299,
+        1299,
+        1299,
+        1299
+      ]
+    },
+    "complete_groups": 3,
+    "position_span_within150": true,
+    "frozen_channels": [],
+    "physical_stop_verified": false,
+    "holding_force_verified": false,
+    "opposed_contact_requires_onsite_confirmation": true
+  },
+  "load_anchor": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      125,
+      246,
+      33,
+      111,
+      0,
+      1
+    ],
+    "positions": [
+      14999,
+      29989,
+      28000,
+      19999,
+      65535,
+      65214
+    ],
+    "targets": [
+      14999,
+      30000,
+      28000,
+      19999,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 452177.064405341,
+    "finished_monotonic": 452177.96857394,
+    "final_status_started_monotonic": 452177.818125404,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "speeds": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "force_targets": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ]
+  },
+  "grasp_feedback": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      125,
+      246,
+      33,
+      111,
+      0,
+      1
+    ],
+    "positions": [
+      14999,
+      29989,
+      28000,
+      19999,
+      65535,
+      65214
+    ],
+    "targets": [
+      14999,
+      30000,
+      28000,
+      19999,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 452177.064405341,
+    "finished_monotonic": 452177.96857394,
+    "final_status_started_monotonic": 452177.818125404,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "speeds": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "force_targets": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ]
+  },
+  "last_loaded_preflight": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      72,
+      202,
+      23,
+      36,
+      0,
+      1
+    ],
+    "positions": [
+      14999,
+      30000,
+      28000,
+      19999,
+      65535,
+      65214
+    ],
+    "targets": [
+      14999,
+      30000,
+      28000,
+      19999,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 452217.5636625,
+    "finished_monotonic": 452218.478809902,
+    "final_status_started_monotonic": 452218.333532094,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "speeds": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "force_targets": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ]
+  },
+  "loaded_profile_source": "same_exclusive_run_before_close_full_profile_plus_fresh_critical_and_complete_group",
+  "arm_stop_attempt": {
+    "result": 0,
+    "physical_stop_verified": false,
+    "hand_stop_or_release": false
+  },
+  "onsite_hardware_stop_required": true
+}

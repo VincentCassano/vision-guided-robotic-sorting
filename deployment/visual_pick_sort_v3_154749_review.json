@@ -1,0 +1,151 @@
+{
+  "archive": "tmp/visual_pick_sort_v3_20261022_154749_189761.zip",
+  "sha256": "eb2f1aa8fbdd886cac14bc873308be4a818ac3a77d135e94cf2b9f1019fc784e",
+  "bytes": 12108099,
+  "members": 15,
+  "internal_hashes": 14,
+  "CRC_ok": true,
+  "inventory_exact": true,
+  "internal_hashes_match": true,
+  "deployed_payload_count": 290,
+  "deployed_payload_matches_v3": true,
+  "parent_worker_match": true,
+  "embedded_pregrasp_sha256": "69df11068ab539fe09f0ed7e2cdc31ff70addf4d4350a45a86198918c076b663",
+  "outcome": "aborted_no_further_writes",
+  "errors": [
+    {
+      "error": "TimeoutError('Supported withdrawal did not yield healthy PREPARE; no normal cycle')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v3_worker.py\", line 190, in main\n    start=hand.withdraw(start);seq.close_hand()\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v3_recovery.py\", line 97, in withdraw\n    raise TimeoutError('Supported withdrawal did not yield healthy PREPARE; no normal cycle')\nTimeoutError: Supported withdrawal did not yield healthy PREPARE; no normal cycle\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "writes": {
+    "arm": 0,
+    "hand": 1,
+    "configuration": 0
+  },
+  "raw_hand_writes": [
+    {
+      "event": "tx",
+      "sequence": 24,
+      "monotonic": 671675.052318438,
+      "request": {
+        "command": "write_registers",
+        "port": 1,
+        "address": 1135,
+        "num": 4,
+        "data": [
+          31,
+          64,
+          31,
+          64,
+          31,
+          64,
+          31,
+          64
+        ],
+        "device": 2
+      },
+      "pre_send_quiet_seconds": 0.3,
+      "hex": "7b22636f6d6d616e64223a2277726974655f726567697374657273222c22706f7274223a312c2261646472657373223a313133352c226e756d223a342c2264617461223a5b33312c36342c33312c36342c33312c36342c33312c36345d2c22646576696365223a327d0d0a"
+    }
+  ],
+  "operator_inputs": [
+    {
+      "index": 4,
+      "phase": "await_supported_opening",
+      "value": "r",
+      "empty_hand_and_opening_clear": true,
+      "explicit_recovery_before_new_cycle": true,
+      "timestamp_utc": "2026-10-22T07:49:49.497976+00:00"
+    }
+  ],
+  "whole_feedback_groups": 20,
+  "post_withdrawal_feedback_groups": 14,
+  "first_four_target_and_actual_reached": true,
+  "post_withdrawal_positions_min": [
+    7999,
+    8001,
+    7996,
+    8000,
+    65535,
+    65535
+  ],
+  "post_withdrawal_positions_max": [
+    8006,
+    8004,
+    7999,
+    8000,
+    65535,
+    65535
+  ],
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      21,
+      46,
+      7,
+      0,
+      3,
+      2
+    ],
+    "positions": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      65535
+    ],
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      65056
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 671703.536984721,
+    "finished_monotonic": 671705.658632804,
+    "final_status_started_monotonic": 671705.30809903,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "fresh_protection": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "any_status3_or4": false,
+  "actual_blocker": "Four flex targets and actuals returned to8000; untouched opposition target65056 but all sampled actuals65535, status5; all-six PREPARE requirement timed out. No g/grasp/lift/bin transfer",
+  "root_cause_of_opposition_not_reaching_target_not_proven": true,
+  "normal_PREPARE_qualified": false,
+  "complete_sort_real_device_accepted": false,
+  "old_fault_last_arm_state_used": false,
+  "offline_project_tests_executed": false,
+  "SDK_executed_locally": false
+}

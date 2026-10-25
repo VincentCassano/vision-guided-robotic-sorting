@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vision-Guided Robotic Grasping and Sorting System</title><style>
+:root{color-scheme:light dark;--paper:#f8fafc;--ink:#243247;--line:#d9e1eb;--panel:#eef2f7}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 system-ui,"Microsoft YaHei",sans-serif}
+main{max-width:1040px;margin:auto;padding:48px 46px 64px}h1{font-size:32px;line-height:1.3;letter-spacing:-.6px;margin:0 0 18px}h2{font-size:23px;margin-top:42px;padding-bottom:9px;border-bottom:1px solid var(--line)}h3{font-size:18px;margin-top:26px}a{color:#3774c4;text-underline-offset:3px}p,ul{margin:16px 0}li{margin:7px 0}pre{padding:18px 20px;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:10px;font:14px/1.65 ui-monospace,Consolas,monospace}code{font-size:.9em}p code,li code,td code{padding:2px 5px;background:var(--panel);border-radius:4px}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid var(--line);padding:11px 14px;text-align:left;vertical-align:top}th{background:var(--panel)}.selection-easter-egg{color:transparent;user-select:text;-webkit-user-select:text;margin-top:32px}.selection-easter-egg::selection{color:#102a43;background:#a5ceff}
+@media(prefers-color-scheme:dark){:root{--paper:#101722;--ink:#e2e8f0;--line:#344155;--panel:#1a2535}a{color:#92bfff}}
+@media(max-width:700px){main{padding:28px 20px}h1{font-size:26px}}
+</style><main><h1>Vision-Guided Robotic Grasping and Sorting System</h1>
+<p><strong>视觉引导的机器人抓取与分拣系统</strong> · 简体中文 | <a href="../README.en.md">English</a></p>
+<p><a href="guide.zh-CN.html">中英文HTML说明（下载后用浏览器打开）</a> · <a href="guide.en.html">English HTML guide</a></p>
+<h2>项目介绍</h2>
+<p>本项目将目标识别、空间定位、机器人抓取与分类投放连接成一个连续工作流程。头部 Intel RealSense D435 提供实时图像，YOLOv5 模型识别电池外形和颜色，定位模块计算当前目标的位置，再由机械臂与灵巧手完成接近、抓取、提起、投放和返回观察位。</p>
+<p>系统根据实时视觉结果生成目标坐标，并根据工作区选择近处或远处腕姿。当前任务是分拣同规格的直立圆柱测试件：黑色进入正常品盒，红色和白色进入废品盒；方形目标仅识别。</p>
+<p>网页控制台提供持续相机画面、自动与单件取放、停止、软件重置、阶段反馈和运行日志。原始定位图像与网页展示视频分开传输；同一目标连续出现至少 <strong>2秒</strong> 才进入检测统计，短暂闪现和重复刷新不会增加数量。</p>
+<ul>
+<li><strong>感知</strong>：D435 RGB图像、三色圆柱检测和两层支撑面定位。</li>
+<li><strong>执行</strong>：近/远腕姿、下降后预抓、夹持、提起、分类投放和返回。</li>
+<li><strong>交互</strong>：深蓝色网页控制台、局域网访问、实时状态；可选ROS 1桥接。</li>
+<li><strong>记录</strong>：原图、通信、动作结果与文件哈希保留，软件周期数与实际分拣结果分别记录。</li>
+</ul>
+<p>底层视觉取放已有四件黑壳连续批次及部分三色取放记录；<strong>当前网页版仍等待现场验收</strong>。动作周期完成不能直接作为实际抓稳、入正确盒或整机成功率的证明。</p>
+<h2>环境配置</h2>
+<h3>硬件与工作条件</h3>
+<div class="table-wrap"><table>
+<tr><th>组件</th><th>当前配置</th></tr>
+<tr><td>机器人</td><td>睿尔曼RM65BI；左臂执行，控制器V1.6.5，SDK API 4.3.1</td></tr>
+<tr><td>灵巧手</td><td>傲意ROH-AP001，RS485通讯</td></tr>
+<tr><td>相机</td><td>Intel RealSense D435；RGB 1280×720、30fps</td></tr>
+<tr><td>测试件</td><td>断电圆柱/空壳，外径45.8mm、高98mm</td></tr>
+<tr><td>工作面</td><td>已测量的槽底与亚克力板顶面，相差9.6mm</td></tr>
+<tr><td>安装关系</td><td>使用本机标定和近/远腕姿绑定，运行期间头部、板及安装关系保持固定</td></tr>
+</table></div>
+<h3>软件与本机资产</h3>
+<p>运行端使用Linux、Python 3.8及以上，以及NumPy、OpenCV（含ArUco）、PyTorch、PyYAML和<code>pyrealsense2</code>。网页服务使用Python标准库，无需Node.js、前端构建或云端服务。ROS 1仅用于可选任务桥接，网页运行不依赖ROS Master。</p>
+<p>已有机器人环境直接复用其Python和依赖。新环境可根据<a href="../requirements-web.txt">依赖清单</a>安装；PyTorch/CUDA及RealSense驱动需与运行主机匹配，清单不代表已对每种组合完成验收。</p>
+<pre><code>python3 -m venv --system-site-packages .venv
+source .venv/bin/activate
+python -m pip install -r requirements-web.txt</code></pre>
+<p>GitHub源码不包含模型权重、设备SDK二进制、现场<code>calibration/</code>或采集数据。启动真机流程前，按<a href="ASSETS.md">资产配置说明</a>恢复本机模型、SDK、标定会话与已验收绑定。不要使用其他机器的标定和示教坐标替代。</p>
+<h2>使用方法</h2>
+<h3>1. 准备工程</h3>
+<p>新工作目录可从GitHub获取源码：</p>
+<pre><code>git clone https://github.com/VincentCassano/vision-guided-robotic-sorting.git
+cd vision-guided-robotic-sorting</code></pre>
+<p>已有部署继续使用原目录<code>~/test/battery-d435-preview</code>即可。恢复必要资产后，退出其他抓取程序与相机预览，避免同时占用设备。SHA256清单要求保留源码字节，修改文件后需重新生成对应发布清单。</p>
+<h3>2. 启动网页</h3>
+<pre><code>/usr/bin/python3 deployment/run_visual_task_control_v24.py --host 0.0.0.0</code></pre>
+<p>服务先启动相机、识别和网页；点击任务按钮后才发起机器人动作。默认尝试打开1440×940普通浏览器窗口，不请求全屏。非Chromium浏览器使用自身窗口设置。</p>
+<ul>
+<li>本机：<code>http://127.0.0.1:18081</code></li>
+<li>同一局域网：<code>http://&lt;运行程序的Ubuntu地址&gt;:18081</code></li>
+<li>查询Ubuntu地址：<code>hostname -I</code></li>
+<li>只启动服务、不自动打开浏览器：在命令末尾添加<code>--no-browser</code>。</li>
+</ul>
+<p>若使用虚拟环境，将命令中的<code>/usr/bin/python3</code>替换为该环境的<code>python</code>，同时通过<code>--inference-python /绝对路径/python</code>指定模型进程的解释器。</p>
+<h3>3. 操作任务</h3>
+<div class="table-wrap"><table>
+<tr><th>网页操作</th><th>实际行为</th></tr>
+<tr><td>自动工作</td><td>持续选择合格目标，完成当前批次取放并返回观察位</td></tr>
+<tr><td>单步工作</td><td>完成一个目标的完整取放流程</td></tr>
+<tr><td>继续识别</td><td>仅在视觉尚未完成时重新观察，不续接持物恢复动作</td></tr>
+<tr><td>停止工作</td><td>锁存停止请求，不再启动下一段/下一件；不自动松手或回臂</td></tr>
+<tr><td>重置任务</td><td>仅清软件任务状态，不清设备错误、不移动机器人</td></tr>
+</table></div>
+<p>黄色框表示等待满2秒的候选，绿色框表示已确认目标，蓝色框表示本轮已锁定目标的采集位置。运动期间画面继续更新，当前抓取坐标保持锁定。检测数统计当前稳定可见目标，每个目标不逐帧累加；动作完成数另行显示。</p>
+<p>当前动作参数为移动/对准/转运30%、下降/提起15%；抓取后提起180mm，红白投放后抬40mm，黑色投放后抬80mm。参数属于当前设备与工作区，不能当作通用速度或净空设置。</p>
+<p>使用断电测试件，清空整手与含物路径，并现场守急停。网页停止与程序退出均不能证明物理停稳；意外运动或碰撞使用现场硬件急停。关闭浏览器不会关闭服务；在服务终端按<code>Ctrl+C</code>请求停止并等待收尾。</p>
+<h3>4. 记录与可选接口</h3>
+<p>记录保存在<code>captures/</code>。退出服务后生成<code>real_task_control_v24_时间.zip</code>，包含界面日志与原机器人会话。不要把空抓走完的动作周期记为实际分拣成功。</p>
+<p>HTTP提供<code>GET /api/status</code>、<code>GET /live.mjpg</code>及<code>POST /api/command</code>。ROS桥可在已配置ROS环境的另一个终端运行：</p>
+<pre><code>source ~/catkin_ws/devel/setup.bash
+/usr/bin/python3 deployment/task_control_ros_v24.py</code></pre>
+<p>ROS桥与网页共用同一真机控制服务。完整接口和操作细节见<a href="../deployment/VISUAL_WEB_CONTROL_V24_README.txt">运行说明</a>。</p>
+<h2>项目结构与边界</h2>
+<pre><code>deployment/             网页、相机服务、定位、原动作流程及发布校验清单
+src/battery_grasp/      ROS功能包、推理模块和配置
+docs/                  资产配置及项目文档
+tools/release/         文件打包与GitHub发布准备工具</code></pre>
+<p>当前范围是固定头/板、同规格直立测试件与已测量的两层工作面。任意未知高度、其他规格、方形抓取、右臂协作及实际抓稳/滑落/入框自动闭环尚未完成。依赖与参考材料说明见<a href="../THIRD_PARTY_NOTICES.md">第三方说明</a>。</p><p class="selection-easter-egg">世上无难事，只要肯登攀。</p></main></html>

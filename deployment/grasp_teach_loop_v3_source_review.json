@@ -1,0 +1,53 @@
+{
+  "scope": "user pasted hardware terminal excerpt plus manual source review; no offline project runtime",
+  "observation": {
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      0,
+      64558
+    ],
+    "positions": [
+      4350,
+      4631,
+      8002,
+      7635,
+      0,
+      65329
+    ],
+    "status": [
+      5,
+      5,
+      2,
+      5,
+      2,
+      5
+    ],
+    "first_increment_rejected_before_write": true,
+    "second_increment_result_unknown": true,
+    "raw_zip_received": false
+  },
+  "protocol_source": "https://oymotion.github.io/ROHand/ROH-Protocols/OHandModBusRTUProtocol_Gen2/",
+  "protocol_facts": {
+    "2": "position reached stopped",
+    "3": "overcurrent protection stopped",
+    "5": "stuck stopped"
+  },
+  "root_causes": [
+    "v2 remembers any observed5 for the entire child and never requalifies even after a successful opening",
+    "v2 subtracts small step from old unreachable target; for thumb7999/actual4350, -1000 is still6999 above actual+150 and cannot be an opening"
+  ],
+  "fix": [
+    "negative step uses min(current actual, current target)+delta; no numerical clamp",
+    "state5 still blocks added closure; allow explicit empty pre-shape reverse target only",
+    "clear only that channel software latch after explicit opening, actual retreat>=250, target reached150,3 quiet groups spanning at least1s all status2, critical config/current/identity/arm guards retained",
+    "never reset hardware or clear real controller diagnostics; no automatic closure retry, no rearm for contact grip3/4/transport faults",
+    "all v2 archive members kept unchanged; isolated v3 parent worker manifest"
+  ],
+  "real_device_v3_accepted": false,
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_compile_AST_mock_FK_IK_executed": false
+}

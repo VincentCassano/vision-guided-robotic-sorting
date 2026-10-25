@@ -1,0 +1,9 @@
+{
+  "source": "explicit_user_request_after_fix2_preflight_failure",
+  "request": "重新记录腕姿，刚才那个不能在固定坐标上升",
+  "accepted_scope": "retire old wrist for motion; capture new seated PRE pose plus actual empty-hand fixed-wrist World-Z raise and same-place visual binding",
+  "hand_recipe_unchanged": true,
+  "automatic_arm_moves_requested_for_this_capture": false,
+  "historical_reference_retained": true,
+  "offline_project_tests_authorized": false
+}

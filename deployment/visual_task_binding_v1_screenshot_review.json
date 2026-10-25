@@ -1,0 +1,54 @@
+{
+  "scope": "Screenshot and source review only; no new raw capture ZIP or full camera RGB supplied",
+  "evidence": {
+    "path": "C:\\Users\\w1531\\AppData\\Local\\Temp\\codex-clipboard-bbb96003-cdbf-40cf-bab4-13980f0a82c6.png",
+    "sha256": "4c566ef1cdf2d74c57d33aa9de231307c1a4181b4873ba79a2b924e1e546ca18",
+    "bytes": 1054692
+  },
+  "observed": {
+    "selected_shell": true,
+    "screen_phase": "REFERENCE: ORIGINAL SUCCESSFUL GRASP PLACE; S binds",
+    "rejected_observations": [
+      {
+        "id": "001",
+        "upper_arc_p90_residual_px": 3.84
+      },
+      {
+        "id": "002",
+        "upper_arc_p90_residual_px": 3.73
+      }
+    ],
+    "original_gate_px": 2,
+    "reference_bound": false
+  },
+  "source_hypothesis": "Image-column top silhouette can include body sides when the body projects diagonally. Screenshot shows a diagonal projection; raw camera image unavailable, causal attribution unconfirmed.",
+  "not_inferred": [
+    "Physical shell lean",
+    "Head or board movement",
+    "Raised cap button as confirmed cause",
+    "Any actual robot motion or stop"
+  ],
+  "change": {
+    "isolated_geometry": "deployment/known_cylinder_geometry_axis.py",
+    "isolated_entry": "deployment/run_visual_task_binding_v2.py",
+    "method": "Keep original closed-rim branch first; fallback derives an orthonormal image body-axis basis and measures the upper outline across that basis.",
+    "upper_arc_p90_pixel_gate": 2,
+    "additional_radial_p90_gate_px": 2,
+    "new_principal_variance_ratio_gate": 2,
+    "new_gate_origin": "Conservative development conditioning guard, not measured accuracy or manufacturer parameter",
+    "threshold_widened": false,
+    "residual_based_point_deletion": false,
+    "world_transform_refit": false,
+    "downstream_circle_body_burst_gates_unchanged": true,
+    "geometry_hash_bound_to_anchor": true
+  },
+  "scope_limits": {
+    "project_or_offline_tests_run": false,
+    "algorithm_imported_or_run_locally": false,
+    "screenshot_or_saved_image_fit_run": false,
+    "robot_hardware_accessed": false,
+    "root_cause_confirmed": false,
+    "new_geometry_field_accepted": false,
+    "execution_ready": false
+  }
+}

@@ -1,0 +1,5 @@
+/usr/bin/python3 deployment/run_grasp_teach_loop_v8.py --execute --confirm-inert-shell-exclusive --confirm-onsite-stop
+
+手空且五指扫掠清空后s恢复预抓，再a-e调节。
+d 18000绝对值；d +500/d -500按实际加减；w退出连接调腕；x保存；q退出。
+未到位/5/观察超时返回调指。真正故障只暂停当前连接，r新读，不重发/清错。

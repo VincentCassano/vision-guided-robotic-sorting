@@ -1,0 +1,211 @@
+{
+  "scope": "Latest screenshot plus existing201634 raw-frame fields and source review; no new raw retry ZIP supplied",
+  "screenshot": {
+    "path": "C:\\Users\\w1531\\AppData\\Local\\Temp\\codex-clipboard-5e746dd6-0359-4299-a460-a6acdd1a5acc.png",
+    "sha256": "01ed8d0052e0e6e35481bed0442e0c6b9df566b9dbc55df06a5041b818d8e14e",
+    "bytes": 1240649
+  },
+  "screenshot_observed": {
+    "reference_bound": true,
+    "saved_targets": 0,
+    "button_received": true,
+    "capture_completed": true,
+    "reject_reasons": [
+      "top_center_repeatability_exceeds_3mm",
+      "geometric_body_center_repeatability_exceeds_3mm"
+    ],
+    "retry_numeric_jitter_not_visible": true
+  },
+  "historical_201634_B_frames": [
+    {
+      "frame_number": 20254,
+      "detector_bbox": [
+        326.0,
+        86.0,
+        107.0,
+        144.0
+      ],
+      "ellipse": {
+        "center_px": [
+          365.6591402439634,
+          109.32198551548558
+        ],
+        "diameters_px": [
+          74.72788310015287,
+          48.080343422265216
+        ],
+        "angle_deg": 169.39567701776593
+      }
+    },
+    {
+      "frame_number": 20264,
+      "detector_bbox": [
+        326.0,
+        87.0,
+        107.0,
+        143.0
+      ],
+      "ellipse": {
+        "center_px": [
+          365.9716332175427,
+          109.94781333070603
+        ],
+        "diameters_px": [
+          75.17811589102527,
+          49.37987620251118
+        ],
+        "angle_deg": 169.93036680987555
+      }
+    },
+    {
+      "frame_number": 20273,
+      "detector_bbox": [
+        326.0,
+        86.0,
+        107.0,
+        144.0
+      ],
+      "ellipse": {
+        "center_px": [
+          365.6634790094639,
+          109.40938345597448
+        ],
+        "diameters_px": [
+          74.7187176757642,
+          48.1196082654451
+        ],
+        "angle_deg": 169.10193053928876
+      }
+    },
+    {
+      "frame_number": 20281,
+      "detector_bbox": [
+        326.0,
+        86.0,
+        107.0,
+        144.0
+      ],
+      "ellipse": {
+        "center_px": [
+          366.0337340180861,
+          110.48387435885957
+        ],
+        "diameters_px": [
+          75.64530945028224,
+          50.63512460282306
+        ],
+        "angle_deg": 170.11856379268488
+      }
+    },
+    {
+      "frame_number": 20290,
+      "detector_bbox": [
+        326.0,
+        86.0,
+        108.0,
+        144.0
+      ],
+      "ellipse": {
+        "center_px": [
+          366.03581108168123,
+          110.06371821575203
+        ],
+        "diameters_px": [
+          75.20077294556387,
+          49.649521133598554
+        ],
+        "angle_deg": 170.01483242121517
+      }
+    },
+    {
+      "frame_number": 20299,
+      "detector_bbox": [
+        326.0,
+        86.0,
+        107.0,
+        144.0
+      ],
+      "ellipse": {
+        "center_px": [
+          366.02463078021185,
+          110.04391203930173
+        ],
+        "diameters_px": [
+          75.203218840861,
+          49.66421639780888
+        ],
+        "angle_deg": 170.04935227408248
+      }
+    },
+    {
+      "frame_number": 20307,
+      "detector_bbox": [
+        326.0,
+        86.0,
+        107.0,
+        145.0
+      ],
+      "ellipse": {
+        "center_px": [
+          365.7058568761261,
+          109.7198671902534
+        ],
+        "diameters_px": [
+          74.71487064551724,
+          48.784393379175036
+        ],
+        "angle_deg": 169.19065863480063
+      }
+    },
+    {
+      "frame_number": 20316,
+      "detector_bbox": [
+        325.0,
+        87.0,
+        108.0,
+        144.0
+      ],
+      "ellipse": {
+        "center_px": [
+          365.64603172798843,
+          109.59057845158405
+        ],
+        "diameters_px": [
+          74.74285957636764,
+          48.45208965098348
+        ],
+        "angle_deg": 169.17941231798082
+      }
+    }
+  ],
+  "diagnosis": "Recorded detector boxes vary1-2px; identical bbox frames20254/20281 also have different fitted ellipse dimensions. Vision-coordinate variability is not a measurement of physical robot movement. Changing detector-driven ROI and image-boundary variability are separate possible contributors; exclusive root cause unconfirmed.",
+  "implementation": {
+    "entry": "deployment/run_visual_task_binding_v3.py",
+    "policy": "Freeze measurement bbox at S for the entire burst; use raw current detector bbox only for identification and preserve it verbatim. Original locate() processes each full live frame with fixed bbox.",
+    "image_matching_overlap_min": 0.5,
+    "source": "Existing burst identity overlap threshold; extended to fixed ROI identity check",
+    "preserve_original2px3mm_and8frame2second_gates": true,
+    "spatial_or_temporal_coordinate_smoothing": false,
+    "discard_bad_frames": false,
+    "preserve_every_burst_RGB": true,
+    "persistent_screen_pass_or_rejection_message": true,
+    "same_geometry_module_same_weights_same_camera_same_anchor": true
+  },
+  "calibration_clarification": {
+    "meaning": "5mm is a validation threshold; recorded residuals compare visual estimates and arm-derived coordinates, not measured robot oscillation.",
+    "method": "ArUco corner/PnP and RGBD, not YOLO detector boxes",
+    "known_same6point_PnP_max_mm": 3.4305802815109967,
+    "known_same6point_RGBD_max_mm": 7.498425158174533,
+    "robot_motion_as_cause_confirmed": false,
+    "YOLO_box_as_calibration_cause_confirmed": false
+  },
+  "scope_limits": {
+    "new_screenshot_retry_raw_ZIP_present": false,
+    "new_runtime_code_executed": false,
+    "SDK_or_robot_access": false,
+    "offline_project_tests_or_image_refitting": false,
+    "known_jitter_fully_resolved": false,
+    "execution_ready": false,
+    "motion_authorized": false
+  }
+}

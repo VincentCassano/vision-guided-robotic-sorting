@@ -1,0 +1,22 @@
+{
+  "schema_version": 23,
+  "same_dimensions_confirmed_by_user": true,
+  "inert_test_objects": true,
+  "diameter_mm": 45.8,
+  "total_height_mm": 98.0,
+  "class_confidences": [
+    0.8,
+    0.55,
+    0.7,
+    0.3
+  ],
+  "class_names": [
+    "black_cyl_battery",
+    "red_cyl_battery",
+    "white_cyl_battery",
+    "square_battery"
+  ],
+  "source_model": "same_accepted_battery_v3_camera.torchscript",
+  "same_dimensions_confirmation": "human_user_20261024_red_white_same45.8x98mm_and_inert",
+  "color_does_not_change_grasp_recipe": true
+}

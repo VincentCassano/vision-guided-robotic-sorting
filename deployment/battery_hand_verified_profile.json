@@ -1,0 +1,801 @@
+{
+  "schema_version": 1,
+  "profile_id": "left_battery_thumb15000_20261009",
+  "device_label": "ROH-AP001 LBR 2-R RS485",
+  "device_identity": [
+    512,
+    769,
+    151,
+    8193,
+    290,
+    2,
+    0,
+    0
+  ],
+  "endpoint": "169.254.128.18:8080",
+  "port": 1,
+  "device": 2,
+  "channel_order": [
+    "thumb_flex",
+    "index",
+    "middle",
+    "ring",
+    "little",
+    "thumb_rotation"
+  ],
+  "current_limit_ma": [
+    1299,
+    1299,
+    1299,
+    1299,
+    1299,
+    1299
+  ],
+  "observed_configuration": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "calibration_end_absolute": [
+      21539,
+      24972,
+      25993,
+      24169,
+      24866,
+      18946
+    ],
+    "calibration_start_absolute": [
+      3039,
+      2472,
+      3093,
+      2469,
+      2616,
+      2386
+    ],
+    "thumb_presets_absolute": [
+      2386,
+      18026,
+      18946
+    ],
+    "pid_p": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_i": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "pid_d": [
+      25000,
+      25000,
+      25000,
+      25000,
+      25000,
+      25000
+    ],
+    "pid_g": [
+      100,
+      100,
+      100,
+      100,
+      100,
+      100
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ],
+    "stall_speed": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "stall_current_ma": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "stall_stop_ms": [
+      300,
+      300,
+      300,
+      300,
+      300,
+      300
+    ],
+    "stall_retry_ms": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500
+    ]
+  },
+  "position_target_unit": "normalized_u16",
+  "position_feedback_tolerance": 150,
+  "target_register_tolerance": 2,
+  "poses": {
+    "open": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      728
+    ],
+    "prepare": [
+      8000,
+      8000,
+      8000,
+      8000,
+      65535,
+      65535
+    ],
+    "battery": [
+      15000,
+      40000,
+      35000,
+      40000,
+      65535,
+      65535
+    ]
+  },
+  "observed_pose_feedback": [
+    {
+      "phase": "initial_open",
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        728
+      ],
+      "before": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          4,
+          77,
+          14,
+          23,
+          27
+        ],
+        "positions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "targets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "angle_raw_u16": [
+        3676,
+        17604,
+        17382,
+        17427,
+        17261,
+        100
+      ],
+      "force_feedback_raw": [
+        116,
+        69,
+        109,
+        29,
+        157
+      ],
+      "after": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          11,
+          70,
+          10,
+          9,
+          35
+        ],
+        "positions": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "targets": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          728
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "reads_are_sequential": true
+    },
+    {
+      "phase": "prepare_batch",
+      "expected": [
+        8000,
+        8000,
+        8000,
+        8000,
+        65535,
+        65535
+      ],
+      "before": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          2,
+          2,
+          72,
+          11,
+          181
+        ],
+        "positions": [
+          7999,
+          8001,
+          7996,
+          8000,
+          65535,
+          65535
+        ],
+        "targets": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          65535
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "angle_raw_u16": [
+        3228,
+        16356,
+        16154,
+        16242,
+        9380,
+        8984
+      ],
+      "force_feedback_raw": [
+        116,
+        71,
+        108,
+        29,
+        155
+      ],
+      "after": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          2,
+          2,
+          2,
+          59,
+          9,
+          188
+        ],
+        "positions": [
+          7999,
+          8001,
+          8007,
+          8000,
+          65535,
+          65535
+        ],
+        "targets": [
+          7999,
+          8001,
+          7999,
+          8000,
+          65535,
+          65535
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "reads_are_sequential": true
+    },
+    {
+      "phase": "adapted_battery_pose",
+      "expected": [
+        15000,
+        30000,
+        35000,
+        40000,
+        65535,
+        65535
+      ],
+      "before": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          10,
+          2,
+          2,
+          10,
+          20,
+          168
+        ],
+        "positions": [
+          14999,
+          30000,
+          35000,
+          40001,
+          65535,
+          65535
+        ],
+        "targets": [
+          14999,
+          30000,
+          35000,
+          40001,
+          65535,
+          65535
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "angle_raw_u16": [
+        2837,
+        13564,
+        12826,
+        12495,
+        9380,
+        8984
+      ],
+      "force_feedback_raw": [
+        118,
+        69,
+        108,
+        27,
+        157
+      ],
+      "after": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          3,
+          2,
+          2,
+          9,
+          9,
+          182
+        ],
+        "positions": [
+          14999,
+          30000,
+          35000,
+          40001,
+          65535,
+          65535
+        ],
+        "targets": [
+          14999,
+          30000,
+          35000,
+          40001,
+          65535,
+          65535
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "reads_are_sequential": true
+    },
+    {
+      "phase": "school_final_index",
+      "expected": [
+        15000,
+        40000,
+        35000,
+        40000,
+        65535,
+        65535
+      ],
+      "before": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          12,
+          1,
+          2,
+          10,
+          9,
+          211
+        ],
+        "positions": [
+          14999,
+          40000,
+          34997,
+          40001,
+          65535,
+          65535
+        ],
+        "targets": [
+          14999,
+          40000,
+          35000,
+          40001,
+          65535,
+          65535
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "angle_raw_u16": [
+        2837,
+        12457,
+        12827,
+        12495,
+        9380,
+        8984
+      ],
+      "force_feedback_raw": [
+        116,
+        69,
+        108,
+        29,
+        155
+      ],
+      "after": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "current": [
+          4,
+          2,
+          1,
+          9,
+          18,
+          179
+        ],
+        "positions": [
+          14999,
+          40000,
+          35011,
+          40001,
+          65535,
+          65535
+        ],
+        "targets": [
+          14999,
+          40000,
+          35000,
+          40001,
+          65535,
+          65535
+        ],
+        "speeds": [
+          65535,
+          65535,
+          65535,
+          65535,
+          65535,
+          65535
+        ],
+        "force_targets": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "reads_are_sequential": true
+    }
+  ],
+  "evidence": {
+    "capture": "school_battery_hand_20261009_101006_552460",
+    "capture_sha256": {
+      "result.json": "7596822da7cfaea9d76af9066b2de5b68fed947236cc01976f7f7229d706f3ee",
+      "wire.jsonl": "094711490bed9de2b4d8fd29ea951fdac856f16b542ae7acdf8a4abdc819ce5c",
+      "samples.jsonl": "7772fbffcb0aef8248460ca754b0bd391086185eb06c40cd6183fce8c6e26c1d"
+    },
+    "runtime_source_sha256": {
+      "run_school_battery_hand.py": "f38791004dcbefb5e798090cfc367f95a4c470c6cfe953b89f10dcb825135866",
+      "school_battery_transport.py": "84da99e9e22ed81984f97f81c20244ef813ff03cf89b29f3778ee8e1db2f1997",
+      "run_school_battery.py": "eda939955d16e32bef35d3b62aca263cf9cdda97dfd28e96a6859e5acfe01590",
+      "school_battery_pose.json": "308b53a31edc139e993fa4308762b31dce2f6adb1507745c780e33f347e2d54f"
+    },
+    "transaction_count": 457,
+    "write_count": 7,
+    "status_sample_count": 51,
+    "sampled_protection_count": 0,
+    "sampled_peak_current_ma": [
+      19,
+      18,
+      94,
+      115,
+      27,
+      226
+    ],
+    "final_current_ma": [
+      2,
+      8,
+      15,
+      0,
+      0,
+      28
+    ]
+  },
+  "validation": {
+    "empty_hand_one_sequence_feedback_passed": true,
+    "thumb_faces_palm_confirmed_by_user": true,
+    "visual_handshape_accepted_by_user": true,
+    "battery_hold_verified": false,
+    "contact_stop_release_verified": false,
+    "tool_to_grasp_transform_verified": false,
+    "lowest_hand_points_verified": false,
+    "dynamic_workspace_verified": false
+  },
+  "execution_ready": false,
+  "notes": [
+    "This profile freezes one observed empty-hand sequence and user-confirmed appearance.",
+    "Normalized targets are not mechanical/collision-safe limits.",
+    "No real battery hold, table clearance, TCP or contact stop/release is certified.",
+    "Original thumb45000 protection cause remains unresolved; that target is not used in this profile."
+  ]
+}

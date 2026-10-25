@@ -1,0 +1,46 @@
+{
+  "source_archive": "visual_pick_sort_v14_20261024_050712_467019.zip",
+  "source_archive_sha256": "ded0511788b29c656602587b3c0349450faea0dd019408126f977c8fb5757c0f",
+  "bytes": 41888676,
+  "original_archive_over32MiB_kept_in_tmp": true,
+  "archive_CRC_and20_hashes_checked": true,
+  "actual_held_drop_success": true,
+  "actual_visual_pick_sort_success": true,
+  "onsite_results": [
+    "y",
+    "y"
+  ],
+  "SDK_cleanup_finished": [
+    true,
+    true
+  ],
+  "exceptions": [],
+  "live_target_delta_world_mm": [
+    -118.55243786443816,
+    0.5579300903413298,
+    0.8767092880797023
+  ],
+  "fresh_start_pose": [
+    0.4507319927215576,
+    -0.3780820071697235,
+    -0.14466699957847595,
+    -2.5929999351501465,
+    -1.2289999723434448,
+    -1.7489999532699585
+  ],
+  "final_hand_targets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    65535
+  ],
+  "visual_cycle_arm_writes": 7,
+  "visual_cycle_hand_writes": 13,
+  "accepted_anchor_sha256": "8121f258ce959cb446988eb99f46ddc32f64d85da10e314bc93a07f30a3cb750",
+  "scope": "One actual new-position visual black-shell pickup/bin-drop cycle from a bin-side empty start; not universal reachability or full-batch acceptance",
+  "sequencing_issue": "v14 performed prepare before alignment/descent; user requires prepare only after descent",
+  "opening_issue": "v14 issued5 single-channel opening writes",
+  "new_grouped_postdescent_motion_accepted": false
+}

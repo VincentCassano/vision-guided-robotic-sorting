@@ -1,0 +1,44 @@
+{
+  "schema_version": 23,
+  "scope": "fix11_console1_red_white_postraise40_black_postraise80",
+  "operator_view": "robot_fixed_head_view_projected_to_World_XY",
+  "user_confirmed_additional_not_replacement": true,
+  "black": {
+    "additional_backward_mm": 30.0,
+    "additional_right_mm": 0.0
+  },
+  "red": {
+    "additional_backward_mm": 55.0,
+    "additional_right_mm": -35.0
+  },
+  "white": {
+    "additional_backward_mm": 55.0,
+    "additional_right_mm": -35.0
+  },
+  "black_prior_backward_mm": 40.0,
+  "red_white_prior_right_mm": 70.0,
+  "red_white_latest_additional_left_mm": 60.0,
+  "latest_left60_applies_to_black": false,
+  "red_white_before_latest_right_mm": 25.0,
+  "red_white_latest_additional_right_mm": -60.0,
+  "height_and_orientation_unchanged": false,
+  "does_not_accumulate_again_on_each_cycle": true,
+  "physical_new_drop_acceptance": false,
+  "red_white_right_mm_history": [
+    70.0,
+    10.0,
+    25.0,
+    -35.0
+  ],
+  "red_white_shared_pose_source": "white",
+  "user_confirmed_shared_waste_bin_pose": true,
+  "red_white_additional_up_mm": 60.0,
+  "user_confirmed_drop_height_increase_mm": 60.0,
+  "post_drop_raise_mm": {
+    "black": 80.0,
+    "red": 40.0,
+    "white": 40.0
+  },
+  "orientation_unchanged": true,
+  "black_drop_height_unchanged": true
+}

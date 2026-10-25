@@ -1,0 +1,41 @@
+{
+  "source": "user_pasted_terminal_20261023_223012_to_223111",
+  "scope": "selected exact terminal lines; not a complete raw result archive",
+  "package": "battery-visual-pick-sort-v13-fix1-20261023.zip",
+  "package_sha256": "9834122aecc2b22f9bd7de359a1ed633b400fa6f4bd9cd5d99137540bdd8b45f",
+  "exact_lines": [
+    "SAVED observation_001 PLANE_BURST_QUALIFIED: True ORIGINAL_FREE3D_BURST: False REASONS: []",
+    "本轮视觉预抓TCP(mm): [237.179, -476.526, -169.932]",
+    "新腕姿(rad): [-2.263000011444092, -0.019999999552965164, 3.0439999103546143] ；无旧2.8+4.5mm偏移。目标保存后别再移动空壳。",
+    "已收到 g；开始读取当前设备状态，随后执行整轮。",
+    "2026-10-23 22:30:39 - battery_hand_readonly_sdk.robotic_arm - INFO: Movel_Cmd:0",
+    "PHASE: raising_empty_current_hand",
+    "2026-10-23 22:31:11 - battery_hand_readonly_sdk.robotic_arm - INFO: Move_Stop_Cmd:0",
+    "2026-10-23 22:31:11 - battery_hand_readonly_sdk.robotic_arm - INFO: 关闭与机械臂的Socket连接",
+    "2026-10-23 22:31:11 - battery_hand_readonly_sdk.robotic_arm - INFO: API反初始化 释放资源",
+    "动作进程结果：退出码=1，阶段=fault。",
+    "具体原因： RuntimeError('Arm joint reserve dropped below3 degrees')"
+  ],
+  "known": {
+    "g_received": true,
+    "first_empty_vertical_move_accepted": true,
+    "software_stop_reply_zero": true,
+    "pregrasp_phase_reached": false,
+    "grasp_phase_reached": false
+  },
+  "unknown": [
+    "exact rejected six-joint sample",
+    "startup current pose",
+    "actual commanded raise target",
+    "specific joint and ordinary/drive margins",
+    "current physical state after software stop"
+  ],
+  "diagnosis": {
+    "source_method": "Sequence.arm_state inherited ordinary-limit software3degree margin check",
+    "not_equivalent_to_controller_hard_limit_or_collision": true,
+    "failed_last_arm_state_not_promoted": true
+  },
+  "pending": "read already saved worker_result.json and last Get_Current_Arm_State SDK result from samples.jsonl; no new device reads or motion required",
+  "physical_stop_verified": false,
+  "actual_pickup_or_sorting_accepted": false
+}

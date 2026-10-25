@@ -1,0 +1,40 @@
+{
+  "scope": "v8_source_and_file_delivery_only_not_real_device_acceptance",
+  "preceding_result": "143310 three completed moves then permission_d_timeout_no_descent",
+  "offset": {
+    "prior_left_mm": 2.8,
+    "additional_lower_left_total_mm": 4.5,
+    "image_direction_uv": [
+      -1,
+      1
+    ],
+    "height_and_wrist_unchanged": true
+  },
+  "source_role": "clean_completed_hover_segment_not_fault_last_state",
+  "source_archive_sha256": "974667c1c6854a504fbb57e6bcf0e6c80985064ec8db4509c90c00729b6005e6",
+  "manual_source_findings": [
+    "Direct uploaded substage raw SHA and internal inventory pinned; exact permission timeout/parent-abort path checked.",
+    "Use last completed hover arm_segments endpoint with ACK/event/error0; never read last_arm_state as a continuation reference.",
+    "Fresh current arm matched by unchanged0.08degree/0.5mm/0.005rad/limits gates; no stale permission or fault reference.",
+    "Only matching empty hover may rise10mm in fixed XY/wrist; hand0writes in clearance stage.",
+    "Additional4.5mm is a vector of length4.5mm, not two4.5mm components or total replacement; previous2.8mm retained.",
+    "Camera K and World mapping define image(-u,+v) projected into constant World-Z; normalized spatial horizontal increment.",
+    "New target captured after clearance; original target and calibration untouched; original/correction/total separately saved.",
+    "All original hand current/status/configuration, drift, protection8/True, motion feedback and m/d permission gates retained.",
+    "560second onsite timeout unchanged; no automatic d or motion retry added.",
+    "Only uploaded alignment substage accepted as evidence; no invented outer bus/retreat acceptance."
+  ],
+  "source_sha256": {
+    "deployment/visual_grasp_offset_v8.py": "0ec017077d13c967a3471f40579f6cbc79659b8540e57ae4916b8750724e3f98",
+    "deployment/run_visual_pregrasp_stage_v8.py": "4ced9d781c05e53f4f77652e35a71b2d84f22c8b092e622863313a3927f256b6",
+    "deployment/visual_pregrasp_motion_worker_v8.py": "a44da2bb7e8dbb0ee1307960123043de5ddd1e3f1c1828b441751640fe03a8be",
+    "deployment/run_visual_pregrasp_motion_v8.py": "e0adc98a09580f1620c6aec1a9ce53b1d9284a8ee1441afe4d2296bb06a06738"
+  },
+  "SDK_loaded": false,
+  "hardware_connected": false,
+  "offline_project_tests_executed": false,
+  "compile_AST_mock_FK_IK_executed": false,
+  "real_device_accepted": false,
+  "collision_free_accepted": false,
+  "grasp_lift_sort_accepted": false
+}

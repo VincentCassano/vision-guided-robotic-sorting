@@ -1,0 +1,12 @@
+用户粘贴终端，非完整原始ZIP；2026-10-23。
+视觉包 visual_task_binding_20261023_032920_380541.zip。
+修正预抓TCP(mm)：[277.80154043248297,-393.02104705225486,-264.6827138624705]
+PHASE: preflight
+PHASE: checking_current_hand_operational_reads
+LAST ARM RAW: [0, [-45.18600082397461,-61.20899963378906,-77.72599792480469,49.279998779296875,43.099998474121094,28.812000274658203], [0.2787019908428192,-0.3929089903831482,-0.1246810033917427,-2.5739998817443848,-1.1690000295639038,-2.2139999866485596], 0, 0]
+ABORT: RuntimeError('Current TCP below corrected target+140mm; no low-start recovery')
+SAVED: captures/visual_pregrasp_stage_v7_cycle_20261023_032920_235447.zip OUTCOME: worker_aborted_no_automatic_retry EXECUTION_READY: False
+SHA256: 705c9fd5d2f9f8e345f068515e8df036d8ba3bb2fba60ef28e281332a27d104f
+STOP: RuntimeError('Fresh visual pregrasp not accepted; no grip process')
+SAVED: captures/visual_pick_sort_v10_20261023_031823_953372.zip OUTCOME: parent_aborted_no_automatic_retry
+终端已回shell；未收到上述两个动作原始ZIP，不推断本次完整写计数。报错分支在源码中位于手准备和臂动作之前；不能把LAST ARM RAW当当时initial或下一轮起点。

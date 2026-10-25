@@ -1,0 +1,58 @@
+{
+  "scope": "source_review_and_file_delivery_new_cycle_not_real_device_acceptance",
+  "accepted_pregrasp_result": {
+    "file": "visual_pregrasp_stage_v8_20261021_174304_223863.zip",
+    "sha256": "69df11068ab539fe09f0ed7e2cdc31ff70addf4d4350a45a86198918c076b663",
+    "operator": "m_d_p",
+    "four_segments_completed": true,
+    "grasp_or_lift": false
+  },
+  "entry_modes": [
+    "continue_current_accepted_visual_pregrasp_without_repeat_descent",
+    "capture_current_target_then_unchanged_v8_alignment_then_same_cycle"
+  ],
+  "manual_source_findings": [
+    "Parent is stdlib and launches SDK only in isolated child. All device stages require Linuxaarch64 and file manifest.",
+    "Source must be clean v8 actual m/d/p, full hashes,4completed segments,arm4/hand1/config0; no fault last state.",
+    "Historical123051 healthy pre-lift receipt contributes only6channel recipe; no old position or fault permission.",
+    "Fresh current source pose/frame/limits match original0.08degree/0.5mm/0.005rad; full identity/DH/SDK/protection8/True/actual configuration and3PREPARE groups required.",
+    "No prepare/descent/reposition write in current-pregrasp worker. No payload/protection/speed/current/force/reset setter.",
+    "One exact recipe write; up to one withdrawal per channel0..3 requires current complete status5 plus fresh status5; state3/4/current faults still latch.",
+    "Every identity read/fence preserves raw diagnostics,0-to1 after clear aborts; no fabricated zero.",
+    "New delivery capability minted only after same-run healthy reached quiet grip and3more complete groups; old fault latch never reset.",
+    "Reuse unchanged SchoolBinCycle.deliver_held_shell and NormalDropTransport/TunedHand semantics; add known trajectory-event read lane and require event_seen before next segment.",
+    "Close healthy hand channels with disarm only; startup collector uses its close method rather than nonexistent sock field.",
+    "l authorizes2percent140mm vertical lift; measured>=20mm with actual retained shell and full route clearance authorizes existing school transit/bin and exact normal release; u/e actual empty observation.",
+    "Failure Stop/cleanup occurs while logs remain open; no automatic release/retry/return or killing an active unresponsive SDK worker.",
+    "Future capture uses official unchangedv8 stage and requiresp; failed capture cannot fall back to historical target."
+  ],
+  "expected_scope": "single measured black shell, same equal-height task mapping and fixed wrist, supervised actual pickup and selected school black bin",
+  "required_permissions": {
+    "g": "same supported shell and closure sweep",
+    "l": "opposed grip and full140mmup sweep",
+    "clearance_mm": "actual lift and>=20mm loaded clearance plus full school route",
+    "u_or_e": "actual drop and empty hand"
+  },
+  "hardware_writes_allowed": [
+    "one recipe at1135x6",
+    "at most one contact-only target reduction at1135..1138 each",
+    "normal bin opening1135x6 preserving65056opposition",
+    "controllerplanned source school route and fixedwrist140mmup"
+  ],
+  "source_sha256": {
+    "deployment/run_visual_pick_sort_v1.py": "2fbcefd2969e3cdfd938d0dffe1459c4bd6452ca1ae7bc335430dbe23559a018",
+    "deployment/visual_pick_sort_worker.py": "154b89021aa52e52db22c86db4350ac1f330f788e0724edc343e647d30eab515",
+    "deployment/visual_pick_sort_hand.py": "63c4b333610661ddcde4cc785c9189e642c55567c3927988bfadab9cd852cbeb",
+    "deployment/visual_pick_sort_source.py": "9f067811fad825fb524d590b91f0b69670b58f9524017bb5a5c7feef48e394ae"
+  },
+  "source_review_limitations": [
+    "No real new grip/lift/bin trial yet.",
+    "Arm/hand feedback does not prove actual retention, physical stop, torque release or whole swept geometry.",
+    "No red/white, multi-target or unattendedAUTO acceptance."
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_executed": false,
+  "compile_AST_mock_FK_IK_executed": false,
+  "new_cycle_real_device_accepted": false
+}

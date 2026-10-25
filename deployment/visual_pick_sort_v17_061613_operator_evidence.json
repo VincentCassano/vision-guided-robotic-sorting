@@ -1,0 +1,52 @@
+{
+  "evidence_type": "operator_pasted_live_terminal_output_not_result_archive",
+  "session": "visual_pick_point_v17_target_20261024_061613_367014",
+  "scope": "two_rejected_live_RGB_height_bursts_no_motion_coordinate_generated",
+  "raw_zip_received_this_turn": false,
+  "operator_request": "取消反复人工e确认，读取五指实际弯曲判断张开；自动决定当前目标高度，不人工选槽内或板顶。",
+  "observations": [
+    {
+      "file": "observation_001.json",
+      "frame_count": 8,
+      "elapsed_seconds": 3.361837110016495,
+      "qualified": false,
+      "height_errors": [],
+      "observed_rise_by_frame_mm": [8.625267020527534, 7.005843683301054, 4.064596452419352, 3.9892435624711284, 7.646395321567464, 12.202701393160922, 5.284555709591119, 9.883865741058315],
+      "observed_rise_median_mm": 7.326119502434259,
+      "height_repeatability_max_mm": 4.876581890726663,
+      "per_frame_support_votes": ["board_top", "board_top", "recess", "recess", "board_top", "board_top", "board_top", "board_top"],
+      "nearest_support": "board_top",
+      "nearest_support_residual_mm": 2.2738804975657407,
+      "classification_boundary_distance_mm": 2.526119502434259
+    },
+    {
+      "file": "observation_002.json",
+      "frame_count": 8,
+      "elapsed_seconds": 3.275514784036204,
+      "qualified": false,
+      "height_errors": [],
+      "observed_rise_by_frame_mm": [3.8190384911290005, 6.719460889124701, 4.245744416853619, 3.8246184175653166, 4.288260547234014, 4.512666453062361, 3.9676154812564373, 8.62922207741084],
+      "observed_rise_median_mm": 4.267002482043816,
+      "height_repeatability_max_mm": 4.362219595367025,
+      "per_frame_support_votes": ["recess", "board_top", "recess", "recess", "recess", "recess", "recess", "board_top"],
+      "nearest_support": "recess",
+      "nearest_support_residual_mm": 4.267002482043816,
+      "classification_boundary_distance_mm": 0.5329975179561837
+    }
+  ],
+  "shared_support_parameters": {
+    "measured_support_levels_mm": [0.0, 9.6],
+    "support_height_model_sha256": "8f723ea6f03fedd6b1c30b5fdd4167faec17cfaaa55a482ac4bfff7a2f5c5558",
+    "decision_boundary_mm": 4.8,
+    "height_repeatability_limit_mm": 3.0,
+    "all_frames_required": true,
+    "reject_reasons": ["auto_height_repeatability_exceeds_original3mm", "auto_height_frames_disagree_on_support", "auto_height_uncertainty_reaches_support_boundary"]
+  },
+  "source_review_findings": [
+    "v17自动高度未决定时仍调用plane_summary；后者把没有平面投影人为映射为geometry_candidate_available=False，因而误报全部原帧缺少几何。",
+    "原始高度诊断height_errors为空；实际8帧均有几何高度，不能用合成的missing_geometry原因断言现场识别丢失。",
+    "旧圆柱几何每帧自由拟合圆周法向与位置；当前高度不稳定已证实，自由法向估计是否为全部根因尚未真机隔离验证。"
+  ],
+  "real_device_success_this_turn": false,
+  "project_executed_offline": false
+}

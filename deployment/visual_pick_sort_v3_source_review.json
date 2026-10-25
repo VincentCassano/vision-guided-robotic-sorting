@@ -1,0 +1,53 @@
+{
+  "scope": "source_reading_and_file_integrity_only_not_project_execution",
+  "source_sha256": {
+    "deployment/run_visual_pick_sort_v3.py": "5aa366bf393a1dfe9a0e12d8d400c9b79051f6f181c865965155f2b337eb57a4",
+    "deployment/visual_pick_sort_v3_worker.py": "7613c2197bb59d45f2dfe756eec4fe6629be50d931ab0da207029a036ff897d3",
+    "deployment/visual_pick_sort_v3_source.py": "2b3738977cb6c3101aa200bd2c97a33d507ba52516312771dca09eb2f38e9fc4",
+    "deployment/visual_pick_sort_v3_recovery.py": "94d6c8c9055b7f4ff439ca94e05198feba07f21ba19f60ffb7db4c05bb754dff"
+  },
+  "actual_failure_review": "deployment/visual_pick_sort_v2_213205_review.json",
+  "new_method": "Explicit empty-only four-channel withdrawal anchors unwritten actual positions to fresh this-run hand reads; actual may stay or return toward unchanged stored targets inside original150 tolerance",
+  "normal_150_position_and_2_target_and_status3_4_current_guards_unchanged": true,
+  "normal_v2_hand_and_continuous_delivery_files_unchanged": true,
+  "normal_grip_recipe": [
+    26500,
+    30500,
+    27000,
+    19000,
+    65535,
+    65056
+  ],
+  "normal_parent_phase_permissions_unchanged": true,
+  "recovery_only_read_capabilities": [
+    "Inherited read_empty_ready one full strict group",
+    "Full configuration and three fresh quiet groups",
+    "Fresh current arm must match only174304 accepted p endpoint",
+    "r explicit current empty-hand permission before one 1135x4 write"
+  ],
+  "recovery_retained_channel_rules": [
+    "Initial little actual must be within150 of existing target",
+    "Initial opposition actual must be within target-150 to protocol upper bound65535",
+    "Unwritten two raw targets must remain exactly equal to freshly bound raw targets",
+    "Each actual stays inside fresh actual-to-existing-target corridor expanded by original150 tolerance",
+    "Absolute error may not exceed best observed error plus150; no accumulating away drift",
+    "Permission-time first-four actual/target unchanged within original150/2; two unwritten channels checked by one-way corridor",
+    "Final all-six PREPARE actual150/target2 and three healthy quiet groups remain mandatory before new normal authority"
+  ],
+  "fault_handling": [
+    "No freshstatus3 beyond original middle/ring in explicit opening scope",
+    "No state4,overcurrent,newdiagnostic,readfailure ignored",
+    "No actuator command repeats,reset,selftest,forcezero,protection/configuration writes",
+    "No old fault last_arm_state used or arm drift thresholds widened",
+    "No SDK loaded in parent"
+  ],
+  "limitations": [
+    "New empty withdrawal not real-device accepted",
+    "Unwritten opposition may remain65527; then normal PREPARE qualification fails and no grasp/lift follows",
+    "v2 lower closure recipe and loaded lift/bin route still need actual real-device evidence"
+  ],
+  "offline_project_tests_executed": false,
+  "compile_AST_mock_FK_IK_executed": false,
+  "SDK_or_robot_executed_locally": false,
+  "new_full_cycle_real_device_accepted": false
+}

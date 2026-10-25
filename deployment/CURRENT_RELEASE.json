@@ -1,0 +1,22 @@
+{
+  "project_title": "Vision-Guided Robotic Grasping and Sorting System",
+  "repository_name": "vision-guided-robotic-sorting",
+  "version": "v24-fix2",
+  "status": "awaiting_field_acceptance",
+  "web_entry": "deployment/run_visual_task_control_v24.py",
+  "terminal_entry": "deployment/run_visual_pick_sort_v23.py",
+  "robot_worker": "deployment/visual_pick_sort_v23_worker.py",
+  "runtime_manifests": [
+    "deployment/visual-pick-sort-v23-files.sha256",
+    "deployment/visual-task-control-v24-files.sha256"
+  ],
+  "local_delivery_archive": "deployment/battery-visual-web-control-v24-fix2-20261026.zip",
+  "detection_confirmation_seconds": 2,
+  "post_drop_raise_mm": {
+    "black": 80,
+    "red": 40,
+    "white": 40
+  },
+  "required_assets_document": "docs/ASSETS.md",
+  "startup_motto": "世上无难事，只要肯登攀。"
+}

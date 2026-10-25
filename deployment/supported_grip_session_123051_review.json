@@ -1,0 +1,397 @@
+{
+  "archive": "tmp/supported_grip_session_20261020_123051_678405.zip",
+  "sha256": "fb32a4ccb4f2d002b950d3ceedf5703e9e8d3f40291fcd7d2886baf0769162a3",
+  "bytes": 104917,
+  "members": 20,
+  "internal_hash_count": 19,
+  "internal_hashes_match": true,
+  "installed_payload_files": 171,
+  "installed_payload_matches_immutable_v4": true,
+  "parent_worker_match": true,
+  "worker_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+  "arm_motion_writes": 1,
+  "hand_writes": 4,
+  "configuration_writes": 0,
+  "moves": [
+    {
+      "key": "i",
+      "address": 1136,
+      "values": [
+        30500
+      ],
+      "active_targets": [
+        26000,
+        30500,
+        29500,
+        21750,
+        65535,
+        65056
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          31,
+          134,
+          40,
+          34,
+          0,
+          1
+        ],
+        "positions": [
+          26001,
+          30507,
+          29499,
+          21750,
+          65535,
+          65048
+        ],
+        "targets": [
+          26001,
+          30501,
+          29499,
+          21750,
+          65535,
+          65056
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 487031.379929793,
+        "finished_monotonic": 487033.514246526,
+        "final_status_started_monotonic": 487033.159124816,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    },
+    {
+      "key": "t",
+      "address": 1135,
+      "values": [
+        26500
+      ],
+      "active_targets": [
+        26500,
+        30500,
+        29500,
+        21750,
+        65535,
+        65056
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          384,
+          39,
+          35,
+          23,
+          0,
+          0
+        ],
+        "positions": [
+          26501,
+          30501,
+          29499,
+          21750,
+          65535,
+          65044
+        ],
+        "targets": [
+          26501,
+          30501,
+          29499,
+          21750,
+          65535,
+          65056
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 487058.759358952,
+        "finished_monotonic": 487060.88566206,
+        "final_status_started_monotonic": 487060.535401939,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    },
+    {
+      "key": "f",
+      "address": 1138,
+      "values": [
+        22000
+      ],
+      "active_targets": [
+        26500,
+        30500,
+        29500,
+        22000,
+        65535,
+        65056
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          320,
+          38,
+          4,
+          34,
+          0,
+          1
+        ],
+        "positions": [
+          26501,
+          30501,
+          29499,
+          22004,
+          65535,
+          65044
+        ],
+        "targets": [
+          26501,
+          30501,
+          29499,
+          22001,
+          65535,
+          65056
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 487091.554775271,
+        "finished_monotonic": 487093.703017723,
+        "final_status_started_monotonic": 487093.347714475,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    }
+  ],
+  "command_attempts": [
+    {
+      "key": "h",
+      "address": 1140,
+      "values": [
+        65056
+      ],
+      "before": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          5
+        ],
+        "current": [
+          3,
+          48,
+          30,
+          67,
+          0,
+          1
+        ],
+        "positions": [
+          26001,
+          30000,
+          29499,
+          21750,
+          65535,
+          65056
+        ],
+        "targets": [
+          26001,
+          30000,
+          29499,
+          21750,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 486981.359272805,
+        "finished_monotonic": 486983.498858173,
+        "final_status_started_monotonic": 486983.143562477,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "attempted": true,
+      "acknowledged": true,
+      "feedback_accepted": true
+    },
+    {
+      "key": "i",
+      "address": 1136,
+      "values": [
+        30500
+      ],
+      "attempted": true,
+      "acknowledged": true,
+      "feedback_accepted": true
+    },
+    {
+      "key": "t",
+      "address": 1135,
+      "values": [
+        26500
+      ],
+      "attempted": true,
+      "acknowledged": true,
+      "feedback_accepted": true
+    },
+    {
+      "key": "f",
+      "address": 1138,
+      "values": [
+        22000
+      ],
+      "attempted": true,
+      "acknowledged": true,
+      "feedback_accepted": true
+    }
+  ],
+  "feedback_groups": 38,
+  "status34_groups": 0,
+  "hand_wire_events": {
+    "tx": 295,
+    "rx": 296,
+    "response": 295,
+    "transport_error": 1,
+    "supported_contact_write_latched": 3
+  },
+  "motion_stop_results": [
+    {
+      "event": "sdk_call_result",
+      "monotonic": 487157.359553829,
+      "method": "Movel_Cmd",
+      "result": 0
+    },
+    {
+      "event": "sdk_call_result",
+      "monotonic": 487191.803575446,
+      "method": "Move_Stop_Cmd",
+      "result": 0
+    }
+  ],
+  "foreign_packet": [
+    {
+      "device": 0,
+      "state": "current_trajectory_state",
+      "trajectory_connect": 0,
+      "trajectory_state": true
+    }
+  ],
+  "last_corridor_check": {
+    "joints": [
+      -47.2130012512207,
+      -60.42399978637695,
+      -78.2020034790039,
+      47.14899826049805,
+      41.770999908447266,
+      29.645999908447266
+    ],
+    "pose": [
+      0.274167001247406,
+      -0.40105700492858887,
+      -0.115276999771595,
+      -2.5789999961853027,
+      -1.1690000295639038,
+      -2.2100000381469727
+    ],
+    "start": [
+      0.27425700426101685,
+      -0.4009990096092224,
+      -0.25373899936676025,
+      -2.578000068664551,
+      -1.1690000295639038,
+      -2.2119998931884766
+    ],
+    "target": [
+      0.2742919921875,
+      -0.4009949862957001,
+      -0.11373399257659911,
+      -2.578000068664551,
+      -1.1690000295639038,
+      -2.2119998931884766
+    ],
+    "delta_xyz_mm": [
+      -0.09000301361083984,
+      -0.05799531936645508,
+      138.46199959516525
+    ],
+    "xy_error_mm": 0.10707006830786157,
+    "rotation_angle_rad": 0.0011482024345113816,
+    "failed_checks": [],
+    "physical_stop_verified": false
+  },
+  "error": "TransportError('Unsolicited or late response before send')",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_grip_session_v4_worker.py\", line 344, in main\n    try:seq.deliver_held_shell(reference)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v4_sequence.py\", line 205, in deliver_held_shell\n    upper = self.move_bin_segment(arm,upper_target,'Movel_Cmd',\n  File \"/home/rm/test/battery-d435-preview/deployment/school_bin_cycle_v4_sequence.py\", line 122, in move_bin_segment\n    hand.monitor_loaded(self.load_targets, self.load_anchor)\n  File \"/home/rm/test/battery-d435-preview/deployment/tuned_grip_bin_hand.py\", line 113, in monitor_loaded\n    row=self.checked_row(self.snapshot(),targets,anchor)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_pose_hand.py\", line 99, in snapshot\n    row=self.read_feedback_group()\n  File \"/home/rm/test/battery-d435-preview/deployment/tuned_grip_bin_hand.py\", line 74, in read_feedback_group\n    def read_feedback_group(self):return TrialHand.read_feedback_group(self)\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_hand.py\", line 71, in read_feedback_group\n    targets = self.read('targets_during_motion', 1135, 6)\n  File \"/home/rm/test/battery-d435-preview/deployment/run_school_battery_hand.py\", line 40, in read\n    started=self.clock(); values=self.io.read(address,count)\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 265, in read\n    return self.exchange(dict(command=MULTI,port=1,address=address,num=count,device=2))\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 210, in exchange\n    self.receive(); raise TransportError('Unsolicited or late response before send')\nschool_battery_transport.TransportError: Unsolicited or late response before send\n",
+  "grip_receipt_present": true,
+  "last_arm_state_promoted": false,
+  "old_140mm_endpoint_accepted": false,
+  "actual_lift_operator_confirmed": true,
+  "normal_drop_performed": false,
+  "new_transfer_candidate_scope": "Independent freshly qualified current held start; no regrip/descent/vertical command; actual clearance and explicit transfer permission required",
+  "protocol_source": "https://develop.realman-robotics.com/robot/json/motionConfig/"
+}

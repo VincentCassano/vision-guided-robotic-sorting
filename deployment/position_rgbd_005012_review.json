@@ -1,0 +1,102 @@
+{
+  "source_zip": "tmp/position_rgbd_20261020_001259_216986_005012_903948.zip",
+  "source_sha256": "cc7f64bcd2ea2a4f2dd9a97e9a2cbccc2465d2a8d01b3bee7bf46647e879af49",
+  "bytes": 10786439,
+  "members": 40,
+  "evidence_inventory_count": 27,
+  "evidence_hash_mismatches": [],
+  "collector_source_matches": {
+    "collector_sha256": true,
+    "timing_helper_sha256": true,
+    "marker_feedback_sha256": true,
+    "original_marker_source_sha256": true
+  },
+  "completed_positions": 6,
+  "saved_observation_frames": 148,
+  "raw_arm_reads": 161,
+  "nonzero_arm_reads": [],
+  "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+  "candidate_unchanged": true,
+  "RGBD_position_validation_pass": false,
+  "RGBD_positions_within_original_5mm": 1,
+  "RGBD_max_error_mm": 7.498425158174533,
+  "marker_PnP_positions_within_original_5mm": 6,
+  "marker_PnP_max_error_mm": 3.4305802815109967,
+  "rows": [
+    {
+      "id": "001",
+      "frames": 24,
+      "position_error_rgbd_mm": 5.87760566057544,
+      "position_error_pnp_mm": 1.5544936218805248,
+      "raw_aligned_Z_minus_PnP_Z_mm": 4.8093015132720796,
+      "color_span_ms": 1167.523193359375,
+      "depth_span_ms": 1167.52294921875,
+      "maximum_pair_difference_ms": 0.01806640625
+    },
+    {
+      "id": "002",
+      "frames": 25,
+      "position_error_rgbd_mm": 1.7718651156227123,
+      "position_error_pnp_mm": 0.6190519598553499,
+      "raw_aligned_Z_minus_PnP_Z_mm": 1.451411012218129,
+      "color_span_ms": 1134.116455078125,
+      "depth_span_ms": 1134.11669921875,
+      "maximum_pair_difference_ms": 0.01806640625
+    },
+    {
+      "id": "003",
+      "frames": 24,
+      "position_error_rgbd_mm": 5.428605048266738,
+      "position_error_pnp_mm": 3.4305802815109967,
+      "raw_aligned_Z_minus_PnP_Z_mm": 8.419792664198456,
+      "color_span_ms": 1167.50244140625,
+      "depth_span_ms": 1167.50244140625,
+      "maximum_pair_difference_ms": 0.01806640625
+    },
+    {
+      "id": "004",
+      "frames": 25,
+      "position_error_rgbd_mm": 7.498425158174533,
+      "position_error_pnp_mm": 1.2163607475929084,
+      "raw_aligned_Z_minus_PnP_Z_mm": 8.3637689132941,
+      "color_span_ms": 1134.1240234375,
+      "depth_span_ms": 1134.1240234375,
+      "maximum_pair_difference_ms": 0.01806640625
+    },
+    {
+      "id": "005",
+      "frames": 27,
+      "position_error_rgbd_mm": 5.778152772667384,
+      "position_error_pnp_mm": 1.248581088667812,
+      "raw_aligned_Z_minus_PnP_Z_mm": 6.827576468081798,
+      "color_span_ms": 1167.535888671875,
+      "depth_span_ms": 1167.535888671875,
+      "maximum_pair_difference_ms": 0.01806640625
+    },
+    {
+      "id": "006",
+      "frames": 23,
+      "position_error_rgbd_mm": 6.567364010979825,
+      "position_error_pnp_mm": 3.1404437097181916,
+      "raw_aligned_Z_minus_PnP_Z_mm": 9.053034926171044,
+      "color_span_ms": 1134.080322265625,
+      "depth_span_ms": 1134.080322265625,
+      "maximum_pair_difference_ms": 0.01806640625
+    }
+  ],
+  "same_depth_bias_pattern_previously_reviewed": "docs/handeye_review/comprehensive_20261007/完整诊断结论.md",
+  "history_not_current_factory_readback": true,
+  "root_cause_not_proven": "Depth/reference disagreement remains; not proven to be alignment alone, hardware fault, paper, or a universal constant offset",
+  "measurement_source_correction_not_applied": true,
+  "no_refit_or_threshold_change": true,
+  "device_writes": {
+    "arm_motion_writes": 0,
+    "hand_writes": 0,
+    "clear_writes": 0,
+    "configuration_writes": 0,
+    "camera_configuration_writes": 0
+  },
+  "full6D_handeye_pass": false,
+  "execution_ready": false,
+  "local_work": "raw evidence arithmetic/hash review and source review only; no project tests or offline calibration solver"
+}

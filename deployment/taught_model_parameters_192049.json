@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "endpoint": [
+    "169.254.128.18",
+    8080
+  ],
+  "network_connection_requested": true,
+  "hardware_writes": 0,
+  "controller_configuration_writes": 0,
+  "actuator_writes": 0,
+  "execution_ready": false,
+  "model_data_applied": false,
+  "fitted_correction_applied": false,
+  "dh_valid": true,
+  "identity_valid": true,
+  "installed_controller_generation": "unknown",
+  "dh_command_generation_support": "this_controller_returned_documented_schema",
+  "parameters_origin": "controller_readback_not_manufacturer_default",
+  "official_references": {
+    "identity": "https://develop.realman-robotics.com/robot/json/systemConfig/",
+    "dh": "https://develop.realman-robotics.com/robot/json/armConfig/"
+  },
+  "units": {
+    "alpha": "1000 raw units per degree",
+    "a": "1000000 raw units per meter",
+    "d": "1000000 raw units per meter",
+    "offset": "1000 raw units per degree"
+  },
+  "transactions": [
+    {
+      "command": "get_arm_software_info",
+      "endpoint": [
+        "169.254.128.18",
+        8080
+      ],
+      "request_hex": "7b22636f6d6d616e64223a226765745f61726d5f736f6674776172655f696e666f227d0d0a",
+      "response_hex": "7b2250726f647563745f76657273696f6e223a22524d36352d4249222c22616c676f726974686d5f696e666f223a7b2276657273696f6e223a22312e342e3130227d2c22636f6d6d616e64223a2261726d5f736f6674776172655f696e666f222c226374726c5f696e666f223a7b226275696c645f74696d65223a22323032342f31312f32322031313a32343a3437222c22636f6d6d69745f6964223a2239346562333939222c2276657273696f6e223a2256312e362e35227d2c2264796e616d69635f696e666f223a7b226d6f64656c5f76657273696f6e223a2232227d2c22706c616e5f696e666f223a7b226275696c645f74696d65223a22323032342f31312f32322031313a32353a3033222c22636f6d6d69745f6964223a2265383735656530222c2276657273696f6e223a2256312e362e35227d7d0d0a",
+      "connection_requested": true,
+      "request_send_completed": true,
+      "socket_closed": true,
+      "response": {
+        "Product_version": "RM65-BI",
+        "algorithm_info": {
+          "version": "1.4.10"
+        },
+        "command": "arm_software_info",
+        "ctrl_info": {
+          "build_time": "2024/11/22 11:24:47",
+          "commit_id": "94eb399",
+          "version": "V1.6.5"
+        },
+        "dynamic_info": {
+          "model_version": "2"
+        },
+        "plan_info": {
+          "build_time": "2024/11/22 11:25:03",
+          "commit_id": "e875ee0",
+          "version": "V1.6.5"
+        }
+      }
+    },
+    {
+      "command": "get_DH_data",
+      "endpoint": [
+        "169.254.128.18",
+        8080
+      ],
+      "request_hex": "7b22636f6d6d616e64223a226765745f44485f64617461227d0d0a",
+      "response_hex": "7b22636f6d6d616e64223a226765745f44485f64617461222c226a6f696e745f31223a5b302c302c3138313036302c305d2c226a6f696e745f32223a5b39303030302c302c302c39303030305d2c226a6f696e745f33223a5b302c3235363030302c302c39303030305d2c226a6f696e745f34223a5b39303030302c302c3231303030302c305d2c226a6f696e745f35223a5b2d39303030302c302c302c305d2c226a6f696e745f36223a5b39303030302c302c3134343030302c305d7d0d0a",
+      "connection_requested": true,
+      "request_send_completed": true,
+      "socket_closed": true,
+      "response": {
+        "command": "get_DH_data",
+        "joint_1": [
+          0,
+          0,
+          181060,
+          0
+        ],
+        "joint_2": [
+          90000,
+          0,
+          0,
+          90000
+        ],
+        "joint_3": [
+          0,
+          256000,
+          0,
+          90000
+        ],
+        "joint_4": [
+          90000,
+          0,
+          210000,
+          0
+        ],
+        "joint_5": [
+          -90000,
+          0,
+          0,
+          0
+        ],
+        "joint_6": [
+          90000,
+          0,
+          144000,
+          0
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "host": {
+    "system": "Linux",
+    "machine": "aarch64"
+  },
+  "identity_response": {
+    "Product_version": "RM65-BI",
+    "algorithm_info": {
+      "version": "1.4.10"
+    },
+    "command": "arm_software_info",
+    "ctrl_info": {
+      "build_time": "2024/11/22 11:24:47",
+      "commit_id": "94eb399",
+      "version": "V1.6.5"
+    },
+    "dynamic_info": {
+      "model_version": "2"
+    },
+    "plan_info": {
+      "build_time": "2024/11/22 11:25:03",
+      "commit_id": "e875ee0",
+      "version": "V1.6.5"
+    }
+  },
+  "dh_response": {
+    "command": "get_DH_data",
+    "joint_1": [
+      0,
+      0,
+      181060,
+      0
+    ],
+    "joint_2": [
+      90000,
+      0,
+      0,
+      90000
+    ],
+    "joint_3": [
+      0,
+      256000,
+      0,
+      90000
+    ],
+    "joint_4": [
+      90000,
+      0,
+      210000,
+      0
+    ],
+    "joint_5": [
+      -90000,
+      0,
+      0,
+      0
+    ],
+    "joint_6": [
+      90000,
+      0,
+      144000,
+      0
+    ]
+  },
+  "dh_parameters": [
+    {
+      "joint": 1,
+      "raw": [
+        0,
+        0,
+        181060,
+        0
+      ],
+      "alpha_degrees": 0.0,
+      "a_meters": 0.0,
+      "d_meters": 0.18106,
+      "offset_degrees": 0.0
+    },
+    {
+      "joint": 2,
+      "raw": [
+        90000,
+        0,
+        0,
+        90000
+      ],
+      "alpha_degrees": 90.0,
+      "a_meters": 0.0,
+      "d_meters": 0.0,
+      "offset_degrees": 90.0
+    },
+    {
+      "joint": 3,
+      "raw": [
+        0,
+        256000,
+        0,
+        90000
+      ],
+      "alpha_degrees": 0.0,
+      "a_meters": 0.256,
+      "d_meters": 0.0,
+      "offset_degrees": 90.0
+    },
+    {
+      "joint": 4,
+      "raw": [
+        90000,
+        0,
+        210000,
+        0
+      ],
+      "alpha_degrees": 90.0,
+      "a_meters": 0.0,
+      "d_meters": 0.21,
+      "offset_degrees": 0.0
+    },
+    {
+      "joint": 5,
+      "raw": [
+        -90000,
+        0,
+        0,
+        0
+      ],
+      "alpha_degrees": -90.0,
+      "a_meters": 0.0,
+      "d_meters": 0.0,
+      "offset_degrees": 0.0
+    },
+    {
+      "joint": 6,
+      "raw": [
+        90000,
+        0,
+        144000,
+        0
+      ],
+      "alpha_degrees": 90.0,
+      "a_meters": 0.0,
+      "d_meters": 0.144,
+      "offset_degrees": 0.0
+    }
+  ],
+  "elapsed_seconds": 0.01986650099934195,
+  "outcome": "readback_recorded_not_applied"
+}

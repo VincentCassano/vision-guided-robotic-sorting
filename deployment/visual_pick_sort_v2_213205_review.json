@@ -1,0 +1,160 @@
+{
+  "archive": "tmp/visual_pick_sort_v2_20261021_213205_741440.zip",
+  "sha256": "2d841535d88fc6b66b5236851eec98590b9e32c4ec75e4d9b0a6861151a68729",
+  "bytes": 12076291,
+  "members": 13,
+  "internal_hashes": 12,
+  "CRC_ok": true,
+  "inventory_exact": true,
+  "internal_hashes_match": true,
+  "installed_payload_count": 282,
+  "installed_payload_matches_v2": true,
+  "parent_worker_match": true,
+  "counts": {
+    "arm": 0,
+    "hand": 0,
+    "configuration": 0
+  },
+  "operator_permission_files": [],
+  "actual_blocker": "Recovery-only preflight incorrectly required unchanged opposition actual position already within150 of target65056; actual65527 on two fresh raw observations, no movement requested",
+  "actual_last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      2,
+      1,
+      2,
+      35,
+      4,
+      1
+    ],
+    "positions": [
+      26501,
+      30496,
+      29496,
+      22001,
+      65535,
+      65527
+    ],
+    "targets": [
+      26501,
+      30501,
+      29499,
+      22001,
+      65535,
+      65056
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 605827.739242144,
+    "finished_monotonic": 605830.73102866,
+    "final_status_started_monotonic": 605830.224572112,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "actual_readiness": {
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ],
+    "speeds": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "force_targets": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "targets": [
+      26501,
+      30501,
+      29499,
+      22001,
+      65535,
+      65056
+    ],
+    "positions": [
+      26501,
+      30496,
+      29496,
+      22001,
+      65535,
+      65527
+    ],
+    "current_first_five": [
+      2,
+      0,
+      0,
+      26,
+      3
+    ],
+    "current": [
+      2,
+      0,
+      0,
+      26,
+      3,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ]
+  },
+  "error": [
+    {
+      "error": "RuntimeError('Untouched little/opposition differs')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v2_worker.py\", line 175, in main\n    hand.configuration();start=hand.before_open();seq.io.finish();seq.close_hand()\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v2_recovery.py\", line 46, in before_open\n    self._critical_configuration();rows=[self.snapshot() for _ in range(3)]\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v2_recovery.py\", line 46, in <listcomp>\n    self._critical_configuration();rows=[self.snapshot() for _ in range(3)]\n  File \"/home/rm/test/battery-d435-preview/deployment/school_operational_pose_hand.py\", line 124, in snapshot\n    self.check_status(row)\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v2_recovery.py\", line 43, in check_status\n    raise RuntimeError('Untouched little/opposition differs')\nRuntimeError: Untouched little/opposition differs\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "fresh_protection": {
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      true
+    ]
+  },
+  "no_status3_or4_in_latest_complete_group": true,
+  "arm_or_hand_or_configuration_actuation_sent": false,
+  "permission_r_or_g_reached": false,
+  "normal_PREPARE_qualified": false,
+  "grasp_lift_sort_accepted": false,
+  "fault_last_arm_state_is_not_startup_reference": true,
+  "SDK_executed_locally": false,
+  "offline_project_tests_executed": false
+}

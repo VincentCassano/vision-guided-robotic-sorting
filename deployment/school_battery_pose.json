@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "source": "G:\\Code_Project\\bisai\\catkin_ws\\src\\grasp_demo\\scripts\\hand_controller.py",
+  "source_sha256": "4c7137705041a373ca0c169c8791bbd3faa5acd551e2daeda7ba8118caf471f3",
+  "channel_order": [
+    "thumb_flex",
+    "index",
+    "middle",
+    "ring",
+    "little",
+    "thumb_rotation"
+  ],
+  "prepare": [
+    {
+      "start_channel": 0,
+      "address": 1135,
+      "count": 6,
+      "values": [
+        8000,
+        8000,
+        8000,
+        8000,
+        65535,
+        65535
+      ],
+      "bytes_high_low": [
+        31,
+        64,
+        31,
+        64,
+        31,
+        64,
+        31,
+        64,
+        255,
+        255,
+        255,
+        255
+      ],
+      "delay_seconds_source_default": 1
+    }
+  ],
+  "grasp": [
+    {
+      "start_channel": 0,
+      "address": 1135,
+      "count": 1,
+      "values": [
+        30000
+      ],
+      "bytes_high_low": [
+        117,
+        48
+      ],
+      "delay_seconds_source_default": 1
+    },
+    {
+      "start_channel": 0,
+      "address": 1135,
+      "count": 6,
+      "values": [
+        15000,
+        15000,
+        15000,
+        15000,
+        65535,
+        65535
+      ],
+      "bytes_high_low": [
+        58,
+        152,
+        58,
+        152,
+        58,
+        152,
+        58,
+        152,
+        255,
+        255,
+        255,
+        255
+      ],
+      "delay_seconds_source_default": 1
+    },
+    {
+      "start_channel": 0,
+      "address": 1135,
+      "count": 6,
+      "values": [
+        45000,
+        30000,
+        35000,
+        40000,
+        65535,
+        65535
+      ],
+      "bytes_high_low": [
+        175,
+        200,
+        117,
+        48,
+        136,
+        184,
+        156,
+        64,
+        255,
+        255,
+        255,
+        255
+      ],
+      "delay_seconds_source_default": 1
+    },
+    {
+      "start_channel": 1,
+      "address": 1136,
+      "count": 1,
+      "values": [
+        40000
+      ],
+      "bytes_high_low": [
+        156,
+        64
+      ],
+      "delay_seconds_source_default": 1
+    }
+  ],
+  "execution_ready": false,
+  "gaps": [
+    "Original stage4 thumb45000 caused status3 then5; original stage5 index40000 was not executed.",
+    "School function does not check status or verify stop/release.",
+    "School runtime speed is unknown; adapter65535 speed requires explicit confirmation.",
+    "Adapted thumb15000 with school final finger targets is a new unverified empty-hand combination."
+  ]
+}

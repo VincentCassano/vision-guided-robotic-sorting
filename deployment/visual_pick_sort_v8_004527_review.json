@@ -1,0 +1,371 @@
+{
+  "scope": "actual004527 raw evidence and source gate review only",
+  "archive": "tmp\\visual_pick_sort_v8_20261023_004527_739018.zip",
+  "sha256": "414746babcba453b2344560ea713dd74a8e012bb901c59c0c869a9be6bc2db9f",
+  "bytes": 24584581,
+  "members": 14,
+  "internal_hashes": 13,
+  "CRC_ok": true,
+  "internal_hashes_match": true,
+  "parent_worker_match": true,
+  "deployed_files": 353,
+  "deployed_sources_match_current": true,
+  "exceptions": [
+    {
+      "error": "RuntimeError('Current supported hand changed beyond original gates; no withdrawal')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v8_worker.py\", line 247, in main\n    hand.configuration();start=hand.before_retreat();seq.io.finish();seq.close_hand()\n  File \"/home/rm/test/battery-d435-preview/deployment/visual_pick_sort_v8_retreat.py\", line 56, in before_retreat\n    raise RuntimeError('Current supported hand changed beyond original gates; no withdrawal')\nRuntimeError: Current supported hand changed beyond original gates; no withdrawal\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "write_counts": {
+    "arm_actuator_writes": 0,
+    "hand_register_writes": 0,
+    "controller_configuration_writes": 0
+  },
+  "startup_readiness": {
+    "passed": true,
+    "deadline_seconds": 45,
+    "attempts": [
+      {
+        "number": 1,
+        "started_monotonic": 703805.193732492,
+        "initial_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "operational_reads": {
+          "current_limit_ma": [
+            1299,
+            1299,
+            1299,
+            1299,
+            1299,
+            1299
+          ],
+          "speeds": [
+            65535,
+            65535,
+            65535,
+            65535,
+            65535,
+            65535
+          ],
+          "force_targets": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "targets": [
+            27500,
+            31500,
+            27001,
+            20500,
+            65535,
+            64558
+          ],
+          "positions": [
+            27500,
+            31500,
+            27001,
+            20500,
+            65535,
+            64558
+          ],
+          "current_ma_0_to_4": [
+            1,
+            16,
+            47,
+            0,
+            0
+          ],
+          "current": [
+            1,
+            16,
+            47,
+            0,
+            0,
+            56
+          ],
+          "status": [
+            2,
+            2,
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "final_identity_raw": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "outcome": "work_registers_accepted_not_motion_certified",
+        "finished_monotonic": 703809.479732039
+      }
+    ],
+    "no_actuator_writes": true,
+    "diagnostic_zero_required": false,
+    "no_claim_that_subexception1_is_stale": true,
+    "automatic_reset_or_start_init": false,
+    "normal_full_profile_still_required": true,
+    "supported_ring_read_scope_only": true,
+    "normal_motion_readiness": false,
+    "existing_ring_protection_not_ignored_for_lift": true,
+    "final_identity_raw": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "initial_diagnostic": 0,
+    "final_diagnostic": 0,
+    "current_work_registers_readable": true,
+    "elapsed_seconds": 4.284438248025253,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "current_healthy_groups": [
+    {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "current": [
+        4,
+        45,
+        56,
+        0,
+        0,
+        50
+      ],
+      "positions": [
+        27500,
+        31500,
+        27001,
+        20500,
+        65535,
+        64558
+      ],
+      "targets": [
+        27500,
+        31500,
+        27001,
+        20500,
+        65535,
+        64558
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 703830.626610068,
+      "finished_monotonic": 703833.624872817,
+      "final_status_started_monotonic": 703833.125935292,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    },
+    {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "current": [
+        2,
+        47,
+        44,
+        0,
+        0,
+        57
+      ],
+      "positions": [
+        27500,
+        31500,
+        27001,
+        20500,
+        65535,
+        64558
+      ],
+      "targets": [
+        27500,
+        31500,
+        27001,
+        20500,
+        65535,
+        64558
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 703833.686565648,
+      "finished_monotonic": 703836.70090377,
+      "final_status_started_monotonic": 703836.201268448,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    },
+    {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "current": [
+        1,
+        64,
+        30,
+        0,
+        0,
+        32
+      ],
+      "positions": [
+        27500,
+        31500,
+        27001,
+        20500,
+        65523,
+        64558
+      ],
+      "targets": [
+        27500,
+        31500,
+        27001,
+        20500,
+        65535,
+        64558
+      ],
+      "reads_are_sequential": true,
+      "started_monotonic": 703836.790410051,
+      "finished_monotonic": 703839.766971835,
+      "final_status_started_monotonic": 703839.265944691,
+      "status_is_last_group_read": true,
+      "physical_stop_verified": false,
+      "torque_release_verified": false
+    }
+  ],
+  "last_snapshot": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      1,
+      64,
+      30,
+      0,
+      0,
+      32
+    ],
+    "positions": [
+      27500,
+      31500,
+      27001,
+      20500,
+      65523,
+      64558
+    ],
+    "targets": [
+      27500,
+      31500,
+      27001,
+      20500,
+      65535,
+      64558
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 703836.790410051,
+    "finished_monotonic": 703839.766971835,
+    "final_status_started_monotonic": 703839.265944691,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "sdk_cleanup": [
+    {
+      "method": "Arm_Socket_Close",
+      "raw_repr": "None"
+    },
+    {
+      "method": "RM_API_UnInit",
+      "raw_repr": "0"
+    }
+  ],
+  "old_fault_ring_actual": 20283,
+  "actual_ring_completed": 20500,
+  "difference_logic_units": 217,
+  "incorrect_gate": "v8 before_retreat compared current completed hand to old fault actual20283 with150 gate",
+  "correct_gate": "fresh same-command target2/actual150 and3quiet healthy groups; fault actual diagnostic only",
+  "no_actuator_writes_or_withdrawal_or_lift_sent": true,
+  "actual_grip_force_or_pickup_accepted": false,
+  "new_state_confirmation_required_at_g": true,
+  "offline_project_tests": false,
+  "SDK_loaded": false
+}

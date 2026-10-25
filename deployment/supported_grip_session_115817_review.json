@@ -1,0 +1,763 @@
+{
+  "archive": "tmp/supported_grip_session_20261020_115817_991915.zip",
+  "sha256": "0b2b9e284a17256982545cbc28dd94f2225f5062d00ebf53c757e5c805378e77",
+  "bytes": 88061,
+  "members": 18,
+  "internal_hash_count": 17,
+  "internal_hashes_match": true,
+  "installed_payload_count": 165,
+  "installed_payload_match": true,
+  "parent_worker_match": true,
+  "worker_sha256": "78993f6e0d3f4726919ff288d722e94a0486dc135be1c18d5a68681910fb5da2",
+  "arm_writes": 0,
+  "hand_writes": 6,
+  "configuration_writes": 0,
+  "write_ACKs": [
+    {
+      "tx": {
+        "event": "tx",
+        "sequence": 12,
+        "monotonic": 485025.843674521,
+        "request": {
+          "command": "write_registers",
+          "port": 1,
+          "address": 1135,
+          "num": 1,
+          "data": [
+            101,
+            144
+          ],
+          "device": 2
+        },
+        "pre_send_quiet_seconds": 0.3,
+        "hex": "7b22636f6d6d616e64223a2277726974655f726567697374657273222c22706f7274223a312c2261646472657373223a313133352c226e756d223a312c2264617461223a5b3130312c3134345d2c22646576696365223a327d0d0a"
+      },
+      "immediate_response": [
+        {
+          "event": "response",
+          "sequence": 12,
+          "monotonic": 485025.894732601,
+          "elapsed_s": 0.351570205995813,
+          "response": {
+            "command": "write_registers",
+            "write_state": true
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "tx": {
+        "event": "tx",
+        "sequence": 12,
+        "monotonic": 485048.342590743,
+        "request": {
+          "command": "write_registers",
+          "port": 1,
+          "address": 1138,
+          "num": 1,
+          "data": [
+            83,
+            252
+          ],
+          "device": 2
+        },
+        "pre_send_quiet_seconds": 0.3,
+        "hex": "7b22636f6d6d616e64223a2277726974655f726567697374657273222c22706f7274223a312c2261646472657373223a313133382c226e756d223a312c2264617461223a5b38332c3235325d2c22646576696365223a327d0d0a"
+      },
+      "immediate_response": [
+        {
+          "event": "response",
+          "sequence": 12,
+          "monotonic": 485048.395050566,
+          "elapsed_s": 0.35301690601045266,
+          "response": {
+            "command": "write_registers",
+            "write_state": true
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "tx": {
+        "event": "tx",
+        "sequence": 12,
+        "monotonic": 485067.781492969,
+        "request": {
+          "command": "write_registers",
+          "port": 1,
+          "address": 1138,
+          "num": 1,
+          "data": [
+            84,
+            246
+          ],
+          "device": 2
+        },
+        "pre_send_quiet_seconds": 0.3,
+        "hex": "7b22636f6d6d616e64223a2277726974655f726567697374657273222c22706f7274223a312c2261646472657373223a313133382c226e756d223a312c2264617461223a5b38342c3234365d2c22646576696365223a327d0d0a"
+      },
+      "immediate_response": [
+        {
+          "event": "response",
+          "sequence": 12,
+          "monotonic": 485067.832353029,
+          "elapsed_s": 0.3513991230283864,
+          "response": {
+            "command": "write_registers",
+            "write_state": true
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "tx": {
+        "event": "tx",
+        "sequence": 12,
+        "monotonic": 485088.700759347,
+        "request": {
+          "command": "write_registers",
+          "port": 1,
+          "address": 1137,
+          "num": 1,
+          "data": [
+            111,
+            84
+          ],
+          "device": 2
+        },
+        "pre_send_quiet_seconds": 0.3,
+        "hex": "7b22636f6d6d616e64223a2277726974655f726567697374657273222c22706f7274223a312c2261646472657373223a313133372c226e756d223a312c2264617461223a5b3131312c38345d2c22646576696365223a327d0d0a"
+      },
+      "immediate_response": [
+        {
+          "event": "response",
+          "sequence": 12,
+          "monotonic": 485088.759495815,
+          "elapsed_s": 0.3592938630026765,
+          "response": {
+            "command": "write_registers",
+            "write_state": true
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "tx": {
+        "event": "tx",
+        "sequence": 12,
+        "monotonic": 485103.663791846,
+        "request": {
+          "command": "write_registers",
+          "port": 1,
+          "address": 1137,
+          "num": 1,
+          "data": [
+            113,
+            72
+          ],
+          "device": 2
+        },
+        "pre_send_quiet_seconds": 0.3,
+        "hex": "7b22636f6d6d616e64223a2277726974655f726567697374657273222c22706f7274223a312c2261646472657373223a313133372c226e756d223a312c2264617461223a5b3131332c37325d2c22646576696365223a327d0d0a"
+      },
+      "immediate_response": [
+        {
+          "event": "response",
+          "sequence": 12,
+          "monotonic": 485103.714578433,
+          "elapsed_s": 0.35144849197240546,
+          "response": {
+            "command": "write_registers",
+            "write_state": true
+          },
+          "value": null
+        }
+      ]
+    },
+    {
+      "tx": {
+        "event": "tx",
+        "sequence": 12,
+        "monotonic": 485125.501056819,
+        "request": {
+          "command": "write_registers",
+          "port": 1,
+          "address": 1137,
+          "num": 1,
+          "data": [
+            115,
+            60
+          ],
+          "device": 2
+        },
+        "pre_send_quiet_seconds": 0.3,
+        "hex": "7b22636f6d6d616e64223a2277726974655f726567697374657273222c22706f7274223a312c2261646472657373223a313133372c226e756d223a312c2264617461223a5b3131352c36305d2c22646576696365223a327d0d0a"
+      },
+      "immediate_response": [
+        {
+          "event": "response",
+          "sequence": 12,
+          "monotonic": 485125.550186939,
+          "elapsed_s": 0.34966770000755787,
+          "response": {
+            "command": "write_registers",
+            "write_state": true
+          },
+          "value": null
+        }
+      ]
+    }
+  ],
+  "accepted_moves": [
+    {
+      "key": "t",
+      "address": 1135,
+      "values": [
+        26000
+      ],
+      "active_targets": [
+        26000,
+        30000,
+        28000,
+        21250,
+        65535,
+        65222
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          5
+        ],
+        "current": [
+          2,
+          45,
+          2,
+          0,
+          0,
+          0
+        ],
+        "positions": [
+          26001,
+          30000,
+          27997,
+          21237,
+          65535,
+          65080
+        ],
+        "targets": [
+          26001,
+          30000,
+          28000,
+          21249,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 485030.265283662,
+        "finished_monotonic": 485032.390282733,
+        "final_status_started_monotonic": 485032.03002267,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    },
+    {
+      "key": "f",
+      "address": 1138,
+      "values": [
+        21500
+      ],
+      "active_targets": [
+        26000,
+        30000,
+        28000,
+        21500,
+        65535,
+        65222
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          5
+        ],
+        "current": [
+          2,
+          15,
+          2,
+          32,
+          0,
+          0
+        ],
+        "positions": [
+          26001,
+          30000,
+          27997,
+          21503,
+          65535,
+          65080
+        ],
+        "targets": [
+          26001,
+          30000,
+          28000,
+          21500,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 485052.774664609,
+        "finished_monotonic": 485054.881589364,
+        "final_status_started_monotonic": 485054.531229962,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    },
+    {
+      "key": "f",
+      "address": 1138,
+      "values": [
+        21750
+      ],
+      "active_targets": [
+        26000,
+        30000,
+        28000,
+        21750,
+        65535,
+        65222
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          5
+        ],
+        "current": [
+          2,
+          34,
+          2,
+          119,
+          0,
+          0
+        ],
+        "positions": [
+          26001,
+          30000,
+          28005,
+          21753,
+          65535,
+          65080
+        ],
+        "targets": [
+          26001,
+          30000,
+          28000,
+          21750,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 485072.187767706,
+        "finished_monotonic": 485074.314756917,
+        "final_status_started_monotonic": 485073.964602034,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    },
+    {
+      "key": "m",
+      "address": 1137,
+      "values": [
+        28500
+      ],
+      "active_targets": [
+        26000,
+        30000,
+        28500,
+        21750,
+        65535,
+        65222
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          5
+        ],
+        "current": [
+          28,
+          45,
+          2,
+          69,
+          0,
+          1
+        ],
+        "positions": [
+          26001,
+          30000,
+          28498,
+          21750,
+          65535,
+          65076
+        ],
+        "targets": [
+          26001,
+          30000,
+          28501,
+          21750,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 485093.133054032,
+        "finished_monotonic": 485095.264995145,
+        "final_status_started_monotonic": 485094.914792649,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    },
+    {
+      "key": "m",
+      "address": 1137,
+      "values": [
+        29000
+      ],
+      "active_targets": [
+        26000,
+        30000,
+        29000,
+        21750,
+        65535,
+        65222
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          5
+        ],
+        "current": [
+          11,
+          55,
+          57,
+          101,
+          0,
+          0
+        ],
+        "positions": [
+          26001,
+          30000,
+          29004,
+          21750,
+          65535,
+          65072
+        ],
+        "targets": [
+          26001,
+          30000,
+          29001,
+          21750,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 485108.035667447,
+        "finished_monotonic": 485110.155101616,
+        "final_status_started_monotonic": 485109.804988724,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    },
+    {
+      "key": "m",
+      "address": 1137,
+      "values": [
+        29500
+      ],
+      "active_targets": [
+        26000,
+        30000,
+        29500,
+        21750,
+        65535,
+        65222
+      ],
+      "feedback": {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          5
+        ],
+        "current": [
+          4,
+          15,
+          2,
+          76,
+          0,
+          0
+        ],
+        "positions": [
+          26001,
+          30000,
+          29502,
+          21750,
+          65535,
+          65072
+        ],
+        "targets": [
+          26001,
+          30000,
+          29499,
+          21750,
+          65535,
+          65222
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 485129.941824147,
+        "finished_monotonic": 485132.052349134,
+        "final_status_started_monotonic": 485131.691904259,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      "contact_target_reduction": false,
+      "calibrated_force_or_holding_verified": false
+    }
+  ],
+  "last_accepted_hand": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      4,
+      15,
+      2,
+      76,
+      0,
+      0
+    ],
+    "positions": [
+      26001,
+      30000,
+      29502,
+      21750,
+      65535,
+      65072
+    ],
+    "targets": [
+      26001,
+      30000,
+      29499,
+      21750,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 485129.941824147,
+    "finished_monotonic": 485132.052349134,
+    "final_status_started_monotonic": 485131.691904259,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "failed_current_hand": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      5,
+      5
+    ],
+    "current": [
+      2,
+      34,
+      2,
+      35,
+      0,
+      1
+    ],
+    "positions": [
+      26001,
+      30000,
+      29502,
+      21750,
+      65535,
+      65056
+    ],
+    "targets": [
+      26001,
+      30000,
+      29499,
+      21750,
+      65535,
+      65222
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 485248.130146807,
+    "finished_monotonic": 485250.265308906,
+    "final_status_started_monotonic": 485249.905176216,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "failed_hand_errors_units": [
+    1,
+    0,
+    2,
+    0,
+    0,
+    -166
+  ],
+  "last_accepted_opposition_error": -150,
+  "failed_opposition_error": -166,
+  "last_accepted_to_failed_opposition_delta": -16,
+  "raw_error": "RuntimeError('Current hand not settled at recorded targets')",
+  "raw_traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_grip_session_worker.py\", line 294, in main\n    hand,before=open_hand()\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_grip_session_worker.py\", line 196, in open_hand\n    if any(abs(x-y)>150 for x,y in zip(row['positions'],active)):raise RuntimeError('Current hand not settled at recorded targets')\nRuntimeError: Current hand not settled at recorded targets\n",
+  "seventh_middle_command_sent": false,
+  "lift_permission_issued": false,
+  "loaded_lift_or_transfer": false,
+  "release_or_stop_command_sent": false,
+  "complete_groups": 26,
+  "status3_or4_groups": 0,
+  "wire_event_counts": {
+    "tx": 224,
+    "rx": 224,
+    "response": 224
+  },
+  "operator_input": [
+    "t",
+    "f",
+    "f",
+    "m",
+    "m",
+    "m",
+    "m"
+  ],
+  "last_read_belongs_to_fault_not_new_reference": true,
+  "next_scope": "Explicit fixed-support opposition target withdrawal to fresh observed quiet actual value; source bound to last accepted feedback, not rejected last row; then thumb/index primary grip and optional supported middle/ring retreat. Retain normal150 tolerance.",
+  "checks_executed": "Original archive/source arithmetic only; no project test, SDK, AST, mocks or FK/IK executed"
+}

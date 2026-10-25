@@ -1,0 +1,56 @@
+{
+  "scope": "source review and file archive integrity only, no new on-device result",
+  "ordinary_conditions_keep_manual_session": [
+    "status5",
+    "not_reached_target",
+    "not_yet_settled",
+    "30second_observation_expired",
+    "unchanged_target_not_settled",
+    "long_operator_input_wait",
+    "arbitrary_command_or_manual_round_count"
+  ],
+  "write_semantics": "one exact target per explicit operator command, no automatic reissue or stall retry",
+  "dynamic_feedback": "per-digit ACKed actual-start/target/minimum/maximum plan with original150count window; other pending authorized fingers may continue; uncommanded fingers anchored at fresh actual",
+  "timeout_result_fields": [
+    "actual_target_arrival_qualified",
+    "feedback_stable",
+    "observation_timed_out",
+    "unreached_channels",
+    "returned_to_manual_adjustment_without_reissue"
+  ],
+  "save_unsettled": "x saves raw targets/positions and stableFalse, automatic_action_reference_qualifiedFalse; no forced pass",
+  "genuine_faults": "real3/4,current_limit,transport,identity,configuration,arm faults still block writes; parent keeps menu",
+  "reconnect": "explicitr after worker exit only; fresh current GET reference, no fault last-arm reference, no reset/auto-prepare/old-write replay",
+  "process_cleanup": "unresponsive worker forbids second connection; exited worker with incomplete SDK cleanup remains labeled incomplete, r is new read-only preflight only",
+  "parent_review_fixes": [
+    "input reader released on terminal child fault instead of busy loop",
+    "discard input if child changed before permission, no stale write",
+    "supervisor faults converted to result/menu rather than escape entire session",
+    "open and restore arrival/stability checked before any next automatic hand step",
+    "all input and manual round count caps removed"
+  ],
+  "preserved_guards": {
+    "target_tolerance": 2,
+    "actual_sweep_tolerance": 150,
+    "collision_stage": 8,
+    "self_collision": true,
+    "hardware_limits": "fresh actual current configuration",
+    "mechanical_arm_writes": "none incl Stop",
+    "opposition_writes": "none"
+  },
+  "verification": {
+    "manual_source_review": true,
+    "archive_crc_sha": true,
+    "project_tests_compile_ast_mock_fk_ik": false,
+    "SDK_loaded": false,
+    "robot_connected": false,
+    "real_device_accepted": false
+  },
+  "unknowns": [
+    "current hardware state",
+    "current failure code and raw trace, no new package received",
+    "actual restoration/tuning and grip effectiveness"
+  ],
+  "initial_prepare_and_manual_UI": "single pre_shape child with explicit prepare-first flag; ACKed motion plans survive initial observation timeout, no second startup qualification before manual UI",
+  "reconnect_prepare_replay": false
+}

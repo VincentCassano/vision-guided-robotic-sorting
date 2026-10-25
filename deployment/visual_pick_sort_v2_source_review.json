@@ -1,0 +1,33 @@
+{
+  "scope": "source_review_only_not_runtime_or_real_device_acceptance",
+  "actual_failure_review": "deployment/visual_pick_sort_v1_205814_review.json",
+  "source_sha256": {
+    "deployment/run_visual_pick_sort_v2.py": "1cbd7095aef0241128c33d3ec6e4315fc2a763ffe8c2b12f4e2c01ce712edee4",
+    "deployment/visual_pick_sort_v2_source.py": "ce33abaf7010a71e962c4c500a742fea6b91446c702385f946ad641aef99591b",
+    "deployment/visual_pick_sort_v2_hand.py": "b01a4003658214cbeaf7c1ff29f9080d6500d2af8eb923aaa9eef73d497900ba",
+    "deployment/visual_pick_sort_v2_worker.py": "e077479f3b6acf360339a81505c5fcbecab53aa800d544be82b99763b4a0cb90",
+    "deployment/visual_pick_sort_v2_sequence.py": "35b603633c458a5b87bf7aef69a56ac0f1357b7c699044bfe8c0575b1b5f553f",
+    "deployment/visual_pick_sort_v2_recovery.py": "653de617e19c0d72bc6f83e40e60bbe936384b5fe8bd1421b90de3ba7647a760"
+  },
+  "changes": [
+    "Remove loaded keyboard waits8/11; prospective permission5 before one close; permission12 only after normal bin opening",
+    "Lower middle/ring caps to27000/19000; other targets and all hand/arm/current/status/configuration tolerances retained",
+    "Reuse three already qualified complete grip rows; no duplicate post-grip three-group round",
+    "Normal drop has distinct upfront permission scope; never fabricate a future observed-lift or measured-clearance event",
+    "Explicit empty-only withdrawal requires flag+r, unchanged accepted p pose, current exact v1 targets, all current parameter checks, existing status3 only on middle/ring, four-channel opening-only sweep, three healthy PREPARE groups before a new normal token",
+    "Recovery current work-read scope is separate from normal readiness; no normal wait_hand_ready status3 bypass",
+    "Original failure last_arm_state not used; fresh startup matches only qualified successful visual p source",
+    "Inherited segment actual SDK error/reserve/corridor/target/settle and completion notification gates; only scoped SDK arm writes",
+    "Identity/raw diagnostic monotonic fences, no fault token rearming, no write retries/reset/configuration/protection writes",
+    "Fresh target capture uses unchanged v8; normal mode remains single measured inert black shell/equal-height/fixed wrist/on-site supervision"
+  ],
+  "limitations": [
+    "No sensor verification of object retention or scene swept volume; upfront planned20mm assertion not a post-lift measurement",
+    "New lower cap recipe and continuous normal route not yet real-device accepted",
+    "If closure cannot qualify healthy feedback or any protection triggers, no lift/automatic fault release",
+    "Read/SDK latency remains; source review does not prove hard real-time stop or heat reduction"
+  ],
+  "no_project_tests_or_compile_AST_mock_FK_IK_or_SDK": true,
+  "new_full_cycle_real_device_accepted": false,
+  "operator_followup": "Shell removed; hand unchanged. Current command opts into empty-only withdrawal, then same-slot replacement before g."
+}

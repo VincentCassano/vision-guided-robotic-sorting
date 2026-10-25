@@ -1,0 +1,7 @@
+# Dependency inventory for the web + TorchScript path, not a verified environment lock.
+# Reuse the on-site environment. Select a PyTorch build appropriate for its Python/CUDA.
+numpy<2
+opencv-contrib-python<5
+pyrealsense2
+PyYAML
+torch

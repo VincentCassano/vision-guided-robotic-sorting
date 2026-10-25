@@ -1,0 +1,394 @@
+{
+  "source_archive": "G:\\Code_Project\\battery_grasp_ws\\tmp\\hand_sdk_readonly_v1_20261021_105801_897617.zip",
+  "sha256": "963aeb76a56028ddfa666411b152af5b19592dd4f8d6164b5d3d1e1f3c2410b2",
+  "bytes": 40201,
+  "members": 5,
+  "internal_hashes": 4,
+  "checks": {
+    "CRC": true,
+    "unique_members": true,
+    "inventory": true,
+    "hashes": true,
+    "parent255_delivery": true,
+    "worker255_delivery": true,
+    "parent_worker_same": true,
+    "four_register_calls_match_report": true,
+    "SDK_only_allowed_calls": true,
+    "first_three_accepted": true,
+    "actual1125_refusal": true,
+    "fault_zero_buffer_not_valid_data": true,
+    "actual_protection_mode_unchanged": true,
+    "only_own_observed_local_pid": true,
+    "SDK_cleanup_recorded": true,
+    "no_strace_no_claim_of_native_wire": true,
+    "all_write_counters_zero": true
+  },
+  "native_register_calls": [
+    {
+      "method": "Read_Multiple_Holding_Registers",
+      "args": [
+        1,
+        1000,
+        8,
+        2
+      ],
+      "value": [
+        0,
+        [
+          2,
+          0,
+          3,
+          1,
+          0,
+          151,
+          32,
+          1,
+          1,
+          34,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "duration_ms": 62.649947009049356
+    },
+    {
+      "method": "Read_Multiple_Holding_Registers",
+      "args": [
+        1,
+        1095,
+        6,
+        2
+      ],
+      "value": [
+        0,
+        [
+          5,
+          19,
+          5,
+          19,
+          5,
+          19,
+          5,
+          19,
+          5,
+          19,
+          5,
+          19
+        ]
+      ],
+      "duration_ms": 74.29105299524963
+    },
+    {
+      "method": "Read_Multiple_Holding_Registers",
+      "args": [
+        1,
+        1000,
+        8,
+        2
+      ],
+      "value": [
+        0,
+        [
+          2,
+          0,
+          3,
+          1,
+          0,
+          151,
+          32,
+          1,
+          1,
+          34,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "duration_ms": 73.11818795278668
+    },
+    {
+      "method": "Read_Multiple_Holding_Registers",
+      "args": [
+        1,
+        1125,
+        6,
+        2
+      ],
+      "value": [
+        "1: CONTROLLER_DATA_RETURN_FALSE",
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "duration_ms": 223.74145104549825
+    }
+  ],
+  "SDK_environment": {
+    "host_os": "Linux",
+    "host_machine": "aarch64",
+    "sdk_source_sha256": {
+      "robotic_arm.py": "a15e4695426325c590f89d3e05b6bb36186793a06f72dd6a500cc828504f74b8",
+      "log_setting.py": "f37e27d8e34b0d00c33cad732e83163e57efe9104a1551e36deafaf6b2b9e90f"
+    },
+    "loaded_native": {
+      "path": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package/libRM_Base.so",
+      "sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+      "byte_count": 690912,
+      "architecture": "aarch64"
+    },
+    "connection_constructor_review": "API init/version/socket start/state only; no actuator or configuration method",
+    "live_controller_identity_firmware_dh_read": false
+  },
+  "native_read_error": {
+    "address": 1125,
+    "count": 6,
+    "SDK_return": [
+      "1: CONTROLLER_DATA_RETURN_FALSE",
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "exceptions": [
+    {
+      "error": "RuntimeError(\"Native SDK read failed; no retry: ['1: CONTROLLER_DATA_RETURN_FALSE', [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]\")",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/hand_sdk_readonly_v1_worker.py\", line 158, in main\n    value=read(address,count);group['values'][name]=value;save()\n  File \"/home/rm/test/battery-d435-preview/deployment/hand_sdk_readonly_v1_worker.py\", line 133, in read\n    raise RuntimeError('Native SDK read failed; no retry: '+str(value))\nRuntimeError: Native SDK read failed; no retry: ['1: CONTROLLER_DATA_RETURN_FALSE', [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]\n"
+    }
+  ],
+  "connections": [
+    {
+      "event": "local_tcp_connections",
+      "reason": "before_connections",
+      "pid": 448710,
+      "monotonic": 567757.793257831,
+      "returncode": 0,
+      "stdout": "State   Recv-Q   Send-Q     Local Address:Port     Peer Address:Port  Process   \n",
+      "stderr": ""
+    },
+    {
+      "event": "local_tcp_connections",
+      "reason": "SDK_connected_before_register_reads",
+      "pid": 448710,
+      "monotonic": 567761.789685195,
+      "returncode": 0,
+      "stdout": "State  Recv-Q  Send-Q     Local Address:Port        Peer Address:Port  Process  \nESTAB  0       0         169.254.128.20:34348     169.254.128.18:8080   users:((\"python3\",pid=448710,fd=4))\n",
+      "stderr": ""
+    },
+    {
+      "event": "local_tcp_connections",
+      "reason": "failure_before_SDK_cleanup",
+      "pid": 448710,
+      "monotonic": 567763.553281612,
+      "returncode": 0,
+      "stdout": "State  Recv-Q  Send-Q     Local Address:Port        Peer Address:Port  Process  \nESTAB  0       0         169.254.128.20:34348     169.254.128.18:8080   users:((\"python3\",pid=448710,fd=4))\n",
+      "stderr": ""
+    },
+    {
+      "event": "local_tcp_connections",
+      "reason": "after_SDK_cleanup",
+      "pid": 448710,
+      "monotonic": 567763.590697219,
+      "returncode": 0,
+      "stdout": "State   Recv-Q   Send-Q     Local Address:Port     Peer Address:Port  Process   \n",
+      "stderr": ""
+    }
+  ],
+  "health_before": {
+    "identity": {
+      "Product_version": "RM65-BI",
+      "algorithm_info": {
+        "version": "1.4.10"
+      },
+      "command": "arm_software_info",
+      "ctrl_info": {
+        "build_time": "2024/11/22 11:24:47",
+        "commit_id": "94eb399",
+        "version": "V1.6.5"
+      },
+      "dynamic_info": {
+        "model_version": "2"
+      },
+      "plan_info": {
+        "build_time": "2024/11/22 11:25:03",
+        "commit_id": "e875ee0",
+        "version": "V1.6.5"
+      }
+    },
+    "arm_before": {
+      "arm_state": {
+        "arm_err": 0,
+        "joint": [
+          -58930,
+          -60705,
+          -51227,
+          -14378,
+          -29601,
+          96433
+        ],
+        "pose": [
+          257725,
+          -444640,
+          -91978,
+          -3014,
+          -789,
+          -2323
+        ],
+        "sys_err": 0
+      },
+      "state": "current_arm_state"
+    },
+    "collision_level": {
+      "collision_stage": 8,
+      "state": "get_collision_stage"
+    },
+    "self_collision": {
+      "command": "get_self_collision_enable",
+      "enable_state": true
+    },
+    "mode": {
+      "role": "optional_tool_RS485_mode",
+      "request": {
+        "command": "get_tool_RS485_mode"
+      },
+      "recognized": true,
+      "endpoint": [
+        "169.254.128.18",
+        8080
+      ],
+      "chunks_hex": [
+        "7b226261756472617465223a3131353230302c22636f6d6d616e64223a226765745f746f6f6c5f52533438355f6d6f6465222c226d6f646275735f74696d656f7574223a312c22746f6f6c5f52533438355f6d6f6465223a317d0d0a"
+      ],
+      "socket_closed": true,
+      "request_hex": "7b22636f6d6d616e64223a226765745f746f6f6c5f52533438355f6d6f6465227d0d0a",
+      "response": {
+        "baudrate": 115200,
+        "command": "get_tool_RS485_mode",
+        "modbus_timeout": 1,
+        "tool_RS485_mode": 1
+      },
+      "raw_received_hex": "7b226261756472617465223a3131353230302c22636f6d6d616e64223a226765745f746f6f6c5f52533438355f6d6f6465222c226d6f646275735f74696d656f7574223a312c22746f6f6c5f52533438355f6d6f6465223a317d0d0a"
+    }
+  },
+  "health_after": {
+    "identity": {
+      "Product_version": "RM65-BI",
+      "algorithm_info": {
+        "version": "1.4.10"
+      },
+      "command": "arm_software_info",
+      "ctrl_info": {
+        "build_time": "2024/11/22 11:24:47",
+        "commit_id": "94eb399",
+        "version": "V1.6.5"
+      },
+      "dynamic_info": {
+        "model_version": "2"
+      },
+      "plan_info": {
+        "build_time": "2024/11/22 11:25:03",
+        "commit_id": "e875ee0",
+        "version": "V1.6.5"
+      }
+    },
+    "arm_before": {
+      "arm_state": {
+        "arm_err": 0,
+        "joint": [
+          -58933,
+          -60702,
+          -51226,
+          -14378,
+          -29599,
+          96436
+        ],
+        "pose": [
+          257738,
+          -444661,
+          -91943,
+          -3014,
+          -789,
+          -2323
+        ],
+        "sys_err": 0
+      },
+      "state": "current_arm_state"
+    },
+    "collision_level": {
+      "collision_stage": 8,
+      "state": "get_collision_stage"
+    },
+    "self_collision": {
+      "command": "get_self_collision_enable",
+      "enable_state": true
+    },
+    "mode": {
+      "role": "optional_tool_RS485_mode",
+      "request": {
+        "command": "get_tool_RS485_mode"
+      },
+      "recognized": true,
+      "endpoint": [
+        "169.254.128.18",
+        8080
+      ],
+      "chunks_hex": [
+        "7b226261756472617465223a3131353230302c22636f6d6d616e64223a226765745f746f6f6c5f52533438355f6d6f6465222c226d6f646275735f74696d656f7574223a312c22746f6f6c5f52533438355f6d6f6465223a317d0d0a"
+      ],
+      "socket_closed": true,
+      "request_hex": "7b22636f6d6d616e64223a226765745f746f6f6c5f52533438355f6d6f6465227d0d0a",
+      "response": {
+        "baudrate": 115200,
+        "command": "get_tool_RS485_mode",
+        "modbus_timeout": 1,
+        "tool_RS485_mode": 1
+      },
+      "raw_received_hex": "7b226261756472617465223a3131353230302c22636f6d6d616e64223a226765745f746f6f6c5f52533438355f6d6f6465222c226d6f646275735f74696d656f7574223a312c22746f6f6c5f52533438355f6d6f6465223a317d0d0a"
+    }
+  },
+  "complete_groups": 0,
+  "SDK_register_read_calls": 4,
+  "counts": {
+    "arm_actuator_writes": 0,
+    "hand_register_writes": 0,
+    "controller_configuration_writes": 0
+  },
+  "conclusions": [
+    "Native SDK directly reproduced controller-data-return-false at1125; switching to native reader is not an accepted repair",
+    "First3 calls1000/1095/1000 accepted;4th1125 failed around223.741ms",
+    "Twelve zeros belong to failed initialized output buffer; not measured speed0 and not a speed write",
+    "No strace was present; native raw serialization/internal retries remain unknown, SDK return is preserved",
+    "No hand or arm motion or parameter write; protections8/True and RTU1/115200/timeout1 unchanged"
+  ],
+  "root_cause_confirmed": false,
+  "execution_ready": false,
+  "local_project_tests_or_SDK_executed": false
+}

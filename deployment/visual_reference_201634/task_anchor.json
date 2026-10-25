@@ -1,0 +1,612 @@
+{
+  "schema_version": 1,
+  "scope": "one_reference_fixed_wrist_task_translation",
+  "camera_context": {
+    "camera_serial": "344322075008",
+    "image_size": [
+      1280,
+      720
+    ],
+    "K": [
+      [
+        908.7157592773438,
+        0.0,
+        654.8253784179688
+      ],
+      [
+        0.0,
+        908.4488525390625,
+        372.3862609863281
+      ],
+      [
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "distortion": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "distortion_model": "distortion.inverse_brown_conrady",
+    "candidate_sha256": "3edef2810580a1de04db14bafb3aabc19c8fd6fcac903641b83a1d0a1a9380cb",
+    "weights_sha256": "0289137a557afa042e79052604cc3ac930274d903a9b2f6e2efa641d0244782e",
+    "shell_model_sha256": "cc1deb1590d8f2d58d4bf7752b80ea4886f723bd0f2a7859e782ffde50f636fb",
+    "source_grasp_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+    "camera_fixed_confirmed": true,
+    "source_pregrasp_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+    "source_pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+    "measured_shell": {
+      "diameter_mm": 45.8,
+      "total_height_mm": 98.0
+    },
+    "geometry_module_sha256": "ac94a57f14951d510e16035a5dc280f7e6d0cd855b65ae129687ae7575d48e4c"
+  },
+  "reference_top_center_world_m": [
+    0.23178726980562292,
+    -0.5479881977288621,
+    -0.3048022200072294
+  ],
+  "reference_pregrasp_tcp_pose_m_rad": [
+    0.27491000294685364,
+    -0.40129199624061584,
+    -0.26479101181030273,
+    -2.5739998817443848,
+    -1.1699999570846558,
+    -2.2149999141693115
+  ],
+  "top_center_to_pregrasp_TCP_world_m": [
+    0.04312273314123072,
+    0.14669620148824625,
+    0.04001120819692666
+  ],
+  "reference_burst": {
+    "scope": "live_repeatability_only_not_absolute_accuracy",
+    "elapsed_seconds": 2.675443942018319,
+    "frame_count": 8,
+    "rejected_frame_indices": [],
+    "all_frames_retained": true,
+    "maximum_repeatability_mm": 3.0,
+    "repeatability_threshold_source": "new_development_sampling_default",
+    "execution_ready": false,
+    "top_center_world_m": [
+      0.23178726980562292,
+      -0.5479881977288621,
+      -0.3048022200072294
+    ],
+    "top_center_repeatability_max_mm": 1.001292119642177,
+    "top_center_repeatability_p95_mm": 0.9928352512589376,
+    "top_center_all_inside_FIT_support": false,
+    "geometric_body_center_world_m": [
+      0.23151088101166506,
+      -0.5469990428439496,
+      -0.3537915194345517
+    ],
+    "geometric_body_center_repeatability_max_mm": 1.1938535704818696,
+    "geometric_body_center_repeatability_p95_mm": 1.1282390874851809,
+    "geometric_body_center_all_inside_FIT_support": false,
+    "lower_half_inferred": true,
+    "frame_quality_pass": true,
+    "burst_qualified": true,
+    "completion_wall_time_known": true,
+    "reject_reasons": []
+  },
+  "accepted_grasp": {
+    "source_worker_sha256": "6652427ab133c3d48ed334f548595b523874436f16d174d833a596b634848614",
+    "pregrasp_source_sha256": "d69a9e0c91d4aa34b68ab8d7ae75600d14f147135fec1b7ce7c5d36b9b0e3372",
+    "pregrasp_crosscheck_sha256": "2480000a1d2d0670a05ce3dbbe7272dc59346d28a671a9f713e98eab571893f6",
+    "source": "024412.completed_descending_endpoint_crosschecked081023.qualified_reference",
+    "arm": {
+      "frames": {
+        "work": {
+          "frame_name": {
+            "name": "World"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tool": {
+          "frame_name": {
+            "name": "Arm_Tip"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "frame_signatures": {
+        "work": {
+          "name": "World",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "tool": {
+          "name": "Arm_Tip",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      "frame_names": {
+        "work": "World",
+        "tool": "Arm_Tip"
+      },
+      "pose": [
+        0.27491000294685364,
+        -0.40129199624061584,
+        -0.26479101181030273,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2149999141693115
+      ],
+      "joints": [
+        -37.020999908447266,
+        -99.99400329589844,
+        -16.04400062561035,
+        81.947998046875,
+        39.459999084472656,
+        -7.252999782562256
+      ],
+      "limits": {
+        "minimum": [
+          -178.0,
+          -130.0,
+          -135.0,
+          -178.0,
+          -128.0,
+          -360.0
+        ],
+        "maximum": [
+          178.0,
+          130.0,
+          135.0,
+          178.0,
+          128.0,
+          360.0
+        ],
+        "speed": [
+          180.0,
+          180.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0
+        ],
+        "acceleration": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "reserve": [
+        140.97900009155273,
+        30.005996704101562,
+        118.95599937438965,
+        96.052001953125,
+        88.54000091552734,
+        352.74700021743774
+      ],
+      "arm_error": 0,
+      "system_error": 0
+    },
+    "recipe": [
+      26500,
+      30500,
+      29500,
+      22000,
+      65535,
+      65056
+    ],
+    "grip_feedback": [
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          114,
+          39,
+          1,
+          25,
+          0,
+          1
+        ],
+        "positions": [
+          26501,
+          30501,
+          29499,
+          22001,
+          65535,
+          65040
+        ],
+        "targets": [
+          26501,
+          30501,
+          29499,
+          22001,
+          65535,
+          65056
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 487141.436464876,
+        "finished_monotonic": 487143.563119187,
+        "final_status_started_monotonic": 487143.208172583,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          106,
+          66,
+          2,
+          34,
+          0,
+          1
+        ],
+        "positions": [
+          26501,
+          30501,
+          29499,
+          22001,
+          65535,
+          65040
+        ],
+        "targets": [
+          26501,
+          30501,
+          29499,
+          22001,
+          65535,
+          65056
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 487143.624513843,
+        "finished_monotonic": 487145.763578049,
+        "final_status_started_monotonic": 487145.397990912,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      },
+      {
+        "identity": [
+          512,
+          769,
+          151,
+          8193,
+          290,
+          2,
+          0,
+          0
+        ],
+        "status": [
+          2,
+          2,
+          2,
+          2,
+          5,
+          2
+        ],
+        "current": [
+          131,
+          59,
+          2,
+          37,
+          0,
+          1
+        ],
+        "positions": [
+          26501,
+          30501,
+          29499,
+          22001,
+          65535,
+          65040
+        ],
+        "targets": [
+          26501,
+          30501,
+          29499,
+          22001,
+          65535,
+          65056
+        ],
+        "reads_are_sequential": true,
+        "started_monotonic": 487145.815638138,
+        "finished_monotonic": 487147.943675055,
+        "final_status_started_monotonic": 487147.588207486,
+        "status_is_last_group_read": true,
+        "physical_stop_verified": false,
+        "torque_release_verified": false
+      }
+    ],
+    "later_partially_lifted_grip_arm_for_recipe_only": {
+      "frames": {
+        "work": {
+          "frame_name": {
+            "name": "World"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "tool": {
+          "frame_name": {
+            "name": "Arm_Tip"
+          },
+          "pose": {
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "quaternion": {
+              "w": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            }
+          },
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "frame_signatures": {
+        "work": {
+          "name": "World",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "tool": {
+          "name": "Arm_Tip",
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          },
+          "payload": {
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        }
+      },
+      "frame_names": {
+        "work": "World",
+        "tool": "Arm_Tip"
+      },
+      "pose": [
+        0.27426400780677795,
+        -0.40099000930786133,
+        -0.25374600291252136,
+        -2.578000068664551,
+        -1.1690000295639038,
+        -2.2119998931884766
+      ],
+      "joints": [
+        -37.652000427246094,
+        -94.22000122070312,
+        -27.41699981689453,
+        75.0510025024414,
+        39.983001708984375,
+        1.3550000190734863
+      ],
+      "limits": {
+        "minimum": [
+          -178.0,
+          -130.0,
+          -135.0,
+          -178.0,
+          -128.0,
+          -360.0
+        ],
+        "maximum": [
+          178.0,
+          130.0,
+          135.0,
+          178.0,
+          128.0,
+          360.0
+        ],
+        "speed": [
+          180.0,
+          180.0,
+          225.0,
+          225.0,
+          225.0,
+          225.0
+        ],
+        "acceleration": [
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0,
+          600.0
+        ]
+      },
+      "reserve": [
+        140.3479995727539,
+        35.779998779296875,
+        107.58300018310547,
+        102.9489974975586,
+        88.01699829101562,
+        358.6449999809265
+      ],
+      "arm_error": 0,
+      "system_error": 0
+    },
+    "later_lifted_pose_used_as_seated_reference": false,
+    "fault_last_arm_state_used": false,
+    "full140mm_endpoint_used": false,
+    "actual_lift_confirmation": "onsite user reported shell lifted and retained after123051",
+    "tool_frame_is_grasp_center": false
+  },
+  "original_grasp_place_confirmed": true,
+  "place_confirmation_source": "onsite user restores same shell to original successful full recess",
+  "task_binding_recorded": true,
+  "independent_absolute_accuracy_accepted": false,
+  "six_dimensional_TCP_calibrated": false,
+  "handeye_refitted": false,
+  "head_or_mount_or_board_movement_permitted": false,
+  "reference_location_operator_confirmed": true,
+  "robot_current_pose_assumed": false,
+  "clearance_inherited": false,
+  "motion_authorized": false,
+  "execution_ready": false,
+  "reference_observation": "observation_001",
+  "reference_observation_file": "reference_observation.json",
+  "reference_observation_sha256": "003cbbb164807cac5f59fec08d8a398b85e6da0209f8ef9ba8b7fb9cf5b6ff8c",
+  "reference_image_file": "reference_image.png",
+  "reference_image_sha256": "3d47f6a4944ee117124b515b4837f64e1fdf86c13dcc3a1081a420e64d0a0006"
+}

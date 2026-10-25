@@ -1,0 +1,32 @@
+<launch>
+  <arg name="inference_python"/>
+  <arg name="repository"/>
+  <arg name="weights" default="$(find battery_grasp)/models/battery_yolov5s_v1.pt"/>
+  <arg name="images" default="$(find battery_grasp)/test_data/battery_v1/images"/>
+  <arg name="device" default="cpu"/>
+  <!-- Empty override arguments retain the selected profile values. -->
+  <arg name="square_confidence" default=""/>
+  <arg name="class_confidences" default=""/>
+  <arg name="synthetic_depth" default="false"/>
+  <arg name="calibrated_v3" default="true"/>
+  <rosparam if="$(arg calibrated_v3)" command="load" file="$(find battery_grasp)/config/yolo_v3_calibrated.yaml"/>
+  <rosparam unless="$(arg calibrated_v3)" param="battery_detector_yolo/class_confidences">[0.25, 0.25, 0.25, 0.25]</rosparam>
+  <node pkg="battery_grasp" type="image_replay.py" name="battery_image_replay" output="screen" required="true">
+    <param name="directory" value="$(arg images)"/>
+    <param name="synthetic_depth" value="$(arg synthetic_depth)"/>
+    <remap from="~image" to="/battery_vision/image"/>
+    <remap from="~depth" to="/battery_vision/depth"/>
+    <remap from="~camera_info" to="/battery_vision/camera_info"/>
+  </node>
+  <node pkg="battery_grasp" type="battery_detector_yolo.py" name="battery_detector_yolo" output="screen" required="true" clear_params="true">
+    <param name="inference_python" value="$(arg inference_python)"/>
+    <param name="worker" value="$(find battery_grasp)/scripts/yolo_worker.py"/>
+    <param name="repository" value="$(arg repository)"/>
+    <param name="weights" value="$(arg weights)"/>
+    <param name="device" value="$(arg device)"/>
+    <rosparam if="$(eval arg('class_confidences') != '')" param="class_confidences" subst_value="true">$(arg class_confidences)</rosparam>
+    <param if="$(eval arg('square_confidence') != '')" name="square_confidence" value="$(arg square_confidence)" type="double"/>
+    <remap from="~image" to="/battery_vision/image"/>
+    <remap from="~detections" to="/battery_vision/detections"/>
+  </node>
+</launch>

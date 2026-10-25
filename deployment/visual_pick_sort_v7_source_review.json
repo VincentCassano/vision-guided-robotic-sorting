@@ -1,0 +1,77 @@
+{
+  "scope": "manual source and actual raw evidence review only, not execution",
+  "input_archive_sha256": "d1b0f45ac848decabcc162b0a66b531e86c2f9e4bd2275b5b1409b626c4be836",
+  "raw_evidence_integrity": true,
+  "actual_runs": {
+    "visual_pick_sort_v6_20261022_230234_368118.zip": {
+      "crc_ok": true,
+      "internal_hashes_ok": true,
+      "exceptions": [],
+      "counts": [
+        1,
+        1,
+        0
+      ]
+    },
+    "visual_pick_sort_v6_20261022_230421_795229.zip": {
+      "crc_ok": true,
+      "internal_hashes_ok": true,
+      "exceptions": [
+        "NameError(\"name 'normal_drop_values' is not defined\")"
+      ],
+      "counts": [
+        4,
+        1,
+        0
+      ]
+    }
+  },
+  "latest_human_state": "手空、仍停在投放点、闭合，未报告其他改变",
+  "changes": {
+    "ring": [
+      19000,
+      20500
+    ],
+    "recipe": [
+      27500,
+      31500,
+      27000,
+      20500,
+      65535,
+      64556
+    ],
+    "normal_drop_import_fixed": "module-level normal_drop_values",
+    "empty_entry": "fresh matched completed-v6 endpoint -> explicit u -> one five-flex empty open -> healthy opening -> empty return",
+    "transfer": "three homogeneous MoveJ-P connect1/1/0 r0; no intermediate stationary/configuration wait",
+    "sdk": "pinned4.3.1; no nonzero blending/mixed queue"
+  },
+  "manual_review_items": [
+    "Current physical hand old v6 recipe, not new v7 ring20500, is accepted for dedicated EMPTY opening",
+    "All hand/status/current/diagnostic and actual arm/frame/limit/protection gates retained",
+    "Queue commands exact ordered targets/speed/options, marked attempted before SDK send, no retry",
+    "Three ACKs and exact ordered device0 bool true trajectory1/1/0 routed independently of register replies",
+    "Final endpoint retains0.5mm/0.005rad, 3 quiet groups over1s and final event; no intermediate stationary endpoint claim",
+    "Original vertical lift remains isolated MoveL with original fixed-wrist corridor",
+    "Fault never grants normal drop/return; no reset, queue clear or queue-flush motion",
+    "Current v6 completed final segment only; fault last_arm_state not used; original drift gates unchanged",
+    "Global normal_drop_values binding present at open_at_bin call site",
+    "Parent/worker/current-vision-stage namespaces and source manifests consistently v7",
+    "Normal route result still requires actual operator observed pickup/drop; f records missed pickup"
+  ],
+  "unknowns": [
+    "v7 grip retention",
+    "actual connected notifications and SDK/controller behavior",
+    "actual cycle speed and smoothness",
+    "new normal five-flex drop completion",
+    "full swept geometry and generic TCP/6D/RGBD accuracy"
+  ],
+  "manufacturer_sources": [
+    "https://develop.realman-robotics.com/robot/json/motionConfig/",
+    "https://github.com/RealManRobot/RM_API"
+  ],
+  "SDK_loaded": false,
+  "device_connected": false,
+  "offline_project_tests_executed": false,
+  "compile_AST_mock_FK_IK_executed": false,
+  "actual_v7_cycle_accepted": false
+}

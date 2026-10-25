@@ -1,0 +1,95 @@
+{
+  "title": "140429 actual near pickup and180mm continuation acceptance",
+  "timestamp_utc": "2026-10-24T06:26:44.428156+00:00",
+  "archive": "tmp/grasp_near_continue_v2_20261024_140429_770157.zip",
+  "archive_sha256": "7c672bbfaae28b9361eba7163071015b596b54514bd143fced71e9fd4e6e67de",
+  "archive_bytes": 215573,
+  "archive_members": 15,
+  "CRC_pass": true,
+  "hashed_files": 14,
+  "file_hashes_pass": true,
+  "source_request_result_and_success_chain_pass": true,
+  "runtime_source_sha_pass": true,
+  "parent_outcome": "operator_confirmed_near_pickup_success",
+  "physical_object_success": true,
+  "worker_outcome": "lift_completed_waiting_operator_result",
+  "worker_phase": "completed",
+  "exit_code": 0,
+  "operator_observed_pickup_success": true,
+  "SDK_cleanup_finished": true,
+  "exceptions": [],
+  "cleanup_errors": [],
+  "arm_writes": 1,
+  "hand_writes": 1,
+  "stop_writes": 0,
+  "configuration_writes": 0,
+  "remaining_hand_command": {
+    "label": "grip",
+    "channel": 2,
+    "target": 19100,
+    "monotonic": 838173.843371197,
+    "attempted": true,
+    "acknowledged": true,
+    "target_readback": [
+      26001,
+      16899,
+      19100,
+      32000,
+      65535,
+      65535
+    ]
+  },
+  "original_ACK_targets_not_replayed": true,
+  "transient_middle_status3_preserved": true,
+  "stationary_wait_recovered": true,
+  "stationary_wait_seconds": 10.874484005966224,
+  "stationary_wait_samples": 3,
+  "terminal_status": [
+    2,
+    2,
+    5,
+    2,
+    2,
+    2
+  ],
+  "wait_actuator_and_reset_writes": 0,
+  "actual_from_recorded_wrist_lift_mm": [
+    0.04000961780548096,
+    -0.019997358322143555,
+    180.00200507231057
+  ],
+  "actual_lift_xy_mm": 0.04472878107890783,
+  "actual_lift_orientation_rad": 0.0,
+  "actual_from_motion_start_lift_mm": [
+    0.025004148483276367,
+    -0.0050067901611328125,
+    179.98699960298836
+  ],
+  "source_success_sha256": "4d4ea59a9f188651029c2f87d11928234452429d5debd7ed7560f7f8b12b55ce",
+  "user_defined_near_cells": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "every_near_cell_visual_cycle_accepted": false,
+  "new_v21_routes_and_vision_accepted": false,
+  "offline_project_tests_executed": false,
+  "SDK_loaded_for_review": false
+}

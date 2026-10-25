@@ -1,0 +1,1237 @@
+{
+  "source_archive": "G:\\Code_Project\\battery_grasp_ws\\tmp\\visual_pregrasp_stage_v8_20261021_174304_223863.zip",
+  "sha256": "69df11068ab539fe09f0ed7e2cdc31ff70addf4d4350a45a86198918c076b663",
+  "bytes": 12025790,
+  "members": 18,
+  "internal_hashes": 17,
+  "checks": {
+    "CRC": true,
+    "unique_members": true,
+    "inventory": true,
+    "hashes": true,
+    "deployment264": true,
+    "worker_parent_same": true,
+    "parent_worker_clean": true,
+    "success_parent": true,
+    "operator_m_d_p": true,
+    "four_segments": true,
+    "descent_endpoint": true,
+    "write_counts": true,
+    "no_grasp": true,
+    "target_hash": true,
+    "offset_parent_worker": true,
+    "target_CRC": true,
+    "target_hashes": true
+  },
+  "result": "PASS_same_shell_fresh_visual_corrected_noncontact_pregrasp_feedback_plus_operator_p",
+  "accepted_scope": "same_measured_shell_fixed_wrist_equal_height_task_visual_pregrasp_only",
+  "operator_events": [
+    {
+      "event": "operator_answer",
+      "index": 1,
+      "phase": "await_visual_high_alignment",
+      "value": "m",
+      "timestamp_utc": "2026-10-21T09:50:26.674918+00:00"
+    },
+    {
+      "event": "operator_answer",
+      "index": 2,
+      "phase": "await_visual_final_descent",
+      "value": "d",
+      "timestamp_utc": "2026-10-21T09:53:09.947919+00:00"
+    },
+    {
+      "event": "operator_endpoint_verdict",
+      "value": "p",
+      "no_device_commands": true
+    }
+  ],
+  "offset": {
+    "scope": "operator_task_offset_not_handeye_or_TCP_calibration",
+    "operator_direction": "head_D435_live_image_left_then_lower_left",
+    "prior_left_mm": 2.8,
+    "additional_lower_left_total_distance_mm": 4.5,
+    "lower_left_image_direction_uv": [
+      -1,
+      1
+    ],
+    "method": "pinhole_image_direction_intersection_with_constant_World_Z_at_selected_target",
+    "prior_delta_world_mm": [
+      2.7988083666625476,
+      0.08168063846300122,
+      0.0
+    ],
+    "additional_delta_world_mm": [
+      1.6617093924382098,
+      4.181951924052049,
+      0.0
+    ],
+    "delta_world_mm": [
+      4.460517759100758,
+      4.26363256251505,
+      0.0
+    ],
+    "original_target_pose_m_rad": [
+      0.27245356134098975,
+      -0.3958615350582897,
+      -0.2646417348368264,
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2149999141693115
+    ],
+    "corrected_target_pose_m_rad": [
+      0.2769140791000905,
+      -0.39159790249577464,
+      -0.2646417348368264,
+      -2.5739998817443848,
+      -1.1699999570846558,
+      -2.2149999141693115
+    ],
+    "height_and_orientation_unchanged": true,
+    "object_position_or_calibration_modified": false,
+    "physical_alignment_accepted": false,
+    "collision_free_accepted": false
+  },
+  "grasp_or_lift_or_bin_performed": false,
+  "final_arm": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.2769069969654083,
+      -0.39160799980163574,
+      -0.26463401317596436,
+      -2.572999954223633,
+      -1.1690000295639038,
+      -2.2149999141693115
+    ],
+    "joints": [
+      -35.90999984741211,
+      -96.73400115966797,
+      -23.31800079345703,
+      77.92400360107422,
+      41.10900115966797,
+      -1.3370000123977661
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      142.0900001525879,
+      33.26599884033203,
+      111.68199920654297,
+      100.07599639892578,
+      86.89099884033203,
+      358.66299998760223
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "final_hand": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      2,
+      1,
+      1,
+      21,
+      0,
+      1
+    ],
+    "positions": [
+      7999,
+      8001,
+      8004,
+      8000,
+      65535,
+      65056
+    ],
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      65056
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 592711.640979518,
+    "finished_monotonic": 592713.982235278,
+    "final_status_started_monotonic": 592713.582124871,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false
+  },
+  "last_preflight": {
+    "identity": [
+      512,
+      769,
+      151,
+      8193,
+      290,
+      2,
+      0,
+      0
+    ],
+    "status": [
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "current": [
+      2,
+      1,
+      2,
+      21,
+      0,
+      1
+    ],
+    "positions": [
+      7999,
+      8001,
+      7996,
+      8000,
+      65535,
+      65056
+    ],
+    "targets": [
+      7999,
+      8001,
+      7999,
+      8000,
+      65535,
+      65056
+    ],
+    "reads_are_sequential": true,
+    "started_monotonic": 592670.40641035,
+    "finished_monotonic": 592672.531583965,
+    "final_status_started_monotonic": 592672.181339045,
+    "status_is_last_group_read": true,
+    "physical_stop_verified": false,
+    "torque_release_verified": false,
+    "speeds": [
+      65535,
+      65535,
+      65535,
+      65535,
+      65535,
+      65535
+    ],
+    "force_targets": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "current_limit_ma": [
+      1299,
+      1299,
+      1299,
+      1299,
+      1299,
+      1299
+    ]
+  },
+  "observed_run_configuration": {
+    "raw": {
+      "identity": {
+        "Product_version": "RM65-BI",
+        "algorithm_info": {
+          "version": "1.4.10"
+        },
+        "command": "arm_software_info",
+        "ctrl_info": {
+          "build_time": "2024/11/22 11:24:47",
+          "commit_id": "94eb399",
+          "version": "V1.6.5"
+        },
+        "dynamic_info": {
+          "model_version": "2"
+        },
+        "plan_info": {
+          "build_time": "2024/11/22 11:25:03",
+          "commit_id": "e875ee0",
+          "version": "V1.6.5"
+        }
+      },
+      "active_tool_payload_raw": {
+        "payload": 0,
+        "pose": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "state": "current_tool_frame",
+        "tool_name": "Arm_Tip"
+      },
+      "active_work_frame_raw": {
+        "frame_name": "World",
+        "pose": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "state": "current_work_frame"
+      },
+      "installation": {
+        "pose": [
+          0,
+          45,
+          0
+        ],
+        "state": "install_pose"
+      }
+    },
+    "sdk_frames": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "configuration_policy": "freeze_existing_observed_configuration_no_setters",
+    "payload_physical_parameters_verified": false,
+    "payload_identification_required": false,
+    "sdk_COM_unit_crosscheck_performed": false
+  },
+  "segments": [
+    {
+      "phase": "raising_current_empty_hand_before_alignment",
+      "method": "Movel_Cmd",
+      "speed": 2,
+      "position_feedback_difference_mm": 0.021099852378599408,
+      "target": [
+        0.2751849889755249,
+        -0.3965350091457367,
+        0.035358265163173586,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2139999866485596
+      ],
+      "endpoint": {
+        "frames": {
+          "work": {
+            "frame_name": {
+              "name": "World"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "tool": {
+            "frame_name": {
+              "name": "Arm_Tip"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "frame_signatures": {
+          "work": {
+            "name": "World",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "tool": {
+            "name": "Arm_Tip",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "frame_names": {
+          "work": "World",
+          "tool": "Arm_Tip"
+        },
+        "pose": [
+          0.2751779854297638,
+          -0.39653000235557556,
+          0.035339001566171646,
+          -2.5739998817443848,
+          -1.1690000295639038,
+          -2.2139999866485596
+        ],
+        "joints": [
+          -61.808998107910156,
+          -32.82099914550781,
+          -98.80799865722656,
+          31.735000610351562,
+          29.981000900268555,
+          35.81999969482422
+        ],
+        "limits": {
+          "minimum": [
+            -178.0,
+            -130.0,
+            -135.0,
+            -178.0,
+            -128.0,
+            -360.0
+          ],
+          "maximum": [
+            178.0,
+            130.0,
+            135.0,
+            178.0,
+            128.0,
+            360.0
+          ],
+          "speed": [
+            180.0,
+            180.0,
+            225.0,
+            225.0,
+            225.0,
+            225.0
+          ],
+          "acceleration": [
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0
+          ]
+        },
+        "reserve": [
+          116.19100189208984,
+          97.17900085449219,
+          36.19200134277344,
+          146.26499938964844,
+          98.01899909973145,
+          324.1800003051758
+        ],
+        "arm_error": 0,
+        "system_error": 0
+      },
+      "notification": {
+        "acknowledged": true,
+        "acknowledgement_observed": true,
+        "event_seen": true,
+        "method": "Movel_Cmd",
+        "phase": "raising_current_empty_hand_before_alignment",
+        "acknowledgement_raw": 0
+      }
+    },
+    {
+      "phase": "aligning_above_visual_target",
+      "method": "Movej_P_Cmd",
+      "speed": 5,
+      "position_feedback_difference_mm": 0.012931371483717724,
+      "target": [
+        0.2769140791000905,
+        -0.39159790249577464,
+        0.035358265163173586,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2149999141693115
+      ],
+      "endpoint": {
+        "frames": {
+          "work": {
+            "frame_name": {
+              "name": "World"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "tool": {
+            "frame_name": {
+              "name": "Arm_Tip"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "frame_signatures": {
+          "work": {
+            "name": "World",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "tool": {
+            "name": "Arm_Tip",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "frame_names": {
+          "work": "World",
+          "tool": "Arm_Tip"
+        },
+        "pose": [
+          0.2769150137901306,
+          -0.3915880024433136,
+          0.035349998623132706,
+          -2.5739998817443848,
+          -1.1690000295639038,
+          -2.2139999866485596
+        ],
+        "joints": [
+          -61.12300109863281,
+          -31.993000030517578,
+          -99.8759994506836,
+          32.810001373291016,
+          30.43899917602539,
+          35.14699935913086
+        ],
+        "limits": {
+          "minimum": [
+            -178.0,
+            -130.0,
+            -135.0,
+            -178.0,
+            -128.0,
+            -360.0
+          ],
+          "maximum": [
+            178.0,
+            130.0,
+            135.0,
+            178.0,
+            128.0,
+            360.0
+          ],
+          "speed": [
+            180.0,
+            180.0,
+            225.0,
+            225.0,
+            225.0,
+            225.0
+          ],
+          "acceleration": [
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0
+          ]
+        },
+        "reserve": [
+          116.87699890136719,
+          98.00699996948242,
+          35.124000549316406,
+          145.18999862670898,
+          97.56100082397461,
+          324.85300064086914
+        ],
+        "arm_error": 0,
+        "system_error": 0
+      },
+      "notification": {
+        "acknowledged": true,
+        "acknowledgement_observed": true,
+        "event_seen": true,
+        "method": "Movej_P_Cmd",
+        "phase": "aligning_above_visual_target",
+        "acknowledgement_raw": 0
+      }
+    },
+    {
+      "phase": "approaching_visual_hover_140mm",
+      "method": "Movel_Cmd",
+      "speed": 2,
+      "position_feedback_difference_mm": 0.027230403010899358,
+      "target": [
+        0.2769140791000905,
+        -0.39159790249577464,
+        -0.12464173483682639,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2149999141693115
+      ],
+      "endpoint": {
+        "frames": {
+          "work": {
+            "frame_name": {
+              "name": "World"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "tool": {
+            "frame_name": {
+              "name": "Arm_Tip"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "frame_signatures": {
+          "work": {
+            "name": "World",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "tool": {
+            "name": "Arm_Tip",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "frame_names": {
+          "work": "World",
+          "tool": "Arm_Tip"
+        },
+        "pose": [
+          0.2769230008125305,
+          -0.3916049897670746,
+          -0.12461700290441513,
+          -2.572999954223633,
+          -1.1699999570846558,
+          -2.2149999141693115
+        ],
+        "joints": [
+          -45.176998138427734,
+          -61.13800048828125,
+          -78.38200378417969,
+          48.895999908447266,
+          43.47700119018555,
+          29.41900062561035
+        ],
+        "limits": {
+          "minimum": [
+            -178.0,
+            -130.0,
+            -135.0,
+            -178.0,
+            -128.0,
+            -360.0
+          ],
+          "maximum": [
+            178.0,
+            130.0,
+            135.0,
+            178.0,
+            128.0,
+            360.0
+          ],
+          "speed": [
+            180.0,
+            180.0,
+            225.0,
+            225.0,
+            225.0,
+            225.0
+          ],
+          "acceleration": [
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0
+          ]
+        },
+        "reserve": [
+          132.82300186157227,
+          68.86199951171875,
+          56.61799621582031,
+          129.10400009155273,
+          84.52299880981445,
+          330.58099937438965
+        ],
+        "arm_error": 0,
+        "system_error": 0
+      },
+      "notification": {
+        "acknowledged": true,
+        "acknowledgement_observed": true,
+        "event_seen": true,
+        "method": "Movel_Cmd",
+        "phase": "approaching_visual_hover_140mm",
+        "acknowledgement_raw": 0
+      }
+    },
+    {
+      "phase": "descending_to_visual_noncontact_pregrasp",
+      "method": "Movel_Cmd",
+      "speed": 2,
+      "position_feedback_difference_mm": 0.014551160221025145,
+      "target": [
+        0.2769140791000905,
+        -0.39159790249577464,
+        -0.2646417348368264,
+        -2.5739998817443848,
+        -1.1699999570846558,
+        -2.2149999141693115
+      ],
+      "endpoint": {
+        "frames": {
+          "work": {
+            "frame_name": {
+              "name": "World"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "tool": {
+            "frame_name": {
+              "name": "Arm_Tip"
+            },
+            "pose": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "quaternion": {
+                "w": 0.0,
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "euler": {
+                "rx": 0.0,
+                "ry": 0.0,
+                "rz": 0.0
+              }
+            },
+            "payload": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          }
+        },
+        "frame_signatures": {
+          "work": {
+            "name": "World",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          },
+          "tool": {
+            "name": "Arm_Tip",
+            "position": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "euler": {
+              "rx": 0.0,
+              "ry": 0.0,
+              "rz": 0.0
+            },
+            "payload": {
+              "payload": 0.0,
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            }
+          }
+        },
+        "frame_names": {
+          "work": "World",
+          "tool": "Arm_Tip"
+        },
+        "pose": [
+          0.2769069969654083,
+          -0.39160799980163574,
+          -0.26463401317596436,
+          -2.572999954223633,
+          -1.1690000295639038,
+          -2.2149999141693115
+        ],
+        "joints": [
+          -35.90999984741211,
+          -96.73400115966797,
+          -23.31800079345703,
+          77.92400360107422,
+          41.10900115966797,
+          -1.3370000123977661
+        ],
+        "limits": {
+          "minimum": [
+            -178.0,
+            -130.0,
+            -135.0,
+            -178.0,
+            -128.0,
+            -360.0
+          ],
+          "maximum": [
+            178.0,
+            130.0,
+            135.0,
+            178.0,
+            128.0,
+            360.0
+          ],
+          "speed": [
+            180.0,
+            180.0,
+            225.0,
+            225.0,
+            225.0,
+            225.0
+          ],
+          "acceleration": [
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0,
+            600.0
+          ]
+        },
+        "reserve": [
+          142.0900001525879,
+          33.26599884033203,
+          111.68199920654297,
+          100.07599639892578,
+          86.89099884033203,
+          358.66299998760223
+        ],
+        "arm_error": 0,
+        "system_error": 0
+      },
+      "notification": {
+        "acknowledged": true,
+        "acknowledgement_observed": true,
+        "event_seen": true,
+        "method": "Movel_Cmd",
+        "phase": "descending_to_visual_noncontact_pregrasp",
+        "acknowledgement_raw": 0
+      }
+    }
+  ],
+  "live_target_sha256": "172e969609e9fdec2f76d2fdc30a7e5cdbe5f01e2c0370fe50a14d2147ba7e28",
+  "repeatability_mm": 2.5590060732792876,
+  "limits": [
+    "Only alignment substage uploaded; outer bus/clearance stages not independently accepted.",
+    "Operator p confirms this endpoint aligned and noncontact, not universal swept geometry or absolute calibration.",
+    "No grasp/lift/drop in this run."
+  ],
+  "offline_project_tests_executed": false,
+  "SDK_loaded": false,
+  "device_connected": false
+}

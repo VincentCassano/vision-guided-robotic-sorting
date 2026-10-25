@@ -1,0 +1,6 @@
+cd ~/test/battery-d435-preview && \
+printf '%s  %s\n' '3985c0fcf6ac51c181ca8de753c7f2ba745906326b808569a2ac6f90ea86d55c' '../battery-visual-web-control-v24-fix2-20261026.zip' | sha256sum --quiet -c - && \
+unzip -oq ../battery-visual-web-control-v24-fix2-20261026.zip -d . && \
+sha256sum --quiet -c deployment/visual-pick-sort-v23-files.sha256 && \
+sha256sum --quiet -c deployment/visual-task-control-v24-files.sha256 && \
+/usr/bin/python3 deployment/run_visual_task_control_v24.py --host 0.0.0.0

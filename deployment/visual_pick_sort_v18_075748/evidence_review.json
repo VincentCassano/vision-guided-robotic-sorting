@@ -1,0 +1,235 @@
+{
+  "evidence_scope": "actual_device_archive_review_not_replay_or_new_execution",
+  "source_archive": "visual_pick_sort_v18_20261024_075748_503272.zip",
+  "sha256": "c89e3ba61f95c5002a85790868680c7c8dbc831dbc32c54c12276f8dcbe1d6f9",
+  "bytes": 13495860,
+  "parent_CRC_pass": true,
+  "parent_source_hashes_verified": 17,
+  "child_CRC_pass": true,
+  "child_source_hashes_verified": 20,
+  "visual": {
+    "automatic_support_decision": "board_top",
+    "measured_support_rise_mm": 9.6,
+    "height_repeatability_max_mm": 1.4182300587786596,
+    "height_observed_median_mm": 6.868466622881769,
+    "frame_count": 8,
+    "all_per_frame_support_votes": [
+      "board_top",
+      "board_top",
+      "board_top",
+      "board_top",
+      "board_top",
+      "board_top",
+      "board_top",
+      "board_top"
+    ],
+    "plane_burst_qualified": true,
+    "plane_point_repeatability_max_mm": 1.0412199156710684,
+    "original_free3D_burst_qualified": false,
+    "absolute_accuracy_or_arbitrary_height_accepted": false
+  },
+  "first_cycle": {
+    "outcome": "worker_not_completed_no_automatic_retry",
+    "failed_phase": "grouped_grip_then_immediate180mm_lift",
+    "arm_actuator_writes": 2,
+    "hand_register_writes": 2,
+    "arm_stop_writes": 0,
+    "exact_prepare": [
+      6001,
+      6000,
+      6001,
+      32000,
+      65535,
+      65535
+    ],
+    "exact_grip_first3": [
+      26001,
+      16899,
+      19100
+    ],
+    "all_group_writes_ACK_and_targets_match": true,
+    "fault": {
+      "status": [
+        0,
+        2,
+        3,
+        2,
+        2,
+        2
+      ],
+      "sampled_current_ma": [
+        170,
+        139,
+        2,
+        69,
+        5,
+        84
+      ],
+      "current_limits_ma": [
+        1299,
+        1299,
+        1299,
+        1299,
+        1299,
+        1299
+      ],
+      "abnormal_status_channels": [
+        {
+          "channel": 2,
+          "name": "middle",
+          "status": 3
+        }
+      ],
+      "status3_means_current_protection_not_normal_stuck5": true,
+      "later_sampled_current_does_not_disprove_prior_protection": true,
+      "phase": "grouped_grip_then_immediate180mm_lift",
+      "loaded_lift_commanded": false
+    },
+    "actual_descent_position_error_mm": 0.019975586190319444,
+    "loaded_lift_commanded": false,
+    "bin_transfer_commanded": false,
+    "SDK_cleanup_finished": true
+  },
+  "second_cycle": {
+    "mode": "park_empty",
+    "phase": "completed",
+    "arm_actuator_writes": 1,
+    "hand_register_writes": 1,
+    "current_open_posture": {
+      "method": "fresh_five_actual_flex_positions_and_open_target_registers",
+      "qualified": true,
+      "actual_positions": [
+        4,
+        0,
+        0,
+        3,
+        6,
+        65535
+      ],
+      "target_positions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65535
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "five_flex_channels": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "opposition_channel_excluded": true,
+      "maximum_actual_open_count": 150,
+      "target_register_zero_tolerance_counts": 2,
+      "tolerance_source": "existing_manual_hand_bus_v2_actual_target_arrival_150counts_and_group_readback2counts",
+      "object_absence_verified": false,
+      "physical_empty_hand_sensor_present": false,
+      "posture_inference_only": true
+    },
+    "final_hand": {
+      "identity": [
+        512,
+        769,
+        151,
+        8193,
+        290,
+        2,
+        0,
+        0
+      ],
+      "current_limit_ma": [
+        1299,
+        1299,
+        1299,
+        1299,
+        1299,
+        1299
+      ],
+      "speeds": [
+        65535,
+        65535,
+        65535,
+        65535,
+        65535,
+        65535
+      ],
+      "force_targets": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65535
+      ],
+      "positions": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        65535
+      ],
+      "current": [
+        29,
+        2,
+        2,
+        0,
+        0,
+        1
+      ],
+      "status": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "protected_channels": [],
+      "status5_channels": [],
+      "blockers": [],
+      "started_monotonic": 816526.706804406,
+      "finished_monotonic": 816530.615638235,
+      "reads_are_sequential": true,
+      "physical_stop_verified": false,
+      "holding_verified": false,
+      "actual_target_differences": [
+        0,
+        0,
+        0,
+        0,
+        6,
+        0
+      ]
+    },
+    "SDK_cleanup_finished": true,
+    "normal_scan_upper_completed": true,
+    "physical_object_absence_verified": false
+  },
+  "source_findings": {
+    "status3_causes_immediate_exception_after_ack_before_lift": true,
+    "later_same_targets_positions_reached_status2_recorded": true,
+    "spontaneous_recovery_without_external_action_proven": false,
+    "offline_project_tests_or_image_replay_executed": false
+  },
+  "complete_visual_pick_sort_accepted": false,
+  "new_v19_wait_branch_accepted": false
+}

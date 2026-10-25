@@ -1,0 +1,687 @@
+{
+  "source_zip": "taught_grasp_cycle_20261014_214212_009946.zip",
+  "source_sha256": "cbcaed935fb19b7ea79dd50cd743255abf91b884822a2a05ee5f935c128d5fa8",
+  "source_bytes": 26232,
+  "zip_members": 10,
+  "audit_kind": "existing_real_field_capture_readonly",
+  "offline_tests_executed": false,
+  "project_code_imported": false,
+  "local_device_connection": false,
+  "outcome": "aborted_no_further_writes",
+  "parent_outcome": "aborted_no_further_writes",
+  "worker_return_code": 1,
+  "exceptions": [
+    {
+      "error": "TransportError('Read rejected')",
+      "traceback": "Traceback (most recent call last):\n  File \"/home/rm/test/battery-d435-preview/deployment/vision_cycle_worker.py\", line 88, in main\n    try:seq.run()\n  File \"/home/rm/test/battery-d435-preview/deployment/vision_cycle_sequence.py\", line 209, in run\n    initial,tip=self.preflight(self.reference,None)\n  File \"/home/rm/test/battery-d435-preview/deployment/high_descent_prepare_worker.py\", line 91, in preflight\n    hand.configuration()\n  File \"/home/rm/test/battery-d435-preview/deployment/continuous_hand_cycle.py\", line 74, in configuration\n    super().configuration()\n  File \"/home/rm/test/battery-d435-preview/deployment/run_school_battery_hand.py\", line 94, in configuration\n    self.report['configuration'][name]=self.read(name,addr,count);self.save()\n  File \"/home/rm/test/battery-d435-preview/deployment/run_school_battery_hand.py\", line 40, in read\n    started=self.clock(); values=self.io.read(address,count)\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 258, in read\n    return self.exchange(dict(command=MULTI,port=1,address=address,num=count,device=2))\n  File \"/home/rm/test/battery-d435-preview/deployment/supported_contact_transport.py\", line 225, in exchange\n    if response.get('read_state') is False: raise TransportError('Read rejected')\nschool_battery_transport.TransportError: Read rejected\n"
+    }
+  ],
+  "cleanup_errors": [],
+  "first_hand_request": {
+    "command": "read_multiple_holding_registers",
+    "port": 1,
+    "address": 1000,
+    "num": 8,
+    "device": 2
+  },
+  "first_hand_raw_reply": {
+    "command": "read_multiple_holding_registers",
+    "read_state": false
+  },
+  "reply_elapsed_seconds": 0.2258947939999416,
+  "hand_tx_command_counts": {
+    "read_multiple_holding_registers": 1
+  },
+  "hand_events": {
+    "tx": 1,
+    "rx": 1,
+    "transport_error": 1,
+    "supported_contact_write_latched": 3
+  },
+  "writes": {
+    "arm_actuator": 0,
+    "hand_register": 0,
+    "controller_configuration": 0
+  },
+  "SDK_motion_or_stop_records": [],
+  "actual_arm": {
+    "frames": {
+      "work": {
+        "frame_name": {
+          "name": "World"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "tool": {
+        "frame_name": {
+          "name": "Arm_Tip"
+        },
+        "pose": {
+          "position": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "quaternion": {
+            "w": 0.0,
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "euler": {
+            "rx": 0.0,
+            "ry": 0.0,
+            "rz": 0.0
+          }
+        },
+        "payload": 0.0,
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "frame_signatures": {
+      "work": {
+        "name": "World",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      },
+      "tool": {
+        "name": "Arm_Tip",
+        "position": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "euler": {
+          "rx": 0.0,
+          "ry": 0.0,
+          "rz": 0.0
+        },
+        "payload": {
+          "payload": 0.0,
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        }
+      }
+    },
+    "frame_names": {
+      "work": "World",
+      "tool": "Arm_Tip"
+    },
+    "pose": [
+      0.30270200967788696,
+      -0.2623229920864105,
+      0.08095099776983261,
+      -2.513000011444092,
+      -0.5690000057220459,
+      2.7790000438690186
+    ],
+    "joints": [
+      -53.84199905395508,
+      -10.472000122070312,
+      -87.56999969482422,
+      167.18499755859375,
+      61.89099884033203,
+      -30.240999221801758
+    ],
+    "limits": {
+      "minimum": [
+        -178.0,
+        -130.0,
+        -135.0,
+        -178.0,
+        -128.0,
+        -360.0
+      ],
+      "maximum": [
+        178.0,
+        130.0,
+        135.0,
+        178.0,
+        128.0,
+        360.0
+      ],
+      "speed": [
+        180.0,
+        180.0,
+        225.0,
+        225.0,
+        225.0,
+        225.0
+      ],
+      "acceleration": [
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0,
+        600.0
+      ]
+    },
+    "reserve": [
+      124.15800094604492,
+      119.52799987792969,
+      47.43000030517578,
+      10.81500244140625,
+      66.10900115966797,
+      329.75900077819824
+    ],
+    "arm_error": 0,
+    "system_error": 0
+  },
+  "actual_arm_safety": {
+    "Get_Joint_EN_State": [
+      0,
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "Get_Joint_Err_Flag": [
+      0,
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "Get_Collision_Stage": [
+      0,
+      8
+    ],
+    "Get_Joint_Drive_Min_Pos": [
+      0,
+      [
+        -183.0,
+        -135.0,
+        -140.0,
+        -360.0,
+        -133.0,
+        -365.0
+      ]
+    ],
+    "Get_Joint_Drive_Max_Pos": [
+      0,
+      [
+        183.0,
+        135.0,
+        140.0,
+        360.0,
+        133.0,
+        365.0
+      ]
+    ],
+    "Get_Joint_Current": [
+      0,
+      [
+        -542.0,
+        1021.0,
+        970.0,
+        -551.0,
+        514.0,
+        -264.0
+      ]
+    ],
+    "Get_Joint_Temperature": [
+      0,
+      [
+        31.0,
+        32.0,
+        30.0,
+        31.0,
+        33.0,
+        34.0
+      ]
+    ],
+    "Get_Joint_Voltage": [
+      0,
+      [
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0,
+        23.0
+      ]
+    ],
+    "Get_Self_Collision_Enable": [
+      0,
+      false
+    ],
+    "Get_Arm_Software_Version": [
+      0,
+      "6B0165",
+      "0",
+      "0",
+      "0",
+      "RM65-BI"
+    ],
+    "Get_Install_Pose": [
+      0,
+      0.0,
+      45.0,
+      0.0
+    ]
+  },
+  "actual_native_metadata": {
+    "schema_version": 1,
+    "read_only": true,
+    "execution_ready": false,
+    "python_version": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+    "host_system": "Linux",
+    "host_machine": "aarch64",
+    "python_pointer_bits": 64,
+    "errors": [],
+    "note": "Provenance only. Does not certify the native algorithm or approve IK/trajectory execution.",
+    "loaded_native": {
+      "path": "/home/rm/catkin_ws/src/grasp_demo/scripts/robotic_arm_package/libRM_Base.so",
+      "bytes": 690912,
+      "sha256": "052f94a92d5c7320f227ea811916375fa0d352250329570bd50e0c7abe603ad5",
+      "binary": {
+        "format": "ELF",
+        "bits": 64,
+        "byteorder": "little",
+        "machine": 183,
+        "architecture": "aarch64"
+      }
+    },
+    "api_version": "4.3.1",
+    "controller_software_info": {
+      "status": 0,
+      "ok": true,
+      "data": [
+        {
+          "product_version": "RM65-BI",
+          "algorithm_info": {
+            "version": "1.4.10"
+          },
+          "ctrl_info": {
+            "build_time": "",
+            "version": " 11:24:47"
+          },
+          "dynamic_info": {
+            "model_version": "V1.6."
+          },
+          "plan_info": {
+            "build_time": "5",
+            "version": " 11:25:03"
+          }
+        }
+      ]
+    },
+    "controller_run_mode_raw": {
+      "status": 0,
+      "ok": true,
+      "data": [
+        1
+      ]
+    },
+    "metadata_complete": true
+  },
+  "actual_fresh_model": {
+    "schema_version": 1,
+    "endpoint": [
+      "169.254.128.18",
+      8080
+    ],
+    "network_connection_requested": true,
+    "hardware_writes": 0,
+    "controller_configuration_writes": 0,
+    "actuator_writes": 0,
+    "execution_ready": false,
+    "model_data_applied": false,
+    "fitted_correction_applied": false,
+    "dh_valid": true,
+    "identity_valid": true,
+    "installed_controller_generation": "unknown",
+    "dh_command_generation_support": "this_controller_returned_documented_schema",
+    "parameters_origin": "controller_readback_not_manufacturer_default",
+    "official_references": {
+      "identity": "https://develop.realman-robotics.com/robot/json/systemConfig/",
+      "dh": "https://develop.realman-robotics.com/robot/json/armConfig/"
+    },
+    "units": {
+      "alpha": "1000 raw units per degree",
+      "a": "1000000 raw units per meter",
+      "d": "1000000 raw units per meter",
+      "offset": "1000 raw units per degree"
+    },
+    "transactions": [
+      {
+        "command": "get_arm_software_info",
+        "endpoint": [
+          "169.254.128.18",
+          8080
+        ],
+        "request_hex": "7b22636f6d6d616e64223a226765745f61726d5f736f6674776172655f696e666f227d0d0a",
+        "response_hex": "7b2250726f647563745f76657273696f6e223a22524d36352d4249222c22616c676f726974686d5f696e666f223a7b2276657273696f6e223a22312e342e3130227d2c22636f6d6d616e64223a2261726d5f736f6674776172655f696e666f222c226374726c5f696e666f223a7b226275696c645f74696d65223a22323032342f31312f32322031313a32343a3437222c22636f6d6d69745f6964223a2239346562333939222c2276657273696f6e223a2256312e362e35227d2c2264796e616d69635f696e666f223a7b226d6f64656c5f76657273696f6e223a2232227d2c22706c616e5f696e666f223a7b226275696c645f74696d65223a22323032342f31312f32322031313a32353a3033222c22636f6d6d69745f6964223a2265383735656530222c2276657273696f6e223a2256312e362e35227d7d0d0a",
+        "connection_requested": true,
+        "request_send_completed": true,
+        "socket_closed": true,
+        "response": {
+          "Product_version": "RM65-BI",
+          "algorithm_info": {
+            "version": "1.4.10"
+          },
+          "command": "arm_software_info",
+          "ctrl_info": {
+            "build_time": "2024/11/22 11:24:47",
+            "commit_id": "94eb399",
+            "version": "V1.6.5"
+          },
+          "dynamic_info": {
+            "model_version": "2"
+          },
+          "plan_info": {
+            "build_time": "2024/11/22 11:25:03",
+            "commit_id": "e875ee0",
+            "version": "V1.6.5"
+          }
+        }
+      },
+      {
+        "command": "get_DH_data",
+        "endpoint": [
+          "169.254.128.18",
+          8080
+        ],
+        "request_hex": "7b22636f6d6d616e64223a226765745f44485f64617461227d0d0a",
+        "response_hex": "7b22636f6d6d616e64223a226765745f44485f64617461222c226a6f696e745f31223a5b302c302c3138313036302c305d2c226a6f696e745f32223a5b39303030302c302c302c39303030305d2c226a6f696e745f33223a5b302c3235363030302c302c39303030305d2c226a6f696e745f34223a5b39303030302c302c3231303030302c305d2c226a6f696e745f35223a5b2d39303030302c302c302c305d2c226a6f696e745f36223a5b39303030302c302c3134343030302c305d7d0d0a",
+        "connection_requested": true,
+        "request_send_completed": true,
+        "socket_closed": true,
+        "response": {
+          "command": "get_DH_data",
+          "joint_1": [
+            0,
+            0,
+            181060,
+            0
+          ],
+          "joint_2": [
+            90000,
+            0,
+            0,
+            90000
+          ],
+          "joint_3": [
+            0,
+            256000,
+            0,
+            90000
+          ],
+          "joint_4": [
+            90000,
+            0,
+            210000,
+            0
+          ],
+          "joint_5": [
+            -90000,
+            0,
+            0,
+            0
+          ],
+          "joint_6": [
+            90000,
+            0,
+            144000,
+            0
+          ]
+        }
+      }
+    ],
+    "errors": [],
+    "host": {
+      "system": "Linux",
+      "machine": "aarch64"
+    },
+    "identity_response": {
+      "Product_version": "RM65-BI",
+      "algorithm_info": {
+        "version": "1.4.10"
+      },
+      "command": "arm_software_info",
+      "ctrl_info": {
+        "build_time": "2024/11/22 11:24:47",
+        "commit_id": "94eb399",
+        "version": "V1.6.5"
+      },
+      "dynamic_info": {
+        "model_version": "2"
+      },
+      "plan_info": {
+        "build_time": "2024/11/22 11:25:03",
+        "commit_id": "e875ee0",
+        "version": "V1.6.5"
+      }
+    },
+    "dh_response": {
+      "command": "get_DH_data",
+      "joint_1": [
+        0,
+        0,
+        181060,
+        0
+      ],
+      "joint_2": [
+        90000,
+        0,
+        0,
+        90000
+      ],
+      "joint_3": [
+        0,
+        256000,
+        0,
+        90000
+      ],
+      "joint_4": [
+        90000,
+        0,
+        210000,
+        0
+      ],
+      "joint_5": [
+        -90000,
+        0,
+        0,
+        0
+      ],
+      "joint_6": [
+        90000,
+        0,
+        144000,
+        0
+      ]
+    },
+    "dh_parameters": [
+      {
+        "joint": 1,
+        "raw": [
+          0,
+          0,
+          181060,
+          0
+        ],
+        "alpha_degrees": 0.0,
+        "a_meters": 0.0,
+        "d_meters": 0.18106,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 2,
+        "raw": [
+          90000,
+          0,
+          0,
+          90000
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.0,
+        "offset_degrees": 90.0
+      },
+      {
+        "joint": 3,
+        "raw": [
+          0,
+          256000,
+          0,
+          90000
+        ],
+        "alpha_degrees": 0.0,
+        "a_meters": 0.256,
+        "d_meters": 0.0,
+        "offset_degrees": 90.0
+      },
+      {
+        "joint": 4,
+        "raw": [
+          90000,
+          0,
+          210000,
+          0
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.21,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 5,
+        "raw": [
+          -90000,
+          0,
+          0,
+          0
+        ],
+        "alpha_degrees": -90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.0,
+        "offset_degrees": 0.0
+      },
+      {
+        "joint": 6,
+        "raw": [
+          90000,
+          0,
+          144000,
+          0
+        ],
+        "alpha_degrees": 90.0,
+        "a_meters": 0.0,
+        "d_meters": 0.144,
+        "offset_degrees": 0.0
+      }
+    ],
+    "elapsed_seconds": 0.022900213999946573,
+    "outcome": "readback_recorded_not_applied"
+  },
+  "protection_responses": [
+    {
+      "collision_stage": 8,
+      "state": "get_collision_stage"
+    },
+    {
+      "command": "get_self_collision_enable",
+      "enable_state": false
+    }
+  ],
+  "hand_configuration": {},
+  "tip_wire_bytes": 0,
+  "hand_identity_or_status_or_motor_configuration_read_this_run": false,
+  "local_write_latch_is_hardware_stop": false,
+  "diagnosis": {
+    "observed": "Controller explicitly refused first identity read; no timeout or status5 observation",
+    "implementation_gap": "Integrated v3 omitted controller terminal RTU configuration before first hand read after reboot",
+    "unique_physical_cause_confirmed": false,
+    "other_unresolved_causes": [
+      "hand power or cable availability",
+      "unfinished startup self-test"
+    ],
+    "repair": "One explicit controller set_modbus_mode before first hand identity; same-run full identity/configuration/preflight must still succeed",
+    "request": {
+      "command": "set_modbus_mode",
+      "port": 1,
+      "baudrate": 115200,
+      "timeout": 1
+    },
+    "timeout_unit": "100ms; timeout1 is not1second",
+    "no_tool_power_change": true,
+    "no_hand_reset_or_self_test_write": true,
+    "no_close_modbus_command": true,
+    "mode_getter_support": "not assumed; legacy SDK has no getter and official getter is third-generation-specific"
+  },
+  "primary_sources": [
+    {
+      "url": "https://develop.realman-robotics.com/robot/json/modbus/",
+      "claim": "After startup set_modbus_mode precedes port Modbus operations; port1 is terminal RTU and timeout unit100ms"
+    },
+    {
+      "path": "G:/Code_Project/bisai/catkin_ws/src/grasp_demo/scripts/grasp_object.py",
+      "lines": [
+        305,
+        306
+      ],
+      "claim": "School sequence configures terminal port1 baud115200 timeout1 before hand control; unrelated Close_Modbustcp_Mode is not copied"
+    },
+    {
+      "url": "https://oymotion.github.io/ROHand/ROH-Protocols/OHandModBusRTUProtocol_Gen1/",
+      "claim": "Hand self-test/reset registers not part of controller-side bus configuration"
+    }
+  ],
+  "field_repair_acceptance": "pending next real execution; neither ACK nor write latch proves stop/torque release"
+}

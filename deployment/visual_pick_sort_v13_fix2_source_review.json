@@ -1,0 +1,91 @@
+{
+  "scope": "fix1 actual initial-rise J4 failure and fix2 bounded approach-path change",
+  "evidence": [
+    "visual_pick_sort_v13_fix1_reserve_operator_excerpt.json",
+    "visual_pick_sort_v13_223012_saved_fields.json"
+  ],
+  "source_type": "user terminal plus stdlib reads from existing robot files; full new ZIP not received",
+  "failed_phase": "raising_empty_current_hand",
+  "failed_raw": {
+    "event": "sdk_call_result",
+    "monotonic": 782146.918195866,
+    "method": "Get_Current_Arm_State",
+    "result": [
+      0,
+      [
+        -61.66400146484375,
+        -56.375,
+        -48.6150016784668,
+        175.6750030517578,
+        15.979000091552734,
+        -31.68400001525879
+      ],
+      [
+        0.3167459964752197,
+        -0.47629499435424805,
+        -0.041669998317956924,
+        -2.263000011444092,
+        -0.019999999552965164,
+        3.0429999828338623
+      ],
+      0,
+      0
+    ]
+  },
+  "failed_joint": 4,
+  "ordinary_upper_degrees": 178.0,
+  "failed_degrees": 175.6750030517578,
+  "ordinary_margin_degrees": 2.3249969482421875,
+  "required_margin_degrees": 3.0,
+  "drive_upper_degrees": 360.0,
+  "arm_error": 0,
+  "system_error": 0,
+  "attained_rise_mm": 128.24099883437157,
+  "uncompleted_rise_mm": 11.738442173024222,
+  "original_grasp_or_sort_reached": false,
+  "physical_stop_verified": false,
+  "implementation": {
+    "revision": "fix2",
+    "current_xy_entry_above_target_mm": 100,
+    "final_visual_target_hover_above_target_mm": 140,
+    "loaded_lift_mm": 140,
+    "old_current_xy_plus140_waypoint_used": false,
+    "automatic_downward_entry": false,
+    "final_alignment_method": "Movel_Cmd",
+    "alignment_corridor": "distance to commanded 3D finite line segment <=1mm; fixed wrist <=0.005rad",
+    "other_vertical_corridors_unchanged": true,
+    "ordinary_and_drive_3degree_guards_unchanged": true,
+    "source_reference_and_visual_mapping_unchanged": true,
+    "PRE_GRIP_DROP_and_status5_policy_unchanged": true,
+    "no_new_device_query_from_diagnostics": true,
+    "failed_raw_logged_before_inherited_checks": true,
+    "diagnostic_never_startup_reference": true,
+    "current_state_fresh_read_each_new_run": true,
+    "parent_prints_joint_and_both_margins": true,
+    "automatic_recovery_retry_release_or_return": false,
+    "actual_grip_arrival_required": false,
+    "grip_then_lift_sort_has_no_keyboard_wait": true
+  },
+  "recovery": {
+    "scope": "manual only if still same stopped pose, empty hand, unchanged wrist and prior path clear",
+    "sequence": "q, verify SDK child exited and physical stop, onsite teaching World Z negative40mm, exit teaching, new current read",
+    "exact_poststop_position_not_assumed": true,
+    "not_applied_if_already_moved": true
+  },
+  "manual_review": "root and independent read-only review of line projection, bounded endpoints, method capability and motion notification/hand-monitor interfaces",
+  "validation": {
+    "project_execution": false,
+    "compile_AST_tests_mock_FK_IK": false,
+    "SDK_loaded": false,
+    "robot_connected": false,
+    "file_integrity_only": true,
+    "new_entry_sweep_accepted": false,
+    "new_line_joint_feasibility_accepted": false,
+    "new_whole_cycle_accepted": false
+  },
+  "limits": [
+    "New connection is not previously hardware accepted; do not claim an IK or endpoint feasibility result.",
+    "Onsite g must cover entire current approach, hand preparation and loaded route.",
+    "The failed raw frame is diagnostic only, not a qualified post-stop pose or recovery origin."
+  ]
+}
